@@ -1,0 +1,769 @@
+<!DOCTYPE html><html><head><title>[Tekstualne sintakse](/courses/#table-of-contents)</title><meta charset="utf-8"><style>@import url(https://fonts.googleapis.com/css?family=Playfair+Display);@import url(https://fonts.googleapis.com/css?family=Droid+Serif);@import url(https://fonts.googleapis.com/css?family=Open+Sans);@import url(https://fonts.googleapis.com/css?family=Work+Sans);@import url(https://fonts.googleapis.com/css?family=Muli);@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);@import url(https://fonts.googleapis.com/css?family=PT+Sans);@import url(https://fonts.googleapis.com/css?family=Roboto);body{font-family:'Open Sans';color:#333;display:flex;height:100%}h1{font-family:"Playfair Display"}h2,h3,h4{font-family:'Yanone Kaffeesatz';font-weight:400}a{font-family:"PT Sans"}.remark-slide-content h1{font-size:3em}.remark-slide-content h2{font-size:2em}.remark-slide-content h3{font-size:1.6em}.remark-code,.remark-inline-code{font-family:'Ubuntu Mono'}.remark-code-line-highlighted{background-color:#373832}h1{text-shadow:-1px 0 #000,0 1px #000,1px 0 #000,0 -1px #000;-webkit-animation:pulse 7s forwards;-moz-animation:pulse 7s forwards;-o-animation:pulse 7s forwards;-ms-animation:pulse 7s forwards;animation:pulse 7s forwards}@-webkit-keyframes pulse{0%{color:#eee}100%{color:#666}}@-moz-keyframes pulse{0%{color:#eee}100%{color:#666}}@-ms-keyframes pulse{0%{color:#eee}100%{color:#666}}@-o-keyframes pulse{0%{color:#eee}100%{color:#666}}@keyframes pulse{0%{color:#eee}100%{color:#666}}h2{-webkit-animation:color-change 1.5s infinite;-moz-animation:color-change 1.5s infinite;-o-animation:color-change 1.5s infinite;-ms-animation:color-change 1.5s infinite;animation:color-change 1.5s infinite}@-webkit-keyframes color-change{0%{color:coral}50%{color:#5db9e0}100%{color:coral}}@-moz-keyframes color-change{0%{color:coral}50%{color:#5db9e0}100%{color:coral}}@-ms-keyframes color-change{0%{color:coral}50%{color:#5db9e0}100%{color:coral}}@-o-keyframes color-change{0%{color:coral}50%{color:#5db9e0}100%{color:coral}}@keyframes color-change{0%{color:coral}50%{color:#5db9e0}100%{color:coral}}h3,h4{color:#c7e2ee;text-shadow:-.7px 0 #4d4d4d,0 .7px #4d4d4d,.7px 0 #4d4d4d,0 -.7px #4d4d4d}.theend{background-color:#000;color:#000;text-shadow:0 0 20px #333}.inverse{background-color:#7e7e7e;color:#c5dae4;text-shadow:0 0 20px #333}.inverse h1{text-shadow:-1px 0 #000,0 1px #000,1px 0 #000,0 -1px #000;-webkit-animation:pulsei 7s forwards;-moz-animation:pulsei 7s forwards;-o-animation:pulsei 7s forwards;-ms-animation:pulsei 7s forwards;animation:pulsei 7s forwards}@-webkit-keyframes pulsei{0%{color:#eee}100%{color:#e9a46b}}@-moz-keyframes pulsei{0%{color:#eee}100%{color:#e9a46b}}@-ms-keyframes pulsei{0%{color:#eee}100%{color:#e9a46b}}@-o-keyframes pulsei{0%{color:#eee}100%{color:#e9a46b}}@keyframes pulsei{0%{color:#eee}100%{color:#e9a46b}}.inverse h2{text-shadow:-1px 0 #000,0 1px #000,1px 0 #000,0 -1px #000;-webkit-animation:color-changei 1s infinite;-moz-animation:color-changei 1s infinite;-o-animation:color-changei 1s infinite;-ms-animation:color-changei 1s infinite;animation:color-changei 1s infinite}@-webkit-keyframes color-changei{0%{color:#fff}50%{color:#7bbcd8}100%{color:#fff}}@-moz-keyframes color-changei{0%{color:#fff}50%{color:#7bbcd8}100%{color:#fff}}@-ms-keyframes color-changei{0%{color:#fff}50%{color:#7bbcd8}100%{color:#fff}}@-o-keyframes color-changei{0%{color:#fff}50%{color:#7bbcd8}100%{color:#fff}}@keyframes color-changei{0%{color:#fff}50%{color:#7bbcd8}100%{color:#fff}}a{color:#bb7917;text-decoration:none;transition:all .3s linear;-webkit-transition:all .3s linear;-moz-transition:all .3s linear;background:linear-gradient(to bottom,var(--mainColor) 0,var(--mainColor) 100%);background-position:0 100%;background-repeat:repeat-x;background-size:1.5px 1.5px}a:hover{background-image:url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");background-position:0 100%;background-size:auto 4px;background-repeat:repeat-x;text-decoration:none;color:#2d77d8;padding-left:10px}.inverse code{background-color:#7e7e7e}.hide-text{text-indent:-9999px}.remark-slide-container{transition:opacity 1s linear,right 1s ease-in-out;opacity:0;right:1000px}.remark-visible{transition:opacity 1s linear,right 1s ease-in-out;opacity:1;right:0}.remark-fading{z-index:9}.remark-visible~.remark-slide-container{right:-1000px}.remark-code,.remark-inline-code{font-family:'Ubuntu Mono'}.remark-code-line-highlighted{background-color:#373832}.remark-inline-code{font-weight:700}.remark-code-line-highlighted{font-weight:700;background-color:transparent;text-shadow:0 5px 15px rgba(255,106,20,.5),5px 0 15px rgba(255,106,20,.5),-5px 0 15px rgba(255,106,20,.5),0 -5px 15px rgba(255,106,20,.5)}.shade{padding:0}.shade{background-color:rgba(0,0,0,.7);color:#fff;width:100%;padding:1em 0}.shadelight{background-color:rgba(0,0,0,.5);color:#fff;width:100%;padding:0}.fgtransparent h1{color:rgba(255,255,255,.8)!important;text-shadow:none}.boxtitle1{padding:1em;text-align:left;border-left:rgba(255,255,255,.6) solid .5em;border-right:#fff solid 0}.nosplit>div:first-of-type{width:100%;height:100%;position:absolute;top:0;left:0}.split-20>div:first-of-type{width:20%;height:100%;position:absolute;top:0;left:0}.split-20>div:nth-of-type(2){width:80%;height:100%;position:absolute;top:0;right:0}.split-30>div:first-of-type{width:30%;height:100%;position:absolute;top:0;left:0}.split-30>div:nth-of-type(2){width:70%;height:100%;position:absolute;top:0;right:0}.split-50>div:first-of-type{width:50%;height:100%;position:absolute;top:0;left:0}.split-50>div:nth-of-type(2){width:50%;height:100%;position:absolute;top:0;right:0}.split-60>div:first-of-type{width:60%;height:100%;position:absolute;top:0;left:0}.split-60>div:nth-of-type(2){width:40%;height:100%;position:absolute;top:0;right:0}.split-70>div:first-of-type{width:70%;height:100%;position:absolute;top:0;left:0}.split-70>div:nth-of-type(2){width:30%;height:100%;position:absolute;top:0;right:0}.column_t1{background-color:#2aa9df;color:#fff}.column_t1 a{color:#b3e5fc}.column_t1 pre code{-webkit-box-shadow:0 0 55px 0 rgba(0,0,0,.75);-moz-box-shadow:0 0 55px 0 rgba(0,0,0,.75);box-shadow:0 0 55px 0 rgba(0,0,0,.75)}.uline{text-decoration:underline}.vmiddle{position:relative;top:50%;transform:translateY(-50%);padding:1em}.remark-slide-content h1{font-size:50px}.remark-slide-content h2{font-size:40px}.remark-slide-content h3{font-size:30px}.remark-slide-content img{width:100%}.remark-slide-content{padding-left:50px;padding-right:50px}.remark-slide-content{background-size:contain}blockquote{font-family:'Playfair Display';font-style:italic;font-size:110%;margin-top:10px;margin-bottom:10px;margin-left:50px;padding:1em 1em;background-color:#f5f5f5;border-left:5px solid #dbdbdb}.hljs-ln td.hljs-ln-numbers{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;text-align:center;color:#ccc;border-right:1px solid #ccc;vertical-align:top;padding-right:5px}.hljs-ln td.hljs-ln-code{padding-left:10px}.lcol{width:49%;float:left}.lcol-narrow{width:39%;float:left}.lcol-narrow2{width:24%;float:left}.lcol-wide{width:59%;float:left}.lcol-wide2{width:74%;float:left}.rcol{width:49%;float:right}.rcol-narrow{width:39%;float:right}.rcol-narrow2{width:24%;float:right}.rcol-wide{width:59%;float:right}.rcol-wide2{width:74%;float:right}.wide{clear:both}.l-col{color:#777;width:20%;height:92%;float:left}.r-col{width:75%;float:right;padding-top:1em}code{-moz-border-radius:5px;-web-border-radius:5px;border-radius:5px;background:#e7e8e2}em{color:#c63235}.remark-slide-content{font-size:24px}ol>li,ul>li{margin-top:5px}.section{font-size:16px;float:right;clear:both}.small,.small .remark-code-line{font-size:60%}.medium,.medium .remark-code-line{font-size:80%}.condensed{line-height:.8em;font-size:90%}.size-90,.size-90 .remark-code-line{font-size:90%}.size-85,.size-85 .remark-code-line{font-size:85%}.multicode pre{margin-top:10px;margin-bottom:10px}.remark-slide img,.remark-slide pre{margin-top:25px;margin-bottom:25px}.attention{-moz-border-radius:5px;-web-border-radius:5px;border-radius:5px;background-color:#fbd2d2;text-align:center}.attention p{margin:10px}.footer{position:absolute;bottom:12px;left:20px;font-size:70%}.footer.small{font-size:50%}.footer,li>p{margin:0}.ref{color:red;vertical-align:super;font-size:70%}.created{font-size:60%;margin-bottom:5em;font-family:"Playfair Display";font-size:16px;font-style:normal;font-variant:normal;font-weight:400;line-height:22px}.created:before{content:"👨🏻‍💻➙ "}.noselect{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.overlay{box-shadow:inset 0 0 0 9999px rgba(0,0,0,.35)}.container{height:100%;width:100%;display:flex;position:fixed;align-items:center;justify-content:center}table{border-collapse:collapse;border-spacing:0;empty-cells:show;border:1px solid #cbcbcb}.center-table table{margin:0 auto}table caption{color:#000;font:italic 85%/1 arial,sans-serif;padding:1em 0;text-align:center}table td,table th{border-left:1px solid #cbcbcb;border-width:0 0 0 1px;font-size:inherit;margin:0;overflow:visible;padding:.5em 1em}table td:first-child,table th:first-child{border-left-width:0}table thead{background-color:#e0e0e0;color:#000;text-align:left;vertical-align:bottom}table td{background-color:transparent}table-odd td{background-color:#f2f2f2}table tr:nth-child(2n-1) td{background-color:#f2f2f2}table td{border-bottom:1px solid #cbcbcb}table tbody>tr:last-child>td{border-bottom-width:0}table-horizontal td,table-horizontal th{border-width:0 0 1px 0;border-bottom:1px solid #cbcbcb}table-horizontal tbody>tr:last-child>td{border-bottom-width:0}/*! bulma.io v0.4.2 | MIT License | github.com/jgthms/bulma */@-webkit-keyframes spinAround{from{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes spinAround{from{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}/*! minireset.css v0.0.2 | MIT License | github.com/jgthms/minireset.css */p{margin:0;padding:0}.message{font-family:'Playfair Display';background-color:#f5f5f5;border-radius:3px;font-size:1rem}.message:not(:last-child){margin-bottom:1.5rem}.message.is-white{background-color:#fff}.message.is-white .message-header{background-color:#fff;color:#0a0a0a}.message.is-white .message-body{border-color:#fff;color:#4d4d4d}.message.is-black{background-color:#fafafa}.message.is-black .message-header{background-color:#0a0a0a;color:#fff}.message.is-black .message-body{border-color:#0a0a0a;color:#090909}.message.is-light{background-color:#fafafa}.message.is-light .message-header{background-color:#f5f5f5;color:#363636}.message.is-light .message-body{border-color:#f5f5f5;color:#505050}.message.is-dark{background-color:#fafafa}.message.is-dark .message-header{background-color:#363636;color:#f5f5f5}.message.is-dark .message-body{border-color:#363636;color:#2a2a2a}.message.is-primary{background-color:#f5fffd}.message.is-primary .message-header{background-color:#00d1b2;color:#fff}.message.is-primary .message-body{border-color:#00d1b2;color:#021310}.message.is-info{background-color:#f6f9fe}.message.is-info .message-header{background-color:#3273dc;color:#fff}.message.is-info .message-body{border-color:#3273dc;color:#22509a}.message.is-success{background-color:#f6fef9}.message.is-success .message-header{background-color:#23d160;color:#fff}.message.is-success .message-body{border-color:#23d160;color:#0e301a}.message.is-warning{background-color:#fffdf5}.message.is-warning .message-header{background-color:#ffdd57;color:rgba(0,0,0,.7)}.message.is-warning .message-body{border-color:#ffdd57;color:#3b3108}.message.is-danger{background-color:#fff5f7}.message.is-danger .message-header{background-color:#ff3860;color:#fff}.message.is-danger .message-body{border-color:#ff3860;color:#cd0930}.message-header{-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#4a4a4a;border-radius:3px 3px 0 0;color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;line-height:1.25;padding:.5em .75em;position:relative}.message-header a,.message-header strong{color:inherit}.message-header a{text-decoration:underline}.message-header .delete{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:0;flex-shrink:0;margin-left:.75em}.message-header+.message-body{border-top-left-radius:0;border-top-right-radius:0;border-top:none}.message-body{border:1px solid #dbdbdb;border-radius:3px;color:#4a4a4a;padding:.1em .5em}.message-body a,.message-body strong{color:inherit}.message-body a{text-decoration:underline}.message-body code,.message-body pre{background:#fff}.message-body pre code{background:0 0}.column{display:block;-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-negative:1;flex-shrink:1;padding:.75rem}.columns.is-mobile>.column.is-narrow{-webkit-box-flex:0;-ms-flex:none;flex:none}.columns.is-mobile>.column.is-full{-webkit-box-flex:0;-ms-flex:none;flex:none;width:100%}.columns.is-mobile>.column.is-three-quarters{-webkit-box-flex:0;-ms-flex:none;flex:none;width:75%}.columns.is-mobile>.column.is-two-thirds{-webkit-box-flex:0;-ms-flex:none;flex:none;width:66.6666%}.columns.is-mobile>.column.is-half{-webkit-box-flex:0;-ms-flex:none;flex:none;width:50%}.columns.is-mobile>.column.is-one-third{-webkit-box-flex:0;-ms-flex:none;flex:none;width:33.3333%}.columns.is-mobile>.column.is-one-quarter{-webkit-box-flex:0;-ms-flex:none;flex:none;width:25%}.columns.is-mobile>.column.is-offset-three-quarters{margin-left:75%}.columns.is-mobile>.column.is-offset-two-thirds{margin-left:66.6666%}.columns.is-mobile>.column.is-offset-half{margin-left:50%}.columns.is-mobile>.column.is-offset-one-third{margin-left:33.3333%}.columns.is-mobile>.column.is-offset-one-quarter{margin-left:25%}.columns.is-mobile>.column.is-1{-webkit-box-flex:0;-ms-flex:none;flex:none;width:8.33333%}.columns.is-mobile>.column.is-offset-1{margin-left:8.33333%}.columns.is-mobile>.column.is-2{-webkit-box-flex:0;-ms-flex:none;flex:none;width:16.66667%}.columns.is-mobile>.column.is-offset-2{margin-left:16.66667%}.columns.is-mobile>.column.is-3{-webkit-box-flex:0;-ms-flex:none;flex:none;width:25%}.columns.is-mobile>.column.is-offset-3{margin-left:25%}.columns.is-mobile>.column.is-4{-webkit-box-flex:0;-ms-flex:none;flex:none;width:33.33333%}.columns.is-mobile>.column.is-offset-4{margin-left:33.33333%}.columns.is-mobile>.column.is-5{-webkit-box-flex:0;-ms-flex:none;flex:none;width:41.66667%}.columns.is-mobile>.column.is-offset-5{margin-left:41.66667%}.columns.is-mobile>.column.is-6{-webkit-box-flex:0;-ms-flex:none;flex:none;width:50%}.columns.is-mobile>.column.is-offset-6{margin-left:50%}.columns.is-mobile>.column.is-7{-webkit-box-flex:0;-ms-flex:none;flex:none;width:58.33333%}.columns.is-mobile>.column.is-offset-7{margin-left:58.33333%}.columns.is-mobile>.column.is-8{-webkit-box-flex:0;-ms-flex:none;flex:none;width:66.66667%}.columns.is-mobile>.column.is-offset-8{margin-left:66.66667%}.columns.is-mobile>.column.is-9{-webkit-box-flex:0;-ms-flex:none;flex:none;width:75%}.columns.is-mobile>.column.is-offset-9{margin-left:75%}.columns.is-mobile>.column.is-10{-webkit-box-flex:0;-ms-flex:none;flex:none;width:83.33333%}.columns.is-mobile>.column.is-offset-10{margin-left:83.33333%}.columns.is-mobile>.column.is-11{-webkit-box-flex:0;-ms-flex:none;flex:none;width:91.66667%}.columns.is-mobile>.column.is-offset-11{margin-left:91.66667%}.columns.is-mobile>.column.is-12{-webkit-box-flex:0;-ms-flex:none;flex:none;width:100%}.columns.is-mobile>.column.is-offset-12{margin-left:100%}@media screen and (max-width:768px){.column.is-narrow-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none}.column.is-full-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none;width:100%}.column.is-three-quarters-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none;width:75%}.column.is-two-thirds-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none;width:66.6666%}.column.is-half-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none;width:50%}.column.is-one-third-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none;width:33.3333%}.column.is-one-quarter-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none;width:25%}.column.is-offset-three-quarters-mobile{margin-left:75%}.column.is-offset-two-thirds-mobile{margin-left:66.6666%}.column.is-offset-half-mobile{margin-left:50%}.column.is-offset-one-third-mobile{margin-left:33.3333%}.column.is-offset-one-quarter-mobile{margin-left:25%}.column.is-1-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none;width:8.33333%}.column.is-offset-1-mobile{margin-left:8.33333%}.column.is-2-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none;width:16.66667%}.column.is-offset-2-mobile{margin-left:16.66667%}.column.is-3-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none;width:25%}.column.is-offset-3-mobile{margin-left:25%}.column.is-4-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none;width:33.33333%}.column.is-offset-4-mobile{margin-left:33.33333%}.column.is-5-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none;width:41.66667%}.column.is-offset-5-mobile{margin-left:41.66667%}.column.is-6-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none;width:50%}.column.is-offset-6-mobile{margin-left:50%}.column.is-7-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none;width:58.33333%}.column.is-offset-7-mobile{margin-left:58.33333%}.column.is-8-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none;width:66.66667%}.column.is-offset-8-mobile{margin-left:66.66667%}.column.is-9-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none;width:75%}.column.is-offset-9-mobile{margin-left:75%}.column.is-10-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none;width:83.33333%}.column.is-offset-10-mobile{margin-left:83.33333%}.column.is-11-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none;width:91.66667%}.column.is-offset-11-mobile{margin-left:91.66667%}.column.is-12-mobile{-webkit-box-flex:0;-ms-flex:none;flex:none;width:100%}.column.is-offset-12-mobile{margin-left:100%}}@media screen and (min-width:769px),print{.column.is-narrow,.column.is-narrow-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none}.column.is-full,.column.is-full-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none;width:100%}.column.is-three-quarters,.column.is-three-quarters-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none;width:75%}.column.is-two-thirds,.column.is-two-thirds-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none;width:66.6666%}.column.is-half,.column.is-half-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none;width:50%}.column.is-one-third,.column.is-one-third-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none;width:33.3333%}.column.is-one-quarter,.column.is-one-quarter-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none;width:25%}.column.is-offset-three-quarters,.column.is-offset-three-quarters-tablet{margin-left:75%}.column.is-offset-two-thirds,.column.is-offset-two-thirds-tablet{margin-left:66.6666%}.column.is-offset-half,.column.is-offset-half-tablet{margin-left:50%}.column.is-offset-one-third,.column.is-offset-one-third-tablet{margin-left:33.3333%}.column.is-offset-one-quarter,.column.is-offset-one-quarter-tablet{margin-left:25%}.column.is-1,.column.is-1-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none;width:8.33333%}.column.is-offset-1,.column.is-offset-1-tablet{margin-left:8.33333%}.column.is-2,.column.is-2-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none;width:16.66667%}.column.is-offset-2,.column.is-offset-2-tablet{margin-left:16.66667%}.column.is-3,.column.is-3-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none;width:25%}.column.is-offset-3,.column.is-offset-3-tablet{margin-left:25%}.column.is-4,.column.is-4-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none;width:33.33333%}.column.is-offset-4,.column.is-offset-4-tablet{margin-left:33.33333%}.column.is-5,.column.is-5-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none;width:41.66667%}.column.is-offset-5,.column.is-offset-5-tablet{margin-left:41.66667%}.column.is-6,.column.is-6-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none;width:50%}.column.is-offset-6,.column.is-offset-6-tablet{margin-left:50%}.column.is-7,.column.is-7-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none;width:58.33333%}.column.is-offset-7,.column.is-offset-7-tablet{margin-left:58.33333%}.column.is-8,.column.is-8-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none;width:66.66667%}.column.is-offset-8,.column.is-offset-8-tablet{margin-left:66.66667%}.column.is-9,.column.is-9-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none;width:75%}.column.is-offset-9,.column.is-offset-9-tablet{margin-left:75%}.column.is-10,.column.is-10-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none;width:83.33333%}.column.is-offset-10,.column.is-offset-10-tablet{margin-left:83.33333%}.column.is-11,.column.is-11-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none;width:91.66667%}.column.is-offset-11,.column.is-offset-11-tablet{margin-left:91.66667%}.column.is-12,.column.is-12-tablet{-webkit-box-flex:0;-ms-flex:none;flex:none;width:100%}.column.is-offset-12,.column.is-offset-12-tablet{margin-left:100%}}@media screen and (max-width:999px){.column.is-narrow-touch{-webkit-box-flex:0;-ms-flex:none;flex:none}.column.is-full-touch{-webkit-box-flex:0;-ms-flex:none;flex:none;width:100%}.column.is-three-quarters-touch{-webkit-box-flex:0;-ms-flex:none;flex:none;width:75%}.column.is-two-thirds-touch{-webkit-box-flex:0;-ms-flex:none;flex:none;width:66.6666%}.column.is-half-touch{-webkit-box-flex:0;-ms-flex:none;flex:none;width:50%}.column.is-one-third-touch{-webkit-box-flex:0;-ms-flex:none;flex:none;width:33.3333%}.column.is-one-quarter-touch{-webkit-box-flex:0;-ms-flex:none;flex:none;width:25%}.column.is-offset-three-quarters-touch{margin-left:75%}.column.is-offset-two-thirds-touch{margin-left:66.6666%}.column.is-offset-half-touch{margin-left:50%}.column.is-offset-one-third-touch{margin-left:33.3333%}.column.is-offset-one-quarter-touch{margin-left:25%}.column.is-1-touch{-webkit-box-flex:0;-ms-flex:none;flex:none;width:8.33333%}.column.is-offset-1-touch{margin-left:8.33333%}.column.is-2-touch{-webkit-box-flex:0;-ms-flex:none;flex:none;width:16.66667%}.column.is-offset-2-touch{margin-left:16.66667%}.column.is-3-touch{-webkit-box-flex:0;-ms-flex:none;flex:none;width:25%}.column.is-offset-3-touch{margin-left:25%}.column.is-4-touch{-webkit-box-flex:0;-ms-flex:none;flex:none;width:33.33333%}.column.is-offset-4-touch{margin-left:33.33333%}.column.is-5-touch{-webkit-box-flex:0;-ms-flex:none;flex:none;width:41.66667%}.column.is-offset-5-touch{margin-left:41.66667%}.column.is-6-touch{-webkit-box-flex:0;-ms-flex:none;flex:none;width:50%}.column.is-offset-6-touch{margin-left:50%}.column.is-7-touch{-webkit-box-flex:0;-ms-flex:none;flex:none;width:58.33333%}.column.is-offset-7-touch{margin-left:58.33333%}.column.is-8-touch{-webkit-box-flex:0;-ms-flex:none;flex:none;width:66.66667%}.column.is-offset-8-touch{margin-left:66.66667%}.column.is-9-touch{-webkit-box-flex:0;-ms-flex:none;flex:none;width:75%}.column.is-offset-9-touch{margin-left:75%}.column.is-10-touch{-webkit-box-flex:0;-ms-flex:none;flex:none;width:83.33333%}.column.is-offset-10-touch{margin-left:83.33333%}.column.is-11-touch{-webkit-box-flex:0;-ms-flex:none;flex:none;width:91.66667%}.column.is-offset-11-touch{margin-left:91.66667%}.column.is-12-touch{-webkit-box-flex:0;-ms-flex:none;flex:none;width:100%}.column.is-offset-12-touch{margin-left:100%}}@media screen and (min-width:1000px){.column.is-narrow-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none}.column.is-full-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none;width:100%}.column.is-three-quarters-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none;width:75%}.column.is-two-thirds-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none;width:66.6666%}.column.is-half-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none;width:50%}.column.is-one-third-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none;width:33.3333%}.column.is-one-quarter-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none;width:25%}.column.is-offset-three-quarters-desktop{margin-left:75%}.column.is-offset-two-thirds-desktop{margin-left:66.6666%}.column.is-offset-half-desktop{margin-left:50%}.column.is-offset-one-third-desktop{margin-left:33.3333%}.column.is-offset-one-quarter-desktop{margin-left:25%}.column.is-1-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none;width:8.33333%}.column.is-offset-1-desktop{margin-left:8.33333%}.column.is-2-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none;width:16.66667%}.column.is-offset-2-desktop{margin-left:16.66667%}.column.is-3-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none;width:25%}.column.is-offset-3-desktop{margin-left:25%}.column.is-4-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none;width:33.33333%}.column.is-offset-4-desktop{margin-left:33.33333%}.column.is-5-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none;width:41.66667%}.column.is-offset-5-desktop{margin-left:41.66667%}.column.is-6-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none;width:50%}.column.is-offset-6-desktop{margin-left:50%}.column.is-7-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none;width:58.33333%}.column.is-offset-7-desktop{margin-left:58.33333%}.column.is-8-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none;width:66.66667%}.column.is-offset-8-desktop{margin-left:66.66667%}.column.is-9-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none;width:75%}.column.is-offset-9-desktop{margin-left:75%}.column.is-10-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none;width:83.33333%}.column.is-offset-10-desktop{margin-left:83.33333%}.column.is-11-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none;width:91.66667%}.column.is-offset-11-desktop{margin-left:91.66667%}.column.is-12-desktop{-webkit-box-flex:0;-ms-flex:none;flex:none;width:100%}.column.is-offset-12-desktop{margin-left:100%}}@media screen and (min-width:1192px){.column.is-narrow-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none}.column.is-full-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none;width:100%}.column.is-three-quarters-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none;width:75%}.column.is-two-thirds-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none;width:66.6666%}.column.is-half-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none;width:50%}.column.is-one-third-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none;width:33.3333%}.column.is-one-quarter-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none;width:25%}.column.is-offset-three-quarters-widescreen{margin-left:75%}.column.is-offset-two-thirds-widescreen{margin-left:66.6666%}.column.is-offset-half-widescreen{margin-left:50%}.column.is-offset-one-third-widescreen{margin-left:33.3333%}.column.is-offset-one-quarter-widescreen{margin-left:25%}.column.is-1-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none;width:8.33333%}.column.is-offset-1-widescreen{margin-left:8.33333%}.column.is-2-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none;width:16.66667%}.column.is-offset-2-widescreen{margin-left:16.66667%}.column.is-3-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none;width:25%}.column.is-offset-3-widescreen{margin-left:25%}.column.is-4-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none;width:33.33333%}.column.is-offset-4-widescreen{margin-left:33.33333%}.column.is-5-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none;width:41.66667%}.column.is-offset-5-widescreen{margin-left:41.66667%}.column.is-6-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none;width:50%}.column.is-offset-6-widescreen{margin-left:50%}.column.is-7-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none;width:58.33333%}.column.is-offset-7-widescreen{margin-left:58.33333%}.column.is-8-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none;width:66.66667%}.column.is-offset-8-widescreen{margin-left:66.66667%}.column.is-9-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none;width:75%}.column.is-offset-9-widescreen{margin-left:75%}.column.is-10-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none;width:83.33333%}.column.is-offset-10-widescreen{margin-left:83.33333%}.column.is-11-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none;width:91.66667%}.column.is-offset-11-widescreen{margin-left:91.66667%}.column.is-12-widescreen{-webkit-box-flex:0;-ms-flex:none;flex:none;width:100%}.column.is-offset-12-widescreen{margin-left:100%}}@media screen and (min-width:1384px){.column.is-narrow-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none}.column.is-full-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none;width:100%}.column.is-three-quarters-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none;width:75%}.column.is-two-thirds-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none;width:66.6666%}.column.is-half-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none;width:50%}.column.is-one-third-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none;width:33.3333%}.column.is-one-quarter-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none;width:25%}.column.is-offset-three-quarters-fullhd{margin-left:75%}.column.is-offset-two-thirds-fullhd{margin-left:66.6666%}.column.is-offset-half-fullhd{margin-left:50%}.column.is-offset-one-third-fullhd{margin-left:33.3333%}.column.is-offset-one-quarter-fullhd{margin-left:25%}.column.is-1-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none;width:8.33333%}.column.is-offset-1-fullhd{margin-left:8.33333%}.column.is-2-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none;width:16.66667%}.column.is-offset-2-fullhd{margin-left:16.66667%}.column.is-3-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none;width:25%}.column.is-offset-3-fullhd{margin-left:25%}.column.is-4-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none;width:33.33333%}.column.is-offset-4-fullhd{margin-left:33.33333%}.column.is-5-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none;width:41.66667%}.column.is-offset-5-fullhd{margin-left:41.66667%}.column.is-6-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none;width:50%}.column.is-offset-6-fullhd{margin-left:50%}.column.is-7-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none;width:58.33333%}.column.is-offset-7-fullhd{margin-left:58.33333%}.column.is-8-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none;width:66.66667%}.column.is-offset-8-fullhd{margin-left:66.66667%}.column.is-9-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none;width:75%}.column.is-offset-9-fullhd{margin-left:75%}.column.is-10-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none;width:83.33333%}.column.is-offset-10-fullhd{margin-left:83.33333%}.column.is-11-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none;width:91.66667%}.column.is-offset-11-fullhd{margin-left:91.66667%}.column.is-12-fullhd{-webkit-box-flex:0;-ms-flex:none;flex:none;width:100%}.column.is-offset-12-fullhd{margin-left:100%}}.columns{margin-left:-.75rem;margin-right:-.75rem;margin-top:-.75rem}.columns:last-child{margin-bottom:-.75rem}.columns:not(:last-child){margin-bottom:.75rem}.columns.is-centered{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.columns.is-gapless{margin-left:0;margin-right:0;margin-top:0}.columns.is-gapless:last-child{margin-bottom:0}.columns.is-gapless:not(:last-child){margin-bottom:1.5rem}.columns.is-gapless>.column{margin:0;padding:0}@media screen and (min-width:769px){.columns.is-grid{-ms-flex-wrap:wrap;flex-wrap:wrap}.columns.is-grid>.column{max-width:33.3333%;padding:.75rem;width:33.3333%}.columns.is-grid>.column+.column{margin-left:0}}.columns.is-mobile{display:-webkit-box;display:-ms-flexbox;display:flex}.columns.is-multiline{-ms-flex-wrap:wrap;flex-wrap:wrap}.columns.is-vcentered{-webkit-box-align:center;-ms-flex-align:center;align-items:center}@media screen and (min-width:769px){.columns:not(.is-desktop){display:-webkit-box;display:-ms-flexbox;display:flex}}@media screen and (min-width:1000px){.columns.is-desktop{display:-webkit-box;display:-ms-flexbox;display:flex}}.label{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:3px 5px 4px;color:#fff;font-weight:700;text-transform:uppercase;white-space:nowrap;font-size:.75em;left:10px;top:-15px;position:relative}div.box p,div.box ul{position:relative;top:-20px}.box.moody .label{background-color:#f89406}.box.happy .label{background-color:#46a546}.box.angry .label{background-color:#c43c35}code,div.box{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:0 5px;border:1px solid #ccc;margin-bottom:25px;font-size:.9em}.angry{background-color:#ffd7d5;border-color:#c43c35}.happy{background-color:#c0e0c0;border-color:#46a546}.moody{background-color:#ffecd1;border-color:#f89406}@page{size:1210px 681px;margin:0}@media print{.remark-slide-scaler{width:100%!important;height:100%!important;transform:scale(1)!important;top:0!important;left:0!important}}</style><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script> <script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.6.0/dist/highlightjs-line-numbers.min.js"></script> <script>hljs.initHighlightingOnLoad();hljs.initLineNumbersOnLoad();</script> <link rel="stylesheet2" href="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.0.10/mermaid.min.css"> <script>mermaid.initialize({startOnLoad:true});</script> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127734928-1"></script> <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);} gtag('js',new Date());gtag('config','UA-127734928-1');</script> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-127734928-1','auto');ga('send','pageview');</script> </head><body> <script>if(window.location.search.match(/print-pdf/gi)){var link=document.createElement('link');link.rel='stylesheet';link.type='text/css';link.href='../pdf.css';document.getElementsByTagName('head')[0].appendChild(link);}</script> <textarea id="source">class: center, middle
+
+## [Tekstualne sintakse](/courses/#table-of-contents)
+
+
+
+.author[[Milovan Tomašević](https://www.milovantomasevic.com/)]
+
+.small[</br>[🌐➙ milovantomasevic.com](https://milovantomasevic.com)</br> [✎➙ mt@milovantomasevic.com](mailto:mt@milovantomasevic.com)]
+
+
+
+.created[25.03.2019 u 16:01]
+
+
+---
+
+
+
+class: split-20 nopadding
+background-image: url(../key.jpg)
+
+.column_t2.center[.vmiddle[
+.fgtransparent[
+![:scale 80%](../zahvalnica.png)
+]
+]]
+.column_t2[.vmiddle.nopadding[
+.shadelight[.boxtitle1[
+.small[
+## Acknowledgements
+
+#### University of Novi Sad | Serbia
+
+- [Prof. dr Igor Dejanović](http://igordejanovic.net/)
+- [Faculty of Technical Sciences](http://ftn.uns.ac.rs/)
+- [Chair of Informatics](http://informatika.ftn.uns.ac.rs/)
+]]]
+]]
+
+.footer.small[
+- #### Slides are created according to sources in the literature & Acknowledgements
+]
+
+---
+
+name: sadrzaj
+
+# Sadržaj
+
+- [Parsiranje](#parsiranje)
+- [Formalne gramatike](#formalne-gramatike)
+- [Strategije parsiranja](#strategije-parsiranja)
+
+---
+name: pregled
+class: center, middle, inverse
+
+# Parsiranje
+
+---
+layout: true
+
+.section[[Parsiranje](#sadrzaj)]
+
+---
+
+## Jezički softver (*Language Software*)
+
+Osnovne klase alata:
+
+- *Generators* - generišu validne rečenice na nekom jeziku.
+- *Recognizers* - prepoznaju da li rečenica pripada jeziku.
+- *Parsers* - prevode rečenice u stabla.
+- *Formatters* - prevode stabla u rečenice.
+
+---
+
+## Parsiranje - sintaksna analiza
+
+- Analiza linearnog zapisa niza simbola na osnovu pravila neke formalne
+  gramatike jezika.
+- Transformacija ulaznog stringa u *stablo parsiranja* ili neku drugu strukturu
+  podatka.
+
+---
+
+## Leksička analiza
+
+- Svaki jezik poseduje *alfabet mogućih karaktera* koji se mogu pojaviti u
+  sklopu validnih rečenica. Kod računarskih jezika određene kombinacije simbola
+  se tretiraju kao jedinstveni entitet - *token*.ref[1].
+- *Proces grupisanja* niza uzastopnih karaktera ulaznog stringa u tokene.
+  Tekstualni blok koji odgovara tokenu naziva se još i *leksema*.
+- Program koji vrši leksičku analizu naziva se *lekser*, *skener* ili
+  *tokenizator*.
+- Leksička analiza *prethodi procesu parsiranja* tako što se karakteri sa ulaza
+  prvo grupišu u tokene a zatim parser vrši sintaksnu analizu i kreira stablo
+  parsiranja.
+- Skeneri mogu biti posebni alati a mogu biti integrisani u parser (*scannerless
+  parsing*).
+- Poznatiji skeneri: flex i lex, JLex...
+
+.footer[
+1. A. Aho and J. Ullman, The theory of parsing, translation, and compiling, vol.
+  1 of Series in Automatic Computation. Prentice-Hall, 1972
+] 
+
+---
+
+## Stablo parsiranja
+
+- Nastaje iz niske simbola (ulaznog stringa) procesom *skeniranja* (tokenizacije
+  ili leksičke analize) i *parsiranja*.
+- Listovi stabla su tokeni prepoznati od strane skenera (*terminali*) dok su
+  unutrašnji čvorovi stabla (*neterminali*) definisani gramatikom jezika.
+- Stablo parsiranja reflektuje sintaksnu strukturu ulaznog stringa na bazi
+  unapred definisane formalne gramatike.
+  
+---
+
+## Stablo parsiranja - primer
+
+![](tekstualne-sintakse/calc_parse_tree.svg)
+.center[Stablo parsiranja za ulazni string `-(4-1)*5/(2+4.67)`]
+
+---
+
+## Stablo apstraktne sintakse
+
+- Svaki iskaz na datom jeziku se može na apstraktan način opisati stablom
+  apstraktne sintakse (*Abstract Syntax Tree*).
+- AST je usmereno labelirano stablo gde čvorovi stabla predstavljaju instance
+  koncepata apstraktne sintakse.
+- AST ne sadrži elemente koje ne doprinose semantici kao što su ključne reči,
+  zagrade, "prazni" karakteri i komentari.
+  
+---
+
+## Primer stabla apstraktne sintakse
+
+![](tekstualne-sintakse/AST.svg)
+.center[`-(4-1)*5/(2+4.67)`]
+
+---
+
+## Razlike između stabla apstraktne i konkretne sintakse
+
+- Stablo konkretne sintakse je bazirano na formalnoj gramatici koja opisuje
+  *detalje zapisa* u tekstualnom obliku.
+- Stablo apstraktne sintakse sadrži *suštinu jezičkog iskaza*.
+- Možemo imati više gramatika za isti jezik odnosno jedno stablo apstraktne
+  sintakse možemo zapisati na više različitih načina što rezultuje različitim
+  stablima konkretne sintakse.
+- Primer: Izraz `-(4-1)*5/(2+4.67)` možemo u postfiksnoj notaciji (obrnuta
+  poljska notacija) zapisati kao `4 1 - 5 * 2 4.67 + / -`. Ovo će rezultovati
+  različitim stablima parsiranja ali je suština izraza ista i može rezultovati
+  istim stablom apstraktne sintakse.
+
+---
+name: formalne-gramatike
+class: center, middle, inverse
+layout: false
+
+# Formalne gramatike
+
+---
+layout: true
+
+.section[[Formalne gramatike](#sadrzaj)]
+
+---
+
+## Formalna gramatika
+
+- Predstavlja skup pravila (*produkcije*) pomoću
+  kojih je moguće generisati sve *validne rečenice* nekog jezika
+  (*formalni jezik*) polazeći od *startnog simbola*.
+- Definiše koji od svih mogućih nizova simbola u jeziku predstavljaju
+  validne rečenice tog jezika (ali bez validnosti njihovih značenja).
+- Generisanje ispravnih rečenica jezika (*generativne gramatike*) - često se
+  koriste kao osnova za prepoznavanje validnih rečenica.
+
+---
+
+## Formalna gramatika - definicija
+
+Formalna gramatika je `G = (N, Σ, P, S)` gde je:
+
+- `N` - konačni skup *neterminalnih simbola*,
+- `Σ` - konačni skup *terminalnih simbola*,
+- `P` - konačni skup *produkcionih pravila* (produkcija) oblika: <br/>
+  `(Σ ∪ N)∗ N(Σ ∪ N)∗ → (Σ ∪ N)∗`
+- `S` - neterminal iz skupa N (S ∈ N) koga nazivamo *početnim simbolom*.
+
+---
+
+## Klasifikacija formalnih gramatika po Čomskom
+
+Formalne gramatike se mogu klasifikovati prema hijerarhijskoj klasifikaciji
+  Noama Čomskog.ref[1]. Prema ovoj klasifikaciji gramatike mogu biti:
+
+  - *tipa 3 - rekurzivno prebrojive* - bez ograničenja na oblik
+      produkcija.
+  - *tipa 2 - kontekstno zavisne* - produkcije oblika: `αAβ → αγβ`
+  - *tipa 1 - kontekstno slobodne* - produkcije oblika: `A → γ`
+  - *tipa 0 - regularne* - produkcije oblika: `A → a, A → aB`
+
+.footer[
+  1. http://en.wikipedia.org/wiki/Chomsky_hierarchy
+]
+
+---
+
+## Konteksno slobodne gramatike (*Context-Free Grammars - CFGs*)
+
+- Produkcije oblika: `A → γ`
+- Popularne u domenu računarskih jezika. Dovoljno jednostavne za konstrukciju
+  *efikasnih algoritama za parsiranje*.
+- Generišu jezike koje nazivamo kontekstno slobodnim jezicima.
+- *Earley parser* - algoritam za parsiranje koji prihvata ceo skup CFG. U praksi
+  se češće koriste jednostavniji algoritmi koji prihvataju samo podskup CFG.
+- Jezik za definisanje CFG - *(Extended) Backus-Naur Form (EBNF)*.
+
+---
+
+## Primer kontekstno slobodne gramatike
+
+```
+G = ({S}, {a, b}, P, S)
+
+S → aSa
+S → bSb
+S → ε
+
+```
+
+.footer[
+https://en.wikipedia.org/wiki/Context-free_grammar
+]
+
+---
+
+## Izvođenje - derivacija (*Derivation*)
+
+- Generisanje ispravne rečenice, počevši od startnog simbola/neterminala,
+  sukcesivnom primenom produkcija dok ne dobijemo rečenicu koja se sastoji samo
+  od terminala.
+
+```
+S → aSa    (1)
+S → bSb    (2)
+S → ε      (3)
+
+S (1)→ aSa (1)→ aaSaa (2)→ aabSbaa  (3)→ aabbaa
+```
+
+.footer[
+https://en.wikipedia.org/wiki/Context-free_grammar
+]
+
+---
+
+## Primer izvođenja - alebarski izrazi
+
+.lcol-narrow2[
+```
+1. S → x
+2. S → y
+3. S → z
+4. S → S + S
+5. S → S - S
+6. S → S * S
+7. S → S / S
+8. S → ( S )
+```
+]
+
+.rcol-wide2[
+```
+S (startni simbol)
+→ S - S (pravilo 5)
+→ S * S - S (pravilo 6, primenjeno na levi neterminal S)
+→ S * S - S / S (pravilo 7, primenjeno na desni neterminal S)
+→ ( S ) * S - S / S (pravilo 8, primenjeno na levi S)
+→ ( S ) * S - S / ( S ) (pravilo 8, primenjeno na desni S)
+→ ( S + S ) * S - S / ( S ) (itd.)
+→ ( S + S ) * S - S * S / ( S )
+→ ( S + S ) * S - S * S / ( S + S )
+→ ( x + S ) * S - S * S / ( S + S )
+→ ( x + y ) * S - S * S / ( S + S )
+→ ( x + y ) * x - S * y / ( S + S )
+→ ( x + y ) * x - S * y / ( x + S )
+→ ( x + y ) * x - z * y / ( x + S )
+→ ( x + y ) * x - z * y / ( x + x )
+```
+]
+
+.footer[
+https://en.wikipedia.org/wiki/Context-free_grammar
+]
+            
+
+---
+
+## Rečenična forma i rečenica
+
+- Bilo koja niska terminala i neterminala koja se može dobiti primenom
+  produkcionih pravila počevši od početnog simbola naziva se rečeničnom formom
+  (*Sentential Form*).
+
+```
+( x + S ) * S - S * S / ( S + S )
+```
+
+- Ukoliko se rečenična forma sastoji samo od terminala onda je to rečenica
+  (*Sentence*).
+
+```
+( x + y ) * x - z * y / ( x + x )
+```
+
+---
+
+## Odluke pri izvođenju
+
+- U svakom koraku izvođenja parser donosi dve odluke:
+
+  1. *koji neterminal da zameni?*,
+  2. *sa kojim pravilom da ga zameni?* - ukoliko imamo više mogućnosti.
+
+- Prva odluka je najčešće fiksna (npr. uvek se zamenjuje prvi sleva ili prvi
+  sdesna).
+- Za drugu odluku koriste se tehnike kao što su *lookahead* (videti u nastavku).
+- Strategija pri donošenju druge odluke utiče na izgled stabla parsiranja.
+
+---
+
+## Strategije izvođenja sa stanovišta izbora neterminala za zamenu
+
+- *Levo izvođenje* - uvek se prvo razrešava levi neterminal.
+- *Desno izvođenje* - uvek se prvo razrešava desni neterminal.
+- Strategija izvođenja je bitna kod parsera koji izvšavaju određene akcije kod
+  svake primene produkcije jer se redosled primene razlikuje iako mogu
+  rezultovati istim stablima parsiranja.
+  
+---
+
+## Levo izvođenje - primer
+
+![](tekstualne-sintakse/LeftDerivation.svg)
+
+---
+
+## Višeznačne gramatike - primer - *dangling else*
+
+.medium[
+- Stablo parsiranja za određeni ulaz nije jednoznačno određeno CFG gramatikom
+- Višeznačna gramatika je gramatika kod koje postoji ulazni string sa više
+  različitih levih izvođenja.
+- Ili jednostavnije: ukoliko postoji ulazni string koji može da rezultuje sa
+  više različitih stabala parsiranja.
+- Klasičan primer je "viseći else":
+
+```
+if a then if b then s else s2
+Može da se parsira kao:
+if a then (if b then s) else s2
+ili kao:
+if a then (if b then s else s2)
+```
+- Rešavaju se dodavanjem pravila prioriteta ili dodavanjem konteksta kojim se
+  izbegava višeznačnost. Na primer, za kod `if-else` klauzule može se dodati
+  ključna reč `endif`.
+]
+
+---
+
+## Višeznačna gramatika - primer
+
+![](tekstualne-sintakse/Ambiguous.svg)
+
+---
+
+## A u ovom slučaju želimo
+
+.center[Stablo koje oslikava prioritet i asocijativnost operacija]
+
+![:scale 80%](tekstualne-sintakse/Ambiguous2.svg)
+
+---
+
+## Razrešavanje višeznačnosti
+
+- Višeznačnost je uglavnom *osobina gramatike a ne jezika*.
+- Često se gramatika može refaktorisati da ne bude višeznačna.
+- Određeni parseri omogućavaju dodatna pravila (npr. *pravilo prioriteta*) koje
+  pomaže u izboru produkcije koju treba primeniti.
+- Parser generatori će najčešće detektovati višeznačnost i prijaviti grešku.
+- Generalizovani parseri dozvoljavaju višeznačne gramatike. Ukoliko postoje
+  različite interpretacije ulaza biće vraćena sva moguća stabla/interpretacije.
+- Pojedini parseri implicitno razrešavaju višeznačnost. Npr. rekurzivni silazni
+  parseri (videti u nastavku) uvek pokušavaju primenu produkcija po redosledu
+  navođenja (s leva na desno).
+
+---
+
+## Leva rekurzija
+
+- Određene vrste parsera ne smeju da imaju *levo rekurzivne produkcije* jer to
+  dovodi do beskonačne rekurzije gde parser primenjuje stalno iste produkcije
+  bez konzumiranja tokena sa ulaza.
+- Mogu biti direktne i indirektne.
+- Direktna leva rekurzija je produkcija oblika `A → Aγ`.
+- Leve rekurzije se *mogu refaktorisati* da koriste desno rekurzivne produkcije
+  ali gramatika tada često gubi na intuitivnosti.
+
+---
+
+## Eliminacija leve rekurzije u opštem slučaju
+Pravilo `A → Aa | B` postaje `A → Ba*`
+
+Primer:
+
+```
+expr → expr '+' term | number
+
+postaje:
+
+expr → number ('+' term)*
+```
+
+---
+
+## *Extended Backus–Naur Form - EBNF*
+
+- Meta-sintaksa za zapis kontekstno slobodnih gramatika.
+- ISO/IEC 14977
+- Produkcije dodeljuju sekvencu simbola (terminala i neterminala) neterminalima.
+- U širokoj upotrebi kod parser generatora i interpretera za opis gramatike
+  jezika.
+  
+---
+
+## Primer - EBNF u EBNF-u
+
+.medium[
+```
+letter = "A" | "B" | "C" | "D" | "E" | "F" | "G"
+       | "H" | "I" | "J" | "K" | "L" | "M" | "N"
+       | "O" | "P" | "Q" | "R" | "S" | "T" | "U"
+       | "V" | "W" | "X" | "Y" | "Z" ;
+digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+symbol = "[" | "]" | "{" | "}" | "(" | ")" | "<" | ">"
+       | "'" | '"' | "=" | "|" | "." | "," | ";" ;
+character = letter | digit | symbol | "_" ;
+
+identifier = letter , { letter | digit | "_" } ;
+terminal = "'" , character , { character } , "'"
+         | '"' , character , { character } , '"' ;
+
+lhs = identifier ;
+rhs = identifier
+     | terminal
+     | "[" , rhs , "]"
+     | "{" , rhs , "}"
+     | "(" , rhs , ")"
+     | rhs , "|" , rhs
+     | rhs , "," , rhs ;
+
+rule = lhs , "=" , rhs , ";" ;
+grammar = { rule } ;
+```
+]
+
+.footer[
+http://en.wikipedia.org/wiki/Extended_Backus-Naur_Form
+]
+
+---
+name: strategije-parsiranja
+class: center, middle, inverse
+layout: false
+
+# Strategije parsiranja
+
+---
+layout: true
+
+.section[[Strategije parsiranja](#sadrzaj)]
+
+---
+
+## Strategije parsiranja
+
+.medium[
+- **Top-down (Silazna)**
+
+  - Kreće od polaznog neterminala gramatike i pokušava da generiše(izvede)
+    ulazni string primenom produkcija *s leva na desno (lhs -> rhs)*.
+  - Od opšteg ka pojedinačnom.
+  - Ukoliko se izabere pogrešna alternativa radi se vraćanje - *backtrack*.
+  - Ukoliko ne koriste vraćanje zovu se *prediktivni parseri*.
+  - LL parseri i rekurzivni silazni parseri (*recursive descent*) koriste ovu
+    strategiju.
+  - LL parseri prirodno primenjuju levo izvođenje stabla parsiranja.
+
+- **Bottom-up (Uzlazna)**
+
+  - Kreće od terminala i primenom produkcija *s desna na levo (lhs <- rhs)*
+    pokušava da redukuje ulaz na polazni neterminal gramatike.
+  - Od pojedinačnog ka opštem.
+  - *Shift-Reduce* - efikasan metod uzlaznog parsiranja.
+  - LR parseri koriste ovu strategiju.
+  - LR parseri prirodno primenjuju desno izvođenje stabala parsiranja
+
+]
+            
+---
+
+## Lookahead
+
+- Strategija kod koje se koristi određeni broj nekonzumiranih tokena sa ulaza da
+  bi se odlučilo o sledećim koracima kod parsiranja.
+- Manji *lookahead* znači jednostavniji parser ali takođe i manji skup gramatika
+  koje prihvata.
+- Koliko tokena unapred koristimo najčešće piše u oznaci parsera - primer LL(1),
+  LR(k).
+- Za većinu programskih jezika potreban je samo jedan token *lookahead*-a -
+  LL(1), LR(1)...
+  
+---
+
+## Vraćanje (*backtracking*)
+
+- Strategija kod koje se u slučaju alternativnih derivacija pokušava redom sa
+  svakom i u slučaju da parsiranje ne uspe *vrši vraćanje unazad* (na
+  stanje izbora alternative) i pokušava se sa sledećom alternativom.
+- Parseri koji implementiraju vraćanje često prihvataju veći skup gramatika tj.
+  manja su ograničenja gramatika koje se prihvataju.
+- Mana je što u praksi možemo imati veliki broj alternativa što često dovodi do
+  *eksponencijalnog vremena parsiranja*.
+- Ukoliko ne koriste vraćanje (prediktivni parseri) prihvataju manji skup
+  gramatika.
+  
+---
+
+## LL parser
+
+- Top-down parser koji podržava podskup kontekstno slobodnih gramatika.
+- Konzumira tokene s leva na desno i kreira levo izvođenje.
+- Klasa gramatika koju podžava LL parser nazivamo LL gramatikama.
+- LL(k) parser koristi k tokena unapred (*lookahead*) za odluku koju
+  sledeću produkciju da primeni. Ako takav parser postoji za neku gramatiku, a
+  da ne koristi vraćanje (*backtracking*) tada kažemo da je gramatika
+  LL(k). Jezik za koji postoji LL(k) gramatika naziva se LL(k) jezik.
+- LL(*) parseri nisu ograničeni na broj tokena koje mogu preuzeti sa ulaza da bi
+  odlučili o sledećoj produkciji - dinamički se prilagođavaju.
+- Veće k - moćniji ali i složeniji parser. LL(1) su naročito popularni kod
+  računarskih jezika.
+  
+---
+
+## Primer LL parsiranja
+
+```
+Gramatika: S → E    E → T + E    E → T    T → int
+Ulaz: int + int + int
+
+Production       Input              Action
+---------------------------------------------------------
+S                int + int + int    Predict S -&gt; E
+E                int + int + int    Predict E -&gt; T + E
+T + E            int + int + int    Predict T -&gt; int
+int + E          int + int + int    Match int
++ E              + int + int        Match +
+E                int + int          Predict E -&gt; T + E
+T + E            int + int          Predict T -&gt; int
+int + E          int + int          Match int
++ E              + int              Match +
+E                int                Predict E -&gt; T
+T                int                Predict T -&gt; int
+int              int                Match int
+                                    Accept
+```
+          
+.footer[
+http://stackoverflow.com/questions/5975741/what-is-the-difference-between-ll-and-lr-parsing
+]
+
+---
+
+## LR parser
+
+- Bottom-up parser koji podržava podskup kontekstno slobodnih gramatika.
+- Implementiraju *Shift-Reduce* strategiju i koriste tablice stanja-prelaza.
+  Skup gramatika koje prihvata je nadskup skupa koje prihvata prediktivni LL
+  parser.
+- 1965 Donald Knuth.
+- Gramatika uglavnom ne mora da se prilagođava kao kod LL parsera. Mogu se
+  navoditi rekurzivne produkcije.
+- Podvarijante: LALR (*Look-Ahead*), SLR (*Simple*), GLR (*Generalized LR*).
+- Generatori: yacc, GNU Bison, Elkhound...
+- Interpreteri: parglare
+
+---
+
+## LR parsiranje - primer
+
+![](tekstualne-sintakse/LR-Primer.png)
+
+.footer[
+http://www.dabeaz.com/ply/ply.html#ply_nn22
+]
+
+---
+
+## GLR
+
+- **G**eneralized **LR** parser.
+- Parsiranje višeznačnih gramatika.
+- Efektivno radi kao LR parser ali u svakom stanju dozvoljava dozvoljava više
+  prelaza čime simulira nedeterministički algoritam.
+- Kod višeznačnih ulaza vraća skup stabala parsiranja (šumu parsiranja - *Parse
+  Forest*).
+- Na korisniku je da odredi ispravno stablo - najčešće dodatnim pravilima (npr.
+  prioritet, asocijativnost).
+- Bison u novijim verzijama može da generiše GLR parser.
+- SDF parser, Elkhound, DParser, parglare.
+
+---
+
+## LL - LR napomene
+
+- Kod LL parsera problem je određivanje produkcije koju treba primeniti nad
+  neterminalom.
+- Kod većine LR parsera (implementiranih kao SHIFT-REDUCE) problem je kada
+  uraditi REDUCE operaciju i na koji neterminal redukovati, odnosno kada uraditi
+  SHIFT.
+- I kod jednog i kod drugog algoritma generiše se tablica koja pomaže parseru da
+  donese odluku u toku parsiranja.
+  
+---
+
+## Rekurzivni silazni parser - Recursive descent parser
+
+- Silazni parser izgrađen na bazi međusobno rekurzivnih procedura.
+- Svaka procedura implementira jednu produkciju odnosno prepoznvanje jednog
+  (ne)terminala.
+- Kod prediktivnih parsera ne zahteva se vraćanje (*backtracking*).
+- Ukoliko se koristi vraćanje vreme parsiranja *može eksponencijalno da
+  poraste* kod složenijih gramatika.
+  
+---
+
+## *Top-Down Parsing Language*
+
+.medium[
+- Šematski opis rekurzivnog silaznog parsera sa vraćanjem (*recursive descent
+  parser with backtracking*). Orijentisan je ka prepoznavanju ulaznog teksta.
+- Ideje datiraju unazad u ’70 godine prošlog veka.ref[1,2].
+- Rekurzivni silazni parseri nisu imali veću popularnost u 20. veku jer vreme
+  parsiranja može biti eksponencijalno ukoliko se ne koristi tehnika
+  *memoizacije* u kom slučaju je linearno ali je potreban značajan memorijski
+  prostor koji direktno zavisi od veličine ulaza.
+- Bryan Ford je obnovio interesovanje za TDPL (*Top-Down Parsing Language*)
+  fomalizam za opis gramatika.ref[3].
+- Gramatike koje opisuju TDPL Ford naziva gramatikama izraza za parsiranje
+  (*Parsing Expression Grammars - PEG*).
+]
+
+.footer.small[
+1. A. Birman, The tmg recognition schema. PhD thesis, 1970
+2. A. Aho and J. Ullman, The theory of parsing, translation, and compiling, vol.
+   1 of Series in Automatic Computation. Prentice-Hall, 1972
+3. B. Ford, Packrat parsing: a practical linear-time algorithm with
+   backtracking. PhD thesis, Massachusetts Institute of Technology, 2002
+]
+
+---
+
+## PEG - *Parsing Expression Grammars*
+
+- Formalizam za opis TDPL.
+- Osnovna prednost PEG gramatika u odnosu na CFG jeste upotreba operatora
+  uređenog izbora (eng. *ordered choice*) koji omogućava nedvosmislenost u
+  parsiranju.
+- Ako ulazni tekst pripada jeziku koji opisuje dati PEG tada postoji samo jedno
+  validno stablo koje ga opisuje.
+- Odnosno, gramatike *ne mogu biti višeznačne*.
+- Kod CFG postoji neodređenost jer je redosled izbora alternativa neodređen i u
+  praktičnim primenama zavisi od korišćenog algoritma u implementaciji parsera.
+- Vrsta parsera koja koristi PEG i implementirana je kao rekurzivni silazni
+  parser sa bektrekingom i memoizacijom naziva se *pakrat parser*.
+
+---
+
+## Packrat parser
+
+- Rekurzivni silazni parser sa vraćanjem koji koristi tehniku *memoizacije*
+  (pamćenje derivacija podstabala) da bi obezbedio *linearno vreme
+  izvršavanja*.
+- Prepoznaje bilo koji LL(k)/LR(k) jezik kao i mnoge jezike koji zahtevaju
+  neograničen lookahead.
+- Bolje kompozitne osobine od LL/LR parsera što ga čini pogodnim za opis
+  proširivih dinamičkih jezika.
+
+---
+
+## Refaktorisanje gramatike za PEG parsere
+
+![](tekstualne-sintakse/PEGPrioritet.svg)
+.center[Kako enkodovati pravila prioriteta i eliminisati levu rekurziju?]
+
+---
+
+## Determinističko parsiranje
+
+- Algoritam parsiranja kod koga se ne koristi vraćanje unazad
+  (*backtracking*).
+- Analogno determinističkom potisnom automatu.
+- Parseri prihvataju klasu determinističkih kontekstno slobodnih jezika (podskup
+  svih kontekstno slobodnih jezika).
+- Linearno vreme parsiranja - popularni u praksi.
+
+---
+
+## Pristupi u izradi parsera
+
+- Parser generatori
+- Interpreteri gramatika
+
+---
+
+## Parser generatori
+
+- Na osnovu formalne gramatike *generišu programski kod* parsera koji će
+  prepoznavati rečenice na datom jeziku i pretvarati ulazne stringove u stabla
+  parsiranja.
+- Često implementiraju mehanizam za obilazak stabla parsiranja i njegovu
+  transformaciju.
+- Mogu generisati i *lexer (scanner)* a mogu biti i *scannerless*.
+- Neki od poznatijih parser generatora: ANTLR, JavaCC, yacc, bison.
+
+---
+
+## ANTLR
+
+- ANTLR (*ANother Tool for Language Recognition*) je LL(*) parser generator
+  implementiran na programskom jeziku Java.
+- Iz opisa gramatike kreira parser kao i infrastrukturu za analizu stabla
+  (vizitori, akcije koje se izvršavaju kada se prepozna određena konstrukcija).
+  
+---
+
+## Interpreteri
+
+- Konfigurišu se gramatikom u vreme izvršavanja (*run-time*) tj. *interpretiraju
+  gramatiku*.
+- Brz round-trip. Nema generisanja parsera. Moguća izmena gramatike "u letu".
+- Arpeggio, parglare i textX rade kao interpreteri.
+
+--
+
+class: center, middle, theend, hide-text
+layout: false
+background-image: url(../theend.gif)
+
+</textarea> <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script> <script>remark.macros.scale=function(percentage){var url=this;return'<div class="center"><img src="' +url+'" style="width: '+percentage+'" /></div>';};var slideshow=remark.create({highlightLanguage:'python',highlightStyle:'monokai',highlightLines:true,countIncrementalSlides:false,navigation:{scroll:false,}});</script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script> <script>mermaid.initialize({startOnLoad:true});</script></body></html>
