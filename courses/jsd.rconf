@@ -1,0 +1,30 @@
+template = "template.html"
+
+author = "[Milovan Tomašević](https://www.milovantomasevic.com/)"
+affiliation = "</br>[🌐➙ milovantomasevic.com](https://milovantomasevic.com)</br> [✎➙ mt@milovantomasevic.com](mailto:mt@milovantomasevic.com)"
+
+"jsd/upoznavanje.md" 
+    title = "[Jezici specifični za domen](/courses/#table-of-contents)"
+    subtitle = "Upoznavanje sa predmetom"
+
+"jsd/uvod.md"
+    title = "[Uvod u JSD](/courses/#table-of-contents)"
+
+"jsd/jezicke-sintakse-i-metamodelovanje.md"
+    title = "[Jezičke sintakse i meta-modelovanje](/courses/#table-of-contents)"
+
+"jsd/tekstualne-sintakse.md"
+    title = "[Tekstualne sintakse](/courses/#table-of-contents)"
+
+"jsd/anatomija-dsla.md"
+    title = "[Anatomija jednog JSD-a](/courses/#table-of-contents)"
+    unfinished = true
+
+"jsd/generisanje-programskog-koda.md"
+    title = "[Generisanje programskog koda](/courses/#table-of-contents)" 
+
+"jsd/arpeggio.md"
+  title = "[Arpeggio parser](/courses/#table-of-contents)"
+
+"jsd/textx.md"
+  title = "[textX](/courses/#table-of-contents)"

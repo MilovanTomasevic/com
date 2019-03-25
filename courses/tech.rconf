@@ -1,0 +1,14 @@
+template = "template.html"
+
+author = "[Milovan Tomašević](https://www.milovantomasevic.com/)"
+affiliation = "</br>[🌐➙ milovantomasevic.com](https://milovantomasevic.com)</br> [✎➙ mt@milovantomasevic.com](mailto:mt@milovantomasevic.com)"
+
+"tech/Python.md"
+  title = "[Programski jezik Python](/courses/#table-of-contents)"
+
+"tech/git.md"
+  title = "[Git](/courses/#table-of-contents)"
+
+"tech/python_napredni.md"
+  title = "[Napredni Python](/courses/#table-of-contents)"
+

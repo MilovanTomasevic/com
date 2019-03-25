@@ -1,0 +1,12 @@
+template = "template.html"
+
+author = "[Milovan Tomašević](https://www.milovantomasevic.com/)"
+affiliation = "</br>[🌐➙ milovantomasevic.com](https://milovantomasevic.com)</br> [✎➙ mt@milovantomasevic.com](mailto:mt@milovantomasevic.com)"
+
+"hpc-short-courses/openmp-presentation.md" 
+    title = "[High-performance computing (HPC)](/courses/#table-of-contents)"
+    subtitle = "OpenMP"
+
+"hpc-short-courses/mpi-presentation.md"
+    title = "[High-performance computing (HPC)](/courses/#table-of-contents)"
+    subtitle = "MPI"

@@ -1,0 +1,53 @@
+template = "template.html"
+
+author = "[Milovan Tomašević](https://www.milovantomasevic.com/)"
+affiliation = "</br>[🌐➙ milovantomasevic.com](https://milovantomasevic.com)</br> [✎➙ mt@milovantomasevic.com](mailto:mt@milovantomasevic.com)"
+
+"python/z1-zadaci.md" 
+    title = "[Python training](/courses/#table-of-contents)"
+    subtitle = "Z1-Zadaci"
+
+"python/z2-zadaci.md" 
+    title = "[Python training](/courses/#table-of-contents)"
+    subtitle = "Z2-Zadaci"
+
+"python/z3-zadaci.md" 
+    title = "[Python training](/courses/#table-of-contents)"
+    subtitle = "Z3-Zadaci"
+
+"python/z4-zadaci.md" 
+    title = "[Python training](/courses/#table-of-contents)"
+    subtitle = "Z4-Zadaci"
+
+"python/z5-zadaci.md" 
+    title = "[Python training](/courses/#table-of-contents)"
+    subtitle = "Z5-Zadaci"
+
+"python/z6-zadaci.md" 
+    title = "[Python training](/courses/#table-of-contents)"
+    subtitle = "Z6-Zadaci"
+
+"python/z7-zadaci.md" 
+    title = "[Python training](/courses/#table-of-contents)"
+    subtitle = "Z7-Zadaci"
+
+"python/z8-zadaci.md" 
+    title = "[Python training](/courses/#table-of-contents)"
+    subtitle = "Z8-Zadaci"
+
+"python/z9-zadaci.md" 
+    title = "[Python training](/courses/#table-of-contents)"
+    subtitle = "Z9-Zadaci"
+
+"python/z10-zadaci.md" 
+    title = "[Python training](/courses/#table-of-contents)"
+    subtitle = "Z10-Zadaci"
+
+"python/z11-zadaci.md" 
+    title = "[Python training](/courses/#table-of-contents)"
+    subtitle = "Z11-Zadaci"
+
+"python/z12-zadaci.md" 
+    title = "[Python training](/courses/#table-of-contents)"
+    subtitle = "Z12-Zadaci"
+

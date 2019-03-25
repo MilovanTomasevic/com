@@ -1,0 +1,8 @@
+template = "template.html"
+
+author = "[Milovan Tomašević](https://www.milovantomasevic.com/)"
+affiliation = "</br>[🌐➙ milovantomasevic.com](https://milovantomasevic.com)</br> [✎➙ mt@milovantomasevic.com](mailto:mt@milovantomasevic.com)"
+
+"docker/docker-and-other-tools-for-reproducible-analysis.md" 
+    title = "[Docker and other tools for reproducible analysis](/courses/#table-of-contents)"
+

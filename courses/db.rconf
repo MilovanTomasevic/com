@@ -1,0 +1,57 @@
+template = "template.html"
+
+author = "[Milovan Tomašević](https://www.milovantomasevic.com/)"
+affiliation = "</br>[🌐➙ milovantomasevic.com](https://milovantomasevic.com)</br> [✎➙ mt@milovantomasevic.com](mailto:mt@milovantomasevic.com)"
+
+"db/z1-zadaci.md" 
+    title = "[DataBase training](/courses/#table-of-contents)"
+    subtitle = "Z1-Zadaci"
+
+"db/z2-zadaci.md" 
+    title = "[DataBase training](/courses/#table-of-contents)"
+    subtitle = "Z2-Zadaci"
+
+"db/z3-zadaci.md" 
+    title = "[DataBase training](/courses/#table-of-contents)"
+    subtitle = "Z3-Zadaci"
+
+"db/z4-zadaci.md" 
+    title = "[DataBase training](/courses/#table-of-contents)"
+    subtitle = "Z4-Zadaci"
+
+"db/z5-zadaci.md" 
+    title = "[DataBase training](/courses/#table-of-contents)"
+    subtitle = "Z5-Zadaci"
+
+"db/z6-zadaci.md" 
+    title = "[DataBase training](/courses/#table-of-contents)"
+    subtitle = "Z6-Zadaci"
+
+"db/z7-zadaci.md" 
+    title = "[DataBase training](/courses/#table-of-contents)"
+    subtitle = "Z7-Zadaci"
+
+"db/z8-zadaci.md" 
+    title = "[DataBase training](/courses/#table-of-contents)"
+    subtitle = "Z8-Zadaci"
+
+"db/z9-zadaci.md" 
+    title = "[DataBase training](/courses/#table-of-contents)"
+    subtitle = "Z9-Zadaci"
+
+"db/z10-zadaci.md" 
+    title = "[DataBase training](/courses/#table-of-contents)"
+    subtitle = "Z10-Zadaci"
+
+"db/z11-zadaci.md" 
+    title = "[DataBase training](/courses/#table-of-contents)"
+    subtitle = "Z11-Zadaci"
+
+"db/z12-zadaci.md" 
+    title = "[DataBase training](/courses/#table-of-contents)"
+    subtitle = "Z12-Zadaci"
+
+"db/test-zadaci.md" 
+    title = "[DataBase training](/courses/#table-of-contents)"
+    subtitle = "Test-Zadaci"
+

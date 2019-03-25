@@ -1,0 +1,7 @@
+template = "template.html"
+
+author = "[Milovan Tomašević](https://www.milovantomasevic.com/)"
+affiliation = "</br>[🌐➙ milovantomasevic.com](https://milovantomasevic.com)</br> [✎➙ mt@milovantomasevic.com](mailto:mt@milovantomasevic.com)"
+
+"fis/PhDfis.md"
+	title = "[Adaptivni model za upravljanje lancima snabdevanja u malim i srednjim preduzećima](http://nardus.mpn.gov.rs/handle/123456789/9234)"

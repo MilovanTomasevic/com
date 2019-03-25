@@ -1,0 +1,12 @@
+template = "template.html"
+
+author = "[Milovan Tomašević](https://www.milovantomasevic.com/)"
+affiliation = "</br>[🌐➙ milovantomasevic.com](https://milovantomasevic.com)</br> [✎➙ mt@milovantomasevic.com](mailto:mt@milovantomasevic.com)"
+
+
+
+"fis/fis.md"
+  title = "[Budi student FIŠ-a](/budi-student-fis-a/)"
+
+"fis/put_do_fis_a.md"
+  title = "[Put do FIŠ-a](/budi-student-fis-a/)"
