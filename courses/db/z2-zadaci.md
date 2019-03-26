@@ -17,7 +17,7 @@ background-image: url(../key.jpg)
 
 #### Matematički fakultet Univerziteta u Beogradu | Srbija
 
-- [Doc. dr Nina Radojičić Matić](http://poincare.matf.bg.ac.rs/~nina/)
+- [Nina Radojičić Matić, Ph.D., Assistant Professor](http://poincare.matf.bg.ac.rs/~nina/)
 - [Katedra za računarstvo i informatiku](http://www.racunarstvo.matf.bg.ac.rs)
 ]]]
 ]]

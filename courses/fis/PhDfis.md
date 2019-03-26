@@ -250,7 +250,7 @@ layout: true
 .section[[Adaptivni model](#sadrzaj)]
 
 ---
-### AM4SCM
+## AM4SCM
 
 .lcol.small[
 - Adaptivni model za upravljanje lancima snabdevanja (Adaptive Model for Supply Chain Management, AM4SCM) je kompleksan sistem koji povezuje funkcionalne i među funkcionalne poslovne procese i koji omogućava učesnicima u lancu snabdevanja upravljanje procesima u realnom vremenu. On se sastoji od:<br><br>
@@ -265,7 +265,7 @@ layout: true
 ]
 
 ---
-### Nivo 1 – analiza i definisanje aktivnosti
+## Nivo 1 – analiza i definisanje aktivnosti
 
 .lcol.small[
 ### model
@@ -295,14 +295,14 @@ layout: true
 ]
 
 ---
-### Nivo 2 – model za upravljanje lancima snabdevanja
+## Nivo 2 – model za upravljanje lancima snabdevanja
 
 .lcol.small[
 ### model
 
 ![:scale 67%](phd/UseCaseBSCMS.jpg)
 
-.medium[
+.small[
 - Ovakvim skupom integrisanih računarskih programa preduzeće dobija : 
 	- Povezivanje svih delova preduzeća  u integralnu celinu, 
 	- Povećanje preglednosti i organizovanosti preduzeća,
@@ -324,7 +324,7 @@ layout: true
 ]
 
 ---
-### Nivo 3 – prilagođavanje modela korisniku
+## Nivo 3 – prilagođavanje modela korisniku
 
 .lcol.medium[
 ### model
@@ -335,7 +335,7 @@ layout: true
 .rcol.small[
 ### verifikacija
 
-![:scale 60%](phd/intermehanika.jpg)
+![:scale 50%](phd/intermehanika.jpg)
 
 .medium[
 .center-table.small[
@@ -353,7 +353,7 @@ layout: true
 ]
 
 ---
-### Nivo 4 – definisanje, praćenje i kontrola procesa
+## Nivo 4 – definisanje, praćenje i kontrola procesa
 
 .lcol.small[
 ### model
@@ -362,7 +362,7 @@ layout: true
 - Funkcionalni model, odnosno proces BSCMS sistema, koji je sačinjen od četiri nivoa:
 	- Prvi nivo čini definisanje partnera, definisanje podataka i dokumenata potrebnih zaposlovanje, nakon čega se definišu pravila o razmeni informacija i njihovoj dostupnosti.
 ]
-![:scale 60%](phd/4nivo.jpg)
+![:scale 45%](phd/4nivo.jpg)
 .small[
 - Planirani koraci su prevashodno u vezi sa definisanjem i primenom protokola između učesnika u SC-u. Neki od protokola koji bi trebalo da zažive su: 
 	- Protokol o razmeni podataka u SC-u;
@@ -379,7 +379,7 @@ layout: true
 ]
 
 ---
-### Nivo 5 – implementacija
+## Nivo 5 – implementacija
 
 .lcol.small[
 ### model
@@ -392,19 +392,19 @@ layout: true
 
 ![Alt Text](https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif)
 
-![:scale 70%](phd/im.jpg)
+![:scale 60%](phd/im.jpg)
 
 ]
 
 ---
-### Nivo 6 – upravljanje korisničkim zahtevima
+## Nivo 6 – upravljanje korisničkim zahtevima
 
 .lcol.small[
 ### model
 .small[
-![:scale 60%](phd/sd.png) 
+![:scale 50%](phd/sd.png) 
 ![:scale 55%](phd/rp.png) 
-![:scale 45%](phd/sdUS.jpg)
+![:scale 40%](phd/sdUS.jpg)
 ]
 ]
 
@@ -417,9 +417,7 @@ layout: true
 ]
 
 ---
-### Nivo 7 – ocenjivanje kvaliteta usluge
-
-## šestokoračni i lsp metod
+## Nivo 7 – ocenjivanje kvaliteta usluge | šestokoračni i lsp metod
 .medium[
 <ol>
   <li>
@@ -451,8 +449,7 @@ layout: true
 ]
 
 ---
-### Nivo 7 – ocenjivanje kvaliteta usluge
-## model FAM4QS
+## Nivo 7 – ocenjivanje kvaliteta usluge | model FAM4QS
 
 .small[
 <p> 
@@ -476,8 +473,7 @@ layout: true
 ]
 
 ---
-### Nivo 7 – ocenjivanje kvaliteta usluge
-## verifikacija FAM4QS - grupisanje i ocenjivanje
+## Nivo 7 – ocenjivanje kvaliteta usluge | verifikacija FAM4QS - grupisanje i ocenjivanje
 
 .lcol.small[
 
@@ -562,10 +558,9 @@ layout: true
 ]
 
 ---
-### Nivo 7 – ocenjivanje kvaliteta usluge
+## Nivo 7 – ocenjivanje kvaliteta usluge | verifikacija FAM4QS - rangiranje
 
 .small[
-## verifikacija FAM4QS - rangiranje
 <p> 
 	 $$   LCL = [ \color{red} 0\color{red}.\color{red}6\color{red}9\color{red}3  \; \; 0.772] \; \; UCL = [ 0.765 \; \; \color{red}0\color{red}.\color{red}8\color{red}1\color{red}1  ]  $$
 	 $$   \Downarrow  $$  
@@ -601,8 +596,7 @@ layout: true
 ]
 
 ---
-### Nivo 7 – ocenjivanje kvaliteta usluge
-#### verifikacija FAM4QS - analiza
+## Nivo 7 – ocenjivanje kvaliteta usluge | verifikacija FAM4QS-analiza
 
 .small[
 .lcol[
@@ -642,17 +636,17 @@ layout: true
 ---
 ## Modeli
 
-- Adaptivni model koji se sastoji od:<br><br>
-	- Model za upravljanje lancima snabdevanja (*BSCMS*)<br><br>
-	- Model za upravljanje korisničkim zahtevima (*Service Desk*)<br><br>
-	- Matematički model za ocenu kvaliteta pružene usluge (*FAM4QS*)<br><br>
+- Adaptivni model koji se sastoji od:
+	- Model za upravljanje lancima snabdevanja (*BSCMS*)
+	- Model za upravljanje korisničkim zahtevima (*Service Desk*)
+	- Matematički model za ocenu kvaliteta pružene usluge (*FAM4QS*)
 - Glavna karakteristika adaptivnog modela je *algoritam sa precizno definisanim koracima* koje korisnik treba da sprovede da bi podigao nivo kvaliteta usluge i održao stabilnost lanca snabdevanja. Na taj način omogućeno je sortiranje lanaca snabdevanja i uočavanje “najboljeg i najlošijeg” u cilju daljeg poboljšanja. 
 
 ---
 ## Primena modela i verifikacija hipoteza
 
-- Razvijeni adaptivni model je primenjen na slučaj preduzeća Intermehanika sa sedištem u Smederevu. To preduzeće sa svojim dobavljačima i korisnicima njenih usluga čini jedan lanac snabdevanja vezanih za delatnost proizvodnje kočionih uređaja kao i pružanja usluga njihovog održavanja. Stoga  su potvrđene hipoteze H1 i H2.<br><br>
-- FAM4QS  je primenjen na 17 lanaca snabdevanja sa teritorije Republike Srbije. U zavisnosti od prirode parametara tim stručnjaka vrši izbor stepena r, odnosno određuje konjuktivnost (disjunktivnost) forme funkcje agregacije i daje dovoljno dobru procenu kvaliteta servisa. Time su hipoteze H3 i H4 potvrđene. <br><br>
+- Razvijeni adaptivni model je primenjen na slučaj preduzeća Intermehanika sa sedištem u Smederevu. To preduzeće sa svojim dobavljačima i korisnicima njenih usluga čini jedan lanac snabdevanja vezanih za delatnost proizvodnje kočionih uređaja kao i pružanja usluga njihovog održavanja. Stoga su potvrđene hipoteze H1 i H2.
+- FAM4QS  je primenjen na 17 lanaca snabdevanja sa teritorije Republike Srbije. U zavisnosti od prirode parametara tim stručnjaka vrši izbor stepena r, odnosno određuje konjuktivnost (disjunktivnost) forme funkcje agregacije i daje dovoljno dobru procenu kvaliteta servisa. Time su hipoteze H3 i H4 potvrđene. 
 - Ocena kvaliteta usluge tj. izračunavanje vrednosti funkcije agregacije je vršeno i za slučajeve kada su procene težinskih koeficijenata bile i realni i fazi-brojevi, a ocene parametara fazi-brojevi, na osnovu čega su verifikovane pomoćne hipoteze H4a i H4b. 
 
 ---
@@ -732,6 +726,6 @@ Dokutorsku disertaciju u pdf formatu možete detaljno pročitati na sajtu <a tar
 
 class: center, middle, theend
 layout: false
-background-image: url(/../theend.gif)
+background-image: url(../theend.gif)
 
 {% endblock %}

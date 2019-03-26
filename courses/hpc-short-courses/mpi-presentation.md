@@ -1,6 +1,34 @@
 {% extends "base_slides.md" %}
 {% block slides %}
 
+
+class: split-20 nopadding
+background-image: url(../key.jpg)
+
+.column_t2.center[.vmiddle[
+.fgtransparent[
+![:scale 80%](../zahvalnica.png)
+]
+]]
+.column_t2[.vmiddle.nopadding[
+.shadelight[.boxtitle1[
+.small[
+## Acknowledgements
+
+#### University of Ljubljana | Slovenia
+#### PRACE Autumn School 2018 | HPC for Engineering and Chemistry
+
+- [Caspar van Leeuwen, HPC consultant bij SURFsara](https://www.linkedin.com/in/caspar-van-leeuwen-57637880/?originalSubdomain=nl)
+
+]]]
+]]
+
+.footer.small[
+- #### Slides are created according to sources in the literature & Acknowledgements
+]
+
+---
+
 name: content
 
 # Content

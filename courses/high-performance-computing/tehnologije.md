@@ -17,7 +17,8 @@ background-image: url(../key.jpg)
 
 #### University of Novi Sad | Serbia
 
-- [Doc. dr Veljko Petrović ](http://www.acs.uns.ac.rs/en/user/30) & [ms Gorana Gojić](http://www.acs.uns.ac.rs/en/user/49)
+- [Veljko Petrović, Ph.D., Assistant Professor](http://www.acs.uns.ac.rs/en/user/30)
+- [Gorana Gojić, MS, Teaching assistant](http://www.acs.uns.ac.rs/en/user/49)
 - [Faculty of Technical Sciences](http://ftn.uns.ac.rs/)
 - [Computing and Control Department | Chair for Applied Computer Sciences](http://www.acs.uns.ac.rs/en)
 ]]]

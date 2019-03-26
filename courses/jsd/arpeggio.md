@@ -17,7 +17,7 @@ background-image: url(../key.jpg)
 
 #### University of Novi Sad | Serbia
 
-- [Prof. dr Igor Dejanović](http://igordejanovic.net/)
+- [Igor Dejanović, Ph.D., Associate Professor](http://igordejanovic.net/)
 - [Faculty of Technical Sciences](http://ftn.uns.ac.rs/)
 - [Chair of Informatics](http://informatika.ftn.uns.ac.rs/)
 ]]]
@@ -26,7 +26,7 @@ background-image: url(../key.jpg)
 .footer.small[
 - #### Slides are created according to sources in the literature & Acknowledgements
 ]
-
+ 
 ---
 name: sadrzaj
 

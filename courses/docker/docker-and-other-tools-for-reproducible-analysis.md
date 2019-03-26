@@ -1,6 +1,32 @@
 {% extends "base_slides.md" %}
 {% block slides %}
 
+
+class: split-20 nopadding
+background-image: url(../key.jpg)
+
+.column_t2.center[.vmiddle[
+.fgtransparent[
+![:scale 80%](../zahvalnica.png)
+]
+]]
+.column_t2[.vmiddle.nopadding[
+.shadelight[.boxtitle1[
+.small[
+## Acknowledgements
+
+#### Melbourne Bioinformatics
+
+- [Tutorials and protocols](https://www.melbournebioinformatics.org.au/tutorials/)
+]]]
+]]
+
+.footer.small[
+- #### Slides are created according to sources in the literature & Acknowledgements
+]
+ 
+---
+
 name: content
 
 # Content

@@ -1,6 +1,6 @@
 template = "template.html"
 
-author = "[Milovan Tomašević](https://www.milovantomasevic.com/)"
+author = "[Milovan Tomašević, Ph.D.](https://www.milovantomasevic.com/)"
 affiliation = "</br>[🌐➙ milovantomasevic.com](https://milovantomasevic.com)</br> [✎➙ mt@milovantomasevic.com](mailto:mt@milovantomasevic.com)"
 
 "db/z1-zadaci.md" 
