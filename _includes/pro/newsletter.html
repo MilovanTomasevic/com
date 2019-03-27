@@ -30,7 +30,7 @@
     {% endcapture %}
 
     {{ site.data.strings.tinyletter.message
-      | default:"Subscribe to my newsletter. <!--form-->"
+      | default:"Subscribe to milovantomasevic.com newsletter. <!--form-->"
       | markdownify
       | replace:"<!--form-->", form
     }}
