@@ -40,7 +40,7 @@ accent_color: rgb(100, 182, 98)
 	- Pre klika na **POŠALJI** proverite još jednom podatke
 	- Za **najkasnije 5 radnih dana** će te dobiti odgovor na Vaš zahtev
 
-<form action="//formspree.io/tomas.ftn.e2@gmail.com?Subject=Zahtev%20za%20upis%20na%20FIŠ"
+<form action="//formspree.io/{{ site.author.email }}?Subject=Zahtev%20za%20upis%20na%20FIŠ"
       method="POST">
     <input type="hidden" name="FIS" value="Zahtev za upis na FIS" />
     <label for="exampleInputEmail1">Ime i prezime</label>
