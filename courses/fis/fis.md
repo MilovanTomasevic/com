@@ -462,6 +462,6 @@ name: pitanja
 
 class: center, middle, theend, hide-text
 layout: false
-background-image: url(../theend.gif)
+background-image: url(https://i.gifer.com/3UyS.gif)
 
 {% endblock %}
