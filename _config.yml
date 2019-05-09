@@ -44,7 +44,7 @@ author:
   name:                Milovan Tomašević
   email:               contact@milovantomasevic.com
   # Used by `jekyll-seo-tag`:
-  # twitter:             <username>
+  twitter:             mt_uns
 
 # This text will appear in a `<small>` tag in the footer of every page.
 copyright:             © 2018 Milovan Tomašević. All rights reserved.
@@ -274,6 +274,7 @@ exclude:
   - courses/db/*.md
   - courses/python/*.md
   - courses/docker/*.md
+  - courses/newfis/*.md
 include:
   - LICENSE.md
 
@@ -314,8 +315,8 @@ webmaster_verifications:
 #   yandex:              <verification-id>
 
 # Used for Twitter cards
-# twitter:
-#   username:            <shortname>
+twitter:
+  username:            mt_uns
 
 # Used for Facebook open graph
 # facebook:
@@ -324,11 +325,14 @@ webmaster_verifications:
 #   admins:              <id>
 
 # Used on index and about sites
-# social:
-#   name:                <firstname> <lastname>
-#   links:
-#     - https://twitter.com/<username>
-#     - https://github.com/<username>
+social:
+  name:                Milovan Tomašević
+  links:
+    - https://www.linkedin.com/in/PhDMilovanTomasevic/
+    - https://www.instagram.com/mt.fis/
+    - https://twitter.com/mt_uns
+    - https://www.youtube.com/c/MilovanTomašević
+    - hhttps://github.com/milovantomasevic
 
 
 # Other Plugins
@@ -360,7 +364,7 @@ compress_html:
   clippings:           all
   endings:             all
   ignore:
-    envs:              [development]
+    envs:              [development, production]
 
 sass:
   style:               compressed
