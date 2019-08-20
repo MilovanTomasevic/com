@@ -32,7 +32,8 @@ OBLO Living provides world-class solutions for home automation (HA). We combine 
 Work time
 {:.figure}
 
-~~~swift
+
+{% highlight swift linenos %}
 -(void)loginButtonClicked:(UIButton*)sender
 {
     LogI(@"Login button clicked");
@@ -75,11 +76,11 @@ Work time
         [ALERT_PRESENTER presentAlertWithTitle:NSLocalizedString(@"error",nil) message:NSLocalizedString(@"msg_19",nil)];
     }
 }
-~~~
+{% endhighlight %}
 objC Examples Login
 {:.figure}
 
-~~~swift
+{% highlight swift linenos %}
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear: animated];
 
@@ -145,7 +146,7 @@ objC Examples Login
             [self messagePresent];
         }
 }
-~~~
+{% endhighlight %}
 objC Examples Open video
 {:.figure}
 
@@ -155,7 +156,7 @@ objC Examples Open video
 </figure>
 
 
-~~~java
+{% highlight java linenos %}
 package iOS;
 
 import Utils.Config;
@@ -247,7 +248,7 @@ public class Login {
     }
 }
 
-~~~
+{% endhighlight %}
 Test for Login (Java)
 {:.figure}
 

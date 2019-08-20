@@ -138,7 +138,8 @@ Mathematical method ( _FAM4QS_ - **F**uzzy **A**ggregation **M**ethod **for** **
 FAM4QS Algorithm
 {:.figure}
 
-~~~csharp
+
+{% highlight csharp linenos %}
 private void CalculateFAM4QS()
         {
             CollectScores();
@@ -178,7 +179,7 @@ private void CalculateFAM4QS()
                     }
                 }
             }
- ~~~           
+{% endhighlight %}          
 FAM4QS Algorithm (program code - C#)
 {:.figure}
 

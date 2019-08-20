@@ -16,7 +16,7 @@ hide_description: true
 
 ## Zadatak 1
 
-```sql
+{% highlight sql linenos %}
 -- a)
 with polozeno as (select i.id_predmeta, i.semestar, count(*) brpol 
     from ispit i join dosije d on d.indeks=i.indeks 
@@ -34,7 +34,9 @@ from upisano
 join predmet p on upisano.id_predmeta=p.id_predmeta 
 left outer join polozeno on upisano.id_predmeta=polozeno.id_predmeta and upisano.semestar=polozeno.semestar 
 order by 6 desc;
+{% endhighlight %}
 
+{% highlight sql linenos %}
 -- drugo rešenje
 with upisano_polozeno as (select uk.id_predmeta, uk.semestar, count(distinct uk.indeks) brup, count(distinct i.indeks) brpol
     from dosije d 
@@ -47,7 +49,9 @@ select p.sifra, p.naziv, up.semestar, brup "broj upisanih", coalesce(brpol, 0) "
 from upisano_polozeno up 
 join predmet p on up.id_predmeta=p.id_predmeta
 order by 6 desc;
+{% endhighlight %}
 
+{% highlight sql linenos %}
 -- b)
 with ponovljeno as (
 select s.naziv, d.indeks, d.ime, d.prezime, uk.id_predmeta 
@@ -72,11 +76,11 @@ join predmet p2 on p2.id_predmeta=up.id_uslovnog and not exists ( select *
     and ocena>5 and status_prijave='o'
     and i.godina<2007) 
     order by naziv_smera desc, indeks;
-```
+{% endhighlight %}
 
 ## Zadatak 2
 
-```sql
+{% highlight sql linenos %}
 create distinct type rsd as float with comparisons;
 create function iznosskolarine(bodovi integer) 
 returns rsd
@@ -110,12 +114,11 @@ on d.indeks=s.indeks where not exists ( select *
     from upisan_kurs uk
     where uk.indeks=d.indeks and uk.godina=s.godina
     and not exists ( select * from ispit i
-    where i.indeks=uk.indeks and i.id_predmeta=uk.id_predmeta and i.godina=uk.godina and ocena>5 and status_prijave='o'));
-```
+{% endhighlight %}
 
 ## Zadatak 3
 
-```sql
+{% highlight sql linenos %}
 with uslovni(id_koren, id_predmet, id_uslovni) as (
 select up.id_predmeta, up.id_predmeta, id_uslovnog
 from uslovni_predmet up 
@@ -131,11 +134,11 @@ join predmet p1 on p1.id_predmeta=u.id_koren
 join predmet p2 on p2.id_predmeta=u.id_uslovni 
 where p2.bodovi=6
 order by 1;
-```
+{% endhighlight %}
 
 ## Dodatni upit
 
-```sql
+{% highlight sql linenos %}
 with polozeno as (
 select d.indeks, sum(p.bodovi) polozeno 
 from dosije d
@@ -174,4 +177,4 @@ cast(VIkategorija*100 as float)/brs "24-30",
 VIIkategorija "brs preko 30",
  VIIkategorija*100.0/brs "preko 30"
 from kategorija;
-```
+{% endhighlight %}
