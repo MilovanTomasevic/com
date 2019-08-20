@@ -9,7 +9,6 @@ permalink: /the-process-of-creating-a-website/
 ---
 
 The goal of developing websites for companies of different sizes is to create an efficient and advanced software solution, in accordance with the client's requirements and marketing strategies. Our designers will build a quality presence on the Internet of companies of different sizes using advanced and latest web development techniques.
-
 ---
 
 ## Table of Contents
@@ -18,7 +17,6 @@ The goal of developing websites for companies of different sizes is to create an
 {:toc}
 
 ---
-
 The process of designing and developing the website contains the following steps:
 
 # Decision on website design
@@ -75,58 +73,6 @@ If you think that creating a website is a cost or pre-lost money, you are cheati
 * [Testing and presenting the final product]{:.heading.flip-title} --- Site testing and build-up on the web.
 * [Website maintenance]{:.heading.flip-title} --- optimization of the website.
 {:.related-posts.faded}
-
-{% comment %} 
-## Documentation
-
-Here you should be able to find everything you need to know to accomplish the most common tasks when blogging with Hydejack.
-Should you think something is missing, [please let me know](mailto:tomas.ftn.e2@gmail.com).
-Should you discover a mistake in the docs (or a bug in general) feel free to [open an issue](https://github.com/qwtel/hydejack/issues) on GitHub.
-
-**NOTE**: While this manual tries to be beginner-friendly, as a user of Jekyll it is assumed that you are comfortable running shell commands and editing text files.
-{:.message}
-
-Buyers of the PRO version can jump straight to [installation for PRO buyers](install.md#pro-version),
-or [upgrades for PRO buyers](upgrade.md#pro-version).
-
-### Getting started
-* [Install]{:.heading.flip-title} --- How to install and run Hydejack.
-* [Upgrade]{:.heading.flip-title} --- You can skip this if you haven't used Hydejack before.
-* [Config]{:.heading.flip-title} --- Once Jekyll is running you can start editing your config file.
-{:.related-posts.faded}
-
-{% endcomment %}
-
-## Using Documentation
-* [Basics]{:.heading.flip-title} --- How to add different types of content.
-* [Writing]{:.heading.flip-title} --- Producing markdown content for Hydejack.
-* [Scripts]{:.heading.flip-title} --- How to include 3rd party scripts on your site.
-* [Build]{:.heading.flip-title} --- How to build the static files for deployment.
-* [Advanced]{:.heading.flip-title} --- Guides for more advanced tasks.
-{:.related-posts.faded}
-
-
-{% comment %} 
-
-## Other
-* [LICENSE]{:.heading.flip-title} --- The license of this project.
-* [NOTICE]{:.heading.flip-title} --- Parts of this program are provided under separate licenses.
-* [CHANGELOG]{:.heading.flip-title} --- Version history of Hydejack.
-{:.related-posts.faded}
-
-{% endcomment %}
-
-[install]: /docs/install.md
-[upgrade]: ../docs/upgrade.md
-[config]: ../docs/config.md
-[basics]: ../docs/basics.md
-[writing]: ../docs/writing.md
-[scripts]: ../docs/scripts.md
-[build]: ../docs/build.md
-[advanced]: ../docs/advanced.md
-[LICENSE]: ../LICENSE.md
-[NOTICE]: ../NOTICE.md
-[CHANGELOG]: ../CHANGELOG.md
 
 [Collecting information]: collecting-information.md
 [Planning]: creating-a-website-development-plan.md
