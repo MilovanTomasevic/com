@@ -1,8 +1,8 @@
 GIT
   remote: git@hydejack:qwtel/hydejack-8-pro.git
-  revision: e12946a1cf9ac5187be39946fee9e60117f93da4
+  revision: 06f1a99c3993e9ff38bbd4602357659986247a02
   specs:
-    jekyll-theme-hydejack-pro (8.4.0)
+    jekyll-theme-hydejack-pro (8.5.1)
       jekyll (~> 3.7)
 
 GEM
@@ -28,7 +28,7 @@ GEM
     http_parser.rb (0.6.0-java)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
-    jekyll (3.8.5)
+    jekyll (3.8.6)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -75,11 +75,11 @@ GEM
     mercenary (0.3.6)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (3.1.0)
+    public_suffix (3.1.1)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    rouge (3.4.1)
+    rouge (3.8.0)
     ruby_dep (1.5.0)
     safe_yaml (1.0.5)
     sass (3.7.4)
@@ -89,7 +89,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
     tzinfo (2.0.0)
       concurrent-ruby (~> 1.0)
-    tzinfo-data (1.2019.1)
+    tzinfo-data (1.2019.2)
       tzinfo (>= 1.0.0)
 
 PLATFORMS
@@ -116,4 +116,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   1.17.3
+   1.17.1
