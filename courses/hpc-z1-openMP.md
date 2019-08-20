@@ -14,7 +14,8 @@ hide_description: true
 
 ---
 
-```c
+{% highlight C linenos %}
+
 #include <stdio.h>
 
 #include "omp.h"
@@ -35,7 +36,10 @@ int main() {
 
     return 0;
 }
-```
+
+{% endhighlight %}
+
+
 hello_world.c
 {:.figure}
 
@@ -72,7 +76,7 @@ gcc -o izvrsna_dat izvorna_dat.c -fopenacc
 
 ### Pi.c
 
-```c 
+{% highlight C linenos %}
 #include <stdio.h>
 #include <omp.h>
 
@@ -105,14 +109,14 @@ void serial_code() {
     printf("pi = %lf\n", pi);
     printf("Time elapsed: %lf\n", end - start);
 }
+{% endhighlight %}
 
-```
 Pi.c - zadatak
 {:.figure}
 
 ### mandelbrot.c
 
-```c
+{% highlight C linenos %}
 // mandelbrot.c
 
 /**
@@ -177,8 +181,7 @@ void testpoint(void){
             break;
         }
     }
-}
-```
+{% endhighlight %}
 mandelbrot.c - zadatak 
 {:.figure}
 
