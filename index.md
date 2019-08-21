@@ -43,10 +43,11 @@ My name is [***Milovan Tomašević***](/resume/) and I work on [**_HPC RIVR proj
 
 I obtained a [*Ph.D.*](courses/fis/PhDfis.html#1){:target="_blank"} in *Industrial Engineering* at the same faculty, with a dissertation paper called [*''Adaptive Model for Supply Chains Management in Small and Medium Enterprises''*](http://nardus.mpn.gov.rs/handle/123456789/9234){:target="_blank"} (as well as an *MSc* in *Industrial Engineering and Engineering Management* and an *MSc* in *Computer Sciences*).
 
-> Something else, my education isn't the end, I'm currently working on my **_second doctorate_**, which is focused on **_Domain Specific Languages (DSLs) for High Performance Computing (HPC)_**.
+> Something else, my education isn't the end, I'm currently working on my **_second doctorate_**, which is focused on **_A Fuzzy Adaptive Model for Feasibility Assessment of High Performance Computing Architectures_**.
 
 My main areas of interest are:
 
+*   Models for Feasibility Assessment of High Performance Computing Architectures,
 *   **_[Domain Specific Languages (DSLs) for High Performance Computing (HPC)](/courses/#table-of-contents)_**,
 *   Supply Chain Management Systems with HPC,
 *   Business Process Management,
