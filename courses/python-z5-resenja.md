@@ -16,7 +16,7 @@ hide_description: true
 
 ## Functions 
 
-```py
+{% highlight py linenos %}
 def inorder_tree_walk(x):
     if x != None:
         inorder_tree_walk(x.left)
@@ -98,13 +98,13 @@ def inorder_tree_walk_list(x, l):
         inorder_tree_walk_list(x.left, l)
         l.append(x.data)
         inorder_tree_walk_list(x.right, l)
-```
+{% endhighlight %}
 functions.py
 {:.figure}
 
 ## Node
 
-```py
+{% highlight py linenos %}
 class Node:
     """
     Tree node: left child, right child and data
@@ -129,13 +129,13 @@ class Data:
         """
         self.a1 = val1
         self.a2 = val2
-```
+{% endhighlight %}
 node.py
 {:.figure}
 
 ## Tree
 
-```py
+{% highlight py linenos %}
 from functions import *
 
 class Tree(object):
@@ -169,13 +169,13 @@ class Tree(object):
 
     def inorder_tree_walk_list(self, l):
             inorder_tree_walk_list(self.root, l)
-```
+{% endhighlight %}
 tree.py
 {:.figure}
 
 ## Zadatak 1
 
-```py
+{% highlight py linenos %}
 import sys
 from node import Data, Node
 from tree import Tree
@@ -225,6 +225,6 @@ if __name__ == "__main__":
     l = []
     T.inorder_tree_walk_list(l)
     print([x.a1 for x in l])
-```
+{% endhighlight %}
 zadatak1.py
 {:.figure}

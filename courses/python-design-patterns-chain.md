@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns chain
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -129,7 +129,7 @@ if __name__ == "__main__":
 # end of chain, no handler for 35
 # request 27 handled in handler 2
 # request 20 handled in handler 2
-```
+{% endhighlight %}
 chain.py
 {:.figure}
 

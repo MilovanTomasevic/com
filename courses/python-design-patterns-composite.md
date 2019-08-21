@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns composite
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -103,6 +103,6 @@ if __name__ == '__main__':
 # Ellipse: 2
 # Ellipse: 3
 # Ellipse: 4
-```
+{% endhighlight %}
 composite.py
 {:.figure}

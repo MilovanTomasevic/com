@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns adapter
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -154,13 +154,13 @@ if __name__ == "__main__":
 # A Cat goes meow!
 # A Human goes 'hello'
 # A Car goes vroom!!!
-```
+{% endhighlight %}
 adapter.py
 {:.figure}
 
 ## adapter Test
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -234,6 +234,6 @@ class AdapterTest(unittest.TestCase):
         expected_noise = "vroom!!!!!!!!!!"
 
         self.assertEqual(noise, expected_noise)
-```
+{% endhighlight %}
 test_adapter.py
 {:.figure}

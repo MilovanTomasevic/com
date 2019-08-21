@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns command
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -81,13 +81,13 @@ if __name__ == "__main__":
 # renaming bar.txt to baz.txt
 # renaming baz.txt to bar.txt
 # renaming bar.txt to foo.txt
-```
+{% endhighlight %}
 command.py
 {:.figure}
 
 ## command Test
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import os
@@ -146,6 +146,6 @@ class CommandTest(unittest.TestCase):
         Remove the temporary directory /test_command and its content.
         """
         shutil.rmtree('tests/test_command')
-```
+{% endhighlight %}
 test_command.py
 {:.figure}

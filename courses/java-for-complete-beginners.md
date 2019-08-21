@@ -18,7 +18,7 @@ Source: [GIT](https://github.com/caveofprogramming/java-beginners){:target="_bla
 
 ## A Hello World Program
 
-```java
+{% highlight java linenos %}
 public class Application {
  
     public static void main(String[] args) {
@@ -26,13 +26,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Using Variables
 
-```java
+{% highlight java linenos %}
 public class Application {
  
     public static void main(String[] args) {
@@ -60,13 +60,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Strings - Working With Text
 
-```java
+{% highlight java linenos %}
 public class Application {
     public static void main(String[] args) {
          
@@ -91,13 +91,13 @@ public class Application {
         System.out.println("My number is: " + myDouble + ".");
     }
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## While Loops
 
-```java
+{% highlight java linenos %}
 public class Application {
     public static void main(String[] args) {
          
@@ -111,13 +111,13 @@ public class Application {
         }
     }
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## For Loops
 
-```java
+{% highlight java linenos %}
 public class Application {
     public static void main(String[] args) {
          
@@ -126,13 +126,13 @@ public class Application {
         }
     }
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## if
 
-```java
+{% highlight java linenos %}
 public class Application {
 	public static void main(String[] args) {
 		
@@ -158,13 +158,13 @@ public class Application {
 		}
 	}
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Getting User Input
 
-```java
+{% highlight java linenos %}
 import java.util.Scanner;
  
 public class Application {
@@ -183,13 +183,13 @@ public class Application {
         System.out.println("You entered: " + value);
     }
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Do While
 
-```java
+{% highlight java linenos %}
 import java.util.Scanner;
  
  
@@ -221,13 +221,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Switch
 
-```java
+{% highlight java linenos %}
 import java.util.Scanner;
  
 public class Application {
@@ -257,13 +257,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Arrays
 
-```java
+{% highlight java linenos %}
 public class Application {
     public static void main(String[] args) {
          
@@ -293,14 +293,13 @@ public class Application {
         }
     }
      
-}
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Arrays of Strings
 
-```java
+{% highlight java linenos %}
 public class Application {
  
     public static void main(String[] args) {
@@ -345,13 +344,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Multi-Dimensional Arrays
 
-```java
+{% highlight java linenos %}
 public class Application {
  
     public static void main(String[] args) {
@@ -408,13 +407,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Classes and Objects
 
-```java
+{% highlight java linenos %}
 class Person {
      
     // Instance variables (data or "state")
@@ -449,13 +448,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Methods
 
-```java
+{% highlight java linenos %}
 class Person {
  
     // Instance variables (data or "state")
@@ -501,13 +500,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Getters and Return Values
 
-```java
+{% highlight java linenos %}
 class Person {
     String name;
     int age;
@@ -554,13 +553,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Method Parameters
 
-```java
+{% highlight java linenos %}
 class Frog {
     private String name;
     private int age;
@@ -603,13 +602,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Constructors
 
-```java
+{% highlight java linenos %}
 class Machine {
     private String name;
     private int code;
@@ -646,13 +645,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Static (and Final)
 
-```java
+{% highlight java linenos %}
 class Thing {
     public final static int LUCKY_NUMBER = 7;
      
@@ -708,13 +707,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## StringBuilder and String Formatting
 
-```java
+{% highlight java linenos %}
 public class Application {
  
  
@@ -782,13 +781,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## The toString Method
 
-```java
+{% highlight java linenos %}
 class Frog {
      
     private int id;
@@ -822,13 +821,13 @@ public class Application {
         System.out.println(frog2);
     }
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Inheritance
 
-```java
+{% highlight java linenos %}
 public class Machine {
      
     protected String name = "Machine Type 1";
@@ -841,11 +840,11 @@ public class Machine {
         System.out.println("Machine stopped.");
     }
 }
-```
+{% endhighlight %}
 Machine.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 public class Car extends Machine {
      
      
@@ -862,11 +861,11 @@ public class Car extends Machine {
         System.out.println("Car name: " + name);
     }
 }
-```
+{% endhighlight %}
 Car.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 public class Application {
  
     public static void main(String[] args) {
@@ -886,53 +885,52 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Packages
 
-```java
+{% highlight java linenos %}
 package com.caveofprogramming.oceangame;
 
 public class Aquarium {
 
-}
-```
+{% endhighlight %}
 com/caveofprogramming/oceangame/Aquarium.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 package ocean.plants;
 
 public class Algae {
 
 }
-```
+{% endhighlight %}
 ocean/plants/Algae.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 package ocean.plants;
 
 public class Seaweed {
 
 }
-```
+{% endhighlight %}
 ocean/plants/Seaweed.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 package ocean;
 
 public class Fish {
 
 }
-```
+{% endhighlight %}
 ocean/Fish.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 import ocean.Fish;
 import ocean.plants.Seaweed;
  
@@ -945,30 +943,30 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Interfaces
 
-```java
+{% highlight java linenos %}
 public interface Info {
     public void showInfo();
 }
-```
+{% endhighlight %}
 Info.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 public interface IStartable {
     public void start();
     public void stop();
 }
-```
+{% endhighlight %}
 IStartable.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 public class Machine implements IStartable {
      
     private int id = 7;
@@ -981,11 +979,11 @@ public class Machine implements IStartable {
         System.out.println("Machine ID is: " + id);
     }
 }
-```
+{% endhighlight %}
 Machine.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 public class Person implements Info {
      
     private String name;
@@ -1003,11 +1001,11 @@ public class Person implements Info {
         System.out.println("Person name is: " + name);
     }
 }
-```
+{% endhighlight %}
 Person.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 public class Application {
      
     public static void main(String[] args) {
@@ -1035,13 +1033,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Public, Private, Protected
 
-```java
+{% highlight java linenos %}
 package world;
  
 public class Field {
@@ -1053,11 +1051,11 @@ public class Field {
         System.out.println(plant.size);
     }
 }
-```
+{% endhighlight %}
 world/Field.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 package world;
  
 class Something {
@@ -1084,11 +1082,11 @@ public class Plant {
         this.height = 8;
     }
 }
-```
+{% endhighlight %}
 world/Plant.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 package world;
  
 public class Oak extends Plant {
@@ -1106,11 +1104,11 @@ public class Oak extends Plant {
     }
  
 }
-```
+{% endhighlight %}
 world/Oak.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 import world.Plant;
  
  
@@ -1121,11 +1119,11 @@ public class Grass extends Plant {
         // System.out.println(this.height);
     }
 }
-```
+{% endhighlight %}
 Grass.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 import world.Plant;
  
 /*
@@ -1160,23 +1158,23 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Polymorphism
 
-```java
+{% highlight java linenos %}
 public class Plant {
     public void grow() {
         System.out.println("Plant growing");
     }
 }
-```
+{% endhighlight %}
 Plant.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 public class Tree extends Plant {
  
     @Override
@@ -1189,11 +1187,11 @@ public class Tree extends Plant {
     }
      
 }
-```
+{% endhighlight %}
 Tree.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 public class Application {
  
     public static void main(String[] args) {
@@ -1227,13 +1225,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Encapsulation and the API Docs
 
-```java
+{% highlight java linenos %}
 class Plant {
      
     // Usually only static final members are public
@@ -1278,13 +1276,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Casting Numerical Values
 
-```java
+{% highlight java linenos %}
 public class Application {
  
     /**
@@ -1322,13 +1320,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Upcasting and Downcasting
 
-```java
+{% highlight java linenos %}
 class Machine {
     public void start() {
         System.out.println("Machine started.");
@@ -1375,13 +1373,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Using Generics
 
-```java
+{% highlight java linenos %}
 import java.util.ArrayList;
 import java.util.HashMap;
  
@@ -1429,13 +1427,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Generics and Wildcards
 
-```java
+{% highlight java linenos %}
 import java.util.ArrayList;
  
 class Machine {
@@ -1503,13 +1501,13 @@ public class Application {
  
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Anonymous Classes
 
-```java
+{% highlight java linenos %}
 class Machine {
     public void start() {
         System.out.println("Starting machine ...");
@@ -1547,13 +1545,13 @@ public class Application {
         plant1.grow();
     }
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Reading Files using Scanner
 
-```java
+{% highlight java linenos %}
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -1586,13 +1584,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Handling exceptions
 
-```java
+{% highlight java linenos %}
 package demo1;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -1610,11 +1608,11 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 demo1/Application.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 package demo2;
  
 import java.io.File;
@@ -1639,11 +1637,11 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 demo2/Application.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 package demo3;
  
 import java.io.File;
@@ -1669,13 +1667,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 demo3/Application.java
 {:.figure}
 
 ## Multiple Exceptions
 
-```java
+{% highlight java linenos %}
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.ParseException;
@@ -1696,11 +1694,11 @@ public class Test {
          
     }
 }
-```
+{% endhighlight %}
 Test.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.ParseException;
@@ -1754,13 +1752,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Runtime vs. checked Exceptions
 
-```java
+{% highlight java linenos %}
 public class Application {
  
     public static void main(String[] args) {
@@ -1784,13 +1782,13 @@ public class Application {
         }
     }
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Abstract Classes
 
-```java
+{% highlight java linenos %}
 public abstract class Machine {
     private int id;
  
@@ -1812,11 +1810,11 @@ public abstract class Machine {
         shutdown();
     }
 }
-```
+{% endhighlight %}
 Machine.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 public class Camera extends Machine {
  
     @Override
@@ -1837,11 +1835,11 @@ public class Camera extends Machine {
     }
  
 }
-```
+{% endhighlight %}
 Camera.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 public class Car extends Machine {
  
     @Override
@@ -1862,11 +1860,11 @@ public class Car extends Machine {
     }
  
 }
-```
+{% endhighlight %}
 Car.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 public class Application {
  
     public static void main(String[] args) {
@@ -1882,13 +1880,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Reading Files With File Reader
 
-```java
+{% highlight java linenos %}
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -1935,13 +1933,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Try With Resources
 
-```java
+{% highlight java linenos %}
 class Temp implements AutoCloseable {
  
     @Override
@@ -1968,11 +1966,11 @@ public class App {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -1999,13 +1997,13 @@ public class Application2 {
     }
  
 }
-```
+{% endhighlight %}
 Application2.java
 {:.figure}
 
 ## Creating and Writing Text Files
 
-```java
+{% highlight java linenos %}
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -2032,21 +2030,21 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
-```sh
+{% highlight sh linenos %}
 This is line one
 This is line two
 Last line.
-```
+{% endhighlight %}
 test.txt
 {:.figure}
 
 ## The `equals()` Method
 
-```java
+{% highlight java linenos %}
 class Person {
     private int id;
     private String name;
@@ -2123,13 +2121,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Inner Classes
 
-```java
+{% highlight java linenos %}
 public class Robot {
  
     private int id;
@@ -2207,13 +2205,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Enum Types - Basic and Advanced Usage
 
-```java
+{% highlight java linenos %}
 public enum Animal {
     CAT("Fergus"), DOG("Fido"), MOUSE("Jerry");
      
@@ -2231,11 +2229,11 @@ public enum Animal {
         return "This animal is called: " + name;
     }
 }
-```
+{% endhighlight %}
 Animal.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 public class Application {
      
     public static void main(String[] args) {
@@ -2271,13 +2269,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Recursion - A useful trick up your sleeve
 
-```java
+{% highlight java linenos %}
 public class App {
  
      
@@ -2299,13 +2297,13 @@ public class App {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Serialization - Saving Objects to Files
 
-```java
+{% highlight java linenos %}
 import java.io.Serializable;
  
 public class Person implements Serializable {
@@ -2326,12 +2324,11 @@ public class Person implements Serializable {
     }
 }
  
-// www.caveofprogramming.com
-```
+{% endhighlight %}
 Person.java
 {:.figure}
 
-```java
+{% highlight java linenos %}{
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -2370,11 +2367,11 @@ public class WriteObjects {
     }
  
 }
-```
+{% endhighlight %}
 WriteObjects.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -2414,13 +2411,13 @@ public class ReadObjects {
     }
  
 }
-```
+{% endhighlight %}
 ReadObjects.java
 {:.figure}
 
 ## Serializing Arrays
 
-```java
+{% highlight java linenos %}
 import java.io.Serializable;
  
 public class Person implements Serializable {
@@ -2441,12 +2438,11 @@ public class Person implements Serializable {
     }
 }
  
-// www.caveofprogramming.com
-```
+{% endhighlight %}
 Person.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -2490,11 +2486,11 @@ public class WriteObjects {
     }
  
 }
-```
+{% endhighlight %}
 WriteObjects.java
 {:.figure}
 
-```java
+{% highlight java linenos %}
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -2547,13 +2543,13 @@ public class ReadObjects {
     }
  
 }
-```
+{% endhighlight %}
 ReadObjects.java
 {:.figure}
 
 ## ArrayList - Arrays the Easy Way
 
-```java
+{% highlight java linenos %}
 import java.util.ArrayList;
 import java.util.List;
  
@@ -2591,13 +2587,13 @@ public class Application {
         List<String> values = new ArrayList<String>();
     }
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Linked Lists
 
-```java
+{% highlight java linenos %}
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -2653,13 +2649,13 @@ public class Application {
  
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## HashMaps - Retrieving Objects via a Key
 
-```java
+{% highlight java linenos %}
 import java.util.HashMap;
 import java.util.Map;
  
@@ -2690,13 +2686,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Sorted Maps
 
-```java
+{% highlight java linenos %}
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -2729,13 +2725,13 @@ public class Application {
     }
      
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Sets
 
-```java
+{% highlight java linenos %}
 import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
@@ -2814,13 +2810,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Using Custom Objects in Sets and as Keys in Maps
 
-```java
+{% highlight java linenos %}
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.Map;
@@ -2902,13 +2898,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Sorting Lists
 
-```java
+{% highlight java linenos %}
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -3055,13 +3051,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Natural Ordering
 
-```java
+{% highlight java linenos %}
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -3153,14 +3149,13 @@ public class Application {
     }
  
 }
-
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Queues
 
-```java
+{% highlight java linenos %}
 import java.util.NoSuchElementException;
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
@@ -3229,13 +3224,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Using Iterators
 
-```java
+{% highlight java linenos %}
 import java.util.Iterator;
 import java.util.LinkedList;
  
@@ -3288,13 +3283,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Implementing Iterable
 
-```java
+{% highlight java linenos %}
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -3370,13 +3365,13 @@ public class UrlLibrary implements Iterable<String> {
      
      
 }
-```
+{% endhighlight %}
 UrlIterator.java
 {:.figure}
 
 ## Deciding Which Collections to use
 
-```java
+{% highlight java linenos %}
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -3463,13 +3458,13 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 
 ## Complex Data Structures
 
-```java
+{% highlight java linenos %}
 import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.Map;
@@ -3526,7 +3521,7 @@ public class Application {
     }
  
 }
-```
+{% endhighlight %}
 Application.java
 {:.figure}
 

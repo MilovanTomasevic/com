@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns template
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -83,6 +83,6 @@ if __name__ == "__main__":
 # Skip conversion
 # [SAVE]
 # `csv` was processed
-```
+{% endhighlight %}
 template.py
 {:.figure}

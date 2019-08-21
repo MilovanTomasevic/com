@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns pool
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -106,13 +106,13 @@ if __name__ == '__main__':
 # Outside with: yam
 # Inside func: sam
 # Outside func: sam
-```
+{% endhighlight %}
 pool.py
 {:.figure}
 
 ## pool Test
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -167,6 +167,6 @@ class TestNaitivePool(unittest.TestCase):
     # print('Outside func: {}'.format(sample_queue.get()))
 
     # if not sample_queue.empty():
-```
+{% endhighlight %}
 test_pool.py
 {:.figure}

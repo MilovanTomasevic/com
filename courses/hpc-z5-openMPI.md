@@ -47,7 +47,7 @@ gcc -o izvrsna_dat izvorna_dat.c -fopenacc
 
 ### hello_world.c
 
-~~~c
+{% highlight c linenos %}
 // Hello World iz hibridnog OpenMPI + OpenMP programa.
 
 #include <stdio.h>
@@ -69,7 +69,7 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-~~~
+{% endhighlight %}
 hello_world.c
 {:.figure}
 
@@ -137,7 +137,7 @@ procesu.
 
 #### main.c
 
-~~~c
+{% highlight c linenos %}
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -213,13 +213,13 @@ int main(int argc, char *argv[]) {
     
     return 0;
 }
-~~~
+{% endhighlight %}
 main.c - zadatak
 {:.figure}
 
 #### CMakeLists.txt
 
-~~~sh
+{% highlight sh linenos %}
 cmake_minimum_required(VERSION 3.5)
 project(MatrixMultiplication)
 
@@ -252,7 +252,7 @@ else()
     add_definitions(-DDISABLE_HDF5)
     message(STATUS "HDF5 support disabled.")
 endif()
-~~~
+{% endhighlight %}
 CMakeLists.txt - zadatak
 {:.figure}
 
@@ -260,7 +260,7 @@ CMakeLists.txt - zadatak
 
 ##### h5defs.h
 
-~~~c
+{% highlight c linenos %}
 #ifndef MATRIXUTILITIES_H5DEFS_H
 #define MATRIXUTILITIES_H5DEFS_H
 
@@ -272,13 +272,13 @@ CMakeLists.txt - zadatak
     (if (e < 0) { printf("\nHDF5 error on line %d\n\n", __LINE__ ); exit 1; })
 
 #endif //MATRIXUTILITIES_H5DEFS_H
-~~~
+{% endhighlight %}
 h5defs.h - zadatak
 {:.figure}
 
 ##### h5_matrix_utils.h
 
-~~~c
+{% highlight c linenos %}
 #ifndef MATRIXUTILITIES_H5_MATRIX_UTILS_H
 #define MATRIXUTILITIES_H5_MATRIX_UTILS_H
 
@@ -323,13 +323,13 @@ void h5_save_float_matrix(const char *filename, float *data, unsigned int rows, 
 void *h5_load_matrix(const char *filename, unsigned long long *rows, unsigned long long *cols);
 
 #endif //MATRIXUTILITIES_H5_MATRIX_UTILS_H
-~~~
+{% endhighlight %}
 h5_matrix_utils.h - zadatak
 {:.figure}
 
 ##### h5_matrix_utils.c
 
-~~~c
+{% highlight c linenos %}
 #include <time.h>
 #include "h5_matrix_utils.h"
 
@@ -431,7 +431,7 @@ void print_float_vector(float *vector, unsigned long long len) {
         printf("%f ", vector[i]);
     } printf("\n");
 }
-~~~
+{% endhighlight %}
 h5_matrix_utils.c - zadatak
 {:.figure}
 
@@ -441,7 +441,7 @@ h5_matrix_utils.c - zadatak
 - [m5x5.h5](../high-performance-computing/v5/input_data/m5x5.h5){:target="_blank"} <br>
 - [statistika.csv](../high-performance-computing/v5/statistika.csv){:target="_blank"}
 
-~~~c
+{% highlight c linenos %}
 // Hello World iz hibridnog OpenMPI + OpenMP programa.
 
 #include <stdio.h>
@@ -463,7 +463,7 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-~~~
+{% endhighlight %}
 hello_world.c
 {:.figure}
 
@@ -471,7 +471,7 @@ hello_world.c
 
 ### pi_openmp.c
 
-~~~c
+{% highlight c linenos %}
 /**
  * Program koji racuna vrednost integrala funkcije 4/(1+x^2). Numericki,
  * ova vrednost je jednaka broju pi.
@@ -510,13 +510,13 @@ int main() {
 
     return 0;
 }
-~~~
+{% endhighlight %}
 pi_openmp.c
 {:.figure}
 
 ### pi_sekvencijalni.c
 
-~~~c
+{% highlight c linenos %}
 /**
  * Program koji racuna vrednost integrala funkcije 4/(1+x^2). Numericki,
  * ova vrednost je jednaka broju pi.
@@ -553,7 +553,7 @@ int main() {
 
     return 0;
 }
-~~~
+{% endhighlight %}
 pi_sekvencijalni.c
 {:.figure}
 
@@ -561,7 +561,7 @@ pi_sekvencijalni.c
 
 ### nbody_basic.c
 
-~~~c
+{% highlight c linenos %}
 /* File:     nbody_basic.c
  * Purpose:  Implement a 2-dimensional n-body solver that uses the 
  *           straightforward n^2 algorithm.  This version directly
@@ -982,13 +982,13 @@ void Compute_energy(struct particle_s curr[], int n, double* kin_en_p,
    *pot_en_p = pe;
 }  /* Compute_energy */
 
-~~~
+{% endhighlight %}
 nbody_basic.c
 {:.figure}
 
 ### nbody_red.c
 
-~~~c
+{% highlight c linenos %}
 /* File:     nbody_red.c
  * Purpose:  Implement a 2-dimensional n-body solver that uses the 
  *           reduced algorithm.  So when the force on particle
@@ -1418,13 +1418,13 @@ void Compute_energy(struct particle_s curr[], int n, double* kin_en_p,
    *pot_en_p = pe;
 }  /* Compute_energy */
 
-~~~
+{% endhighlight %}
 nbody_red.c
 {:.figure}
 
 ### omp_nbody_basic.c
 
-~~~c
+{% highlight c linenos %}
 /* File:     omp_nbody_basic.c
  * Purpose:  Implement a 2-dimensional n-body solver that uses the 
  *           basic algorithm.  So this version directly computes 
@@ -1837,13 +1837,13 @@ void Compute_energy(struct particle_s curr[], int n, double* kin_en_p,
    *kin_en_p = ke;
    *pot_en_p = pe;
 }  /* Compute_energy */
-~~~
+{% endhighlight %}
 omp_nbody_basic.c
 {:.figure}
 
 ### omp_nbody_red.c
 
-~~~c
+{% highlight c linenos %}
 /* File:     omp_nbody_red.c
  *
  * Purpose:  Use OpenMP to parallelize a 2-dimensional n-body solver 
@@ -2248,13 +2248,13 @@ void Update_part(int part, vect_t forces[], struct particle_s curr[],
 // curr[part].s[X] += delta_t * curr[part].v[X];
 // curr[part].s[Y] += delta_t * curr[part].v[Y];
 }  /* Update_part */
-~~~
+{% endhighlight %}
 omp_nbody_red.c
 {:.figure}
 
 ### mpi_nbody_basic.c
 
-~~~c
+{% highlight c linenos %}
 /* File:     mpi_nbody_basic.c
  * Purpose:  Implement a 2-dimensional n-body solver that uses the 
  *           basic algorithm.  This version uses an in-place Allgather
@@ -2723,13 +2723,13 @@ void Update_part(int loc_part, double masses[], vect_t loc_forces[],
                loc_vel[loc_part][X], loc_vel[loc_part][Y]);
 #  endif
 }  /* Update_part */
-~~~
+{% endhighlight %}
 mpi_nbody_basic.c
 {:.figure}
 
 ### mpi_nbody_red.c
 
-~~~c
+{% highlight c linenos %}
 /* File:     mpi_nbody_red.c
  * Purpose:  Implement a 2-dimensional n-body solver that uses the 
  *           reduced algorithm.  In this version, we reduce storage 
@@ -3409,6 +3409,6 @@ void Update_part(int loc_part, double masses[], vect_t loc_forces[],
                loc_vel[loc_part][X], loc_vel[loc_part][Y]);
 #  endif
 }  /* Update_part */
-~~~
+{% endhighlight %}
 mpi_nbody_red.c
 {:.figure}

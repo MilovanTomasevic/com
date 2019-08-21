@@ -16,7 +16,7 @@ hide_description: true
 
 ## Zadatak 1
 
-```py
+{% highlight py linenos %}
 import math
 import random
 import time
@@ -90,13 +90,13 @@ if __name__ == "__main__":
             for m in [p, p//2, p//4]:
                 test(n, p, m)
 
-```
+{% endhighlight %}
 zadatak1.py
 {:.figure}
 
 ## Zadatak 2
 
-```py
+{% highlight py linenos %}
 import math
 import random
 import time
@@ -182,6 +182,6 @@ if __name__ == "__main__":
     for n in [10000, 50000, 100000]:
         for m in [n, n//2, n//4]:
             test(n, m)
-```
+{% endhighlight %}
 zadatak2.py
 {:.figure}

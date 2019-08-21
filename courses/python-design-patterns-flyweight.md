@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns flyweight
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -156,13 +156,13 @@ if __name__ == '__main__':
 # (31903856, 31903856)
 # True
 # False
-```
+{% endhighlight %}
 flyweight.py
 {:.figure}
 
 ## flyweight Test
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -199,6 +199,6 @@ class TestCard(unittest.TestCase):
         c2 = Card('9', 'h')
         self.assertEqual(hasattr(c2, expected_attribute_name), True)
         self.assertEqual(c2.attr, expected_attribute_value)
-```
+{% endhighlight %}
 test_flyweight.py
 {:.figure}

@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns chaining_method
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -54,7 +54,7 @@ if __name__ == '__main__':
 
 ### OUTPUT ###
 # Jack move 5m then stop
-```
+{% endhighlight %}
 chaining_method.py
 {:.figure}
 

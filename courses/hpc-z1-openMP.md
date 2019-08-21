@@ -187,7 +187,7 @@ mandelbrot.c - zadatak
 
 ### linkedlist.c
 
-```c
+{% highlight c linenos %}
 // Linked.c
 
 #include <stdlib.h>
@@ -288,7 +288,7 @@ int main(int argc, char *argv[]) {
     printf("Compute Time: %f seconds\n", end - start);
     return 0;
 }
-```
+{% endhighlight %}
 linkedlist.c - zadatak 
 {:.figure}
 
@@ -296,7 +296,7 @@ linkedlist.c - zadatak
 
 ### Pi.c
 
-```c 
+{% highlight c linenos %}
 /**
  * Program koji racuna vrednost integrala funkcije 4/(1+x^2). Numericki,
  * ova vrednost je jednaka broju pi.
@@ -557,13 +557,13 @@ void parallel_code_for_construct() {
     printf("Time elapsed: %lf\n", end - start);
 }
 
-```
+{% endhighlight %}
 Pi.c - rešenje
 {:.figure}
 
 ### mandelbrot.c
 
-```c
+{% highlight c linenos %}
 #include <stdio.h>
 #include <omp.h>
 
@@ -631,13 +631,13 @@ void testpoint(struct d_complex c){
         }
     }
 }
-```
+{% endhighlight %}
 mandelbrot.c - rešenje 
 {:.figure}
 
 ### linkedlist.c
 
-```c
+{% highlight c linenos %}
 #include <stdlib.h>
 #include <stdio.h>
 #include <omp.h>
@@ -743,6 +743,6 @@ int main(int argc, char *argv[]) {
     printf("Compute Time: %f seconds\n", end - start);
     return 0;
 }
-```
+{% endhighlight %}
 linkedlist.c - rešenje 
 {:.figure}

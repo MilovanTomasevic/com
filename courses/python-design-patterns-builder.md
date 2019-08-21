@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns builder
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/python
 # -*- coding : utf-8 -*-
 
@@ -124,13 +124,13 @@ if __name__ == "__main__":
 # Floor: One | Size: Big
 # Floor: More than One | Size: Small
 # Floor: One | Size: Big and fancy
-```
+{% endhighlight %}
 builder.py
 {:.figure}
 
 ## builder Test
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -152,6 +152,6 @@ class TestComplex(unittest.TestCase):
         house = construct_building(ComplexHouse)
         self.assertEqual(house.size, 'Big and fancy')
         self.assertEqual(house.floor, 'One')
-```
+{% endhighlight %}
 test_builder.py
 {:.figure}

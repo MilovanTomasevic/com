@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns abstract_factory
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -122,13 +122,13 @@ if __name__ == "__main__":
 # We have a lovely Cat
 # It says meow
 # ====================
-```
+{% endhighlight %}
 abstract_factory.py
 {:.figure}
 
 ## abstract_factory Test
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -145,6 +145,6 @@ class TestPetShop(unittest.TestCase):
         with patch.object(Dog, 'speak') as mock_Dog_speak:
             dog_pet_shop.show_pet()
             self.assertEqual(mock_Dog_speak.call_count, 1)
-```
+{% endhighlight %}
 test_abstract_factory.py
 {:.figure}

@@ -47,7 +47,7 @@ gcc -o izvrsna_dat izvorna_dat.c -fopenacc
 
 ### ptraliasing.c
 
-~~~c
+{% highlight c linenos %}
 void assign(int *a, int *b, int size) {
     #pragma acc kernels
     {
@@ -59,13 +59,13 @@ void assign(int *a, int *b, int size) {
 int main() {
     return 0;
 }
-~~~
+{% endhighlight %}
 ptraliasing.c
 {:.figure}
 
 ### parallel.c
 
-~~~c
+{% highlight c linenos %}
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -85,13 +85,13 @@ int main() {
 
 	return 0;
 }
-~~~
+{% endhighlight %}
 parallel.c
 {:.figure}
 
 ### parallelloop.c
 
-~~~c
+{% highlight c linenos %}
 #include <stdlib.h>
 #include <openacc.h>
 
@@ -112,13 +112,13 @@ int main() {
 
   return 0;
 }
-~~~
+{% endhighlight %}
 parallelloop.c
 {:.figure}
 
 ### data.c
 
-~~~c
+{% highlight c linenos %}
 #include <stdlib.h>
 
 #define N 1024
@@ -145,13 +145,13 @@ int main() {
 
   return 0;
 }
-~~~
+{% endhighlight %}
 data.c
 {:.figure}
 
 ### matrixop.c
 
-~~~c
+{% highlight c linenos %}
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -189,13 +189,13 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
-~~~
+{% endhighlight %}
 matrixop.c
 {:.figure}
 
 ### matrixop-coalesced.c
 
-~~~c
+{% highlight c linenos %}
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -231,13 +231,13 @@ int main(int argc, char *argv[]) {
 
   return 0;
 }
-~~~
+{% endhighlight %}
 matrixop-coalesced.c
 {:.figure}
 
 ### matrixinit.c
 
-~~~c
+{% highlight c linenos %}
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -273,13 +273,13 @@ int main(int argc, char *argv[]) {
   free(randomMatrix);
   printf("Elapsed Time: %f ms\n",((float)(t2 - t1) / 1000000.0F ) * 1000);
 }
-~~~
+{% endhighlight %}
 matrixinit.c
 {:.figure}
 
 ### matrixinitdiv.c
 
-~~~c
+{% highlight c linenos %}
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -321,6 +321,6 @@ int main(int argc, char *argv[]) {
 
   return 0;
 }
-~~~
+{% endhighlight %}
 matrixinitdiv.c
 {:.figure}

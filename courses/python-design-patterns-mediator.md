@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns mediator
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -160,7 +160,7 @@ if __name__ == '__main__':
 # Tearing down
 # Updating the test results in Database
 # Reporting the results of Test
-```
+{% endhighlight %}
 mediator.py
 {:.figure}
 

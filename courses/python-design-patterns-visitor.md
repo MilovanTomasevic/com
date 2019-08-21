@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns visitor
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -74,6 +74,6 @@ visitor.visit(c)
 # generic_visit A
 # visit_B B
 # visit_B C
-```
+{% endhighlight %}
 visitor.py
 {:.figure}

@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns graph_search
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -87,6 +87,6 @@ print(graph1.find_shortest_path('A', 'D'))
 # ['A', 'B', 'C', 'D']
 # [['A', 'B', 'C', 'D'], ['A', 'B', 'D'], ['A', 'C', 'D']]
 # ['A', 'B', 'D']
-```
+{% endhighlight %}
 graph_search.py
 {:.figure}

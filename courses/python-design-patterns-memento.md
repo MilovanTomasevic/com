@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns memento
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -158,7 +158,7 @@ if __name__ == '__main__':
 #     self.value += 1
 # TypeError: Can't convert 'int' object to str implicitly
 # <NumObj: 2>
-```
+{% endhighlight %}
 memento.py
 {:.figure}
 

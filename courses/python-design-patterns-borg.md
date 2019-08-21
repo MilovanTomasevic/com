@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns borg
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -110,13 +110,13 @@ if __name__ == '__main__':
 # rm1: Init
 # rm2: Init
 # rm3: Init
-```
+{% endhighlight %}
 borg.py
 {:.figure}
 
 ## borg Test
 
-```py
+{% highlight py linenos %}
 ##!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -140,6 +140,6 @@ class BorgTest(unittest.TestCase):
 
     def test_instances_shall_have_own_ids(self):
         self.assertNotEqual(id(self.b1), id(self.b2), id(self.ib1))
-```
+{% endhighlight %}
 test_borg.py
 {:.figure}

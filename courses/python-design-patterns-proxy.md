@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns proxy
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -76,13 +76,13 @@ if __name__ == '__main__':
 # This Sales Manager will not talk to you whether he/she is busy or not
 # Proxy checking for Sales Manager availability
 # This Sales Manager will not talk to you whether he/she is busy or not
-```
+{% endhighlight %}
 proxy.py
 {:.figure}
 
 ## proxy Test
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import sys
@@ -180,6 +180,6 @@ This Sales Manager will not talk to you whether he/she is busy or not\n'
         cls.assertEqual(print_output, expected_print_output)
         expected_execution_time = 1
         cls.assertEqual(int(execution_time * 10), expected_execution_time)
-```
+{% endhighlight %}
 test_proxy.py
 {:.figure}

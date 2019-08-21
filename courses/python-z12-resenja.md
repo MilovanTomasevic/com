@@ -16,7 +16,7 @@ hide_description: true
 
 ## Zadatak 1
 
-```py
+{% highlight py linenos %}
 import sys
 import random
 import time
@@ -113,6 +113,6 @@ if __name__ == "__main__":
 
     for i in [5, 10, 11, 12, 13, 14, 15]:
         test_iterative(i)
-```
+{% endhighlight %}
 zadatak1.py
 {:.figure}

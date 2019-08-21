@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns iterator
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -61,7 +61,7 @@ print()
 # one two
 # Counting to five...
 # one two three four five
-```
+{% endhighlight %}
 iterator.py
 {:.figure}
 

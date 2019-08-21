@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns registry
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -69,6 +69,6 @@ if __name__ == "__main__":
 # After subclassing:
 # BaseRegisteredClass
 # ClassRegistree
-```
+{% endhighlight %}
 registry.py
 {:.figure}

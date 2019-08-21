@@ -47,7 +47,7 @@ gcc -o izvrsna_dat izvorna_dat.c -fopenacc
 
 ### ptraliasing.c
 
-~~~c
+{% highlight c linenos %}
 void assign(int *a, int *b, int size) {
     #pragma acc kernels
     {
@@ -59,13 +59,13 @@ void assign(int *a, int *b, int size) {
 int main() {
     return 0;
 }
-~~~
+{% endhighlight %}
 ptraliasing.c
 {:.figure}
 
 ### parallel.c
 
-~~~c
+{% highlight c linenos %}
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -85,13 +85,13 @@ int main() {
 
 	return 0;
 }
-~~~
+{% endhighlight %}
 parallel.c
 {:.figure}
 
 ### parallelloop.c
 
-~~~c
+{% highlight c linenos %}
 #include <stdlib.h>
 #include <openacc.h>
 
@@ -112,13 +112,13 @@ int main() {
 
   return 0;
 }
-~~~
+{% endhighlight %}
 parallelloop.c
 {:.figure}
 
 ### data.c
 
-~~~c
+{% highlight c linenos %}
 #include <stdlib.h>
 
 #define N 1024
@@ -145,6 +145,6 @@ int main() {
 
   return 0;
 }
-~~~
+{% endhighlight %}
 data.c
 {:.figure}

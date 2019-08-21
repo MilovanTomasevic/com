@@ -16,7 +16,7 @@ hide_description: true
 
 ## Functions
 
-```py
+{% highlight py linenos %}
 import sys
 from math import inf
 from vertex import *
@@ -78,13 +78,13 @@ def topological_sort(G):
     dfs(G)
     L = sorted(G, key=lambda x: x.f, reverse=True)
     return L
-```
+{% endhighlight %}
 functions.py
 {:.figure}
 
 ## Vertex
 
-```py
+{% highlight py linenos %}
 import sys
 from queue import Queue as queue
 
@@ -105,13 +105,13 @@ class VertexColor:
     BLACK = 0
     GRAY = 127
     WHITE = 255
-```
+{% endhighlight %}
 vertex.py
 {:.figure}
 
 ## Zadatak 1
 
-```py
+{% highlight py linenos %}
 import sys
 from functions import *
 
@@ -181,6 +181,6 @@ if __name__ == "__main__":
     # Topological sort
     L = topological_sort(G2)
     print([(i.val, i.d, i.f) for i in reversed(L)])
-```
+{% endhighlight %}
 zadatak1.py
 {:.figure}

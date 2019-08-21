@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns parameter_injection
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/python
 # -*- coding : utf-8 -*-
 import datetime
@@ -72,13 +72,13 @@ class MidnightTimeProvider(object):
     def now(self):
         current_time_is_always_midnight = "24:01"
         return current_time_is_always_midnight
-```
+{% endhighlight %}
 parameter_injection.py
 {:.figure}
 
 ## parameter_injection Test
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -124,6 +124,6 @@ class ParameterInjectionTest(unittest.TestCase):
         self.assertEqual(
             class_under_test.get_current_time_as_html_fragment(production_code_time_provider), expected_time
         )
-```
+{% endhighlight %}
 test_parameter_injection.py
 {:.figure}

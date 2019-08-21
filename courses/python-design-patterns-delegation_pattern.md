@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns delegation_pattern
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -73,6 +73,6 @@ if __name__ == '__main__':
     import doctest
 
     doctest.testmod()
-```
+{% endhighlight %}
 delegation_pattern.py
 {:.figure}

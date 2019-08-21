@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns front_controller
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -91,6 +91,6 @@ if __name__ == '__main__':
 # Displaying tablet index page
 # cant dispatch the request
 # request must be a Request object
-```
+{% endhighlight %}
 front_controller.py
 {:.figure}

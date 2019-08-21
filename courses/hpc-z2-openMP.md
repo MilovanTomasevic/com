@@ -47,7 +47,7 @@ gcc -o izvrsna_dat izvorna_dat.c -fopenacc
 
 ### Pi.c
 
-```c 
+{% highlight c linenos %}
 #include <stdio.h>
 #include <omp.h>
 
@@ -81,13 +81,13 @@ void serial_code() {
     printf("Time elapsed: %lf\n", end - start);
 }
 
-```
+{% endhighlight %}
 Pi.c - zadatak
 {:.figure}
 
 ### mandelbrot.c
 
-```c
+{% highlight c linenos %}
 // mandelbrot.c
 
 /**
@@ -153,13 +153,13 @@ void testpoint(void){
         }
     }
 }
-```
+{% endhighlight %}
 mandelbrot.c - zadatak 
 {:.figure}
 
 ### linkedlist.c
 
-```c
+{% highlight c linenos %}
 // Linked.c
 
 #include <stdlib.h>
@@ -260,7 +260,7 @@ int main(int argc, char *argv[]) {
     printf("Compute Time: %f seconds\n", end - start);
     return 0;
 }
-```
+{% endhighlight %}
 linkedlist.c - zadatak 
 {:.figure}
 
@@ -318,7 +318,7 @@ je drugačije specificirano tokom kompajliranja.
 
 #### main.c
 
-```c
+{% highlight c linenos %}
 #include <omp.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -391,13 +391,13 @@ int main(int argc, char *argv[]) {
     
     return 0;
 }
-```
+{% endhighlight %}
 main.c - zadatak 
 {:.figure}
 
 #### CMakeLists.txt
 
-```sh
+{% highlight sh linenos %}
 cmake_minimum_required(VERSION 3.5)
 project(TransposeMatrix)
 
@@ -427,7 +427,7 @@ else()
     add_definitions(-DDISABLE_HDF5)
     message(STATUS "HDF5 support disabled.")
 endif()
-```
+{% endhighlight %}
 CMakeLists.txt - zadatak 
 {:.figure}
 
@@ -435,7 +435,7 @@ CMakeLists.txt - zadatak
 
 ##### h5defs.h
 
-```c
+{% highlight c linenos %}
 #ifndef MATRIXUTILITIES_H5DEFS_H
 #define MATRIXUTILITIES_H5DEFS_H
 
@@ -447,13 +447,13 @@ CMakeLists.txt - zadatak
     (if (e < 0) { printf("\nHDF5 error on line %d\n\n", __LINE__ ); exit 1; })
 
 #endif //MATRIXUTILITIES_H5DEFS_H
-```
+{% endhighlight %}
 h5defs.h - zadatak 
 {:.figure}
 
 ##### h5_matrix_utils.h
 
-```c
+{% highlight c linenos %}
 #ifndef MATRIXUTILITIES_H5_MATRIX_UTILS_H
 #define MATRIXUTILITIES_H5_MATRIX_UTILS_H
 
@@ -487,13 +487,13 @@ void *h5_load_matrix(const char *filename, unsigned long long *rows, unsigned lo
 
 #endif //MATRIXUTILITIES_H5_MATRIX_UTILS_H
 
-```
+{% endhighlight %}
 h5_matrix_utils.h - zadatak 
 {:.figure}
 
 ##### h5_matrix_utils.c
 
-```c
+{% highlight c linenos %}
 #include <time.h>
 #include "h5_matrix_utils.h"
 
@@ -586,8 +586,7 @@ void print_float_matrix(float *matrix, unsigned long long rows, unsigned long lo
         } printf("\n");
     }
 }
-
-```
+{% endhighlight %}
 h5_matrix_utils.h - zadatak 
 {:.figure}
 
@@ -635,7 +634,7 @@ je drugačije specificirano tokom kompajliranja.
 
 #### main.c
 
-```c
+{% highlight c linenos %}
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -922,13 +921,13 @@ void timer(void (*f)(void), double *time) {
     *time += (stop - start);
 }
 
-```
+{% endhighlight %}
 main.c - zadatak 
 {:.figure}
 
 #### CMakeLists.txt
 
-```sh
+{% highlight sh linenos %}
 cmake_minimum_required(VERSION 3.5)
 project(GeneticAlgorithm)
 
@@ -940,8 +939,7 @@ set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_EXE_LINKER_FLAGS}
 set(SOURCE_FILES main.c)
 
 add_executable(GeneticAlgorithm ${SOURCE_FILES})
-
-```
+{% endhighlight %}
 CMakeLists.txt - zadatak 
 {:.figure}
 
@@ -990,7 +988,7 @@ je drugačije specificirano tokom kompajliranja.
 
 #### main.c
 
-```c
+{% highlight c linenos %}
 #include <stdio.h>
 #include <math.h>
 #include <omp.h>
@@ -1124,13 +1122,13 @@ int main() {
     return 0;
 }
 
-```
+{% endhighlight %}
 main.c - zadatak
 {:.figure}
 
 #### CMakeLists.txt
 
-```sh
+{% highlight sh linenos %}
 cmake_minimum_required(VERSION 3.5)
 project(BisectionMethod)
 
@@ -1144,7 +1142,7 @@ set(SOURCE_FILES main.c)
 add_executable(BisectionMethod ${SOURCE_FILES})
 target_link_libraries(BisectionMethod -lm)
 
-```
+{% endhighlight %}
 CMakeLists.txt - zadatak
 {:.figure}
 
@@ -1152,7 +1150,7 @@ CMakeLists.txt - zadatak
 
 ### Pi.c
 
-```c 
+{% highlight c linenos %}
 /**
  * Program koji racuna vrednost integrala funkcije 4/(1+x^2). Numericki,
  * ova vrednost je jednaka broju pi.
@@ -1413,13 +1411,13 @@ void parallel_code_for_construct() {
     printf("Time elapsed: %lf\n", end - start);
 }
 
-```
+{% endhighlight %}
 Pi.c - rešenje
 {:.figure}
 
 ### mandelbrot.c
 
-```c
+{% highlight c linenos %}
 #include <stdio.h>
 #include <omp.h>
 
@@ -1487,13 +1485,13 @@ void testpoint(struct d_complex c){
         }
     }
 }
-```
+{% endhighlight %}
 mandelbrot.c - rešenje 
 {:.figure}
 
 ### linkedlist.c
 
-```c
+{% highlight c linenos %}
 #include <stdlib.h>
 #include <stdio.h>
 #include <omp.h>
@@ -1599,6 +1597,6 @@ int main(int argc, char *argv[]) {
     printf("Compute Time: %f seconds\n", end - start);
     return 0;
 }
-```
+{% endhighlight %}
 linkedlist.c - rešenje 
 {:.figure}

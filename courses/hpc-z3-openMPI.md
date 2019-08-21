@@ -48,7 +48,7 @@ gcc -o izvrsna_dat izvorna_dat.c -fopenacc
 
 ### hello_world.c
 
-~~~c
+{% highlight c linenos %}{
 #include <stdio.h>
 
 #include "mpi.h"
@@ -66,14 +66,13 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-
-~~~
+{% endhighlight %}
 hello_world.c - primer
 {:.figure}
 
 ### send_recv.c
 
-~~~c
+{% highlight c linenos %}
 /**
  * MPI C implementacija sinhrone komunikacije izmedju dva MPI procesa.
  * Proces 0 salje poruku tipa MPI_INT procesu 1. Duzina poruke je 1.
@@ -105,13 +104,13 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-~~~
+{% endhighlight %}
 send_recv.c - primer
 {:.figure}
 
 ### bcast.c
 
-~~~c
+{% highlight c linenos %}
 #include <stdio.h>
 #include <mpi.h>
 
@@ -135,14 +134,14 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-~~~
+{% endhighlight %}
 bcast.c - primer
 {:.figure}
 
 
 ### scatter.c
 
-~~~c
+{% highlight c linenos %}
 /**
  * OpenMPI program koji demonstrira rad MPI_Scatter funkcije.
  * 
@@ -205,14 +204,13 @@ int main(int argc, char *argv[]) {
     MPI_Finalize();
 
     return 0;
-}
-~~~
+{% endhighlight %}
 scatter.c - primer
 {:.figure}
 
 ### gather.c
 
-~~~c
+{% highlight c linenos %}
 /**
  * OpenMPI C program koji demonstrira rad MPI_Gather funkcije.
  * 
@@ -282,7 +280,7 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-~~~
+{% endhighlight %}
 gather.c - primer
 {:.figure}
 
@@ -290,7 +288,7 @@ gather.c - primer
 
 ### allgather.c
 
-~~~c
+{% highlight c linenos %}
 /**
  * OpenMPI C program koji demonstrira rad MPI_Allgather funkcije.
  * 
@@ -358,13 +356,13 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-~~~
+{% endhighlight %}
 gather.c - primer
 {:.figure}
 
 ###  reduce.c 
 
-~~~c
+{% highlight c linenos %}
 /**
  * OpenMPI C program koji demonstrira rad MPI_Reduce funkcije.
  * 
@@ -401,14 +399,14 @@ int main(int argc, char *argv[]) {
 }
 
 
-~~~
+{% endhighlight %}
 reduce.c - primer
 {:.figure}
 
 ### allreduce.c
 
 
-~~~c
+{% highlight c linenos %}
 /**
  * OpenMPI C program koji demonstrira rad MPI_Reduce funkcije.
  * 
@@ -443,7 +441,7 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-~~~
+{% endhighlight %}
 allreduce.c - primer
 {:.figure}
 
@@ -506,7 +504,7 @@ procesa koje hoćete da stvorite.
 
 #### main.c
 
-~~~c
+{% highlight c linenos %}
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -557,13 +555,13 @@ int main() {
     
     return 0;
 }
-~~~
+{% endhighlight %}
 main.c - zadatak
 {:.figure}
 
 #### CMakeLists.txt
 
-~~~sh
+{% highlight sh linenos %}
 cmake_minimum_required(VERSION 3.5)
 project(MatrixVectorMultiplication)
 
@@ -598,7 +596,7 @@ else()
     message(STATUS "HDF5 support disabled.")
 endif()
 
-~~~
+{% endhighlight %}
 CMakeLists.txt - zadatak
 {:.figure}
 
@@ -606,7 +604,7 @@ CMakeLists.txt - zadatak
 
 ##### h5defs.h
 
-~~~c
+{% highlight c linenos %}
 #ifndef MATRIXUTILITIES_H5DEFS_H
 #define MATRIXUTILITIES_H5DEFS_H
 
@@ -618,14 +616,14 @@ CMakeLists.txt - zadatak
     (if (e < 0) { printf("\nHDF5 error on line %d\n\n", __LINE__ ); exit 1; })
 
 #endif //MATRIXUTILITIES_H5DEFS_H
-~~~
+{% endhighlight %}
 h5defs.h - zadatak
 {:.figure}
 
 
 ##### h5_matrix_utils.h
 
-~~~c
+{% highlight c linenos %}
 #ifndef MATRIXUTILITIES_H5_MATRIX_UTILS_H
 #define MATRIXUTILITIES_H5_MATRIX_UTILS_H
 
@@ -659,13 +657,13 @@ void h5_save_matrix(const char *filename, unsigned int rows, unsigned int cols);
 void *h5_load_matrix(const char *filename, unsigned long long *rows, unsigned long long *cols);
 
 #endif //MATRIXUTILITIES_H5_MATRIX_UTILS_H
-~~~
+{% endhighlight %}
 h5_matrix_utils.h - zadatak
 {:.figure}
 
 ##### h5_matrix_utils.c
 
-~~~c
+{% highlight c linenos %}
 #include <time.h>
 #include "h5_matrix_utils.h"
 
@@ -765,7 +763,7 @@ void print_float_vector(float *vector, unsigned long long len) {
         printf("%f ", vector[i]);
     } printf("\n");
 }
-~~~
+{% endhighlight %}
 h5_matrix_utils.c - zadatak
 {:.figure}
 
@@ -787,7 +785,7 @@ h5_matrix_utils.c - zadatak
 
 ### communicators.c
 
-~~~c
+{% highlight c linenos %}
 #include <stdio.h>
 
 #include "mpi.h"
@@ -814,14 +812,14 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-~~~
+{% endhighlight %}
 communicators.c - rešenje
 {:.figure}
 
 
 ### ping_pong.c
 
-~~~c
+{% highlight c linenos %}
 // Author: Wes Kendall
 // Copyright 2011 www.mpitutorial.com
 // This code is provided freely with the tutorials on mpitutorial.com. Feel
@@ -870,13 +868,13 @@ int main(int argc, char** argv) {
   }
   MPI_Finalize();
 }
-~~~
+{% endhighlight %}
 ping_pong.c - rešenje
 {:.figure}
 
 ### ring.c
 
-~~~c
+{% highlight c linenos %}
 // Author: Wes Kendall
 // Copyright 2011 www.mpitutorial.com
 // This code is provided freely with the tutorials on mpitutorial.com. Feel
@@ -923,13 +921,13 @@ int main(int argc, char** argv) {
   }
   MPI_Finalize();
 }
-~~~
+{% endhighlight %}
 ring.c - rešenje
 {:.figure}
 
 ### bcast.c
 
-~~~c
+{% highlight c linenos %}
 // Author: Wes Kendall
 // Copyright 2011 www.mpitutorial.com
 // This code is provided freely with the tutorials on mpitutorial.com. Feel
@@ -982,13 +980,13 @@ int main(int argc, char** argv) {
 
   MPI_Finalize();
 }
-~~~
+{% endhighlight %}
 bcast.c - rešenje
 {:.figure}
 
 ### avg.c
 
-~~~c
+{% highlight c linenos %}
 // Author: Wes Kendall
 // Copyright 2012 www.mpitutorial.com
 // This code is provided freely with the tutorials on mpitutorial.com. Feel
@@ -1094,6 +1092,6 @@ int main(int argc, char** argv) {
   MPI_Barrier(MPI_COMM_WORLD);
   MPI_Finalize();
 }
-~~~
+{% endhighlight %}
 avg.c - rešenje
 {:.figure}

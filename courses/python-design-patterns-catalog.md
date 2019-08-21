@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns catalog
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -189,7 +189,7 @@ if __name__ == "__main__":
 # Value x1
 # Value x2
 # executed method 1!
-```
+{% endhighlight %}
 catalog.py
 {:.figure}
 

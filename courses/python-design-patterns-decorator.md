@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns decorator
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -88,13 +88,13 @@ if __name__ == '__main__':
 ### OUTPUT ###
 # before: hello, world!
 # after: <i><b>hello, world!</b></i>
-```
+{% endhighlight %}
 decorator.py
 {:.figure}
 
 ## decorator Test
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -112,6 +112,6 @@ class TestTextWrapping(unittest.TestCase):
 
     def test_mixed_bold_and_italic(self):
         self.assertEqual(BoldWrapper(ItalicWrapper(self.raw_string)).render(), '<b><i>raw but not cruel</i></b>')
-```
+{% endhighlight %}
 test_decorator.py
 {:.figure}

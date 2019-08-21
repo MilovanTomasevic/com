@@ -16,7 +16,7 @@ hide_description: true
 
 ## Zadatak 1
 
-```py
+{% highlight py linenos %}
 class Node:
     def __init__(self, val):
         self.val = val
@@ -98,6 +98,6 @@ if __name__ == "__main__":
         print("EVAL_TREE RETURNS:", eval_three(T, d))
         print("MAKE_INFIX RETURNS:", make_infix(T))
         print()
-```
+{% endhighlight %}
 zadatak1.py
 {:.figure}

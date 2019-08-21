@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns facade
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -139,13 +139,13 @@ if __name__ == '__main__':
 # Tearing down
 # Test Finished
 #
-```
+{% endhighlight %}
 facade.py
 {:.figure}
 
 ## facade Test
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -201,6 +201,6 @@ class TestRunnerFacilities(unittest.TestCase):
         self.assertEqual(
             output, str(self.average_result_tc1 + '\n\n' + self.average_result_tc2 + '\n\n' + self.average_result_tc3)
         )
-```
+{% endhighlight %}
 test_facade.py
 {:.figure}

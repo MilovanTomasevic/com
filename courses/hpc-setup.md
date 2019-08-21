@@ -233,7 +233,7 @@ log  test.log
 
 ```
 
-```c
+{% highlight c linenos %}
 
 // prime-number.c
 
@@ -267,7 +267,7 @@ int main()
    return 0;
 }
 
-```
+{% endhighlight %}
 
 ```sh
 
@@ -346,7 +346,7 @@ python vsota.py
 
 ```
 
-```c
+{% highlight c linenos %}
 
 /* C Example */
 #include <stdio.h>
@@ -366,7 +366,7 @@ int main (argc, argv)
   return 0;
 }
 
-```
+{% endhighlight %}
 
 ```sh
 

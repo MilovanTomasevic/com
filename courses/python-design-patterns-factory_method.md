@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns factory_method
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -90,13 +90,13 @@ if __name__ == '__main__':
 # parrot parrot
 # cat γάτα
 # bear bear
-```
+{% endhighlight %}
 factory_method.py
 {:.figure}
 
 ## factory_method Test
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -129,6 +129,6 @@ class TestLocalizer(unittest.TestCase):
 
     def test_bear_greek_localization(self):
         self.assertEqual(self.g.get('bear'), 'bear')
-```
+{% endhighlight %}
 test_factory_method.py
 {:.figure}

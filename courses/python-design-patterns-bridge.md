@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns bridge
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -122,6 +122,6 @@ class BridgeTest(unittest.TestCase):
             sh2.scale(2)
             cls.assertEqual(mock_sh1_scale_circle.call_count, 1)
             cls.assertEqual(mock_sh2_scale_circle.call_count, 1)
-```
+{% endhighlight %}
 test_bridge.py
 {:.figure}

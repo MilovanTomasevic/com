@@ -16,7 +16,7 @@ hide_description: true
 
 ## Zadatak 1
 
-```py
+{% highlight py linenos %}
 import sys
 import random
 import time
@@ -67,13 +67,13 @@ def test(elements):
 if __name__ == "__main__":
     for i in range(500, 10000, 500):
         test(i)
-```
+{% endhighlight %}
 zadatak1.py
 {:.figure}
 
 ## Zadatak 2
 
-```py
+{% highlight py linenos %}
 import sys
 import random
 import time
@@ -115,6 +115,6 @@ def test(elements):
 if __name__ == "__main__":
     for i in range(500, 10000, 500):
         test(i)
-```
+{% endhighlight %}
 zadatak2.py
 {:.figure}

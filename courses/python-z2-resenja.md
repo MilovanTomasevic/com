@@ -15,7 +15,7 @@ hide_description: true
 ---
 ## Zadatak 1
 
-```py
+{% highlight py linenos %}
 import random
 import time
 
@@ -44,13 +44,13 @@ def test(elements):
 if __name__ == "__main__":
     for i in range(500, 5000, 500):
         test(i)
-```
+{% endhighlight %}
 zadatak1.py
 {:.figure}
 
 ## Zadatak 2
 
-```py
+{% highlight py linenos %}
 import random
 import time
 
@@ -78,13 +78,13 @@ def test(elements):
 if __name__ == "__main__":
     for i in range(500, 5000, 500):
         test(i)
-```
+{% endhighlight %}
 zadatak2.py
 {:.figure}
 
 ## Zadatak 3
 
-```py
+{% highlight py linenos %}
 import random
 import time
 
@@ -110,13 +110,13 @@ def test(elements):
 if __name__ == "__main__":
     for i in range(5000, 50000, 5000):
         test(i)
-```
+{% endhighlight %}
 zadatak3.py
 {:.figure}
 
 ## Zadatak 4
 
-```py
+{% highlight py linenos %}
 import random
 import time
 
@@ -147,6 +147,6 @@ def test(elements):
 if __name__ == "__main__":
     for i in range(10000, 500000, 10000):
         test(i)
-```
+{% endhighlight %}
 zadatak4.py
 {:.figure}

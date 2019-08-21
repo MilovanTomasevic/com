@@ -16,7 +16,7 @@ hide_description: true
 
 ## Functions
 
-```py
+{% highlight py linenos %}
 import sys
 from graph import *
 from math import inf
@@ -101,13 +101,13 @@ def generate_graph(n, m, edge):
                 r = randint(0, N - 1)
             G.add_edge(Edge(G.V[i], G.V[r], randint(0, edge)))
     return G
-```
+{% endhighlight %}
 functions.py
 {:.figure}
 
 ## Graph
 
-```py
+{% highlight py linenos %}
 import sys
 
 class Vertex:
@@ -146,13 +146,13 @@ class Graph:
 
     def __str__(self):
         return "Nodes: " + str([f"{i.val}" for i in self.V]) + "\nConnections: " + str([f"({i.first.val}, {i.second.val}, {i.val})" for i in self.E])
-```
+{% endhighlight %}
 graph.py
 {:.figure}
 
 ## Zadatak 1
 
-```py
+{% highlight py linenos %}
 import sys
 from functions import *
 
@@ -183,6 +183,6 @@ if __name__ == "__main__":
         print()
         print("Total distance: ", v.d)
     print()
-```
+{% endhighlight %}
 zadatak1.py
 {:.figure}

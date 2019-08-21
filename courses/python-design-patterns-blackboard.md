@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns blackboard
 
-```py
+{% highlight py linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -137,6 +137,6 @@ if __name__ == '__main__':
 #  'Student',
 #  'Scientist',
 #  'Professor']
-```
+{% endhighlight %}
 blackboard.py
 {:.figure}
