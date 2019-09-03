@@ -1,0 +1,8 @@
+template = "template.html"
+
+author = " kandidat: [Milovan Tomašević](https://www.milovantomasevic.com/) </br> mentor: [Prof. Dr. Ivan Luković](http://www.ftn.uns.ac.rs/n1319397715/ivan-lukovic)"
+affiliation = "</br>[🌐➙ milovantomasevic.com](https://milovantomasevic.com)</br> [✎➙ mt@milovantomasevic.com](mailto:mt@milovantomasevic.com)"
+
+"PhDDispozicija/PhDdispozicija.md"
+	title = "[Fazi adaptivni model za procenu izvodljivosti HPC arhitektura](/courses/#table-of-contents)"
+    subtitle = "Prezentacija dispozicije - FIŠ, Novo mesto, Slovenija"

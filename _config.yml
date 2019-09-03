@@ -275,6 +275,7 @@ exclude:
   - courses/python/*.md
   - courses/docker/*.md
   - courses/newfis/*.md
+  - courses/PhDDispozicija/*.md
 include:
   - LICENSE.md
 
