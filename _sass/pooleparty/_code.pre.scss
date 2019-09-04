@@ -13,18 +13,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-// <<<<< LINK
-code, pre {
-  font-family: Consolas, Courier, "Courier New", 'STKaiti', 'KaiTi', 'SimKai', monospace;
-}
-
-code {
-  @extend .color-transition;
-  padding: .25em .5em;
-  background-color: var(--gray-bg);
-  font-size: .85em;
-}
-
 .pre-base {
   margin-left: -1rem;
   margin-right: -1rem;
