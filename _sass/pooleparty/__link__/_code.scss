@@ -24,9 +24,8 @@
 
 
 code, pre {
-  font-family: var(--code-font-family);
+  font-family: Consolas, Courier, "Courier New", 'STKaiti', 'KaiTi', 'SimKai', monospace;
 }
-
 code {
   @extend .color-transition;
   padding: .25em .5em;
