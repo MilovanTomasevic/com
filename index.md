@@ -1,6 +1,6 @@
 ---
 layout: welcome
-cover: true
+cover: false
 title: Impossible is nothing but a word!
 image: /assets/img/MilovanTomasevic-8.jpeg
 description: >
