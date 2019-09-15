@@ -1,1 +1,85 @@
 // This is deprecated. Modify CSS Custom Properties instead.
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$base-font-family: 'IBM Plex Sans', Helvetica, sans-serif !default;
+$code-font-family: 'Hack', monospace !default;
+$base-font-size:   16px !default;
+$code-font-size:   12px !default;
+$small-font-size:  $base-font-size * 0.925 !default;
+$smaller-font-size: $base-font-size * 0.85 !default;
+$large-font-size:  $base-font-size * 1.0625 !default;
+$base-font-weight: 300 !default;
+$bold-font-weight: 500 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       #111 !default;
+$background-color: #fdfdfd !default;
+
+$gray:             #828282 !default;
+$mild-gray:        lighten($gray, 25%) !default;
+$light-gray:       lighten($gray, 40%) !default;
+$lightest-gray:    #f9f9f9 !default;
+$dark-gray:        darken($gray, 15%) !default;
+
+$blue:             #2a7ae2 !default;
+$light-blue:       lighten($blue, 17%) !default;
+$dark-blue:        darken($blue, 20%) !default;
+$red:              #d65946 !default;
+$lightest-red:     #fffafa !default;
+$green:            #6aaf50 !default;
+$light-purple:     #eef !default;
+$lightest-purple:  #f1f1ff !default;
+
+// Width of the content area
+$content-width:    880px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        880px !default;
+
+
+$nimbus-lightest-green: #8fbc8f;
+$nimbus-light-green:    #9ccc65;
+$nimbus-green:          #6aaf50;
+$nimbus-dark-green:     #058945;
+$nimbus-green-bg:       #042b11;
+$nimbus-light-blue:     #68a5e9;
+$nimbus-blue:           #5180b3;
+$nimbus-blue-bg:        #112b47;
+$nimbus-orange:         #df9522;
+$nimbus-tan:            #bdbc61;
+$nimbus-dark-tan:       #7d7c61;
+$nimbus-bright-yellow:  #fffe0a;
+$nimbus-yellow:         #baba36;
+$nimbus-purple:         #ab75c3;
+$nimbus-light-gray:     #858585;
+$nimbus-gray:           #757575;
+$nimbus-dark-gray:      #656565;
+$nimbus-darker-gray:    #454545;
+$nimbus-darkest-gray:   #252525;
+$nimbus-blue-gray:      #608079;
+$nimbus-brown:          #987654;
+$nimbus-red:            #d65946;
+$nimbus-dark-red:       #9d2512;
+
+$nimbus-bg:             #1a1a1a;
+$nimbus-fg:             #bdbdb3;
+$nimbus-fringe:         #262626;
+
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@mixin relative-font-size($ratio) {
+    font-size: $base-font-size * $ratio;
+
+    code {
+        font-size: $code-font-size * $ratio;
+    }
+}
