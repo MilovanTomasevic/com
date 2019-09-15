@@ -99,13 +99,12 @@ if (navigator && navigator.clipboard) {
   document.body.appendChild(script)
 }
 
-
-
+{% comment %}
 function copyCode() {
   var lines = document.querySelectorAll("pre.prettyprint li");
   var txt = "";
   for (var i = 0; i < lines.length; i++) {
     txt = txt + lines[i].textContent + "\n";
   }
-
+{% endcomment %}
 </script>
