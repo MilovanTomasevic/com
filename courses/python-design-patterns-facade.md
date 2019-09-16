@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns facade
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -145,7 +145,7 @@ facade.py
 
 ## facade Test
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest

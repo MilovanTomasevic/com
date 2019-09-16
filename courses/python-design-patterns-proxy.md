@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns proxy
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -82,7 +82,7 @@ proxy.py
 
 ## proxy Test
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import sys

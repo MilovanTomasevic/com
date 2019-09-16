@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns constructor_injection
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/python
 # -*- coding : utf-8 -*-
 import datetime

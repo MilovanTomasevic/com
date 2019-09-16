@@ -16,7 +16,7 @@ hide_description: true
 
 ## Functions 
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 def inorder_tree_walk(x):
     if x != None:
         inorder_tree_walk(x.left)
@@ -104,7 +104,7 @@ functions.py
 
 ## Node
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 class Node:
     """
     Tree node: left child, right child and data
@@ -135,7 +135,7 @@ node.py
 
 ## Tree
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 from functions import *
 
 class Tree(object):
@@ -175,7 +175,7 @@ tree.py
 
 ## Zadatak 1
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 import sys
 from node import Data, Node
 from tree import Tree

@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns prototype
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -97,7 +97,7 @@ prototype.py
 
 ## prototype Test
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest

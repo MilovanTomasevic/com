@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns flyweight
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -162,7 +162,7 @@ flyweight.py
 
 ## flyweight Test
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest

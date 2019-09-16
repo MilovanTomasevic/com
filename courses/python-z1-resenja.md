@@ -16,7 +16,7 @@ hide_description: true
 
 ## Primer 1
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 import sys
 
 if __name__ == "__main__":
@@ -34,7 +34,7 @@ primer1.py
 
 ## Zadatak 1
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 def zbir(n):
     if n <= 0:
         return 0
@@ -49,7 +49,7 @@ zadatak1.py
 
 ## Zadatak 2
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 import sys
 
 def kv_zbir(n):
@@ -70,7 +70,7 @@ zadatak2.py
 
 ## Zadatak 3
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 if __name__ == "__main__":
     str1 = input()
     str2 = input()
@@ -82,7 +82,7 @@ zadatak3.py
 
 ## Zadatak 4
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 if __name__ == "__main__":
     l = [i + 1 for i in range(100)]
     print (l[::-1])
@@ -92,7 +92,7 @@ zadatak4.py
 
 ## Zadatak 5
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 if __name__ == "__main__":
     f = open("dict_test.txt", "r")
     d = dict()
@@ -112,7 +112,7 @@ zadatak5.py
 
 ## Zadatak 6
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 if __name__ == "__main__":
     l = []
     l.append((1, 2.3, "a"))
@@ -128,7 +128,7 @@ zadatak6.py
 
 ## Zadatak 7
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 if __name__ == "__main__":
     s = set()
     el0 = 1, 2.3, "a"

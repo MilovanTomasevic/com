@@ -26,7 +26,7 @@ Test
 
 ## Python-Design-Patterns hsm
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 """
 Implementation of the HSM (hierarchical state machine) or
 NFSM (nested finite state machine) C++ example from
@@ -199,7 +199,7 @@ hsm.py
 
 ## hsm Test
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest

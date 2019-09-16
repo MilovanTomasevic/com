@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns specification
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 

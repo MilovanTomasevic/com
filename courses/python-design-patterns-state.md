@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns state
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -111,7 +111,7 @@ state.py
 
 ## Test state
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest

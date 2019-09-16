@@ -16,7 +16,7 @@ hide_description: true
 
 ## Functions
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 import sys
 from graph import *
 from math import inf
@@ -107,7 +107,7 @@ functions.py
 
 ## Graph
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 import sys
 
 class Vertex:
@@ -152,7 +152,7 @@ graph.py
 
 ## Zadatak 1
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 import sys
 from functions import *
 

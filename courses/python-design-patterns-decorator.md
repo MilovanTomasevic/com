@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns decorator
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -94,7 +94,7 @@ decorator.py
 
 ## decorator Test
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest

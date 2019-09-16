@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns adapter
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -160,7 +160,7 @@ adapter.py
 
 ## adapter Test
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest

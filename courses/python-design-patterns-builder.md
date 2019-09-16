@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns builder
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/python
 # -*- coding : utf-8 -*-
 
@@ -130,7 +130,7 @@ builder.py
 
 ## builder Test
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest

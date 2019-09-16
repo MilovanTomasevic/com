@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns parameter_injection
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/python
 # -*- coding : utf-8 -*-
 import datetime
@@ -78,7 +78,7 @@ parameter_injection.py
 
 ## parameter_injection Test
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest

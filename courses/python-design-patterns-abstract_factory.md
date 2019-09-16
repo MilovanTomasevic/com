@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns abstract_factory
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -128,7 +128,7 @@ abstract_factory.py
 
 ## abstract_factory Test
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest

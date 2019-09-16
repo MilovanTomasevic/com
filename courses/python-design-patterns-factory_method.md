@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns factory_method
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -96,7 +96,7 @@ factory_method.py
 
 ## factory_method Test
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest

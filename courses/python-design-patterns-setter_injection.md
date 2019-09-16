@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns setter_injection
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/python
 # -*- coding : utf-8 -*-
 import datetime
@@ -81,7 +81,7 @@ setter_injection.py
 
 ## setter_injection Test
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest

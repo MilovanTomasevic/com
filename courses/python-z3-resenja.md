@@ -16,7 +16,7 @@ hide_description: true
 
 ## Zadatak 1
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 import sys
 import random
 import time
@@ -73,7 +73,7 @@ zadatak1.py
 
 ## Zadatak 2
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 import sys
 import random
 import time

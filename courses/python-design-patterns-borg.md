@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns borg
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -116,7 +116,7 @@ borg.py
 
 ## borg Test
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 ##!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest

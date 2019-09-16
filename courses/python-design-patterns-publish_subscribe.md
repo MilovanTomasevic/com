@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns publish_subscribe
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
@@ -112,7 +112,7 @@ publish_subscribe.py
 
 ## publish_subscribe Test
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest

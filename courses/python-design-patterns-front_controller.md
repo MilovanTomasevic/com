@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns front_controller
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 

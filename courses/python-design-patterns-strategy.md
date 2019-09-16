@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns strategy
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -96,7 +96,7 @@ strategy.py
 
 ## strategy Test
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import os

@@ -16,7 +16,7 @@ hide_description: true
 
 ## Functions
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 import sys
 from math import inf
 from vertex import *
@@ -84,7 +84,7 @@ functions.py
 
 ## Vertex
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 import sys
 from queue import Queue as queue
 
@@ -111,7 +111,7 @@ vertex.py
 
 ## Zadatak 1
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 import sys
 from functions import *
 

@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns lazy_evaluation
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -121,7 +121,7 @@ lazy_evaluation.py
 
 ## lazy_evaluation Test
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from __future__ import print_function

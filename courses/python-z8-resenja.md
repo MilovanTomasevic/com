@@ -16,7 +16,7 @@ hide_description: true
 
 ## Zadatak 1
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 class Node:
     def __init__(self, val):
         self.val = val

@@ -20,7 +20,7 @@ hide_description: true
 
 ## Python-Design-Patterns command
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -87,7 +87,7 @@ command.py
 
 ## command Test
 
-{% highlight py linenos %}
+{% highlight python linenos %}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import os
