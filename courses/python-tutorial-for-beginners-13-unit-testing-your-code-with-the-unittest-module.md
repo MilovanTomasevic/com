@@ -42,16 +42,7 @@ def divide(x, y):
 calc.py
 {:.figure}
 
-
 ##  Run Code 2 in Python
-
-{% highlight python linenos %}
-
-{% endhighlight %}
-start.py
-{:.figure}
-
-##  Run Code 3 in Python
 
 {% highlight python linenos %}
 import unittest
@@ -98,7 +89,7 @@ if __name__ == '__main__':
 start.py
 {:.figure}
 
-##  Run Code 4 in Python
+##  Run Code 3 in Python
 
 {% highlight python linenos %}
 
@@ -137,7 +128,7 @@ employee.py
 {:.figure}
 
 
-##  Run Code 5 in Python
+##  Run Code 4 in Python
 
 {% highlight python linenos %}
 import unittest
@@ -189,7 +180,7 @@ if __name__ == '__main__':
 test_employee.py
 {:.figure}
 
-##  Run Code 6 in Python
+##  Run Code 5 in Python
 
 {% highlight python linenos %}
 ###### With Prints ######
@@ -245,7 +236,7 @@ if __name__ == '__main__':
 test_employee.py
 {:.figure}
 
-##  Run Code 7 in Python
+##  Run Code 6 in Python
 
 {% highlight python linenos %}
 import unittest
