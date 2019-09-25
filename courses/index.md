@@ -76,12 +76,12 @@ In this context are the programming languages as well as methodologies. In addit
 
 ##### Python OOP Tutorial
 
-1. [Classes and Instances](python-oop-tutorial-1-day){:target="_blank"}
-1. [Class Variables](python-oop-tutorial-1-day){:target="_blank"}
-1. [classmethods and staticmethods](python-oop-tutorial-1-day){:target="_blank"}
-1. [Inheritance - Creating Subclasses](python-oop-tutorial-1-day){:target="_blank"}
-1. [Special (Magic-Dunder) Methods](python-oop-tutorial-1-day){:target="_blank"}
-1. [Property Decorators - Getters, Setters, and Deleters](python-oop-tutorial-1-day){:target="_blank"}
+1. [Classes and Instances](python-oop-tutorial-1-classes-and-instances){:target="_blank"}
+1. [Class Variables](python-oop-tutorial-2-class-variables){:target="_blank"}
+1. [classmethods and staticmethods](python-oop-tutorial-3-classmethods-and-staticmethods){:target="_blank"}
+1. [Inheritance - Creating Subclasses](python-oop-tutorial-4-inheritance-creating-subclasses){:target="_blank"}
+1. [Special (Magic-Dunder) Methods](python-oop-tutorial-5-special-magic-dunder-methods){:target="_blank"}
+1. [Property Decorators - Getters, Setters, and Deleters](python-oop-tutorial-6-property-decorators-getters-setters-and-deleters){:target="_blank"}
 
 
 ##### Python-Design-Patterns (source: [GIT](https://github.com/rajan2275/Python-Design-Patterns){:target="_blank"})
