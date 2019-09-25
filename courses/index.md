@@ -31,9 +31,32 @@ In this context are the programming languages as well as methodologies. In addit
 
 ### Pyhton
 
+#### Learn Python
+
   - [Pyhton](/tech/Python.html){:target="_blank"}{:.heading.flip-title} --- Basic level.
   - [PyhtonPro](/tech/python_napredni.html){:target="_blank"}{:.heading.flip-title} --- Advanced level.
+  - [Python Django](/tech/Python.html){:target="_blank"}{:.heading.flip-title} --- Basic level.
 {:.related-posts.faded}
+
+#### Python Exercises, Practice, Solution
+
+##### Python Tutorial for Beginners
+
+1. [Strings - Working with Textual Data](python-tutorial-for-beginners-1-strings-working-with-textual-data){:target="_blank"}
+1. [Integers and Floats - Working with Numeric Data](python-tutorial-for-beginners-2-integers-and-floats-working-with-numeric-data){:target="_blank"}
+1. [Lists, Tuples, and Sets](python-tutorial-for-beginners-3-lists-tuples-and-sets){:target="_blank"}
+1. [Dictionaries - Working with Key-Value Pairs](python-tutorial-for-beginners-4-dictionaries-working-with-key-value-pairs){:target="_blank"}
+1. [Conditionals and Booleans - If, Else, and Elif Statements](python-tutorial-for-beginners-5-conditionals-and-booleans-if-else-and-elif-statements){:target="_blank"}
+1. [Loops and Iterations - For-While Loops](python-tutorial-for-beginners-6-loops-and-iterations-for-while-loops){:target="_blank"}
+1. [Functions](python-tutorial-for-beginners-7-functions){:target="_blank"}
+1. [Import Modules and Exploring The Standard Library](python-tutorial-for-beginners-8-import-modules-and-exploring-the-standard-library){:target="_blank"}
+1. [File Objects - Reading and Writing to Files](python-tutorial-for-beginners-9-file-objects-reading-and-writing-to-files){:target="_blank"}
+1. [CSV Module - How to Read, Parse, and Write CSV Files](python-tutorial-for-beginners-10-csv-module-how-to-read-parse-and-write-csv-files){:target="_blank"}
+1. [Real World Example - Parsing Names From a CSV to an HTML List](python-tutorial-for-beginners-11-real-world-example-parsing-names-from-a-csv-to-an-html-list){:target="_blank"}
+1. [Using Try/Except Blocks for Error Handling](python-tutorial-for-beginners-12-using-try-except-blocks-for-error-handling){:target="_blank"}
+1. [Unit Testing Your Code with the unittest Module](python-tutorial-for-beginners-13-unit-testing-your-code-with-the-unittest-module){:target="_blank"}
+
+##### Exercises with Solutions
 
 |                        **Zadaci**                          |                      **Rešenja**                        |
 |:----------------------------------------------------------:|:-------------------------------------------------------:|
@@ -50,7 +73,18 @@ In this context are the programming languages as well as methodologies. In addit
 |  [ Z11-Zadaci ](python/z11-zadaci.html){:target="_blank"}  |  [ Z11-Rešenja ](python-z11-resenja){:target="_blank"}  |
 |  [ Z12-Zadaci ](python/z12-zadaci.html){:target="_blank"}  |  [ Z12-Rešenja ](python-z12-resenja){:target="_blank"}  |
 
-#### Python-Design-Patterns (source: [GIT](https://github.com/rajan2275/Python-Design-Patterns){:target="_blank"})
+
+##### Python OOP Tutorial
+
+1. [Classes and Instances](python-oop-tutorial-1-day){:target="_blank"}
+1. [Class Variables](python-oop-tutorial-1-day){:target="_blank"}
+1. [classmethods and staticmethods](python-oop-tutorial-1-day){:target="_blank"}
+1. [Inheritance - Creating Subclasses](python-oop-tutorial-1-day){:target="_blank"}
+1. [Special (Magic-Dunder) Methods](python-oop-tutorial-1-day){:target="_blank"}
+1. [Property Decorators - Getters, Setters, and Deleters](python-oop-tutorial-1-day){:target="_blank"}
+
+
+##### Python-Design-Patterns (source: [GIT](https://github.com/rajan2275/Python-Design-Patterns){:target="_blank"})
 
 | __Creational Patterns__ | [abstract_factory](python-design-patterns-abstract_factory){:target="_blank"} | [borg](python-design-patterns-borg){:target="_blank"} | [builder](python-design-patterns-builder){:target="_blank"}| [factory_method](python-design-patterns-factory_method){:target="_blank"} | [lazy_evaluation](python-design-patterns-lazy_evaluation){:target="_blank"} | [pool](python-design-patterns-pool){:target="_blank"} |[prototype](python-design-patterns-prototype){:target="_blank"} |
 |-----------------|--------------|--------------|-----------------|--------------|--------------|--------------|
