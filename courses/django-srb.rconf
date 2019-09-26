@@ -1,0 +1,8 @@
+template = "template.html"
+
+author = "[Milovan Tomašević, Ph.D.](https://www.milovantomasevic.com/)"
+affiliation = "</br>[🌐➙ milovantomasevic.com](https://milovantomasevic.com)</br> [✎➙ mt@milovantomasevic.com](mailto:mt@milovantomasevic.com)"
+
+"django/django-srb.md"
+ title = "[Django](/courses/#table-of-contents)"
+ subtitle = "bazirano na Django tutorijalu i verziji 1.8.6"

@@ -278,6 +278,7 @@ exclude:
   - courses/docker/*.md
   - courses/newfis/*.md
   - courses/PhDDispozicija/*.md
+  - courses/django/*.md
 include:
   - LICENSE.md
 

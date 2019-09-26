@@ -35,7 +35,7 @@ In this context are the programming languages as well as methodologies. In addit
 
   - [Pyhton](/tech/Python.html){:target="_blank"}{:.heading.flip-title} --- Basic level.
   - [PyhtonPro](/tech/python_napredni.html){:target="_blank"}{:.heading.flip-title} --- Advanced level.
-  - [Python Django](/tech/Python.html){:target="_blank"}{:.heading.flip-title} --- Basic level.
+  - [Python Django](django/django-srb.html){:target="_blank"}{:.heading.flip-title} --- Basic level.
 {:.related-posts.faded}
 
 #### Python Exercises, Practice, Solution
