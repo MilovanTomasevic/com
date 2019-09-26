@@ -84,6 +84,19 @@ In this context are the programming languages as well as methodologies. In addit
 1. [Property Decorators - Getters, Setters, and Deleters](python-oop-tutorial-6-property-decorators-getters-setters-and-deleters){:target="_blank"}
 
 
+##### Python Matplotlib 
+
+1. [Introduction](python-matplotlib-1-introduction){:target="_blank"}
+1. [Bar Charts](python-matplotlib-2-bar-charts){:target="_blank"}
+1. [Pie Charts](python-matplotlib-3-pie-charts){:target="_blank"}
+1. [Stack Plots](python-matplotlib-4-stack-plots){:target="_blank"}
+1. [Fill Betweens](python-matplotlib-5-fill-betweens){:target="_blank"}
+1. [Histograms](python-matplotlib-6-histograms){:target="_blank"}
+1. [Scatter Plots](python-matplotlib-7-scatter-plots){:target="_blank"}
+1. [Time Series](python-matplotlib-8-time-series){:target="_blank"}
+1. [Live Data](python-matplotlib-9-live-data){:target="_blank"}
+1. [Subplots](python-matplotlib-10-subplots){:target="_blank"}
+
 ##### Python-Design-Patterns (source: [GIT](https://github.com/rajan2275/Python-Design-Patterns){:target="_blank"})
 
 | __Creational Patterns__ | [abstract_factory](python-design-patterns-abstract_factory){:target="_blank"} | [borg](python-design-patterns-borg){:target="_blank"} | [builder](python-design-patterns-builder){:target="_blank"}| [factory_method](python-design-patterns-factory_method){:target="_blank"} | [lazy_evaluation](python-design-patterns-lazy_evaluation){:target="_blank"} | [pool](python-design-patterns-pool){:target="_blank"} |[prototype](python-design-patterns-prototype){:target="_blank"} |
