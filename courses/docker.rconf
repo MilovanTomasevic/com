@@ -6,3 +6,6 @@ affiliation = "</br>[🌐➙ milovantomasevic.com](https://milovantomasevic.com)
 "docker/docker-and-other-tools-for-reproducible-analysis.md" 
     title = "[Docker and other tools for reproducible analysis](/courses/#table-of-contents)"
 
+"docker/docker.md"
+  title = "[Docker](/courses/#table-of-contents)"
+  subtitle = "Bazirano na verziji 1.12.3"

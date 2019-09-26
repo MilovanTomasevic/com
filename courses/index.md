@@ -159,12 +159,18 @@ In this context are the programming languages as well as methodologies. In addit
 - [Literatura](jsd-literatura){:target="_blank"}
   
 
+### Docker
+
+- [Docker and other tools for reproducible analysis](/courses/docker/docker-and-other-tools-for-reproducible-analysis.html){:target="_blank"}
+
+- [Docker](/courses/docker/docker.html){:target="_blank"}
+
 ### High-performance computing (HPC)
 
 #### First settings
 - [Installation, Compilation & Running OpenMP/MPI/OpenACC and HPC Rudolf connection](/courses/hpc-setup){:target="_blank"}
 
-- [Docker and other tools for reproducible analysis](/courses/docker/docker-and-other-tools-for-reproducible-analysis.html){:target="_blank"}
+
   
 #### HPC Complete Courses (C)
 <br>
