@@ -29,6 +29,19 @@ In this context are the programming languages as well as methodologies. In addit
   - [Git](/tech/git.html){:target="_blank"}{:.heading.flip-title} --- Basic level.
 {:.related-posts.faded}
 
+### The Go Programming Language
+
+
+#### Learn GO
+
+  - [Programski jezik Go](/tech/GoLang/index.html){:target="_blank"}{:.heading.flip-title} --- Acknowledgments for the slides to Professor [Igor Dejanović](http://igordejanovic.net/){:target="_blank"}.
+{:.related-posts.faded}
+
+#### Welcome To Golang and Let's GO
+
+GO tutorial
+
+
 ### Pyhton
 
 #### Learn Python
@@ -43,18 +56,18 @@ In this context are the programming languages as well as methodologies. In addit
 ##### Python Tutorial for Beginners
 
 1. [Strings - Working with Textual Data](python-tutorial-for-beginners-1-strings-working-with-textual-data){:target="_blank"}
-1. [Integers and Floats - Working with Numeric Data](python-tutorial-for-beginners-2-integers-and-floats-working-with-numeric-data){:target="_blank"}
-1. [Lists, Tuples, and Sets](python-tutorial-for-beginners-3-lists-tuples-and-sets){:target="_blank"}
-1. [Dictionaries - Working with Key-Value Pairs](python-tutorial-for-beginners-4-dictionaries-working-with-key-value-pairs){:target="_blank"}
-1. [Conditionals and Booleans - If, Else, and Elif Statements](python-tutorial-for-beginners-5-conditionals-and-booleans-if-else-and-elif-statements){:target="_blank"}
-1. [Loops and Iterations - For-While Loops](python-tutorial-for-beginners-6-loops-and-iterations-for-while-loops){:target="_blank"}
-1. [Functions](python-tutorial-for-beginners-7-functions){:target="_blank"}
-1. [Import Modules and Exploring The Standard Library](python-tutorial-for-beginners-8-import-modules-and-exploring-the-standard-library){:target="_blank"}
-1. [File Objects - Reading and Writing to Files](python-tutorial-for-beginners-9-file-objects-reading-and-writing-to-files){:target="_blank"}
-1. [CSV Module - How to Read, Parse, and Write CSV Files](python-tutorial-for-beginners-10-csv-module-how-to-read-parse-and-write-csv-files){:target="_blank"}
-1. [Real World Example - Parsing Names From a CSV to an HTML List](python-tutorial-for-beginners-11-real-world-example-parsing-names-from-a-csv-to-an-html-list){:target="_blank"}
-1. [Using Try/Except Blocks for Error Handling](python-tutorial-for-beginners-12-using-try-except-blocks-for-error-handling){:target="_blank"}
-1. [Unit Testing Your Code with the unittest Module](python-tutorial-for-beginners-13-unit-testing-your-code-with-the-unittest-module){:target="_blank"}
+2. [Integers and Floats - Working with Numeric Data](python-tutorial-for-beginners-2-integers-and-floats-working-with-numeric-data){:target="_blank"}
+3. [Lists, Tuples, and Sets](python-tutorial-for-beginners-3-lists-tuples-and-sets){:target="_blank"}
+4. [Dictionaries - Working with Key-Value Pairs](python-tutorial-for-beginners-4-dictionaries-working-with-key-value-pairs){:target="_blank"}
+5. [Conditionals and Booleans - If, Else, and Elif Statements](python-tutorial-for-beginners-5-conditionals-and-booleans-if-else-and-elif-statements){:target="_blank"}
+6. [Loops and Iterations - For-While Loops](python-tutorial-for-beginners-6-loops-and-iterations-for-while-loops){:target="_blank"}
+7. [Functions](python-tutorial-for-beginners-7-functions){:target="_blank"}
+8. [Import Modules and Exploring The Standard Library](python-tutorial-for-beginners-8-import-modules-and-exploring-the-standard-library){:target="_blank"}
+9. [File Objects - Reading and Writing to Files](python-tutorial-for-beginners-9-file-objects-reading-and-writing-to-files){:target="_blank"}
+10. [CSV Module - How to Read, Parse, and Write CSV Files](python-tutorial-for-beginners-10-csv-module-how-to-read-parse-and-write-csv-files){:target="_blank"}
+11. [Real World Example - Parsing Names From a CSV to an HTML List](python-tutorial-for-beginners-11-real-world-example-parsing-names-from-a-csv-to-an-html-list){:target="_blank"}
+12. [Using Try/Except Blocks for Error Handling](python-tutorial-for-beginners-12-using-try-except-blocks-for-error-handling){:target="_blank"}
+13. [Unit Testing Your Code with the unittest Module](python-tutorial-for-beginners-13-unit-testing-your-code-with-the-unittest-module){:target="_blank"}
 
 ##### Exercises with Solutions
 
