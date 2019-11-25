@@ -39,8 +39,24 @@ In this context are the programming languages as well as methodologies. In addit
 
 #### Welcome To Golang and Let's GO
 
-GO tutorial
-
+| **GO tutorial** |                                                                                             **Description**                                                                                             |
+|:---------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|      GO 1:      |        [Golang characteristics and Go Syntax](https://talks.godoc.org/github.com/MilovanTomasevic/Welcome-To-Golang-and-Let-s-GO/1-golang-characteristics-and-go-syntax.slide){:target="_blank"}        |
+|      GO 2:      |                   [Declaring Variables in Go](https://talks.godoc.org/github.com/MilovanTomasevic/Welcome-To-Golang-and-Let-s-GO/2-declaring-variables-in-go.slide){:target="_blank"}                   |
+|      GO 3:      |                             [Functions in Go](https://talks.godoc.org/github.com/MilovanTomasevic/Welcome-To-Golang-and-Let-s-GO/3-functions-in-go.slide){:target="_blank"}                             |
+|      GO 4:      |                        [Error Handling in Go](https://talks.godoc.org/github.com/MilovanTomasevic/Welcome-To-Golang-and-Let-s-GO/4-error-handling-in-go.slide){:target="_blank"}                        |
+|      GO 5:      |                          [Flow control in Go](https://talks.godoc.org/github.com/MilovanTomasevic/Welcome-To-Golang-and-Let-s-GO/5-flow-control-in-go.slide){:target="_blank"}                          |
+|      GO 6:      |                     [If..else Statement in Go](https://talks.godoc.org/github.com/MilovanTomasevic/Welcome-To-Golang-and-Let-s-GO/6-if-else-statement-in-go.slide){:target="_blank"}                    |
+|      GO 7:      |                      [Switch Statement in Go](https://talks.godoc.org/github.com/MilovanTomasevic/Welcome-To-Golang-and-Let-s-GO/7-switch-statement-in-go.slide){:target="_blank"}                      |
+|      GO 8:      |             [Data Structures in Go with Array](https://talks.godoc.org/github.com/MilovanTomasevic/Welcome-To-Golang-and-Let-s-GO/8-data-structure-in-go-with-array.slide){:target="_blank"}            |
+|      GO 9:      |            [Data Structures in Go with Slices](https://talks.godoc.org/github.com/MilovanTomasevic/Welcome-To-Golang-and-Let-s-GO/9-data-structure-in-go-with-slices.slide){:target="_blank"}           |
+|      GO 10:     |              [Data Structures in Go with Map](https://talks.godoc.org/github.com/MilovanTomasevic/Welcome-To-Golang-and-Let-s-GO/10-data-structure-in-go-with-map.slide){:target="_blank"}              |
+|      GO 11:     |                          [Custom Types in Go](https://talks.godoc.org/github.com/MilovanTomasevic/Welcome-To-Golang-and-Let-s-GO/11-custom-types-in-go.slide){:target="_blank"}                         |
+|      GO 12:     |                                [Struct in Go](https://talks.godoc.org/github.com/MilovanTomasevic/Welcome-To-Golang-and-Let-s-GO/12-struct-in-go.slide){:target="_blank"}                               |
+|      GO 13:     |                               [Methods in Go](https://talks.godoc.org/github.com/MilovanTomasevic/Welcome-To-Golang-and-Let-s-GO/13-methods-in-go.slide){:target="_blank"}                              |
+|      GO 14:     |                            [Interfaces in Go](https://talks.godoc.org/github.com/MilovanTomasevic/Welcome-To-Golang-and-Let-s-GO/14-interfaces-in-go.slide){:target="_blank"}                           |
+|      GO 15:     |           [Concurrency with Goroutines in Go](https://talks.godoc.org/github.com/MilovanTomasevic/Welcome-To-Golang-and-Let-s-GO/15-concurrency-with-goroutines-in-go.slide){:target="_blank"}          |
+|      GO 16:     | [Concurrency with Goroutines and Channel in Go](https://talks.godoc.org/github.com/MilovanTomasevic/Welcome-To-Golang-and-Let-s-GO/16-concurrency-with-goroutine-channel-in-go.slide){:target="_blank"} |
 
 ### Pyhton
 
