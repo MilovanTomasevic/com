@@ -66,7 +66,7 @@ While I teach my students
 
 I enrolled my doctoral studies in the Department of engineering management, with the thesis _‘Adaptive model for supply chains management in small and medium enterprises’_.
 
-**_You can see the PhD presentation [here](../PhD-MT/index.html){:target="_blank"}._**
+**_You can see the PhD presentation [here](../courses/PhD-MT/index.html){:target="_blank"}._**
 
 
 ![](/assets/img/projects/mt_phd.png)
