@@ -24,6 +24,10 @@ basics:
     countryCode: "SI"
     region: ""
   profiles:
+    - network: "download"
+      username: "CV"
+      url: "../CV_MT_2019.pdf"
+      
     - network: "LinkedIn"
       username: "Milovan Tomašević"
       url: "https://www.linkedin.com/in/PhDMilovanTomasevic/"
