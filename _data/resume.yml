@@ -27,6 +27,10 @@ basics:
     - network: "download"
       username: "CV"
       url: "../CV_MT_2019.pdf"
+
+    - network: "download"
+      username: "CV(slo)"
+      url: "../mt2020cv.pdf"
       
     - network: "LinkedIn"
       username: "Milovan Tomašević"
