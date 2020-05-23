@@ -10,6 +10,7 @@ hide_description: true
 : Milovan Tomašević
 
  **Address**
+: 1000 Ljubljana
 : Slovenia
 
  **Email**
