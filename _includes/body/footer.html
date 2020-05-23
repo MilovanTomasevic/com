@@ -2,7 +2,7 @@
 <footer role="contentinfo">
   <hr/>
   {% if site.copyright.size > 0 %}
-    <p><small class="copyright">{{ site.copyright | markdownify | replace:'<p>','' | replace:'</p>','' }}</small></p>
+    <p><small class="copyright">© 2018 - <script>document.write(new Date().getFullYear())</script> Milovan Tomašević.&nbsp{{ site.copyright | markdownify | replace:'<p>','' | replace:'</p>','' }}</small></p>
   {% endif %}
   {% if site.legal.size > 0 %}
     <nav class="legal"><small>
