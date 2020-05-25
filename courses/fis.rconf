@@ -1,9 +1,7 @@
 template = "template.html"
 
 author = "[Milovan Tomašević, Ph.D.](https://www.milovantomasevic.com/)"
-affiliation = "</br>[🌐➙ milovantomasevic.com](https://milovantomasevic.com)</br> [✎➙ mt@milovantomasevic.com](mailto:mt@milovantomasevic.com)"
-
-
+affiliation = "![:scale 40%](../codep.png).medium[[🌐➙ milovantomasevic.com](https://milovantomasevic.com)</br> [✎➙ tomas.ftn.e2@gmail.com](mailto:tomas.ftn.e2@gmail.com)]"
 
 "fis/fis.md"
   title = "[Budi student FIŠ-a](/budi-student-fis-a/)"

@@ -57,7 +57,7 @@ layout: true
 - Zato što ćete postati odlični poznavaoci informaciono-komunikacionih tehnologija, kao i društvenog i organizacionog okruženja.
 - Zato što ćete biti obučeni za profesiju budućnosti.
 - Zato što ćete biti osposobljeni da rešavate najkompleksnije izazove informacionih i mrežnih tehnologija.
-- Zato što uspešno izvršavamo svoju dužnost svih 10 godina
+- Zato što uspešno izvršavaa svoju dužnost više od 10 godina
 ​![:scale 35%](fis/fis10.png)
 
 ]
