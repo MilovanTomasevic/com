@@ -1,5 +1,5 @@
 ---
-title: Courses/Slides
+title: ../courses
 description: >
   ...context are the programming languages as well as methodologies. There are various presentations as well as pieces of training by Milovan Tomašević...
 hide_description: true

@@ -1,6 +1,6 @@
 ---
 layout: welcome
-title: Budi student FIŠ-a
+title: ../budi student fiš-a
 description: >
   Prezentacija FIŠ-a, kako se prijaviti na FIŠ, kada je upis na FIŠ, kako do vize, rokovi, prodecude, sve na jednom mestu...
 hide_description: true

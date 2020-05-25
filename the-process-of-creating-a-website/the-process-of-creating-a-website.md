@@ -1,5 +1,5 @@
 ---
-title: The process of creating a website
+title: ../choose a website
 description: >
    developing websites for companies of different sizes is to create an efficient and advanced software solution... by Milovan Tomašević
 hide_description: true
@@ -66,7 +66,6 @@ If you think that creating a website is a cost or pre-lost money, you are cheati
 - [Personal page - CV]{:.heading.flip-title}
 
 - [A simple yet special blog]{:.heading.flip-title}
-
 {:.related-posts.faded}
 
 ## The final phase of creating a website
