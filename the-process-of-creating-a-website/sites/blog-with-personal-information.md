@@ -15,16 +15,8 @@ Screenshots: Pictures from computer perspective
 Screenshots: Pictures from cell phone perspective
 {:.figure}
 
-
-Now, if you like this description, you can see [the demo version here][demo8]{:target="_blank"} or you can find what you are looking for and the following description.
-
-
 Continue with [self-typing blog]{:.heading.flip-title}
 {:.read-more}
-
-**NOTE**: You can also see the [full list of demo websites]{:target="_blank"}{:.heading.flip-title} with a small description.
-{:.message}
-
 
 You have finished choosing a website, read the last step - [final development of the website]{:.heading.flip-title}
 {:.read-more}

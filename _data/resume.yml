@@ -5,7 +5,7 @@ basics:
   name: "Milovan Tomašević"
   label: "Researcher"
   picture: "/assets/icons/milovantomasevic.png"
-  email: "mt@milovantomasevic.com"
+  email: "tomas.ftn.e2@gmail.com"
   phone: "(+386) 40/***065"
   website: "https://www.milovantomasevic.com"
   summary: >
@@ -19,8 +19,8 @@ basics:
     tomorrow, but it will.
   location:
     address: ""
-    postalCode: ""
-    city: ""
+    postalCode: "1000"
+    city: "Ljubljana"
     countryCode: "SI"
     region: ""
   profiles:
@@ -159,6 +159,18 @@ awards:
     summary: "Heino Schrader University Alliances EMEA SAP AG"
 
 publications:
+  - name: "Evaluation of Criteria for the Implementation of High-Performance Computing (HPC) in Danube Region Countries Using Fuzzy PIPRECIA Method"
+    publisher: "Sustainability"
+    releaseDate: "2020-04-01"
+    website: "http://dx.doi.org/10.3390/su12073017"
+    summary: "The use of computers with outstanding performance has become a real necessity in order to achieve greater efficiency and sustainability for the accomplishment of various tasks. Therefore, with the development of information technology and increasing dynamism in the business environment, it is expected that these computers will be more intensively deployed. In this paper, research was conducted in Danube region countries: Austria, Bosnia and Herzegovina, Bulgaria, Croatia, Czech Republic, Germany, Hungary, Moldova, Montenegro, Romania, Serbia, Slovakia, Slovenia, and Ukraine. The aim of the research was to determine what criteria are most significant for the introduction of high-performance computing and the real situation in each of the countries. In addition, the aim was to establish the infrastructure needed to implement such a system. In order to determine the partial significance of each criterion and thus the possibility of implementing high-performance computing, a multi-criteria model in a fuzzy environment was applied. The weights of criteria and their rankings were performed using the Fuzzy PIvot Pairwise RElative Criteria Importance Assessment—fuzzy PIPRECIA method. The results indicate different values depend on decision-makers (DMs) in the countries. Spearman’s and Pearson’s correlation coefficients were calculated to verify the results obtained."
+  
+  - name: "A Novel Extended EDAS in Minkowski Space (EDAS-M) Method for Evaluating Autonomous Vehicles"
+    publisher: "ICI Bucharest"
+    releaseDate: "2019-09-01"
+    website: "https://doi.org/10.24846/v28i3y201902"
+    summary: "Multi-Criteria Decision-Making (MCDM) methods have a significant influence on decision making in a variety of strategic fields, including science, business, and real-life studies. These methods also effectively support researchers in solving the emerging issues that may be encountered during their research activity. This work introduces a new Evaluation method based on the Distance from the Average Solution in the Minkowski space (EDAS-M). The main contribution of this study is the EDAS-M based MCDM model for the evaluation of an autonomous vehicle. Besides, the CRITIC (Criteria Importance Through Intercriteria Correlation) was used to determine objective criteria weights. The EDAS-M method provides a modified extension of the conventional Evaluation method based on the Distance from the Average Solution (EDAS) method. Seven different MADM methods are used to compare problem-solving results. Namely, the EDAS, WASPAS (Weighted Aggregated Sum Product ASsessment), SAW (Simple Additive Weighting), ARAS (Additive Ratio ASsessment), TOPSIS (Technique for Order Preference by Similarity Ideal Solution), TOPSIS-M (TOPSIS Minkowski space) and MABAC (Multi-Attributive Border Approximation Area Comparison) techniques validate the stability of the results obtained by using the new method above mentioned. Sensitivity analysis reflects the dynamics of the influence of dynamic matrices. It showed a high correlation of positions with all applied approaches. This correlation has also been maintained in a dynamic environment."
+
   - name: "ADAPTIVE FUZZY MODEL FOR DETERMINATION OF QUALITY ASSESSMENT SERVICES IN SUPPLY CHAIN"
     publisher: "Technical Gazette"
     releaseDate: "2018-12-01"

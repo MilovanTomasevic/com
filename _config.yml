@@ -4,7 +4,7 @@
 # IMPORTANT: Set the URL of your site.
 # Set to https://<username>.github.io when hosting on GitHub Pages
 # (unless you are using a custom domain).
-url:                   https://www.milovantomasevic.com #https://domain.tld 
+url:                   https://www.milovantomasevic.com
 
 # IMPORTANT: Set The "base URL" of your site.
 # When your site sits in a subdirectory, set to /<name of directory>
@@ -24,12 +24,10 @@ title:                 Milovan Tomašević
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Milovan works as a HPC (High Performance Computing) Consultant at the Faculty of Information Studies in Novo mesto, Slovenia. I obtained a Ph.D. in...
-
+  In addition to scientific research, I also develop business software and websites with the aim of creating a new product or service that consumers will want.
 # A shorter description for the sidebar.
 tagline:               >
-  *I'm here to create meaningful and lasting relationships with my clients, students, colleagues, and my friends.*<br><br>
-  **LET'S BUILD SOMETHING AMAZING TOGETHER** 
+  *In addition to scientific research, I also develop business software and websites with the aim of creating a new product or service that consumers will want.*
 
 # A list of keywords for your blog
 keywords:              [Milovan Tomašević, hpc, high performance computing, development tools, parallel development, Programming online presentation, Big Data Storage, High-level language High performance computing, Computer Science, Information Science, Scientific Computing, Algorithms ]
@@ -42,7 +40,7 @@ logo:                  /assets/icons/milovantomasevic.png
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   name:                Milovan Tomašević
-  email:               contact@milovantomasevic.com
+  email:               tomas.ftn.e2@gmail.com
   # Used by `jekyll-seo-tag`:
   twitter:             mt_uns
 

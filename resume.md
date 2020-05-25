@@ -2,7 +2,7 @@
 layout: resume
 title: Résumé*
 description: >
-  `Milovan Tomašević is currently employed at the Faculty of Information Studies in Novo mesto, where I specialize in the use of HPC in industry.`
+  `In addition to scientific research, I also develop business software and websites with the aim of creating a new product or service that consumers will want.`
 hide_description: true
 menu: true
 order: 6

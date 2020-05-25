@@ -9,6 +9,7 @@ permalink: /the-process-of-creating-a-website/
 ---
 
 The goal of developing websites for companies of different sizes is to create an efficient and advanced software solution, in accordance with the client's requirements and marketing strategies. Our designers will build a quality presence on the Internet of companies of different sizes using advanced and latest web development techniques.
+
 ---
 
 ## Table of Contents
@@ -30,41 +31,41 @@ If you think that creating a website is a cost or pre-lost money, you are cheati
 {:.related-posts.faded}
 
 ## Favorite list of web pages 
-[Demo 1]{:target="_blank"} --- [Blog with cover picture posts]{:.heading.flip-title}
+- [Blog with cover picture posts]{:.heading.flip-title}
 
-[Demo 2]{:target="_blank"} --- [Blog with changing cover picture posts]{:.heading.flip-title}
+- [Blog with changing cover picture posts]{:.heading.flip-title}
 
-[Demo 3]{:target="_blank"} --- [Blog with post cards]{:.heading.flip-title}
+- [Blog with post cards]{:.heading.flip-title}
 
-[Demo 4]{:target="_blank"} --- [Blog with animated posts]{:.heading.flip-title}
+- [Blog with animated posts]{:.heading.flip-title}
 
-[Demo 5]{:target="_blank"} --- [Blog with least posts and projects]{:.heading.flip-title}
+- [Blog with least posts and projects]{:.heading.flip-title}
 
-[Demo 6]{:target="_blank"} --- [Apstract animated blog]{:.heading.flip-title}
+- [Apstract animated blog]{:.heading.flip-title}
 
-[Demo 7]{:target="_blank"} --- [Blog with an emphasis on review]{:.heading.flip-title}
+- [Blog with an emphasis on review]{:.heading.flip-title}
 
-[Demo 8]{:target="_blank"} --- [Blog with personal information]{:.heading.flip-title}
+- [Blog with personal information]{:.heading.flip-title}
 
-[Demo 9]{:target="_blank"} --- [Self-typing blog]{:.heading.flip-title}
+- [Self-typing blog]{:.heading.flip-title}
 
-[Demo 10]{:target="_blank"} --- [Rectangle blog]{:.heading.flip-title}
+- [Rectangle blog]{:.heading.flip-title}
 
-[Demo 11]{:target="_blank"} --- [One-click social media page]{:.heading.flip-title}
+- [One-click social media page]{:.heading.flip-title}
 
-[Demo 12]{:target="_blank"} --- [Retro CV]{:.heading.flip-title}
+- [Retro CV]{:.heading.flip-title}
 
-[Demo 13]{:target="_blank"} --- [Blog with the accompanying menu]{:.heading.flip-title}
+- [Blog with the accompanying menu]{:.heading.flip-title}
 
-[Demo 14]{:target="_blank"} --- [Blog with legant design]{:.heading.flip-title}
+- [Blog with legant design]{:.heading.flip-title}
 
-[Demo 15]{:target="_blank"} --- [Easy to look blog]{:.heading.flip-title}
+- [Easy to look blog]{:.heading.flip-title}
 
-[Demo 16]{:target="_blank"} --- [Minimal blog]{:.heading.flip-title}
+- [Minimal blog]{:.heading.flip-title}
 
-[Demo 17]{:target="_blank"} --- [Personal page - CV]{:.heading.flip-title}
+- [Personal page - CV]{:.heading.flip-title}
 
-[Demo 18]{:target="_blank"} --- [A simple yet special blog]{:.heading.flip-title}
+- [A simple yet special blog]{:.heading.flip-title}
 
 {:.related-posts.faded}
 
@@ -77,26 +78,6 @@ If you think that creating a website is a cost or pre-lost money, you are cheati
 [Collecting information]: collecting-information.md
 [Planning]: creating-a-website-development-plan.md
 [Website design]: time-to-design-a-website.md
-
-[Demo 1]:https://www.demo.milovantomasevic.com/demo1/
-[Demo 2]:https://www.demo.milovantomasevic.com/demo2/
-[Demo 3]:https://www.demo.milovantomasevic.com/demo3/
-[Demo 4]:https://www.demo.milovantomasevic.com/demo4/
-[Demo 5]:https://www.demo.milovantomasevic.com/demo5/
-[Demo 6]:https://www.demo.milovantomasevic.com/demo6/
-[Demo 7]:https://www.demo.milovantomasevic.com/demo7/
-[Demo 8]:https://www.demo.milovantomasevic.com/demo8/
-[Demo 9]:https://www.demo.milovantomasevic.com/demo9/
-[Demo 10]:https://www.demo.milovantomasevic.com/demo10/
-[Demo 11]:https://www.demo.milovantomasevic.com/demo11/
-[Demo 12]:https://www.demo.milovantomasevic.com/demo12/
-[Demo 13]:https://www.demo.milovantomasevic.com/demo13/
-[Demo 14]:https://www.demo.milovantomasevic.com/demo14/
-[Demo 15]:https://www.demo.milovantomasevic.com/demo15/
-[Demo 16]:https://www.demo.milovantomasevic.com/demo16/
-[Demo 17]:https://www.demo.milovantomasevic.com/demo17/
-[Demo 18]:https://www.demo.milovantomasevic.com/demo18/
-
 
 [Blog with cover picture posts]: /sites/blog-with-cover-picture-posts.md
 [Blog with changing cover picture posts]: /sites/blog-with-changing-cover-picture-posts.md
