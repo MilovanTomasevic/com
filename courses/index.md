@@ -259,12 +259,8 @@ In this context are the programming languages as well as methodologies. In addit
 
 - [Presentation at FIS](/courses/fis/PhDfis.html){:target="_blank"}{:.heading.flip-title} --- PC & Mobile view.
 - [Defense at FTS](/courses/PhD-MT/index.html){:target="_blank"}{:.heading.flip-title} --- PC view.
-{:.related-posts.faded}
-
-{% comment %} 
 - [DOCTORAL DISSERTATION PROPOSAL](/courses/PhDDispozicija/PhDdispozicija.html){:target="_blank"}{:.heading.flip-title} --- PC & Mobile view.
-{% endcomment %}
-
+{:.related-posts.faded}
 
 ### FIS Presentation (in Serbian)
 

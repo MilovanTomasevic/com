@@ -1,7 +1,7 @@
 template = "template.html"
 
 author = " kandidat: [Milovan Tomašević](https://www.milovantomasevic.com/) </br> mentor: [Prof. Dr. Ivan Luković](http://www.ftn.uns.ac.rs/n1319397715/ivan-lukovic)"
-affiliation = "</br>[🌐➙ milovantomasevic.com](https://milovantomasevic.com)</br> [✎➙ mt@milovantomasevic.com](mailto:mt@milovantomasevic.com)"
+affiliation = "![:scale 30%](../codep.png).medium[[🌐➙ milovantomasevic.com](https://milovantomasevic.com)</br> [✎➙ tomas.ftn.e2@gmail.com](mailto:tomas.ftn.e2@gmail.com)]"
 
 "PhDDispozicija/PhDdispozicija.md"
 	title = "[Fazi adaptivni model za procenu izvodljivosti HPC arhitektura](/courses/#table-of-contents)"
