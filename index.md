@@ -4,7 +4,7 @@ cover: false
 title: Impossible is nothing but a word!
 image: /assets/img/MilovanTomasevic-8.jpeg
 description: >
-  My name is Milovan Tomašević and I work as a HPC (High Performance Computing) Consultant at the Faculty of Information Studies in Novo Mesto, Slovenia. I'm currently working on my second PhD, which is focused on Domain Specific Languages (DSLs) for High Performance Computing (HPC).
+  In addition to scientific research, I also develop business software and websites with the aim of creating a new product or service that consumers will want.
 hide_description: true
 selected_projects:
 - _projects/Faculty-of-Information-Studies-in-Novo-MestoThe-Ministry-of-Education-Science-and-Sport-Slovenia.md
