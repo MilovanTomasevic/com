@@ -36,11 +36,33 @@ basics:
       username: "Milovan Tomašević"
       url: "https://www.linkedin.com/in/PhDMilovanTomasevic/"
 work:
+  - company: "NLB d.d."
+    position: "Data Solutions Developer"
+    website: "https://www.nlb.si/"
+    startDate: "09-06-2020"
+    endDate: ""
+    summary: >
+      → HBase, HDFS, Hive, Kafka, Apache Hadoop, Knox, Solr, Storm, YARN, Pig, Sqoop, Oozie, ZooKeeper, Ambari Infra, Ambari Metrics, Ranger, SmartSense, Spark2, IBM DB2 BIG SQL, DSM, Spectrum Scale, Slider and Atlas Service.
+    highlights:
+      - coordination of external contractors on the development of new data solutions
+      - advising and supporting user administrators and users in the development and use of data solutions on computer systems
+      - analysis of business requirements and data flows
+      - management of advanced analytical platforms and models
+      - data quality management and data cleaning
+      - data dictionary management and data traceability
+      - design and maintenance of logical and physical data model
+      - design, development, upgrade, testing, maintenance and documentation of data solutions
+      - coordinating and leading teams
+      - proposing and / or introducing improvements
+      - coordinating, controlling and monitoring the work process
+      - participation in project and working groups
+      - mentoring and knowledge transfer
+    
   - company: "Faculty of information studies"
     position: "Researcher"
     website: "https://fis.unm.si/en/"
     startDate: "21-08-2018"
-    endDate: ""
+    endDate: "08-06-2020"
     summary: >
       Milovan works as a researcher on the project “SUPERVISION OF NATIONAL RESEARCH INFRASTRUCTURES - HPC RIVER”.
     highlights:
