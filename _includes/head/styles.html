@@ -3,8 +3,8 @@
 {% capture icons_url %}{% link assets/icomoon/style.css %}{% endcapture %}
 {% capture fonts_url %}https://fonts.googleapis.com/css?family={{ google_fonts }}{% endcapture %}
 
-{% assign font_heading = site.font_heading | default:"Roboto Slab, Helvetica, Arial, sans-serif" %}
-{% assign font         = site.font         | default:"Noto Sans, Helvetica, Arial, sans-serif" %}
+<!-- {% assign font_heading = site.font_heading | default:"Roboto Slab, Helvetica, Arial, sans-serif" %}
+{% assign font         = site.font         | default:"Noto Sans, Helvetica, Arial, sans-serif" %} -->
 
 {% if site.hydejack.no_inline_css or jekyll.environment == 'development' %}
   <link rel="stylesheet" href="{{ style_url | relative_url }}">

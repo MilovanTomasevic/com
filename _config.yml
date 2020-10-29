@@ -77,17 +77,17 @@ theme_color:           rgb(25,55,71)
 
 # The string encoding which fonts to fetch from Google Fonts.
 # See: <https://hydejack.com/docs/configuration/>
-# google_fonts:          Inconsolata+Inconsolata:700|Inconsolata+Inconsolata:400,400i,700,700i
+google_fonts:          Inconsolata:wght@200;300;400&display=swap
 
 # The text font. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
-# font:                  Inconsolata+Inconsolata:700|Inconsolata+Inconsolata:400,400i,700,700i
+# font:                  Inconsolata
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
-# font_heading:          Inconsolata+Inconsolata:700|Inconsolata+Inconsolata:400,400i,700,700i
+# font_heading:          Inconsolata
 
-font_code:             Consolas, Courier, "Courier New", 'STKaiti', 'KaiTi', 'SimKai', monospace
+# font_code:             Consolas, Courier, "Courier New", 'STKaiti', 'KaiTi', 'SimKai', monospace
 
 defaults:
   - scope:
