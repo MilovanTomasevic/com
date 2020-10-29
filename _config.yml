@@ -81,11 +81,11 @@ google_fonts:          Inconsolata
 
 # The text font. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
-# font:                  Inconsolata
+font:                  Inconsolata
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
-# font_heading:          Inconsolata
+font_heading:          Inconsolata
 
 # font_code:             Consolas, Courier, "Courier New", 'STKaiti', 'KaiTi', 'SimKai', monospace
 
