@@ -296,13 +296,15 @@ plugins:
   - jekyll-sitemap
   - jekyll-titles-from-headings
   - jekyll-plantuml
+  - jekyll-include-cache
 
 # Theme
 # ---------------------------------------------------------------------------------------
 
 # theme: jekyll-theme-hydejack
 # remote_theme: qwtel/hydejack
-theme: jekyll-theme-hydejack-pro
+# theme: jekyll-theme-hydejack-pro
+remote_theme: hydecorp/hydejack@v9.1.2
 
 # SEO Tag
 # ---------------------------------------------------------------------------------------
@@ -331,10 +333,11 @@ social:
   name:                Milovan Tomašević
   links:
     - https://www.linkedin.com/in/PhDMilovanTomasevic/
-    - https://www.instagram.com/mt.fis/
+    - https://github.com/milovantomasevic
+    - https://stackoverflow.com/users/13155046/milovan-tomašević
+    - https://www.instagram.com/httpsmt/
     - https://twitter.com/mt_uns
     - https://www.youtube.com/c/MilovanTomašević
-    - hhttps://github.com/milovantomasevic
 
 
 # Other Plugins
