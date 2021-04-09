@@ -7,17 +7,14 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 ## Installation
 
-```sh
-
+~~~sh
+# file: 'terminal'
 ## c/c==
 
 apt-get install libopenmpi-dev 
@@ -28,12 +25,12 @@ apt-get install openmpi-bin
 sudo apt-get install python
 sudo apt-get install python-mpi4py
 
-```
+~~~
 
 ## Compilation & Running OpenMP/MPI/OpenACC & mpi4py
 
-```sh
-
+~~~sh
+# file: 'terminal'
 # c/c++ 
 
 ## OpenMP
@@ -52,11 +49,12 @@ mpirun -np 1 ./filename # -lm
 # python
 mpirun -np 4 ./filename
 
-```
+~~~
 
 ## HPC Rudolf connection
 
-```sh
+~~~sh
+# file: 'terminal'
 # First create a source file in /etc/apt/sources.list.d/nordugrid.list
 # apend 
 # Base channel - must be enabled
@@ -68,63 +66,71 @@ deb-src http://download.nordugrid.org/repos/15.03/ubuntu/ zesty main
 deb http://download.nordugrid.org/repos/15.03/ubuntu/ zesty-updates main
 deb-src http://download.nordugrid.org/repos/15.03/ubuntu/ zesty-updates main
 
-```
+~~~
 
-```sh
+~~~sh
+# file: 'terminal'
 # Scheduled package updates - optional
 #deb http://download.nordugrid.org/repos/15.03/ubuntu/ zesty-experimental main
 #deb-src http://download.nordugrid.org/repos/15.03/ubuntu/ zesty-experimental main
-```
+~~~
 
-```sh
+~~~sh
+# file: 'terminal'
 # Import the apt-key:
 wget -q -O - http://download.nordugrid.org/DEB-GPG-KEY-nordugrid.asc \
  | sudo apt-key add -
 
 wget -q -O - http://download.nordugrid.org/DEB-GPG-KEY-nordugrid.asc \
  | sudo apt-key add -
-```
+~~~
 
-```sh
+~~~sh
+# file: 'terminal'
 # Install ARC client:
 
 sudo apt-get update
 sudo apt-get install nordugrid-arc-client nordugrid-arc-plugins-globus
-```
+~~~
 
-```sh
+~~~sh
+# file: 'terminal'
 # Add EGI-trustanchors and install CA-s /etc/apt/sources.list.d/EGI-trustanchors.list *** 0
 
 #append these lines
 #### EGI Trust Anchor Distribution ####
 
 deb http://repository.egi.eu/sw/production/cas/1/current egi-igtf core 
-```
+~~~
 
-```sh
+~~~sh
+# file: 'terminal'
 # Import key
 
 wget -q -O - \ 
 https://dist.eugridpma.info/distribution/igtf/current/GPG-KEY-EUGridPMA-RPM-3\
  | sudo apt-key add -
-```
+~~~
 
-```sh
+~~~sh
+# file: 'terminal'
 #tale je OK  *** 1
 
 wget -q -O - \
      https://dist.eugridpma.info/distribution/igtf/current/GPG-KEY-EUGridPMA-RPM-3 \
      | sudo apt-key add -
-```
+~~~
 
-```sh
+~~~sh
+# file: 'terminal'
 # Install CA-s: *** 2
 
 sudo apt-get update
 sudo apt-get install ca-policy-egi-core fetch-crl
-```
+~~~
 
-```sh
+~~~sh
+# file: 'terminal'
 # Now you need to transform the certiciate and key in .pem format, make sure the key is only readable # by you and move both files in your ~/.arc  directory:
 
 ~/.arc/
@@ -136,27 +142,31 @@ openssl pkcs12 -in usercert.p12 -clcerts -nokeys -out usercert.pem
 openssl pkcs12 -in usercert.p12 -nocerts -out userkey.pem
 chmod 400 userkey.pem
 chmod 644 usercert.pem
-```
+~~~
 
-```sh
+~~~sh
+# file: 'terminal'
 # create .arc/vomses/hpc.fis.unm.si file and insert:
 
 "hpc.fis.unm.si" "voms.sling.si" "15005" "/C=SI/O=SiGNET/O=SLING/CN=voms.sling.si" "hpc.fis.unm.si"
-```
+~~~
 
-```sh
+~~~sh
+# file: 'terminal'
 # create .arc/vomsdir/hpc.fis.unm.si file and insert:
 
 /C=SI/O=SiGNET/O=SLING/CN=voms.sling.si
 /C=SI/O=SiGNET/CN=SiGNET CA
-```
+~~~
 
-```sh
+~~~sh
+# file: 'terminal'
 arcproxy -C .arc/cert.pem -K .arc/key.pem -s .arc/vomsdir -V .arc/vomses
 arcproxy -C ~/.arc/usercert.pem -K ~/.arc/userkey.pem -s ~/.arc/vomsdir -V ~/.arc/vomses
-```
+~~~
 
-```sh
+~~~sh
+# file: 'terminal'
 # HPC connect 
 
 arcproxy -S hpc.fis.unm.si
@@ -165,9 +175,10 @@ arcproxy -C .arc/cert.pem -K .arc/key.pem -s .arc/vomsdir -V .arc/vomses
 
 arcproxy -C ~/.arc/usercert.pem -K ~/.arc/userkey.pem -s ~/.arc/vomsdir -V ~/.arc/vomses
 
-```
+~~~
 
-```sh
+~~~sh
+# file: 'terminal'
 # Connected
 mt@mt:~/hpc$ arcproxy -S hpc.fis.unm.si
 Enter pass phrase for private key:
@@ -175,10 +186,10 @@ Your identity: /C=SI/O=SiGNET/O=FIS Novo mesto/OU=HPC Rudolf/CN=Milovan Tomasevi
 Contacting VOMS server (named hpc.fis.unm.si): voms.sling.si on port: 15005
 Proxy generation succeeded
 Your proxy is valid until: 2019-02-13 12:03:53
-```
+~~~
 
-```sh
-
+~~~sh
+# file: 'terminal'
 # arc
 
 man arcsub
@@ -208,11 +219,12 @@ Jobs processed: 1, successfully retrieved: 1, successfully cleaned: 1
 
 $ ls SAVLDmDkUAonmmR0Xox1SiGmABFKDmABFKDmuZFKDmABFKDmPIfaUm/
 log  test.log
-```
+~~~
 
 # MPI Example for HPC Rudolf
 
-```sh
+~~~sh
+# file: 'prime-number.xrsl'
 # Example of a task in C:
 
 # example.c and example.sh must be in the directory from which you will send the task.
@@ -231,12 +243,10 @@ log  test.log
 (jobname="NalogaC")
 (runtimeenvironment = "APPS/BASE/OPENMPI-2.1")
 
-```
+~~~
 
-{% highlight c linenos %}
-
-// prime-number.c
-
+~~~c
+// file: 'prime-number.c'
 #include<stdio.h>
  
 int main()
@@ -263,29 +273,22 @@ int main()
       }
       i++;
    }
- 
    return 0;
 }
+~~~
 
-{% endhighlight %}
-
-```sh
-
-# prime-number.sh
-
+~~~sh
+# file: 'prime-number.sh'
 #!/bin/sh
 date 
 gcc prime-number.c -o primenumber
 ./primenumber
 date
+~~~
 
-```
-
-```sh
-
+~~~sh
+# file: 'vsota.xrsl'
 # Example of a task in Python:
-
-# vsota.xrsl
 
 &
 (executable="vsota.sh")
@@ -299,35 +302,27 @@ date
 (stderr="err.txt")
 (gmlog="vsota.log")
 (jobName="vsota")
- (runtimeenvironment = "APPS/FIS/DEFAULT")
+(runtimeenvironment = "APPS/FIS/DEFAULT")
+~~~
 
-```
-
-```py
-
-# vsota.py
-
+~~~py
+# file: 'vsota.py'
 sum = 0
 print "Printout numbers: "
 for x in ["1", "1050","164999"]: print x
 print "Number of numbers "
 for y in [1,1050,164999]: sum=sum+y
 print sum
+~~~
 
-```
-
-```sh
-
-# vsota.sh
-
+~~~sh
+# file: 'vsota.sh'
 #!/bin/sh
 python vsota.py
+~~~
 
-```
-
-```sh
-
-# hellompi.xrsl
+~~~sh
+# file: 'hellompi.xrsl'
 
 &
 (count = 4)
@@ -343,11 +338,10 @@ python vsota.py
 (gmlog = log)
 (memory = 2000)
 (runtimeenvironment = "APPS/FIS/MPI-1.8")
+~~~
 
-```
-
-{% highlight c linenos %}
-
+~~~c
+// file: 'mpi_rank.c'
 /* C Example */
 #include <stdio.h>
 #include <mpi.h> 
@@ -365,13 +359,10 @@ int main (argc, argv)
   MPI_Finalize();
   return 0;
 }
+~~~
 
-{% endhighlight %}
-
-```sh
-
-# hellompi.sh:
-
+~~~sh
+# file: 'hellompi.sh'
 #!/bin/bash
 date
 hostname
@@ -382,5 +373,4 @@ echo "Running example:"
 mpiexec -np 1 ${PWD}/hello
 echo "Done."
 date
-
-```
+~~~

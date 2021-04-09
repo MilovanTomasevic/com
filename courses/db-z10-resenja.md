@@ -7,22 +7,21 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 ## Primer 1
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer10-1.sql'
 create distinct type indeks as integer with comparisons;
-{% endhighlight %}
+~~~
 
 ## Primer 2
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer10-2.sql'
 create table dosije1 (
     indeks indeks not null , 
     id_smera integer not null , 
@@ -32,19 +31,21 @@ create table dosije1 (
     dat_upisa date not null,
 primary key (indeks),
     foreign key (id_smera) references smer);
-{% endhighlight %}
+~~~
 
 ## Primer 3
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer10-3.sql'
 insert into dosije1
 select indeks, id_smera, status, ime, prezime, dat_upisa 
 from dosije;
-{% endhighlight %}
+~~~
 
 ## Primer 4
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer10-4.sql'
 select d1.indeks + d2.indeks
 from dosije1 d1, dosije1 d2
 where d1.indeks=20060001 and d2.indeks=20060005;
@@ -52,41 +53,45 @@ where d1.indeks=20060001 and d2.indeks=20060005;
 select integer(d1.indeks) + integer(d2.indeks)
 from dosije1 d1, dosije1 d2
 where d1.indeks=indeks(20060001) and d2.indeks=indeks(20060005);
-{% endhighlight %}
+~~~
 
 ## Primer 5
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer10-5.sql'
 create function godinaupisa(indeks indeks) -- drugo je tip, prvo ulazna promenljiva... 
 returns integer
 return integer(indeks)/10000;
-{% endhighlight %}
+~~~
 
 ## Primer 6
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer10-6.sql'
 create function brojindeksa(indeks indeks) 
 returns integer
 return mod(integer(indeks),10000);
 
 select godinaupisa(indeks), brojindeksa(indeks) 
 from dosije1;
-{% endhighlight %}
+~~~
 
 ## Primer 7
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer10-7.sql'
 create function max (indeks) 
 returns indeks
 source sysibm.max(integer);
 
 select max(indeks)
 from dosije1;
-{% endhighlight %}
+~~~
 
 ## Primer 8
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer10-8.sql'
 create distinct type bodovi as smallint with comparisons;
 
 create function obaveznibodovi(smer integer) 
@@ -120,11 +125,12 @@ select d.indeks, ime, prezime, s.naziv, polozenobodova, obaveznibodovi(s.id_smer
 from dosije d 
 join smer s on d.id_smera=s.id_smera
 join polozenobodova pk on pk.indeks=d.indeks; );
-{% endhighlight %}
+~~~
 
 ## Primer 9
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer10-9.sql'
 with na_smeru as (
 select d.id_smera, count(distinct d.indeks) n, avg(ocena+0.0) ocena 
 from dosije d 
@@ -142,11 +148,12 @@ from smer s
 join na_smeru us
 on us.id_smera = s.id_smera, svi 
 order by ocena;
-{% endhighlight %}
+~~~
 
 ## Primer 10
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer10-10.sql'
 update dosije
 set status='diplomirao'
 where id_smera in ( select id_smera
@@ -162,4 +169,4 @@ delete from ispit
 where godina=2008 and indeks in ( select indeks
     from dosije
     where status='mirovanje');
-{% endhighlight %}
+~~~

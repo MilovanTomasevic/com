@@ -7,17 +7,15 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 
 ##  Run Code 1 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'starting_code.py'
 from matplotlib import pyplot as plt
 
 plt.style.use("fivethirtyeight")
@@ -32,7 +30,7 @@ plt.show()
 # Red = #fc4f30
 # Yellow = #e5ae37
 # Green = #6d904f
-{% endhighlight %}
+~~~
 starting_code.py
 {:.figure}
 
@@ -45,7 +43,8 @@ starting_code.py
 
 ##  Run Code 2 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'finished_code.py'
 from matplotlib import pyplot as plt
 
 plt.style.use("fivethirtyeight")
@@ -61,7 +60,7 @@ plt.pie(slices, labels=labels, explode=explode, shadow=True,
 plt.title("My Awesome Pie Chart")
 plt.tight_layout()
 plt.show()
-{% endhighlight %}
+~~~
 finished_code.py
 {:.figure}
 

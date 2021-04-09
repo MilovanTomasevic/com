@@ -7,16 +7,15 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ## Zadatak 1
 
-{% highlight python linenos %}
+~~~py
+# file: 'z81.py'
 class Node:
     def __init__(self, val):
         self.val = val
@@ -98,6 +97,4 @@ if __name__ == "__main__":
         print("EVAL_TREE RETURNS:", eval_three(T, d))
         print("MAKE_INFIX RETURNS:", make_infix(T))
         print()
-{% endhighlight %}
-zadatak1.py
-{:.figure}
+~~~

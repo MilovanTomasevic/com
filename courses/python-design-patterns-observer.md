@@ -7,12 +7,10 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ## observer Model
 
@@ -20,7 +18,8 @@ hide_description: true
 
 ## Python-Design-Patterns observer
 
-{% highlight python linenos %}
+~~~py
+# file: 'observer.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -124,13 +123,14 @@ if __name__ == '__main__':
 # DecimalViewer: Subject Data 1 has data 10
 # Setting Data 2 = 15
 # DecimalViewer: Subject Data 2 has data 15
-{% endhighlight %}
+~~~
 observer.py
 {:.figure}
 
 ## observer Test
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_observer.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -192,6 +192,6 @@ class TestData(unittest.TestCase):
     def test_data_name_shall_be_changeable(cls):
         cls.sub.name = 'New Data Name'
         cls.assertEqual(cls.sub.name, 'New Data Name')
-{% endhighlight %}
+~~~
 test_observer.py
 {:.figure}

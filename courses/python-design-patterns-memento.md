@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## memento Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns memento
 
-{% highlight python linenos %}
+~~~py
+# file: 'memento.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -158,7 +156,7 @@ if __name__ == '__main__':
 #     self.value += 1
 # TypeError: Can't convert 'int' object to str implicitly
 # <NumObj: 2>
-{% endhighlight %}
+~~~
 memento.py
 {:.figure}
 

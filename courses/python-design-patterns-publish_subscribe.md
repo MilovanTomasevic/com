@@ -7,12 +7,10 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ## publish_subscribe Model
 
@@ -20,7 +18,8 @@ hide_description: true
 
 ## Python-Design-Patterns publish_subscribe
 
-{% highlight python linenos %}
+~~~py
+# file: 'publish_subscribe.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
@@ -106,13 +105,14 @@ if __name__ == "__main__":
 # jim got cartoon
 # jim got cartoon
 # gee got movie
-{% endhighlight %}
+~~~
 publish_subscribe.py
 {:.figure}
 
 ## publish_subscribe Test
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_publish_subscribe.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -179,6 +179,6 @@ class TestProvider(unittest.TestCase):
             mock_subscriber1_run.assert_has_calls(expected_sub1_calls)
             expected_sub2_calls = [call('sub 2 msg 1'), call('sub 2 msg 2')]
             mock_subscriber2_run.assert_has_calls(expected_sub2_calls)
-{% endhighlight %}
+~~~
 test_publish_subscribe.py
 {:.figure}

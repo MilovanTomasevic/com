@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## catalog Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns catalog
 
-{% highlight python linenos %}
+~~~py
+# file: 'catalog.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -189,7 +187,7 @@ if __name__ == "__main__":
 # Value x1
 # Value x2
 # executed method 1!
-{% endhighlight %}
+~~~
 catalog.py
 {:.figure}
 

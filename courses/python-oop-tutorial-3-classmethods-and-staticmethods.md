@@ -7,16 +7,14 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 ##  Run Code 1 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'start3.py'
 class Employee:
 
     num_of_emps = 0
@@ -77,6 +75,6 @@ import datetime
 my_date = datetime.date(2016, 7, 11)
 
 print(Employee.is_workday(my_date))
-{% endhighlight %}
-start.py
+~~~
+start3.py
 {:.figure}

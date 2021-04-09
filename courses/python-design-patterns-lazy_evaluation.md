@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## lazy_evaluation Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns lazy_evaluation
 
-{% highlight python linenos %}
+~~~py
+# file: 'lazy_evaluation.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -115,13 +113,14 @@ if __name__ == '__main__':
 # {'_lazy__parents': 'Father and mother', 'relatives': 'Many relatives.', 'call_count2': 1, 'name': 'Jhon', 'occupation': 'Coder'}  # noqa flake8
 # Father and mother
 # 1
-{% endhighlight %}
+~~~
 lazy_evaluation.py
 {:.figure}
 
 ## lazy_evaluation Test
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_lazy.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from __future__ import print_function
@@ -153,6 +152,6 @@ class TestDynamicExpanding(unittest.TestCase):
         for _ in range(2):
             self.assertEqual(self.John.parents, "Father and mother")
         self.assertEqual(self.John.call_count2, 1)
-{% endhighlight %}
+~~~
 test_lazy.py
 {:.figure}

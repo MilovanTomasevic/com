@@ -7,47 +7,49 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## Setup
 
 ### Installation
 
-```sh
+~~~sh
+# file: 'terminal'
 apt-get install libopenmpi-dev 
 apt-get install openmpi-bin 
-```
+~~~
 
 ### Compilation & Running OpenMP
-```sh
+~~~sh
+# file: 'terminal'
 gcc -o name name.c -fopenmp
 ./name
-```
+~~~
 
 ### Compilation & Running MPI
 
-```sh
+~~~sh
+# file: 'terminal'
 mpicc filename.c -o filename 
 mpirun -np 1 ./filename # -lm
-```
+~~~
 
 ### Compilation & Running OpenACC
 
-```sh
+~~~sh
+# file: 'terminal'
 gcc -o izvrsna_dat izvorna_dat.c -fopenacc
 ./izvrsna_dat
-```
+~~~
 
 ## Primeri 
 
 ### ptraliasing.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'ptraliasing.c'
 void assign(int *a, int *b, int size) {
     #pragma acc kernels
     {
@@ -59,13 +61,14 @@ void assign(int *a, int *b, int size) {
 int main() {
     return 0;
 }
-{% endhighlight %}
+~~~
 ptraliasing.c
 {:.figure}
 
 ### parallel.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'parallel.c'
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -85,13 +88,14 @@ int main() {
 
 	return 0;
 }
-{% endhighlight %}
+~~~
 parallel.c
 {:.figure}
 
 ### parallelloop.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'parallelloop.c'
 #include <stdlib.h>
 #include <openacc.h>
 
@@ -112,13 +116,14 @@ int main() {
 
   return 0;
 }
-{% endhighlight %}
+~~~
 parallelloop.c
 {:.figure}
 
 ### data.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'data.c'
 #include <stdlib.h>
 
 #define N 1024
@@ -145,13 +150,14 @@ int main() {
 
   return 0;
 }
-{% endhighlight %}
+~~~
 data.c
 {:.figure}
 
 ### matrixop.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'matrixop.c'
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -189,13 +195,14 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
-{% endhighlight %}
+~~~
 matrixop.c
 {:.figure}
 
 ### matrixop-coalesced.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'matrixop-coalesced.c'
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -231,13 +238,14 @@ int main(int argc, char *argv[]) {
 
   return 0;
 }
-{% endhighlight %}
+~~~
 matrixop-coalesced.c
 {:.figure}
 
 ### matrixinit.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'matrixinit.c'
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -273,13 +281,14 @@ int main(int argc, char *argv[]) {
   free(randomMatrix);
   printf("Elapsed Time: %f ms\n",((float)(t2 - t1) / 1000000.0F ) * 1000);
 }
-{% endhighlight %}
+~~~
 matrixinit.c
 {:.figure}
 
 ### matrixinitdiv.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'matrixinitdiv.c'
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -321,6 +330,6 @@ int main(int argc, char *argv[]) {
 
   return 0;
 }
-{% endhighlight %}
+~~~
 matrixinitdiv.c
 {:.figure}

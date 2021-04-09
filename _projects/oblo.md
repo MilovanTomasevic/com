@@ -33,7 +33,8 @@ Work time
 {:.figure}
 
 
-{% highlight swift linenos %}
+~~~swift
+# file: 'LoginViewController.m'
 -(void)loginButtonClicked:(UIButton*)sender
 {
     LogI(@"Login button clicked");
@@ -76,11 +77,12 @@ Work time
         [ALERT_PRESENTER presentAlertWithTitle:NSLocalizedString(@"error",nil) message:NSLocalizedString(@"msg_19",nil)];
     }
 }
-{% endhighlight %}
+~~~
 objC Examples Login
 {:.figure}
 
-{% highlight swift linenos %}
+~~~swift
+# file: 'LiveViewController.m'
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear: animated];
 
@@ -146,7 +148,7 @@ objC Examples Login
             [self messagePresent];
         }
 }
-{% endhighlight %}
+~~~
 objC Examples Open video
 {:.figure}
 
@@ -156,7 +158,8 @@ objC Examples Open video
 </figure>
 
 
-{% highlight java linenos %}
+~~~java
+// file: 'Login.java'
 package iOS;
 
 import Utils.Config;
@@ -248,7 +251,7 @@ public class Login {
     }
 }
 
-{% endhighlight %}
+~~~
 Test for Login (Java)
 {:.figure}
 

@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## facade Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns facade
 
-{% highlight python linenos %}
+~~~py
+# file: 'facade.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -139,13 +137,14 @@ if __name__ == '__main__':
 # Tearing down
 # Test Finished
 #
-{% endhighlight %}
+~~~
 facade.py
 {:.figure}
 
 ## facade Test
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_facade.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -201,6 +200,6 @@ class TestRunnerFacilities(unittest.TestCase):
         self.assertEqual(
             output, str(self.average_result_tc1 + '\n\n' + self.average_result_tc2 + '\n\n' + self.average_result_tc3)
         )
-{% endhighlight %}
+~~~
 test_facade.py
 {:.figure}

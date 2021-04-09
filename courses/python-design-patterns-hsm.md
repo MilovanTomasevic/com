@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## hsm Model
 
@@ -26,7 +23,8 @@ Test
 
 ## Python-Design-Patterns hsm
 
-{% highlight python linenos %}
+~~~py
+# file: 'hsm.py'
 """
 Implementation of the HSM (hierarchical state machine) or
 NFSM (nested finite state machine) C++ example from
@@ -193,13 +191,14 @@ class Failed(OutOfService):
 
     def __init__(self, HierachicalStateMachine):
         self._hsm = HierachicalStateMachine
-{% endhighlight %}
+~~~
 hsm.py
 {:.figure}
 
 ## hsm Test
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_hsm.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -294,6 +293,6 @@ class StandbyStateTest(unittest.TestCase):
         with cls.assertRaises(UnsupportedTransition):
             cls.hsm.on_message('operator inservice')
         cls.assertEqual(isinstance(cls.hsm._current_state, Standby), True)
-{% endhighlight %}
+~~~
 test_hsm.py
 {:.figure}

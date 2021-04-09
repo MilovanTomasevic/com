@@ -7,104 +7,110 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## Primer 1
 
 Prikazati šifru i naziv predmeta.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer2-1.sql'
 RANGE OF PX IS PREDMET
 PX.SIFRA, PX.NAZIV
-{% endhighlight %}
+~~~
 
 ## Primer 2
 
 Prikazati podatke o predmetima koji imaju po 6 kredita.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer2-2.sql'
 RANGE OF PX IS PREDMET
 P.* WHERE KREDITI = 6
-{% endhighlight %}
+~~~
 
 ## Primer 3
 
 Izdvojiti ime i prezime studenta sa indeksom 25/2010.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer2-3.sql'
 RANGE OF DX IS DOSIJE
 DX.IME, DX.PREZIME WHERE INDEKS = 20100025
-{% endhighlight %}
+~~~
 
 ## Primer 4
 
 Za svakog studenta izdvojiti predmete koje je polagao. 
 Izdvojiti indeks studenta, naziv predmeta i ocenu koju je dobio.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer2-4.sql'
 RANGE OF IX IS ISPIT
 RANGE OF PX IS PREDMET
 IX.INDEKS, PX.NAZIV, IX.OCENA WHERE
 IX.ID_PREDMETA=PX.ID_PREDMETA
-{% endhighlight %}
+~~~
 
 ## Primer 5
 
 Izdvojiti parove predmeta koji imaju isti broj kredita. 
 Izdvojiti šifre i nazive predmeta.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer2-5.sql'
 RANGE OF PX, PY IS PREDMET
 PX.SIFRA, PX.NAZIV, PY.SIFRA, PY.NAZIV
 WHERE PX.KREDITI = PY.KREDITI AND PX.ID_PREMETA < PY.ID_PREDMETA
-{% endhighlight %}
+~~~
 
 ## Primer 6
 
 Izdvojiti šifre i nazive predmeta koje je položio student sa indeksom 26/2010.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer2-6.sql'
 RANGE OF PX IS PREDMET
 RANGE OF IX IS ISPIT
 PX.SIFRA, PX.NAZIVWHERE EXISTS IX (IX.ID_PREDMETA = PX.ID_PREDMETA AND IX.INDEKS =
 20100026 AND IX.OCENA > 5)
-{% endhighlight %}
+~~~
 
 ## Primer 7
 
 Izdvojiti indekse studenata koji su polagali sve predmete.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer2-7.sql'
 RANGE OF PX IS PREDMET
 RANGE OF IX IS ISPIT
 RANGE OF DX IS DOSIJE
 DX.INDEKS WHERE FORALL PX (EXISTS IX (IX.ID_PREDMETA =
 PX.ID_PREDMETA AND DX.INDEKS = IX.INDEKS))
-{% endhighlight %}
+~~~
 
 ## Primer 8
 
 Pronaci nazive predmeta koji imaju po 6 kredita i koje je polagao student sa prezimenom Vukovic.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer2-8.sql'
 RANGE OF DX IS DOSIJE
 RANGE OF PX IS PREDMET
 RANGE OF IX IS ISPIT
 PX.NAZIV
 WHERE KREDITI = 6 AND EXISTS IX(IX.ID_PREDMETA = PX.ID_PREDMETA
 AND EXISTS DX (DX.INDEKS = IX.INDEKS AND DX.PREZIME = ‘Vukovic’))
-{% endhighlight %}
+~~~
 
 ## Primer 9
 
 Pronaci indekse studenata koji su položili bar sve predmete koje je položio student sa indeksom 25/2010.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer2-9.sql'
 RANGE OF PX IS PREDMET
 RANGE OF IX, IY IS ISPIT
 RANGE OF DX IS DOSIJE
@@ -112,13 +118,14 @@ DX.INDEKS WHERE FORALL PX(IF EXISTS IX(IX.ID_PREDMETA =
 PX.PREDMETA AND IX.INDEKS = 20100025 AND IX.OCENA>5) THEN EXISTS
 IY(IY.ID_PREDMETA = PX.ID_PREDMETA AND IY.INDEKS = DX.INDEKS AND
 IX.OCENA >5))
-{% endhighlight %}
+~~~
 
 ## Primer 10
 
 Pronaci indeks, ime i prezime studenta koji je položio samo Programiranje 1.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer2-10.sql'
 RANGE OF PX IS PREDMETRANGE OF IX, IY IS ISPIT
 RANGE DX OF DOSIJE
 DX.INDEKS, DX.IME, DX.PREZIME
@@ -126,14 +133,15 @@ WHERE EXISTS IX (IX.INDEKS = DX.INDEKS AND IX.OCENA > 5 AND EXISTS
 PX (PX.ID_PREDMETA = IX.ID_PREDMETA AND PX.NAZIV = ‘Programiranje 1’
 AND NOT EXISTS IY(IY.INDEKS = DX.INDEKS AND IY.ID_PREDMETA <>
 PX.ID_PREDMETA AND IY.OCENA >5)))
-{% endhighlight %}
+~~~
 
 ## Primer 11
 
 Pronaći predmet sa najvećim brojem kredita. 
 Izdvojiti naziv i broj kredita predmeta.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer2-11.sql'
 -- Relaciona algebra:
 DEFINE ALIAS P1 FOR PREDMET
 DEFINE ALIAS P2 FOR PREDMET
@@ -146,14 +154,15 @@ P3)[P3.NAZIV, KREDITI]
 -- Relacioni račun:
 RANGE OD PX, PY IS PREDMET
 PX.KREDITI, PX.NAZIV WHERE NOT EXISTS PY (PY.KREDITI > PX.KREDITI)
-{% endhighlight %}
+~~~
 
 ## Primer 12
 
 Pronaci studente koji su položili neki predmet sa 6 kredita. 
 Izdvojiti indeks, ime, prezime i naziv predmeta.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer2-12.sql'
 -- Relaciona algebra:
 (DOSIJE JOIN (ISPIT WHERE OCENA > 5) JOIN (PREDMET WHERE KREDITI =
 6))[DOSIJE.INDEKS, DOSIJE.IME, DOSIJE.PREZIME, PREDMET.NAZIV]
@@ -165,13 +174,14 @@ RANGE OF DX IS DOSIJE
 DX.INDEKS, DX.IME, DX.PREZIME, PX.PREDMET
 WHERE PX.KREDITI = 6 AND EXISTS IX (IX.ID_PREDMETA =
 PX.ID_PREDMETA AND IX.OCENA > 5 AND IX.INDEKS = DX.INDEKS)
-{% endhighlight %}
+~~~
 
 ## Primer 13
 
 Pronaci studenta koji je u jednoj godini položio sve predmete. 
 Izdvojiti godinu i indeks.
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer2-13.sql'
 -- Relaciona algebra:
 (ISPIT WHERE OCENA>5)[GODINA_ROKA, INDEKS, ID_PREDMETA]
 DIVIDE BY
@@ -186,12 +196,13 @@ IRX.GODINA_ROKA, DY.INDEKS
 WHERE EXISTS DX(FORALL PX(EXISTS IX
 (IX.GODINA_ROKA=IRX.GODINA_ROKA AND IX.INDEKS=DX.INDEKS AND
 IX.ID_PREDMETA=PX.ID_PREDMETA AND IX.OCENA>5))
-{% endhighlight %}
+~~~
 
 ## Primer 14
 
 Pronaci studente koji su predmet sa identifikatorom 4002 polagali tacno dva puta.
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer2-14.sql'
 -- Relaciona algebra:
 DEFINE ALIAS I1 FOR ISPIT
 DEFINE ALIAS I2 FOR ISPITDEFINE ALIAS I3 FOR ISPIT
@@ -222,13 +233,14 @@ IZ(IZ.INDEKS=DX.INDEKS AND IZ.ID_PREDMETA=4002 AND
 IX.OZNAKA_ROKA<>IZ.OZNAKA_ROKA) AND
 (IY.GODINA_ROKA<>IZ.GODINA_ROKA OR
 IY.OZNAKA_ROKA<>IZ.OZNAKA_ROKA))))
-{% endhighlight %}
+~~~
 
 ## Primer 15
 
 Pronaci predmete koje su položili dva studenta rodjena iste godine. 
 Izdvojiti godinu i naziv predmeta.
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer2-15.sql'
 -- Relaciona algebra:
 DEFINE ALIAS ISPIT1 FOR ISPIT
 DEFINE ALIAS DOSIJE1 FOR DOSIJE
@@ -247,13 +259,14 @@ IX.ID_PREDMETA=PX.ID_PREDMETA AND IX.OCENA>5 AND EXISTS
 IY(IY.ID_PREDMETA=PX.ID_PREDMETA AND IY.OCENA>5 AND EXISTS
 DY(DY.INDEKS<>DX.INDEKS AND
 DX.GOD_RODJENJA=DY.GOD_RODJENJA)))
-{% endhighlight %}
+~~~
 
 ## Primer 16
 
 Pronaci studenta koji: 
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer2-16.sql'
 -- je položio sve predmete od 6 kredita
 -- Relaciona algebra:
 (ISPIT WHERE OCENA>5)[INDEKS, ID_PREDMETA]
@@ -294,4 +307,4 @@ MINUS
 ((ISPIT WHERE OCENA>5)[INDEKS, ID_PREDMETA]
 DIVIDE BY
 (PREDMET WHERE KREDITI=6)[ID_PREDMETA])
-{% endhighlight %}
+~~~

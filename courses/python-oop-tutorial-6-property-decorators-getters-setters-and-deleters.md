@@ -7,17 +7,15 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ##  Run Code 1 in Python
 
-{% highlight python linenos %}
-
+~~~py
+# file: 'start6.py'
 class Employee:
 
     def __init__(self, first, last):
@@ -53,6 +51,6 @@ print(emp_1.email)
 print(emp_1.fullname)
 
 del emp_1.fullname
-{% endhighlight %}
-start.py
+~~~
+start6.py
 {:.figure}

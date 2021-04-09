@@ -1,9 +1,9 @@
-GIT
-  remote: git@hydejack:qwtel/hydejack-8-pro.git
-  revision: c60ab8d18249c8bb065b4a2d861e2005ae0f944a
+PATH
+  remote: #jekyll-theme-hydejack
   specs:
-    jekyll-theme-hydejack-pro (8.5.2)
-      jekyll (~> 3.7)
+    jekyll-theme-hydejack (9.1.2)
+      jekyll (>= 3.8, < 5.0)
+      jekyll-include-cache (~> 0.2)
 
 GEM
   remote: https://rubygems.org/
@@ -44,6 +44,8 @@ GEM
     jekyll-default-layout (0.1.4)
       jekyll (~> 3.0)
     jekyll-feed (0.13.0)
+      jekyll (>= 3.7, < 5.0)
+    jekyll-include-cache (0.2.1)
       jekyll (>= 3.7, < 5.0)
     jekyll-optional-front-matter (0.3.2)
       jekyll (>= 3.0, < 5.0)
@@ -109,7 +111,7 @@ DEPENDENCIES
   jekyll-relative-links
   jekyll-seo-tag
   jekyll-sitemap
-  jekyll-theme-hydejack-pro!
+  jekyll-theme-hydejack!
   jekyll-titles-from-headings
   tzinfo-data
 

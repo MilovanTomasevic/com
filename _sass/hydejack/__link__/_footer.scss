@@ -7,7 +7,7 @@
 // During development you can run `npm run watch:css`
 // to continuosly rebuild this file.
 
-// Copyright (c) 2018 Milovan Tomašević <https://milovantomasevic.com/>
+// Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -23,21 +23,19 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-main > footer {
+main > footer.content {
   position: absolute;
   bottom: 0;
-  left: .5rem;
+  left: 0;
   right: 0;
-  padding: 0 1rem;
-  color: var(--text-muted);
+  color: var(--gray);
   text-align: center;
+  min-height: 0;
+  padding-top: 0;
+  padding-bottom: 2rem;
 
   > p {
     margin-bottom: 0;
-  }
-
-  @media screen and (min-width: $break-point-3) {
-    left: 0;
   }
 
   @media print {

@@ -7,17 +7,15 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 
 ##  Run Code 1 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app1.py'
 def add(x, y):
     """Add Function"""
     return x + y
@@ -38,13 +36,12 @@ def divide(x, y):
     if y == 0:
         raise ValueError('Can not divide by zero!')
     return x / y
-{% endhighlight %}
-calc.py
-{:.figure}
+~~~
 
 ##  Run Code 2 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app2.py'
 import unittest
 import calc
 
@@ -85,13 +82,12 @@ if __name__ == '__main__':
 
 ##doc
 #https://docs.python.org/3/library/unittest.html#unittest.TestCase.debug
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 3 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'employee.py'
 
 import requests
 
@@ -123,14 +119,12 @@ class Employee:
             return response.text
         else:
             return 'Bad Response!'
-{% endhighlight %}
-employee.py
-{:.figure}
-
+~~~
 
 ##  Run Code 4 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_employee.py'
 import unittest
 from employee import Employee
 
@@ -176,13 +170,12 @@ class TestEmployee(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-{% endhighlight %}
-test_employee.py
-{:.figure}
+~~~
 
 ##  Run Code 5 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_employee.py'
 ###### With Prints ######
 
 import unittest
@@ -232,13 +225,12 @@ class TestEmployee(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-{% endhighlight %}
-test_employee.py
-{:.figure}
+~~~
 
 ##  Run Code 6 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app6.py'
 import unittest
 from unittest.mock import patch
 from employee import Employee
@@ -311,6 +303,4 @@ class TestEmployee(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 # sudo pip3 install requests
-{% endhighlight %}
-test_employee.py
-{:.figure}
+~~~

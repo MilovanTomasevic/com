@@ -17,7 +17,8 @@ hide_description: true
 
 ##  Test text
 
-{% highlight csv linenos %}
+~~~sh
+# file: 'data.csv'
 first_name,last_name,email
 John,Doe,john-doe@bogusemail.com
 Mary,Smith-Robinson,maryjacobs@bogusemail.com
@@ -63,13 +64,14 @@ Jane,Stuart,janestuart@bogusemail.com
 Travis,Arnold,travisarnold@bogusemail.com
 John,Robinson,johnrobinson@bogusemail.com
 Travis,Arnold,travisarnold@bogusemail.com
-{% endhighlight %}
+~~~
 names.csv
 {:.figure}
 
 ##  Run Code 1 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app1.py'
 import csv
 
 with open('names.csv', 'r') as csv_file:
@@ -77,14 +79,13 @@ with open('names.csv', 'r') as csv_file:
 
     for line in csv_reader:
         print(line)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 
 ##  Run Code 2 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app2.py'
 import csv
 
 with open('names.csv', 'r') as csv_file:
@@ -92,13 +93,12 @@ with open('names.csv', 'r') as csv_file:
 
     for line in csv_reader:
         print(line[2])
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 3 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app3.py'
 import csv
 
 with open('names.csv', 'r') as csv_file:
@@ -108,13 +108,12 @@ with open('names.csv', 'r') as csv_file:
     
     for line in csv_reader:
         print(line[2])
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 4 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app4.py'
 import csv
 
 with open('names.csv', 'r') as csv_file:
@@ -125,14 +124,13 @@ with open('names.csv', 'r') as csv_file:
 
         for line in csv_reader:
             csv_writer.writerow(line)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 
 ##  Run Code 5 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app5.py'
 import csv
 
 with open('names.csv', 'r') as csv_file:
@@ -143,13 +141,12 @@ with open('names.csv', 'r') as csv_file:
 
         for line in csv_reader:
             csv_writer.writerow(line)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 6 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app6.py'
 import csv
 
 with open('new_names.csv', 'r') as csv_file:
@@ -157,27 +154,25 @@ with open('new_names.csv', 'r') as csv_file:
 
     for line in csv_reader:
         print(line)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 7 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app7.py'
 import csv
 
 with open('new_names.csv', 'r') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter='\t')
     for line in csv_reader:
         print(line)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 
 ##  Run Code 8 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app8.py'
 import csv
 
 with open('names.csv', 'r') as csv_file:
@@ -185,13 +180,12 @@ with open('names.csv', 'r') as csv_file:
 
     for line in csv_reader:
         print(line)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 9 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app9.py'
 import csv
 
 with open('names.csv', 'r') as csv_file:
@@ -199,13 +193,12 @@ with open('names.csv', 'r') as csv_file:
 
     for line in csv_reader:
         print(line['email'])
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 10 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app10.py'
 import csv
 
 with open('names.csv', 'r') as csv_file:
@@ -220,14 +213,13 @@ with open('names.csv', 'r') as csv_file:
 
         for line in csv_reader:
             csv_writer.writerow(line)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 
 ##  Run Code 11 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app11.py'
 import csv
 
 with open('names.csv', 'r') as csv_file:
@@ -243,6 +235,4 @@ with open('names.csv', 'r') as csv_file:
         for line in csv_reader:
             del line['email']
             csv_writer.writerow(line)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~

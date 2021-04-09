@@ -7,16 +7,14 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 ##  Test text
 
-{% highlight text linenos %}
+~~~sh
+# file: 'text.ptxty'
 1) This is a test file
 2) With multiple lines of data...
 3) Third line
@@ -27,13 +25,14 @@ hide_description: true
 8) Eighth line
 9) Ninth line
 10) Tenth line
-{% endhighlight %}
+~~~
 text.txt
 {:.figure}
 
 ##  Run Code 1 in Python
 
-{% highlight text linenos %}
+~~~sh
+# file: 'app1.py'
 #File Objects
 
 ##The Basics:
@@ -44,24 +43,24 @@ f = open("test.txt", "r+")
 print(f.name)
 print(f.mode)
 f.close()
-{% endhighlight %}
+~~~
 text.txt
 {:.figure}
 
 
 ##  Run Code 2 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app2.py'
 ##Reading Files:
 with open("test.txt", "r") as f:
 	pass
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 3 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app3.py'
 ##Reading Files: uncomment part by part 
 with open("test.txt", "r") as f:
 	#pass
@@ -123,13 +122,12 @@ with open("test.txt", "r") as f:
 #print(f.mode)
 #print(f.closed)
 #print(f.read())
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 4 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app4.py'
 ##Writing Files:
 ###The Error:
 with open("test.txt", "r") as f:
@@ -142,52 +140,48 @@ with open("test2.txt", "w") as f:
 	f.seek(0)
 	f.write("Test")
 	f.seek("R")
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 
 ##  Run Code 5 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app5.py'
 ##Copying Files:
 with open("test.txt", "r") as rf:
 	with open("test_copy.txt", "w") as wf:
 		for line in rf:
 			wf.write(line)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 6 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app6.py'
 #Copying the/your image:
 ###The Error
 with open("yourPic.jpg", "r") as rf:
 	with open("yourPic_copy.jpg", "w") as wf:
 		for line in rf:
 			wf.write(line)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 7 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app7.py'
 ###Copying the image starts, without chunks:
 with open("yourPic.jpg", "rb") as rf:
 	with open("yourPic_copy.jpg", "wb") as wf:
 		for line in rf:
 			wf.write(line)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 
 ##  Run Code 8 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app8.py'
 ###Copying the image with chunks:
 with open("yourPic.jpg", "rb") as rf:
 	with open("yourPic_copy.jpg", "wb") as wf:
@@ -196,6 +190,4 @@ with open("yourPic.jpg", "rb") as rf:
         while len(rf_chunk) > 0:
             wf.write(rf_chunk)
             rf_chunk = rf.read(chunk_size)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~

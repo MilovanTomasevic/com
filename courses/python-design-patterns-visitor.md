@@ -7,12 +7,10 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ## visitor Model
 
@@ -20,7 +18,8 @@ hide_description: true
 
 ## Python-Design-Patterns visitor
 
-{% highlight python linenos %}
+~~~py
+# file: 'visitor.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -74,6 +73,6 @@ visitor.visit(c)
 # generic_visit A
 # visit_B B
 # visit_B C
-{% endhighlight %}
+~~~
 visitor.py
 {:.figure}

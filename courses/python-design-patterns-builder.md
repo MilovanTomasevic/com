@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## builder Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns builder
 
-{% highlight python linenos %}
+~~~py
+# file: 'builder.py'
 #!/usr/bin/python
 # -*- coding : utf-8 -*-
 
@@ -124,13 +122,14 @@ if __name__ == "__main__":
 # Floor: One | Size: Big
 # Floor: More than One | Size: Small
 # Floor: One | Size: Big and fancy
-{% endhighlight %}
+~~~
 builder.py
 {:.figure}
 
 ## builder Test
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_builder.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -152,6 +151,6 @@ class TestComplex(unittest.TestCase):
         house = construct_building(ComplexHouse)
         self.assertEqual(house.size, 'Big and fancy')
         self.assertEqual(house.floor, 'One')
-{% endhighlight %}
+~~~
 test_builder.py
 {:.figure}

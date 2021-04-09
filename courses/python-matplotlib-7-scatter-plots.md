@@ -7,16 +7,14 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 ##  Run Code 1 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'starting_code.py'
 import pandas as pd
 from matplotlib import pyplot as plt
 
@@ -43,15 +41,15 @@ y = [7, 4, 3, 9, 1, 3, 2, 5, 2, 4, 8, 7, 1, 6, 4, 9, 7, 7, 5, 1]
 plt.tight_layout()
 
 plt.show()
-{% endhighlight %}
+~~~
 starting_code.py
 {:.figure}
 
 
 ##  Run Code 2 in Python
 
-{% highlight python linenos %}
-
+~~~py
+# file: 'finished_code.py'
 import pandas as pd
 from matplotlib import pyplot as plt
 
@@ -78,7 +76,7 @@ plt.ylabel('Total Likes')
 plt.tight_layout()
 
 plt.show()
-{% endhighlight %}
+~~~
 finished_code.py
 {:.figure}
 
@@ -91,7 +89,8 @@ finished_code.py
 
 ##  CSV data
 
-{% highlight csv linenos %}
+~~~sh
+# file: '2019-05-31-data.csv'
 view_count,likes,ratio
 8036001,324742,96.91
 9378067,562589,98.19
@@ -293,6 +292,6 @@ view_count,likes,ratio
 319347,1208,92.5
 27594927,1351963,96.4
 26993425,437561,97.42
-{% endhighlight %}
+~~~
 data.csv
 {:.figure}

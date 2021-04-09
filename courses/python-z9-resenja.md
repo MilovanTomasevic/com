@@ -7,16 +7,14 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 ## Functions
 
-{% highlight python linenos %}
+~~~py
+# file: 'functions.py'
 import sys
 from math import inf
 from vertex import *
@@ -78,13 +76,14 @@ def topological_sort(G):
     dfs(G)
     L = sorted(G, key=lambda x: x.f, reverse=True)
     return L
-{% endhighlight %}
+~~~
 functions.py
 {:.figure}
 
 ## Vertex
 
-{% highlight python linenos %}
+~~~py
+# file: 'vertex.py'
 import sys
 from queue import Queue as queue
 
@@ -105,13 +104,14 @@ class VertexColor:
     BLACK = 0
     GRAY = 127
     WHITE = 255
-{% endhighlight %}
+~~~
 vertex.py
 {:.figure}
 
 ## Zadatak 1
 
-{% highlight python linenos %}
+~~~py
+# file: 'z9-1.py'
 import sys
 from functions import *
 
@@ -181,6 +181,4 @@ if __name__ == "__main__":
     # Topological sort
     L = topological_sort(G2)
     print([(i.val, i.d, i.f) for i in reversed(L)])
-{% endhighlight %}
-zadatak1.py
-{:.figure}
+~~~

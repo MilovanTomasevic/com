@@ -18,20 +18,16 @@ basics:
     needs to overcome obstacles and work diligently. And `all will be okay`, if not at the very instant,
     tomorrow, but it will.
   location:
-    address: ""
     postalCode: "1000"
     city: "Ljubljana"
     countryCode: "SI"
-    region: ""
   profiles:
     - network: "download"
       username: "CV"
       url: "../mt2020cv-en.pdf"
-
     - network: "download"
       username: "CV(slo)"
       url: "../mt2020cv.pdf"
-      
     - network: "LinkedIn"
       username: "Milovan Tomašević"
       url: "https://www.linkedin.com/in/PhDMilovanTomasevic/"

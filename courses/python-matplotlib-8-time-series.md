@@ -7,16 +7,14 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 ##  Run Code 1 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'starting_code.py'
 import pandas as pd
 from datetime import datetime, timedelta
 from matplotlib import pyplot as plt
@@ -47,14 +45,15 @@ y = [0, 1, 3, 4, 6, 5, 7]
 plt.tight_layout()
 
 plt.show()
-{% endhighlight %}
+~~~
 starting_code.py
 {:.figure}
 
 
 ##  Run Code 2 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'finished_code.py'
 import pandas as pd
 from datetime import datetime, timedelta
 from matplotlib import pyplot as plt
@@ -81,7 +80,7 @@ plt.ylabel('Closing Price')
 plt.tight_layout()
 
 plt.show()
-{% endhighlight %}
+~~~
 finished_code.py
 {:.figure}
 
@@ -94,7 +93,8 @@ finished_code.py
 
 ##  CSV data
 
-{% highlight csv linenos %}
+~~~sh
+# file: 'data.csv'
 Date,Open,High,Low,Close,Adj Close,Volume
 2019-05-18,7266.080078,8281.660156,7257.259766,8193.139648,8193.139648,723011166
 2019-05-19,8193.139648,8193.139648,7591.850098,7998.290039,7998.290039,637617163
@@ -110,6 +110,6 @@ Date,Open,High,Low,Close,Adj Close,Volume
 2019-05-29,8664.559570,9065.889648,8027.209961,8276.250000,8276.250000,815525590
 2019-05-30,8276.250000,8570.780273,8116.000000,8560.080078,8560.080078,500141087
 2019-05-31,8550.629883,8576.339844,8459.650391,8504.980469,8504.980469,69915456
-{% endhighlight %}
+~~~
 data.csv
 {:.figure}

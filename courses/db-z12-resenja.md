@@ -7,16 +7,14 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 ## Primer 1
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer12-1.sql'
 with uslovni(id_predmeta, id_uslovnog) as (
 select id_predmeta, id_uslovnog
 from uslovni_predmet
@@ -29,11 +27,12 @@ select distinct u.id_predmeta, p1.naziv, id_uslovnog, p2.naziv
 from uslovni u 
 join predmet p1 on p1.id_predmeta=u.id_predmeta 
 join predmet p2 on p2.id_predmeta=u.id_uslovnog;
-{% endhighlight %}
+~~~
 
 ## Primer 2
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer12-2.sql'
 with uslovni(nivo, id_predmeta, id_uslovnog) as (
 select 0, id_predmeta, id_uslovnog
 from uslovni_predmet
@@ -46,11 +45,12 @@ select distinct nivo, u.id_predmeta, p1.naziv, id_uslovnog, p2.naziv
 from uslovni u 
 join predmet p1 on p1.id_predmeta=u.id_predmeta 
 join predmet p2 on p2.id_predmeta=u.id_uslovnog where nivo>0;
-{% endhighlight %}
+~~~
 
 ## Primer 3
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer12-3.sql'
 with sp as (
 select s.id_smera, s.oznaka, s.bodovi espbuk, sum(p.bodovi) espbob 
 from obavezan_predmet op
@@ -82,11 +82,12 @@ espbob, polob,
 case when espbob>0 then polob*100.0/espbob else 0 end procob
 from polozeno p 
 join sp on sp.id_smera = p.id_smera 
-{% endhighlight %}
+~~~
 
 ## Primer 4
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer12-4.sql'
 with prolaznost as (
 select ir.naziv naziv_roka, p.id_predmeta,
 p.naziv naziv_predmeta, 
@@ -105,11 +106,12 @@ when brPrijavili>0 and (brPolozili+brPonistili)*100.0/brPrijavili > 80 then 'odl
 else 'losa' end as rang
 from prolaznost 
 order by rang;
-{% endhighlight %}
+~~~
 
 ## Primer 5
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer12-5.sql'
 with polozeno as (
 select i.indeks, sum(p.bodovi) as polozeno 
 from ispit i 
@@ -138,11 +140,12 @@ ocena > 5 ))
 
 and s.bodovi > p.polozeno 
 order by nepolozeno_obaveznih;
-{% endhighlight %}
+~~~
 
 ## Primer 6
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer12-6.sql'
 update upis_godine ug
 set upisano_bodova=(select sum(p.bodovi)
     from upisan_kurs uk 
@@ -168,11 +171,12 @@ where godina=2008 and indeks in ( select indeks
     join nivo_kvalifikacije nk on s.id_nivoa=nk.id
     where nk.stepen='VI')
 and upisano_bodova is not null;
-{% endhighlight %}
+~~~
 
 ## Primer 7
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer12-7.sql'
 --create trigger unos_ispita
 
 before insert on ispit
@@ -189,11 +193,12 @@ begin atomic
         else null
     end;
 end@
-{% endhighlight %}
+~~~
 
 ## Primer 8
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer12-8.sql'
 create type rsd as float;
 create function iznosskolarine(bodovi integer) --returns rsd
 return bodovi*1200.0;
@@ -231,4 +236,4 @@ when matched then
 when not matched then
  insert (indeks, godina, bodova, iznos)
  values(p.indeks, p.godina, p.upisano_bodova, iznosskolarine(upisano_bodova));
-{% endhighlight %}
+~~~

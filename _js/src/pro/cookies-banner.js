@@ -1,28 +1,29 @@
-// # src / cookies-banner.js
-// Copyright (c) 2018 Milovan Tomašević <https://milovantomasevic.com/>
+// Copyright (c) 2019 Florian Klampfer <https://qwtel.com/>
 
-import { importTemplate } from "../common";
+import { importTemplate, stylesheetReady } from '../common';
 
-requestIdleCallback(() => {
-  if (!navigator.CookiesOK && document.cookie.indexOf("hy--cookies-ok") === -1) {
-    const cookiesBanner = importTemplate("_cookies-banner-template");
+(async () => {
+  await stylesheetReady;
+
+  if (!navigator.CookiesOK && document.cookie.indexOf('hy--cookies-ok') === -1) {
+    const cookiesBanner = importTemplate('_cookies-banner-template');
     if (cookiesBanner) {
-      const parent = document.getElementsByTagName("hy-push-state")[0];
-      parent.insertBefore(cookiesBanner, parent.firstChild);
+      const parent = document.querySelector('hy-push-state');
+      parent?.insertBefore(cookiesBanner, parent.firstChild);
 
-      document.getElementById("_cookies-ok").addEventListener(
-        "click",
+      document.getElementById('_cookies-ok')?.addEventListener(
+        'click',
         () => {
           const maxAge = 60 * 60 * 24 * 356;
           document.cookie = `hy--cookies-ok=true;path=/;max-age=${maxAge}`;
 
-          const banner = document.getElementById("_cookies-banner");
-          banner.parentNode.removeChild(banner);
+          const banner = document.getElementById('_cookies-banner');
+          banner?.parentNode?.removeChild(banner);
 
-          document.dispatchEvent(new CustomEvent("hy--cookies-ok"));
+          document.dispatchEvent(new CustomEvent('hy--cookies-ok'));
         },
-        { once: true }
+        { once: true },
       );
     }
   }
-});
+})();

@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## abstract_factory Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns abstract_factory
 
-{% highlight python linenos %}
+~~~py
+# file: 'abstract_factory.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -122,13 +120,14 @@ if __name__ == "__main__":
 # We have a lovely Cat
 # It says meow
 # ====================
-{% endhighlight %}
+~~~
 abstract_factory.py
 {:.figure}
 
 ## abstract_factory Test
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_abstract_factory.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -145,6 +144,6 @@ class TestPetShop(unittest.TestCase):
         with patch.object(Dog, 'speak') as mock_Dog_speak:
             dog_pet_shop.show_pet()
             self.assertEqual(mock_Dog_speak.call_count, 1)
-{% endhighlight %}
+~~~
 test_abstract_factory.py
 {:.figure}

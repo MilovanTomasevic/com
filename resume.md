@@ -18,4 +18,9 @@ right_column:
  - interests
  - awards
 
+buttons:
+  print: true
+  pdf: /assets/Resume.pdf
+  vcf: http://h2vx.com/vcf/<!--url-->
+  json: /assets/resume.json
 ---

@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## setter_injection Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns setter_injection
 
-{% highlight python linenos %}
+~~~py
+# file: 'setter_injection.py'
 #!/usr/bin/python
 # -*- coding : utf-8 -*-
 import datetime
@@ -75,13 +73,14 @@ class MidnightTimeProvider(object):
     def now(self):
         current_time_is_always_midnight = "24:01"
         return current_time_is_always_midnight
-{% endhighlight %}
+~~~
 setter_injection.py
 {:.figure}
 
 ## setter_injection Test
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_setter_injection.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -127,6 +126,6 @@ class ParameterInjectionTest(unittest.TestCase):
         current_time = datetime.datetime.now()
         expected_time = "<span class=\"tinyBoldText\">{}:{}</span>".format(current_time.hour, current_time.minute)
         self.assertEqual(class_under_test.get_current_time_as_html_fragment(), expected_time)
-{% endhighlight %}
+~~~
 test_setter_injection.py
 {:.figure}

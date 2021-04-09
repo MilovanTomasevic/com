@@ -7,12 +7,10 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ## Agregatne funkcije
 
@@ -54,67 +52,74 @@ hide_description: true
 
 Izdvojiti ukupan broj studenata.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer6-1.sql'
 select count(*) broj_studenata 
 from dosije;
-{% endhighlight %}
+~~~
 
 ## Primer 2
 
 Izdvojiti ukupan broj studenata koji bar iz jednog predmeta imaju ocenu 10.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer6-2.sql'
 select count(distinct indeks) broj_studenata 
 from ispit
 where ocena=10;
-{% endhighlight %}
+~~~
 
 ## Primer 3
 
 Izdvojiti ukupan broj položenih predmeta i položenih bodova za studenta sa indeksom 25/2010.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer6-3.sql'
 select count(*), sum(bodovi) suma_bodova
 from ispit i 
 join predmet p on i.id_predmeta=p.id_predmeta 
 where ocena>5 and indeks=20100025;
 
 -- U prethodnim primerima uočite razmiku između: count(*), count(ime_kolone), count(distinct ime_kolone)...
-{% endhighlight %}
+~~~
 
 ## Primer 4
 
 Izlistati ocene dobijene na ispitima i ako je ocena jednaka 5 ispisati NULL
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer6-4.sql'
 SELECT NULLIF(ocena, 5) 
 FROM ispit;
-{% endhighlight %}
+~~~
 
 ## Primer 5
 
 Koliko ima različitih ocena dobijenih na ispitu a da ocena nije 5.
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer6-5.sql'
 SELECT COUNT(DISTINCT NULLIF(ocena, 5)) 
 FROM ispit;
-{% endhighlight %}
+~~~
 
 ## Primer 6
 
 Izdvojiti šifre, nazive i bodove predmeta čiji je broj bodova veći od prosečnog broja bodova svih predmeta.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer6-6.sql'
 select sifra, naziv, bodovi
 from predmet
 where bodovi> (select avg(bodovi + 0.0)
     from predmet);
-{% endhighlight %}
+~~~
 
 ## Primer 7
 
 Za svaki predmet izračunati koliko studenata ga je položilo.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer6-7.sql'
 select id_predmeta, (select count(*) 
     from ispit i 
     where i.id_predmeta=p.id_predmeta and ocena>5) as polozilo
@@ -125,35 +130,38 @@ select p.id_predmeta, count(indeks) as polozilo
 from predmet p 
 left outer join ispit i on p.id_predmeta=i.id_predmeta and ocena>5 
 group by p.id_predmeta;
-{% endhighlight %}
+~~~
 
 ## Primer 8
 
 Za svakog studenta rođenog 1992. godine, koji ima bar jedan položen ispit, izdvojiti broj indeksa, prosečnu ocenu, najmanju i najveću ocenu.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer6-8.sql'
 select d.indeks, avg(ocena+0.0) as prosek, min(ocena) as najmanja_ocena, max(ocena) as najveca_ocena
 from dosije d join ispit i on d.indeks=i.indeks
 where god_rodjenja=1992 and ocena>5
 group by d.indeks;
-{% endhighlight %}
+~~~
 
 ## Primer 9
 
 Za svaku godinu ispitnog roka i predmet pronaći najveću ocenu. 
 Izdvojiti godinu roka, naziv predmeta i najveću ocenu.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer6-9.sql'
 select godina_roka, naziv, max(ocena) as najveca_ocena 
 from ispit i join predmet p on i.id_predmeta=p.id_predmeta 
 group by godina_roka, naziv;
-{% endhighlight %}
+~~~
 
 ## Primer 10
 
 Izdvojiti predmete koje je polagalo više od 5 različitih studenata.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer6-10.sql'
 select id_predmeta, count(distinct indeks) broj_studenata 
 from ispit
 group by id_predmeta
@@ -164,7 +172,7 @@ select id_predmeta
 from ispit
 group by id_predmeta
 having count(distinct indeks)>5;
-{% endhighlight %}
+~~~
 
 ## Primer 11
 ### Rešenja zadataka za vežbu
@@ -173,7 +181,8 @@ having count(distinct indeks)>5;
  Izdvojiti indeks studenta, ime meseca i broj položenih predmeta. 
  Rezultat urediti prema broju indeksa i mesecu polaganja.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer6-11.sql'
 --select indeks, monthname(datum_ispita) as mesec, count(*) as broj_predmeta --from ispit
 --where ocena>5
 --group by indeks, monthname(datum_ispita)
@@ -194,14 +203,15 @@ where ocena>5
 group by indeks, monthname(datum_ispita)
 having count(*) > 2 
 order by indeks, mesec;
-{% endhighlight %}
+~~~
 
 ## Primer 12
 ### Rešenja zadataka za vežbu
 
 Za svaki rok koji održan 2011. godine i u kome nema neuspešnih polaganja ispita, izdvojiti oznaku roka, broj položenih ispita u tom roku i broj studenata koji su položili ispite u tom roku.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer6-12.sql'
 select oznaka_roka, count(*) as broj_ispita, count(distinct indeks) broj_studenata 
 from ispit
 where godina_roka=2011
@@ -213,42 +223,45 @@ select oznaka_roka, count(*) as broj_ispita, count(distinct indeks) broj_studena
 from ispit
 group by godina_roka, oznaka_roka
 having godina_roka=2011 and min(ocena)>5;
-{% endhighlight %}
+~~~
 
 ## Primer 13
 ### Rešenja zadataka za vežbu
 
 Za svaki ispitni rok izdvojiti naziv ispitnog roka, najveću ocenu dobijenu u tom ispitnom roku i ime i prezime studenta koji je dobio tu ocenu. Ime i prezime studenta napisati u jednoj koloni. Za ispitne rokove u kojima nije bilo ispita, kao ime i prezime studenta ispisati nema, a kao ocenu 0.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer6-13.sql'
 select naziv, coalesce(ime || ' ' || prezime, 'nema'), coalesce(ocena, 0)
 from ispitni_rok ir 
 left outer join ispit i on i.godina_roka=ir.godina_roka and i.oznaka_roka=ir.oznaka_roka
 left outer join dosije d on i.indeks=d.indeks where ocena = (select max(ocena)
 from ispit i2
 where i.godina_roka=ir.godina_roka and ir.oznaka_roka=i2.oznaka_roka) or ocena is null;
-{% endhighlight %}
+~~~
 
 ## Primer 14
 ### Rešenja zadataka za vežbu
 
 Prikazati naziv predmeta koji je položio samo student Milos Peric.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer6-14.sql'
 select naziv
 from predmet p join ispit i on p.id_predmeta=i.id_predmeta
 join dosije d on d.indeks=i.indeks
 where ime='Milos' and prezime='Peric' and ocena>5
 and not exists ( select * from ispit i2
     where ocena>5 and i2.indeks<>d.indeks and i2.id_predmeta=p.id_predmeta);
-{% endhighlight %}
+~~~
 
 ## Primer 15
 ### Rešenja zadataka za vežbu
 
 Izdvojiti parove studenata čija imena počinju na slovo M i za koje važi da su bar dva ista predmeta položili u istom ispitnom roku.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer6-15.sql'
 select d1.indeks, d1.ime, d1.prezime, d2.indeks, d2.ime, d2.prezime 
 from dosije d1, dosije d2
 where d1.indeks<d2.indeks and 2 <= (select count(*) and
@@ -256,4 +269,4 @@ where d1.indeks<d2.indeks and 2 <= (select count(*) and
     join ispit i2 on i1.id_predmeta=i2.id_predmeta i1.godina_roka=i2.godina_roka and
       i1.oznaka_roka=i2.oznaka_roka where d1.indeks=i1.indeks and d2.indeks=i2.indeks
       and i1.ocena>5 and i2.ocena>5) and d1.ime like 'M%' and d2.ime like 'M%';
-{% endhighlight %}
+~~~

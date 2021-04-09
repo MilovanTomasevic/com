@@ -29,7 +29,8 @@ Milovan Tomašević works as a researcher at the [_Faculty of Information Studie
 
 OpenMP is the dominant shared-memory programming model in computational science.
 
-{% highlight C linenos %}
+~~~c
+// file: 'omp.c'
 #include <omp.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -60,7 +61,7 @@ int main (int argc, char *argv[])
   // Print result
   printf("Pi estimate: %.20f, obtained in %f seconds\n", pi, end-start);
 }
-{% endhighlight %}
+~~~
 C Examples of Parallel Programming with OpenMP (Open Multi-Processing)
 {:.figure}
 
@@ -69,7 +70,8 @@ The Message Passing Interface (MPI) is a library specification that allows HPC t
 
 OpenMPI is both a runtime and compile-time environment for MPI-compliant code.
 
-{% highlight C linenos %}
+~~~c
+// file: 'mpi.c'
 #include <mpi.h>
 #include <stdio.h>
 
@@ -122,6 +124,6 @@ int main(int argc, char* argv[])
 
         MPI_Finalize();
 }
-{% endhighlight %}
+~~~
 Message Passing Interface (MPI) - C Examples
 {:.figure}

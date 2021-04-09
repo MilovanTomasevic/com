@@ -7,17 +7,14 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
-{% highlight C linenos %}
-
+~~~c
+// file: 'hello_world.c'
 #include <stdio.h>
-
 #include "omp.h"
 
 int main() {
@@ -36,9 +33,7 @@ int main() {
 
     return 0;
 }
-
-{% endhighlight %}
-
+~~~
 
 hello_world.c
 {:.figure}
@@ -47,36 +42,41 @@ hello_world.c
 
 ### Installation
 
-```sh
+~~~sh
+# file: 'terminal'
 apt-get install libopenmpi-dev 
 apt-get install openmpi-bin 
-```
+~~~
 
 ### Compilation & Running OpenMP
-```sh
+~~~sh
+# file: 'terminal'
 gcc -o name name.c -fopenmp
 ./name
-```
+~~~
 
 ### Compilation & Running MPI
 
-```sh
+~~~sh
+# file: 'terminal'
 mpicc filename.c -o filename 
 mpirun -np 1 ./filename # -lm
-```
+~~~
 
 ### Compilation & Running OpenACC
 
-```sh
+~~~sh
+# file: 'terminal'
 gcc -o izvrsna_dat izvorna_dat.c -fopenacc
 ./izvrsna_dat
-```
+~~~
 
 ## Zadaci
 
 ### Pi.c
 
-{% highlight C linenos %}
+~~~c
+// file: 'pi.c'
 #include <stdio.h>
 #include <omp.h>
 
@@ -108,17 +108,15 @@ void serial_code() {
 
     printf("pi = %lf\n", pi);
     printf("Time elapsed: %lf\n", end - start);
-}
-{% endhighlight %}
+~~~
 
 Pi.c - zadatak
 {:.figure}
 
 ### mandelbrot.c
 
-{% highlight C linenos %}
-// mandelbrot.c
-
+~~~c
+// file: 'mandelbrot.c'
 /**
  * OpenMP paralelizovan Mandelbrotov algoritam. Program ne daje ispravne rezultate
  * zbog stetnog preplitanja koje se pojavljuje u njemu. Pronaci i otkloniti greske koje
@@ -180,16 +178,15 @@ void testpoint(void){
             numoutside++;
             break;
         }
-    }
-{% endhighlight %}
+ }
+~~~
 mandelbrot.c - zadatak 
 {:.figure}
 
 ### linkedlist.c
 
-{% highlight c linenos %}
-// Linked.c
-
+~~~c
+// file: 'linkedlist.c'
 #include <stdlib.h>
 #include <stdio.h>
 #include <omp.h>
@@ -287,8 +284,8 @@ int main(int argc, char *argv[]) {
 
     printf("Compute Time: %f seconds\n", end - start);
     return 0;
-}
-{% endhighlight %}
+
+~~~
 linkedlist.c - zadatak 
 {:.figure}
 
@@ -296,7 +293,8 @@ linkedlist.c - zadatak
 
 ### Pi.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'pi.c'
 /**
  * Program koji racuna vrednost integrala funkcije 4/(1+x^2). Numericki,
  * ova vrednost je jednaka broju pi.
@@ -556,14 +554,14 @@ void parallel_code_for_construct() {
     printf("pi = %lf\n", pi);
     printf("Time elapsed: %lf\n", end - start);
 }
-
-{% endhighlight %}
+~~~
 Pi.c - rešenje
 {:.figure}
 
 ### mandelbrot.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'mandelbrot.c'
 #include <stdio.h>
 #include <omp.h>
 
@@ -630,14 +628,15 @@ void testpoint(struct d_complex c){
             break;
         }
     }
-}
-{% endhighlight %}
+
+~~~
 mandelbrot.c - rešenje 
 {:.figure}
 
 ### linkedlist.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'linkedlist.c'
 #include <stdlib.h>
 #include <stdio.h>
 #include <omp.h>
@@ -742,7 +741,7 @@ int main(int argc, char *argv[]) {
 
     printf("Compute Time: %f seconds\n", end - start);
     return 0;
-}
-{% endhighlight %}
+
+~~~
 linkedlist.c - rešenje 
 {:.figure}

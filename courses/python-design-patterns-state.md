@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## state Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns state
 
-{% highlight python linenos %}
+~~~py
+# file: 'state.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -105,13 +103,14 @@ if __name__ == '__main__':
 # Switching to AM
 # Scanning... Station is 1250 AM
 # Scanning... Station is 1380 AM
-{% endhighlight %}
+~~~
 state.py
 {:.figure}
 
 ## Test state
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_state.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -167,6 +166,6 @@ class RadioTest(unittest.TestCase):
         state = self.radio.state.name
         expected_state_name = 'AM'
         self.assertEqual(state, expected_state_name)
-{% endhighlight %}
+~~~
 test_state.py
 {:.figure}

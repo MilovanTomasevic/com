@@ -7,12 +7,10 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ## front_controller Model
 
@@ -20,7 +18,8 @@ hide_description: true
 
 ## Python-Design-Patterns front_controller
 
-{% highlight python linenos %}
+~~~py
+# file: 'front_controller.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -91,6 +90,6 @@ if __name__ == '__main__':
 # Displaying tablet index page
 # cant dispatch the request
 # request must be a Request object
-{% endhighlight %}
+~~~
 front_controller.py
 {:.figure}

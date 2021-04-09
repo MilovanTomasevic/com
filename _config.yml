@@ -45,7 +45,7 @@ author:
   twitter:             mt_uns
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             All rights reserved.
+copyright:             © 2018 - 2021 Milovan Tomašević. All rights reserved.
 
 # Add links to the footer.
 # Typically you'll want to link to your impress, cookies or privacy policy, etc.
@@ -76,7 +76,7 @@ accent_color:          rgb(79,177,186)
 theme_color:           rgb(25,55,71)
 
 # The string encoding which fonts to fetch from Google Fonts.
-# See: <https://hydejack.com/docs/configuration/>
+# See: <https://milovantomasevic.com/docs/configuration/>
 google_fonts:          Inconsolata
 
 # The text font. Expects a string that is a valid CSS font-family value.
@@ -208,7 +208,7 @@ hydejack:
   # When enabled, no user-related data will be stored until the user gives consent.
   cookies_banner:      true
 
-  # Set to `true` if you would like to add a "Powered by Hydejack" link in the footer.
+  # Set to `true` if you would like to add a "Powered by MT" link in the footer.
   advertise:           true
 
   # Note that dark mode only works in the PRO version of Hydejack.
@@ -300,9 +300,10 @@ plugins:
 # Theme
 # ---------------------------------------------------------------------------------------
 
-# theme: jekyll-theme-hydejack
+theme: jekyll-theme-hydejack
 # remote_theme: qwtel/hydejack
-theme: jekyll-theme-hydejack-pro
+# theme: jekyll-theme-hydejack-pro
+
 
 # SEO Tag
 # ---------------------------------------------------------------------------------------

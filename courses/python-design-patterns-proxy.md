@@ -7,12 +7,10 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ## proxy Model
 
@@ -20,7 +18,8 @@ hide_description: true
 
 ## Python-Design-Patterns proxy
 
-{% highlight python linenos %}
+~~~py
+# file: 'proxy.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -76,13 +75,14 @@ if __name__ == '__main__':
 # This Sales Manager will not talk to you whether he/she is busy or not
 # Proxy checking for Sales Manager availability
 # This Sales Manager will not talk to you whether he/she is busy or not
-{% endhighlight %}
+~~~
 proxy.py
 {:.figure}
 
 ## proxy Test
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_proxy.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import sys
@@ -180,6 +180,6 @@ This Sales Manager will not talk to you whether he/she is busy or not\n'
         cls.assertEqual(print_output, expected_print_output)
         expected_execution_time = 1
         cls.assertEqual(int(execution_time * 10), expected_execution_time)
-{% endhighlight %}
+~~~
 test_proxy.py
 {:.figure}

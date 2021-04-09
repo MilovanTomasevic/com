@@ -7,12 +7,10 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ## pool Model
 
@@ -20,7 +18,8 @@ hide_description: true
 
 ## Python-Design-Patterns pool
 
-{% highlight python linenos %}
+~~~py
+# file: 'pool.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -106,13 +105,14 @@ if __name__ == '__main__':
 # Outside with: yam
 # Inside func: sam
 # Outside func: sam
-{% endhighlight %}
+~~~
 pool.py
 {:.figure}
 
 ## pool Test
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_pool.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -167,6 +167,6 @@ class TestNaitivePool(unittest.TestCase):
     # print('Outside func: {}'.format(sample_queue.get()))
 
     # if not sample_queue.empty():
-{% endhighlight %}
+~~~
 test_pool.py
 {:.figure}

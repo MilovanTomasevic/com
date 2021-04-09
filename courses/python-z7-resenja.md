@@ -7,16 +7,14 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 ## Zadatak 1
 
-{% highlight python linenos %}
+~~~py
+# file: 'z7-1.py'
 import math
 import random
 import time
@@ -90,13 +88,12 @@ if __name__ == "__main__":
             for m in [p, p//2, p//4]:
                 test(n, p, m)
 
-{% endhighlight %}
-zadatak1.py
-{:.figure}
+~~~
 
 ## Zadatak 2
 
-{% highlight python linenos %}
+~~~py
+# file: 'z7-2.py'
 import math
 import random
 import time
@@ -182,6 +179,4 @@ if __name__ == "__main__":
     for n in [10000, 50000, 100000]:
         for m in [n, n//2, n//4]:
             test(n, m)
-{% endhighlight %}
-zadatak2.py
-{:.figure}
+~~~

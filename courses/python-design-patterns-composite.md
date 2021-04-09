@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## composite Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns composite
 
-{% highlight python linenos %}
+~~~py
+# file: 'composite.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -103,6 +101,6 @@ if __name__ == '__main__':
 # Ellipse: 2
 # Ellipse: 3
 # Ellipse: 4
-{% endhighlight %}
+~~~
 composite.py
 {:.figure}

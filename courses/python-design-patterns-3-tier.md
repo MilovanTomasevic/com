@@ -7,12 +7,10 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ## 3-tier Model
 
@@ -20,7 +18,8 @@ hide_description: true
 
 ## Python-Design-Patterns 3-tier
 
-{% highlight python linenos %}
+~~~py
+# file: '3-tier.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -106,6 +105,6 @@ if __name__ == '__main__':
 # Name: Milk, Price: 1.50, Quantity: 10
 # (Fetching from Data Store)
 # That product "arepas" does not exist in the records
-{% endhighlight %}
+~~~
 3-tier.py
 {:.figure}

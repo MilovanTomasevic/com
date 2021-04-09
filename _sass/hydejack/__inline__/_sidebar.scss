@@ -7,7 +7,7 @@
 // During development you can run `npm run watch:css`
 // to continuosly rebuild this file.
 
-// Copyright (c) 2018 Milovan Tomašević <https://milovantomasevic.com/>
+// Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -26,7 +26,8 @@ hy-drawer {
   width: 100%; 
   position: relative; 
   overflow: hidden; 
-//   z-index: 2; 
+  display: block; 
+  z-index: 4; 
   @media screen {
     
   }
@@ -50,9 +51,7 @@ hy-drawer {
   }
 
   @media screen and (min-width: $break-point-dynamic) {
-    $r28: ($content-width-5 / 2) + $content-margin-5;
-
-    width: calc(50% - #{$r28});
+    width: calc(50% - #{$half-content});
 
     
   }
@@ -68,14 +67,26 @@ hy-drawer {
   align-items: center;
   color: rgba(255, 255, 255, .75);
   text-align: center;
-  z-index: 2;
   min-height: 100vh;
+  &.invert { color: rgba(32, 32, 32, .75) }
   
 
   a {
+    
     color: #fff; 
     border-bottom-color: rgba(255, 255, 255, 0.2); 
-//     &:hover { border-bottom-color: #fff; } 
+    text-decoration-color: rgba(255, 255, 255, 0.2); 
+    
+    
+  }
+
+  &.invert a {
+    
+    color: #222;
+    border-bottom-color: rgba(32, 32, 32, 0.2); 
+    text-decoration-color: rgba(32, 32, 32, 0.2); 
+    
+    
   }
 }
 
@@ -104,7 +115,7 @@ hy-drawer {
   &.sidebar-overlay::after {
 //     background: -moz-linear-gradient(top, rgba(32,32,32,0) 0%, rgba(32,32,32,0.5) 50%, rgba(32,32,32,0) 100%); 
 //     background: -webkit-linear-gradient(top, rgba(32,32,32,0) 0%,rgba(32,32,32,0.5) 50%, rgba(32,32,32,0) 100%); 
-    background: linear-gradient(to bottom, rgba(32,32,32,0) 0%,rgba(32,32,32,0.5) 50%, rgba(32,32,32,0) 100%);
+    background: linear-gradient(to bottom, rgba(32,32,32,0) 0%,rgba(32,32,32,0.5) 50%, rgba(32,32,32,0) 100%); 
   }
 }
 
@@ -122,9 +133,33 @@ hy-drawer {
     margin-bottom: 1.5rem
   }
 
-  > h2 {
-    margin-top: 0;
+  > a.sidebar-title {
+    text-decoration: none;
+    > h2 {
+      margin: 0;
+      padding-bottom: .5rem;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      border-bottom: 2px solid;
+      margin: 0 auto .5rem;
+      width: 4rem;
+      border-color: rgba(255, 255, 255, 0.2);
+      transition: border-color 250ms;
+    }
+
+    &:hover::after {
+      border-color: rgba(255, 255, 255, 1);
+      transition: border-color 50ms;
+    }
   }
+}
+
+.sidebar.invert .sidebar-about > a.sidebar-title{
+  &::after { border-color: rgba(32, 32, 32, 0.2) }
+  &:hover::after { border-color: #222 }
 }
 
 .sidebar-nav > ul {
@@ -132,12 +167,17 @@ hy-drawer {
   padding-left: 0;
 }
 
-a.sidebar-nav-item {
+.sidebar-nav-item {
+  @extend .f4;
   display: inline-block;
-  font-weight: var(--font-weight-heading);
-  line-height: 1.75;
-  padding: .25rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: .5rem;
+}
+
+#_main.no-drawer {
+  @media (min-width: $break-point-3) {
+    #_menu { display: none }
+    .nav-btn-bar > :nth-child(2) { border: none }
+  }
 }
 
 

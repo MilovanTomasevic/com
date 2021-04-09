@@ -7,12 +7,10 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ## strategy Model
 
@@ -20,7 +18,8 @@ hide_description: true
 
 ## Python-Design-Patterns strategy
 
-{% highlight python linenos %}
+~~~py
+# file: 'strategy.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -90,13 +89,14 @@ if __name__ == '__main__':
 # Strategy Example 0
 # Strategy Example 1 from execute 1
 # Strategy Example 2 from execute 2
-{% endhighlight %}
+~~~
 strategy.py
 {:.figure}
 
 ## strategy Test
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_strategy.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import os
@@ -117,6 +117,6 @@ class StrategyTest(unittest.TestCase):
         # byte representation required due to EOF returned subprocess
         expected_output_as_bytes = expected_output.encode(encoding='UTF-8')
         self.assertEqual(output, expected_output_as_bytes)
-{% endhighlight %}
-strategy.py
+~~~
+test_strategy.py
 {:.figure}

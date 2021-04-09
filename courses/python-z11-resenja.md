@@ -7,16 +7,14 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 ## Functions
 
-{% highlight python linenos %}
+~~~py
+# file: 'functions.py'
 import sys
 from graph import *
 from math import inf
@@ -110,13 +108,14 @@ def update_edge(G, nodeA, nodeB, weight):
         G.update_edge_value(nodeA, nodeB, weight)
     else:
         G.add_edge(Edge(nodeA, nodeB, weight))
-{% endhighlight %}
+~~~
 functions.py
 {:.figure}
 
 ## Graph
 
-{% highlight python linenos %}
+~~~py
+# file: 'graph.py'
 import sys
 from math import inf
 
@@ -161,13 +160,14 @@ class Graph:
 
     def __str__(self):
         return "Nodes: " + str([f"{i.val}" for i in self.V]) + "\nConnections: " + str([f"({i.first.val}, {i.second.val}, {i.val})" for i in self.E])
-{% endhighlight %}
+~~~
 graph.py
 {:.figure}
 
 ## Zadatak 1
 
-{% highlight python linenos %}
+~~~py
+# file: 'z11-1.py'
 import sys
 from functions import *
 
@@ -211,6 +211,4 @@ if __name__ == "__main__":
     for i in range(len(L)):
         print(L[i].val, end = " ")
     print()
-{% endhighlight %}
-zadatak1.py
-{:.figure}
+~~~

@@ -7,16 +7,15 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ## Primer 1
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer11-1.sql'
 select d.indeks, ime, prezime, naziv, ocena
 case when i.id_predmeta in (select id_predmeta
     from obavezan_predmet op
@@ -26,11 +25,12 @@ from dosije d
 join ispit i on d.indeks=i.indeks
 join predmet p on p.id_predmeta=i.id_predmeta
 where ocena>5 and status_prijave='o' and ime like 'P%' and month(dat_rodjenja) between 2 and 7;
-{% endhighlight %}
+~~~
 
 ## Primer 2
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer11-2.sql'
 create trigger brisanje_studenta 
 before delete
 on dosije
@@ -46,11 +46,12 @@ where indeks=20090206@
 update dosije
 set status='ispisan'
 where indeks=20090206@
-{% endhighlight %}
+~~~
 
 ## Primer 3
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer11-3.sql'
 create trigger promena_bodova before update of bodovi on predmet referencing old as staro new as nova
 for each row
 begin atomic
@@ -88,11 +89,12 @@ from predmet
 where id_predmeta=1601@
 
 drop trigger promena_bodova@
-{% endhighlight %}
+~~~
 
 ## Primer 4
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer11-4.sql'
 insert into broj_predmeta select count(*) from predmet@
 
 select *
@@ -116,11 +118,12 @@ where id_predmeta=2002@
 
 select *
 from broj_predmeta@
-{% endhighlight %}
+~~~
 
 ## Primer 5
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer11-5.sql'
 create table predmet_student 
 ( id_predmeta integer, studenti smallint );
 
@@ -137,11 +140,12 @@ when matched then
 update set ps.studenti=p.n
 when not matched then insert
 values (p.id_predmeta, p.n);
-{% endhighlight %}
+~~~
 
 ## Primer 6
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer11-6.sql'
 create table student_podaci (
 indeks integer, broj_predmeta smallint, prosek float, dat_rodjenja date);
 
@@ -169,11 +173,12 @@ when matched and p.status='budzet' then update set
 insert (indeks, broj_predmeta, prosek)
 values (p.indeks, p.brp, p.prosek) 
 else ignore;
-{% endhighlight %}
+~~~
 
 ## Primer 7
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer11-7.sql'
 create distinct type prosek as float with comparisons;
 
 create table prosek (
@@ -212,4 +217,4 @@ end@
 
 insert into ispit (indeks, id_predmeta, godina, semestar, godina_roka, oznaka_roka, datum_prijav, nacin_prijav, status_prijave,bodovi_pismenog, datum_pismenog, bodovi, ocena)
 values(20070208, 635, 2007, 1, 2007, 'jan', '02-02-2007', 'auto', 'o', 85, '02-15-2007', 85, 9);
-{% endhighlight %}
+~~~

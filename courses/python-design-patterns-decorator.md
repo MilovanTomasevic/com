@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## decorator Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns decorator
 
-{% highlight python linenos %}
+~~~py
+# file: 'decorator.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -88,13 +86,14 @@ if __name__ == '__main__':
 ### OUTPUT ###
 # before: hello, world!
 # after: <i><b>hello, world!</b></i>
-{% endhighlight %}
+~~~
 decorator.py
 {:.figure}
 
 ## decorator Test
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_decorator.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -112,6 +111,6 @@ class TestTextWrapping(unittest.TestCase):
 
     def test_mixed_bold_and_italic(self):
         self.assertEqual(BoldWrapper(ItalicWrapper(self.raw_string)).render(), '<b><i>raw but not cruel</i></b>')
-{% endhighlight %}
+~~~
 test_decorator.py
 {:.figure}

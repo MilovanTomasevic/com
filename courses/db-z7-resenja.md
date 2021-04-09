@@ -7,17 +7,16 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ## Zadaci za danas
 ### Primer 1
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-1.sql'
 --a
 select indeks
 from dosije
@@ -44,11 +43,12 @@ select indeks
 from ispit
 where ocena=10
 order by indeks desc;
-{% endhighlight %}
+~~~
 
 ### Primer 2
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-2.sql'
 select d.indeks, count(*) br_ispita
 from dosije d join ispit i on d.indeks=i.indeks group by d.indeks
 union
@@ -57,11 +57,12 @@ from dosije d
 where not exists ( select *
     from ispit i
     where d.indeks=i.indeks);
-{% endhighlight %}
+~~~
 
 ### Primer 3
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-3.sql'
 select indeks, id_predmeta, ocena, case
     when ocena=10 then 'deset' 
     when ocena=9 then 'devet' 
@@ -82,22 +83,24 @@ select indeks, id_predmeta, ocena, case ocena
     else 'nepolozen'
     end as rezultat_ispita
 from ispit;
-{% endhighlight %}
+~~~
 
 ### Primer 4
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-4.sql'
 select naziv, case
     when bodovi>7 then 'I kat' 
     when bodovi>4 then 'II kat' 
     else 'III kat'
     end as kategorija 
 from predmet;
-{% endhighlight %}
+~~~
 
 ### Primer 5
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-5.sql'
 select kategorija, count(*) from (select naziv, case
     when bodovi>7 then 'I kat' 
     when bodovi>4 then 'II kat' 
@@ -117,11 +120,12 @@ select kategorija,
 count(*) 
 from predmet_kategorija 
 group by kategorija;
-{% endhighlight %}
+~~~
 
 ### Primer 6
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-6.sql'
 with student_bodovi as (
 select indeks, sum(bodovi) pol_bodovi
 from ispit i join predmet p on i.id_predmeta=p.id_predmeta
@@ -130,11 +134,12 @@ group by indeks)
 select count(*) br_studenata 
 from student_bodovi
 where pol_bodovi>10;
-{% endhighlight %}
+~~~
 
 ### Primer 7
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-7.sql'
 with student_ocene as (
 select indeks, ocena br8, cast(null as smallint) br9 from ispit
 where ocena=8
@@ -174,68 +179,76 @@ select indeks, sum(case when ocena=8 then 1 else 0 end) broj_8, sum(case when oc
 from ispit
 where ocena=8 or ocena=9
 group by indeks;
-{% endhighlight %}
+~~~
 
 ### Primer 8
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-8.sql'
 insert into dosije (indeks, ime, prezime, god_rodjenja, mesto_rodjenja) 
 values (20100028, 'Marko', 'Markovic', 1990, 'Kragujevac');
-{% endhighlight %}
+~~~
 
 ### Primer 9
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-9.sql'
 insert into predmet
 values (2005, 'P112', 'Uvod u arhitekturu racunara', 6), (2006, 'P116', 'Razvoj softvera', 6);
-{% endhighlight %}
+~~~
 
 ### Primer 10
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-10.sql'
 insert into ispit (indeks, id_predmeta, godina_roka, oznaka_roka, ocena) 
 select indeks, id_predmeta, 2011, 'jun', 9
 from dosije, predmet
 where god_rodjenja=1991 and naziv='Programiranje 2';
-{% endhighlight %}
+~~~
 
 ### Primer 11
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-11.sql'
 delete from dosije
 where god_rodjenja=1990;
-{% endhighlight %}
+~~~
 
 ### Primer 12
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-12.sql'
 delete from ispit
 where id_predmeta in ( select id_predmeta
     from predmet
     where naziv='Programiranje 2' or bodovi=15);
-{% endhighlight %}
+~~~
 
 ### Primer 13
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-13.sql'
 update predmet
 set bodovi=bodovi*1.2 
 where sifra like 'P%';
-{% endhighlight %}
+~~~
 
 ### Primer 14
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-14.sql'
 update ispit
 set (godina_roka, oznaka_roka, datum_ispita)=(2011, 'jun', null) 
 where id_predmeta in (select id_predmeta
     from predmet
     where naziv='Analiza 1') and godina_roka=2011 and oznaka_roka='jan';
-{% endhighlight %}
+~~~
 
 ### Primer 15
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-15.sql'
 update predmet
 set bodovi=(select max(bodovi)
     from predmet) 
@@ -243,20 +256,22 @@ where exists ( select *
     from ispit i 
     join dosije d on i.indeks=d.indeks
     where mesto_rodjenja='Beograd' and i.id_predmeta=predmet.id_predmeta);
-{% endhighlight %}
+~~~
 
 ### Primer 16
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-16.sql'
 select distinct coalesce(ir.naziv, ‘nema odgovarajuceg‘), coalesce(p.naziv, ‘nema odgovarajuceg‘)
 from ispitni_rok ir 
 left outer join ispit i on ir.godina_roka=i.godina_roka and ir.oznaka_roka=i.oznaka_roka 
 full outer join predmet p on p.id_predmeta=i.id_predmeta;
-{% endhighlight %}
+~~~
 
 ### Primer 17
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-17.sql'
 with pom as (select indeks, count(distinct id_predmeta) br_polozenih, avg(ocena+0.0) prosek
     from ispit i 
     join predmet p on p.id_predmeta=i.id_predmeta 
@@ -270,99 +285,109 @@ join pom on d.indeks = pom.indeks
 join ispit i on i.indeks = d.indeks 
 group by d.indeks, ime, prezime, br_polozenih,prosek
 order by d.indeks
-{% endhighlight %}
+~~~
 
 ## Zadaci za vežbu
+
 ### Primer 1
 
 Izdvojiti ukupan broj studenata i maksimalni broj indeksa studenta iz tabele dosije.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-v1.sql'
 select count(*) ukupno_studenata, max(indeks) maksimalni_indeks 
 from dosije
-{% endhighlight %}
+~~~
 
 ### Primer 2
 
 Odrediti ukupan broj studenata kojima je poznata godina rođenja i broj različitih vrednosti za godinu rođenja.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-v2.sql'
 select count(god_rodjenja) brSaPoznatomGod, count(distinct god_rodjenja) brRazlicitihGod 
 from dosije
-{% endhighlight %}
+~~~
 
 ### Primer 3
 
 Prikazati ukupan broj položenih ispita studenta sa brojem indeksa 22/2010.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-v3.sql'
 select count(*) ukupno
 from ispit
 where indeks = 20100022 and ocena>5
-{% endhighlight %}
+~~~
 
 ### Primer 4
 
 Izdvojiti ukupan broj studenata koji su bar jedan ispit položili sa ocenom 8.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-v4.sql'
 select count(distinct indeks) broj_studenata 
 from ispit
 where ocena = 8
-{% endhighlight %}
+~~~
 
 ### Primer 5
 
 Za svakog studenta izdvojiti broj indeksa i ukupan broj skupljenih bodova.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-v5.sql'
 select indeks, sum(bodovi) ukupno
 from ispit i 
 join predmet p on i.id_predmeta = p.id_predmeta 
 where ocena>5
 group by indeks
-{% endhighlight %}
+~~~
 
 ### Primer 6
 
 Za svakog studenta koji je skupio barem 20 bodova prikazati ukupan broj skupljenih bodova.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-v6.sql'
 select indeks, sum(bodovi) ukupno 
 from ispit i 
 join predmet p on i.id_predmeta = p.id_predmeta 
 where ocena > 5
 group by indeks
 having sum(bodovi) >= 20
-{% endhighlight %}
+~~~
 
 ### Primer 7
 
 Za svakog studenta izračunati trenutni prosek ocena.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-v7.sql'
 select indeks, avg(ocena+0.0) prosek 
 from ispit
 where ocena>5
 group by indeks
-{% endhighlight %}
+~~~
 
 ### Primer 8
 
 Za svaki od ispitnih rokova i za svaki polagan predmet odrediti broj položenih ispita.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-v8.sql'
 select oznaka_roka, godina_roka, id_predmeta, count(*) ukupno 
 from ispit
 where ocena>5
 group by oznaka_roka, godina_roka, id_predmeta
-{% endhighlight %}
+~~~
 
 ### Primer 9
 
 Izdvojiti id predmeta koji ili nose više od 6 bodova ili ih je polagao student čiji broj indeksa je 20100024.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-v9.sql'
 (select id_predmeta
 from predmet where bodovi>6 union
 select id_predmeta
@@ -378,13 +403,14 @@ from predmet where bodovi>6
 union
 select id_predmeta
 from ispit where indeks = 20100024
-{% endhighlight %}
+~~~
 
 ### Primer 10
 
 Izdvojiti id predmeta koji su polagani i u januaru 2011 i u februaru 2011.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-v10.sql'
 select id_predmeta
 from ispit
 where oznaka_roka=‘jan‘ and godina_roka=2011 intersect
@@ -404,13 +430,14 @@ select distinct i.id_predmeta
 from ispit i
 where i.oznaka_roka=‘jan‘ and i.godina_roka=2011 and exists (select * from ispit
 where id_predmeta = i.id_predmeta and oznaka_roka=‘feb‘ and godina_roka=2011)
-{% endhighlight %}
+~~~
 
 ### Primer 11
 
 Izdvojiti sve identifikatore za predmete koje položio student sa brojem indeksa 20100021, a nije položio student sa indeksom 20100025, sortirane u opadajućem poretku.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-v11.sql'
 select i.id_predmeta
 from ispit i
 where i.indeks = 20100021 and i.ocena>5 except
@@ -431,13 +458,14 @@ select i.id_predmeta
 from ispit i
 where i.indeks = 20100021 and i.ocena>5 and i.id_predmeta not in (select id_predmeta from ispit
 where indeks = 20100025 and ocena>5)
-{% endhighlight %}
+~~~
 
 ### Primer 12
 
  Izdvojiti brojeve indeksa studenata koji su položili barem 3 ispita i id predmeta koje su položila barem tri studenta. Sve to uradi u jednom upitu i rezultat urediti u opadajućem poretku po broju položenih ispita, odnosno studenata.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-v12.sql'
 select indeks id, count(*) ukupno from ispit
 where ocena > 5
 group by indeks
@@ -448,37 +476,40 @@ where ocena > 5
 group by id_predmeta
 having count(*)>=3
 order by 2 desc
-{% endhighlight %}
+~~~
 
 ### Primer 13
 
 Izdvojiti sve informacije za predmete i uz svaki od njih ispisati `lak` ako predmet nosi manje od 6 bodova, `srednje tezak` ako nosi 6 ili 7 bodova i `tezak` ako nosi bar 8 bodova.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-v13.sql'
 select p.*, case
 when bodovi<6 then ‘lak’
 when bodovi between 6 and 7 then ‘srednje tezak’ else ‘tezak’
 end as tezina
 from predmet p
-{% endhighlight %}
+~~~
 
 ### Primer 14
 
 Izdvojiti sva polaganja predmeta Programiranje 1 i uz svako od njih u zavisnosti od ocena izdvojiti `pao` ako je ocena 5, `provukao se` ako je ocena 6, inače `polozio`.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-v14.sql'
 select i.*, case ocena when 5 then 'pao'
 when 6 then 'provukao se' else 'polozio'
 end as napomena
 from ispit i join predmet p
 on i.id_predmeta = p.id_predmeta and p.naziv = ’Programiranje 1’
-{% endhighlight %}
+~~~
 
 ### Primer 15
 
 Za svakog studenta koji je položio više od 30 kredita (bodova) i čije prezime ne sadrži slovo o izdvojiti indeks, mesto rođenja, broj predmeta koje je polagao ali pao u koloni “Broj neuspesnih”, broj predmeta koje je položio u koloni “Broj uspesnih” i prosečnu ocenu u koloni “Prosek”. Rezultat urediti prema proseku opadajuce.
 
-{% highlight sql linenos %}
+~~~sql
+-- file: 'primer7-v15.sql'
 with Pomocna as(select d.indeks, d.mesto_rodjenja, sum(krediti) ukupnoBodova
 from dosije d join ispit i on d.indeks=i.indeks join predmet p on i.id_predmeta=p.id_predmeta where d.prezime not like '%o%' and i.ocena > 5
 group by d.indeks, d.mesto_rodjenja
@@ -488,4 +519,4 @@ select P.indeks, P.mesto_rodjenja, sum(case when i.ocena<6 then 1 else 0 end) "B
 dec(avg(i.ocena*1.0),4,2) Prosek
 from Pomocna P join ispit i on P.indeks=i.indeks group by P.indeks, P.mesto_rodjenja
 order by Prosek desc;
-{% endhighlight %}
+~~~

@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## template Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns template
 
-{% highlight python linenos %}
+~~~py
+# file: 'template.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -83,6 +81,6 @@ if __name__ == "__main__":
 # Skip conversion
 # [SAVE]
 # `csv` was processed
-{% endhighlight %}
+~~~
 template.py
 {:.figure}

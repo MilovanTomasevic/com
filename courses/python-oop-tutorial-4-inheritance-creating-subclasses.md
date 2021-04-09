@@ -7,16 +7,14 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 ##  Run Code 1 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'start4.py'
 class Employee:
 
     raise_amt = 1.04
@@ -39,14 +37,15 @@ dev_2 = Employee('Test', 'Employee', 60000)
 
 print(dev_1.email)
 print(dev_2.email)
-{% endhighlight %}
-start.py
+~~~
+start4.py
 {:.figure}
 
 
 ##  Run Code 2 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'start4-2.py'
 class Employee:
 
     raise_amt = 1.04
@@ -105,6 +104,6 @@ mgr_1.add_emp(dev_2)
 mgr_1.remove_emp(dev_2)
 
 mgr_1.print_emps()
-{% endhighlight %}
-start.py
+~~~
+start4-2.py
 {:.figure}

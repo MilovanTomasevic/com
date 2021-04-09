@@ -7,25 +7,16 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
 ---
 
-Python Matplotlib - 6. Histograms
-Python Matplotlib - 7. Scatter Plots
-Python Matplotlib - 8. Time Series
-Python Matplotlib - 9. Live Data
-Python Matplotlib - 10. Subplots
-
-
-
-
 ##  Run Code 1 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'starting_code.py'
 import pandas as pd
 from matplotlib import pyplot as plt
 
@@ -49,7 +40,7 @@ plt.ylabel('Total Respondents')
 plt.tight_layout()
 
 plt.show()
-{% endhighlight %}
+~~~
 starting_code.py
 {:.figure}
 
@@ -62,7 +53,8 @@ starting_code.py
 
 ##  Run Code 2 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'finished_code.py'
 import pandas as pd
 from matplotlib import pyplot as plt
 
@@ -90,7 +82,7 @@ plt.ylabel('Total Respondents')
 plt.tight_layout()
 
 plt.show()
-{% endhighlight %}
+~~~
 finished_code.py
 {:.figure}
 
@@ -103,7 +95,8 @@ finished_code.py
 
 ##  CSV data
 
-{% highlight csv linenos %}
+~~~sh
+# file: 'data.csv'
 Responder_id,Age
 1,14
 2,19
@@ -79315,6 +79308,6 @@ Responder_id,Age
 87739,25
 88212,40
 88863,18
-{% endhighlight %}
+~~~
 data.csv
 {:.figure} 

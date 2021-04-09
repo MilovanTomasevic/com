@@ -7,16 +7,14 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 ## Zadatak 1
 
-{% highlight python linenos %}
+~~~py
+# file: 'z3-1.py'
 import sys
 import random
 import time
@@ -67,13 +65,14 @@ def test(elements):
 if __name__ == "__main__":
     for i in range(500, 10000, 500):
         test(i)
-{% endhighlight %}
-zadatak1.py
-{:.figure}
+~~~
+
 
 ## Zadatak 2
 
-{% highlight python linenos %}
+~~~py
+# file: 'z3-2.py'
+
 import sys
 import random
 import time
@@ -115,6 +114,4 @@ def test(elements):
 if __name__ == "__main__":
     for i in range(500, 10000, 500):
         test(i)
-{% endhighlight %}
-zadatak2.py
-{:.figure}
+~~~

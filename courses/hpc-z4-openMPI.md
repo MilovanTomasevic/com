@@ -7,47 +7,49 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## Setup
 
 ### Installation
 
-```sh
+~~~sh
+# file: 'terminal'
 apt-get install libopenmpi-dev 
 apt-get install openmpi-bin 
-```
+~~~
 
 ### Compilation & Running OpenMP
-```sh
+~~~sh
+# file: 'terminal'
 gcc -o name name.c -fopenmp
 ./name
-```
+~~~
 
 ### Compilation & Running MPI
 
-```sh
+~~~sh
+# file: 'terminal'
 mpicc filename.c -o filename 
 mpirun -np 1 ./filename # -lm
-```
+~~~
 
 ### Compilation & Running OpenACC
 
-```sh
+~~~sh
+# file: 'terminal'
 gcc -o izvrsna_dat izvorna_dat.c -fopenacc
 ./izvrsna_dat
-```
+~~~
 
 ## Primeri
 
 ### hello_world.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'hello_world.c'
 #include <stdio.h>
 
 #include "mpi.h"
@@ -66,13 +68,14 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
-{% endhighlight %}
+~~~
 hello_world.c - primer
 {:.figure}
 
 ### send_recv.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'send_recv.c'
 /**
  * MPI C implementacija sinhrone komunikacije izmedju dva MPI procesa.
  * Proces 0 salje poruku tipa MPI_INT procesu 1. Duzina poruke je 1.
@@ -104,13 +107,14 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-{% endhighlight %}
+~~~
 send_recv.c - primer
 {:.figure}
 
 ### send_recv_nonblocking.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'send_recv_nonblocking.c'
 #include <stdio.h>
 #include <mpi.h>
 
@@ -165,13 +169,14 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-{% endhighlight %}
+~~~
 send_recv_nonblocking.c - primer
 {:.figure}
 
 ### ping_pong_printf_async.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'ping_pong_printf_async.c'
 /* Use the File->Save as selection to save this source code*/
 /*                  pong.c Generic Benchmark code
  *               Dave Turner - Ames Lab - July of 1994+++
@@ -396,21 +401,22 @@ int main (int argc, char **argv)
    MPI_Finalize();
    return (0);
 }
-{% endhighlight %}
+~~~
 ping_pong_printf_async.c - primer
 {:.figure}
 
 ### ping_pong_printf_variablelen.c
 
 #### MPI_Probe
-{% highlight c linenos %}
+~~~c
+// file: 'MPI_Probe.c'
 int MPI_Probe(
   int source,
   int tag,
   MPI_Comm comm,
   MPI_Status *status
 );
-{% endhighlight %}
+~~~
 
 ##### Parameters
 
@@ -424,13 +430,14 @@ int MPI_Probe(
   - [out] status object (Status)
 
 #### MPI_Get_count
-{% highlight c linenos %}
+~~~c
+// file: 'MPI_Get_count.c'
 int MPI_Get_count(
   MPI_Status *status,
   MPI_Datatype datatype,
   int *count
 );
-{% endhighlight %}
+~~~
 
 ##### Parameters
 
@@ -443,7 +450,8 @@ int MPI_Get_count(
 
 #### MPI_Probe sample code
 
-{% highlight c linenos %}
+~~~c
+// file: 'MPI_Probe.c'
 #include "mpi.h"
 #include <stdio.h>
  
@@ -540,13 +548,14 @@ int main(int argc, char **argv)
     MPI_Finalize();
     return 0;
 }
-{% endhighlight %}
+~~~
 MPI_Probe.c - primer
 {:.figure}
 
 #### MPI_Get_count sample code
 
-{% highlight c linenos %}
+~~~c
+// file: 'MPI_Get_count.c'
 #include "mpi.h"
 #include <stdio.h>
  
@@ -648,13 +657,14 @@ int main( int argc, char *argv[] )
     MPI_Finalize();
     return errs;
 }
-{% endhighlight %}
+~~~
 MPI_Get_count.c - primer
 {:.figure}
 
 ### bcast.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'bcast.c'
 #include <stdio.h>
 #include <mpi.h>
 
@@ -678,13 +688,14 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-{% endhighlight %}
+~~~
 bcast.c - primer
 {:.figure}
 
 ### scatter.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'scatter.c'
 /**
  * OpenMPI program koji demonstrira rad MPI_Scatter funkcije.
  * 
@@ -748,13 +759,14 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-{% endhighlight %}
+~~~
 scatter.c - primer
 {:.figure}
 
 ### gather.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'gather.c'
 /**
  * OpenMPI C program koji demonstrira rad MPI_Gather funkcije.
  * 
@@ -824,13 +836,14 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-{% endhighlight %}
+~~~
 gather.c - primer
 {:.figure}
 
 ### allgather.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'allgather.c'
 /**
  * OpenMPI C program koji demonstrira rad MPI_Allgather funkcije.
  * 
@@ -898,13 +911,14 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-{% endhighlight %}
+~~~
 gather.c - primer
 {:.figure}
 
 ###  reduce.c 
 
-{% highlight c linenos %}
+~~~c
+// file: 'reduce.c'
 /**
  * OpenMPI C program koji demonstrira rad MPI_Reduce funkcije.
  * 
@@ -939,13 +953,14 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-{% endhighlight %}
+~~~
 reduce.c - primer
 {:.figure}
 
 ### allreduce.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'allreduce.c'
 /**
  * OpenMPI C program koji demonstrira rad MPI_Reduce funkcije.
  * 
@@ -980,7 +995,7 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-{% endhighlight %}
+~~~
 allreduce.c - primer
 {:.figure}
 
@@ -1002,17 +1017,20 @@ dodati opciju u liniju ``set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${MPI_C_COMPILE_FLA
 ###### Kompajliranje iz terminala
 Ukoliko želite da koristite izgenerisane ulazne podatke u ``hdf5`` formatu neophodno je imati instaliranu podršku za ovaj
 format podataka. Na Ubuntu operativnim sistemina, hdf5 paket možete instalirati pokretanjem sledećih komandi:
-```sh
+~~~sh
+# file: 'terminal'
 sudo apt install libhdf5-dev 
-```
+~~~
 Zatim se pozicinonirati u korenski direktorijum zadatka i pokrenuti:
-```sh
+~~~sh
+# file: 'terminal'
 h5cc utils/*.h utils/*.c main.c
-```
+~~~
 Ukoliko ne želite da koristite ulazne podatke u hdf5 formatu, zadatak možetekompajlirati na sledeći način:
-```sh
+~~~sh
+# file: 'terminal'
 gcc main.c -DDISABLE_HDF5
-```
+~~~
 Ukoliko isključite podršku za učitavanje generisanih ulaznih podataka, potrebno je da 
 modifikujete izvorni kod tako da na neki drugi način obezbedite učitavanje ulaznih podataka, ali je obavezno koristiti
 vrednosti iz parova datoteka m3x3.h5, v3x1.h5 i m5x5.h5, v5x1.h5 zbog testiranja rešenja zadatka.
@@ -1021,16 +1039,18 @@ vrednosti iz parova datoteka m3x3.h5, v3x1.h5 i m5x5.h5, v5x1.h5 zbog testiranja
 Ukoliko nemate instalirane ``cmake`` i ``make`` pakete nećete moći ovako da kompajlirate zadatak.
 
 Instalacija na Ubuntu operativnim sistemima:
-```sh
+~~~sh
+# file: 'terminal'
 sudo apt install cmake make -y
-```
+~~~
 Nakon uspešne instalacije, potrebno je da se pozicionirate u korenski direktorijum zadatka i pokrenete sledeće naredbe:
 
-```sh
+~~~sh
+# file: 'terminal'
 mkdir build && cd build
 cmake ..
 make -j4
-```
+~~~
 Ukoliko hoćete da iskompajlirate program bez podrške za ``hdf5`` paket, liniju ``cmake ..`` treba zameniti sa 
 ``cmake -DENABLE_HDF5=OFF ..``. Ukoliko isključite podršku za učitavanje generisanih ulaznih podataka, potrebno je da 
 modifikujete izvorni kod tako da na neki drugi način obezbedite učitavanje ulaznih podataka.
@@ -1042,7 +1062,8 @@ procesa koje hoćete da stvorite.
 
 #### main.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'main.c'
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -1093,13 +1114,14 @@ int main() {
     
     return 0;
 }
-{% endhighlight %}
+~~~
 main.c - zadatak
 {:.figure}
 
 #### CMakeLists.txt
 
-{% highlight sh linenos %}
+~~~sh
+# file: 'CMakeLists.txt'
 cmake_minimum_required(VERSION 3.5)
 project(MatrixVectorMultiplication)
 
@@ -1134,7 +1156,7 @@ else()
     message(STATUS "HDF5 support disabled.")
 endif()
 
-{% endhighlight %}
+~~~
 CMakeLists.txt - zadatak
 {:.figure}
 
@@ -1142,7 +1164,8 @@ CMakeLists.txt - zadatak
 
 ##### h5defs.h
 
-{% highlight c linenos %}
+~~~c
+// file: 'h5defs.c'
 #ifndef MATRIXUTILITIES_H5DEFS_H
 #define MATRIXUTILITIES_H5DEFS_H
 
@@ -1154,13 +1177,14 @@ CMakeLists.txt - zadatak
     (if (e < 0) { printf("\nHDF5 error on line %d\n\n", __LINE__ ); exit 1; })
 
 #endif //MATRIXUTILITIES_H5DEFS_H
-{% endhighlight %}
+~~~
 h5defs.h - zadatak
 {:.figure}
 
 ##### h5_matrix_utils.h
 
-{% highlight c linenos %}
+~~~c
+// file: 'h5_matrix_utils.h'
 #ifndef MATRIXUTILITIES_H5_MATRIX_UTILS_H
 #define MATRIXUTILITIES_H5_MATRIX_UTILS_H
 
@@ -1194,13 +1218,14 @@ void h5_save_matrix(const char *filename, unsigned int rows, unsigned int cols);
 void *h5_load_matrix(const char *filename, unsigned long long *rows, unsigned long long *cols);
 
 #endif //MATRIXUTILITIES_H5_MATRIX_UTILS_H
-{% endhighlight %}
+~~~
 h5_matrix_utils.h - zadatak
 {:.figure}
 
 ##### h5_matrix_utils.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'h5_matrix_utils.c'
 #include <time.h>
 #include "h5_matrix_utils.h"
 
@@ -1299,7 +1324,7 @@ void print_float_vector(float *vector, unsigned long long len) {
         printf("%f ", vector[i]);
     } printf("\n");
 }
-{% endhighlight %}
+~~~
 h5_matrix_utils.c - zadatak
 {:.figure}
 
@@ -1330,17 +1355,20 @@ dodati opciju u liniju ``set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${MPI_C_COMPILE_FLA
 ###### Kompajliranje iz terminala
 Ukoliko želite da koristite izgenerisane ulazne podatke u ``hdf5`` formatu neophodno je imati instaliranu podršku za ovaj
 format podataka. Na Ubuntu operativnim sistemina, hdf5 paket možete instalirati pokretanjem sledećih komandi:
-```sh
+~~~sh
+# file: 'terminal'
 sudo apt install libhdf5-dev 
-```
+~~~
 Zatim se pozicinonirati u korenski direktorijum zadatka i pokrenuti:
-```sh
+~~~sh
+# file: 'terminal'
 h5cc utils/*.h utils/*.c main.c
-```
+~~~
 Ukoliko ne želite da koristite ulazne podatke u hdf5 formatu, zadatak možetekompajlirati na sledeći način:
-```sh
+~~~sh
+# file: 'terminal'
 gcc main.c -DDISABLE_HDF5
-```
+~~~
 Ukoliko isključite podršku za učitavanje generisanih ulaznih podataka, potrebno je da 
 modifikujete izvorni kod tako da na neki drugi način obezbedite učitavanje ulaznih podataka, ali je obavezno koristiti
 vrednosti date u datotekama m3x3.h5 i m5x5.h5. Da bi se postiglo množenje dve matrice, svaku od prethodno navedenih
@@ -1351,17 +1379,19 @@ u matricama (dakle ne treba da bude specifičnosti koje koriste činjenicu da se
 Ukoliko nemate instalirane ``cmake`` i ``make`` pakete nećete moći ovako da kompajlirate zadatak.
 
 Instalacija na Ubuntu operativnim sistemima:
-```sh
+~~~sh
+# file: 'terminal'
 sudo apt install cmake make -y
-```
+~~~
 Nakon uspešne instalacije, potrebno je da se pozicionirate u korenski direktorijum zadatka i pokrenete sledeće naredbe:
 
-```sh
+~~~sh
+# file: 'terminal'
 mkdir build
 cd build
 cmake ..
 make -j4
-```
+~~~
 Ukoliko hoćete da iskompajlirate program bez podrške za ``hdf5`` paket, liniju ``cmake ..`` treba zameniti sa 
 ``cmake -DENABLE_HDF5=OFF ..``. Ukoliko isključite podršku za učitavanje generisanih ulaznih podataka, potrebno je da 
 modifikujete izvorni kod tako da na neki drugi način obezbedite učitavanje ulaznih podataka.
@@ -1373,7 +1403,8 @@ procesa koje hoćete da stvorite.
 
 #### main.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'main.c'
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -1431,13 +1462,14 @@ int main() {
     
     return 0;
 }
-{% endhighlight %}
+~~~
 main.c - zadatak
 {:.figure}
 
 #### CMakeLists.txt
 
-{% highlight sh linenos %}
+~~~sh
+# file: 'CMakeLists.txt'
 cmake_minimum_required(VERSION 3.5)
 project(MatrixMultiplication)
 
@@ -1472,7 +1504,7 @@ else()
     message(STATUS "HDF5 support disabled.")
 endif()
 
-{% endhighlight %}
+~~~
 CMakeLists.txt - zadatak
 {:.figure}
 
@@ -1480,7 +1512,8 @@ CMakeLists.txt - zadatak
 
 ##### h5defs.h
 
-{% highlight c linenos %}
+~~~c
+// file: 'h5defs.h'
 #ifndef MATRIXUTILITIES_H5DEFS_H
 #define MATRIXUTILITIES_H5DEFS_H
 
@@ -1492,13 +1525,14 @@ CMakeLists.txt - zadatak
     (if (e < 0) { printf("\nHDF5 error on line %d\n\n", __LINE__ ); exit 1; })
 
 #endif //MATRIXUTILITIES_H5DEFS_H
-{% endhighlight %}
+~~~
 h5defs.h - zadatak
 {:.figure}
 
 ##### h5_matrix_utils.h
 
-{% highlight c linenos %}
+~~~c
+// file: '.c'
 #ifndef MATRIXUTILITIES_H5_MATRIX_UTILS_H
 #define MATRIXUTILITIES_H5_MATRIX_UTILS_H
 
@@ -1532,13 +1566,14 @@ void h5_save_matrix(const char *filename, unsigned int rows, unsigned int cols);
 void *h5_load_matrix(const char *filename, unsigned long long *rows, unsigned long long *cols);
 
 #endif //MATRIXUTILITIES_H5_MATRIX_UTILS_H
-{% endhighlight %}
+~~~
 h5_matrix_utils.h - zadatak
 {:.figure}
 
 ##### h5_matrix_utils.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'h5_matrix_utils.c'
 #include <time.h>
 #include "h5_matrix_utils.h"
 
@@ -1637,7 +1672,7 @@ void print_float_vector(float *vector, unsigned long long len) {
         printf("%f ", vector[i]);
     } printf("\n");
 }
-{% endhighlight %}
+~~~
 h5_matrix_utils.c - zadatak
 {:.figure}
 
@@ -1650,7 +1685,8 @@ h5_matrix_utils.c - zadatak
 
 ### communicators.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'communicators.c'
 #include <stdio.h>
 
 #include "mpi.h"
@@ -1677,13 +1713,14 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-{% endhighlight %}
+~~~
 communicators.c - rešenje
 {:.figure}
 
 ### ping_pong.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'ping_pong.c'
 // Author: Wes Kendall
 // Copyright 2011 www.mpitutorial.com
 // This code is provided freely with the tutorials on mpitutorial.com. Feel
@@ -1732,13 +1769,14 @@ int main(int argc, char** argv) {
   }
   MPI_Finalize();
 }
-{% endhighlight %}
+~~~
 ping_pong.c - rešenje
 {:.figure}
 
 ### ring.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'ring.c'
 // Author: Wes Kendall
 // Copyright 2011 www.mpitutorial.com
 // This code is provided freely with the tutorials on mpitutorial.com. Feel
@@ -1785,13 +1823,14 @@ int main(int argc, char** argv) {
   }
   MPI_Finalize();
 }
-{% endhighlight %}
+~~~
 ring.c - rešenje
 {:.figure}
 
 ### bcast.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'bcast.c'
 // Author: Wes Kendall
 // Copyright 2011 www.mpitutorial.com
 // This code is provided freely with the tutorials on mpitutorial.com. Feel
@@ -1844,13 +1883,14 @@ int main(int argc, char** argv) {
 
   MPI_Finalize();
 }
-{% endhighlight %}
+~~~
 bcast.c - rešenje
 {:.figure}
 
 ### avg.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'avg.c'
 // Author: Wes Kendall
 // Copyright 2012 www.mpitutorial.com
 // This code is provided freely with the tutorials on mpitutorial.com. Feel
@@ -1956,7 +1996,7 @@ int main(int argc, char** argv) {
   MPI_Barrier(MPI_COMM_WORLD);
   MPI_Finalize();
 }
-{% endhighlight %}
+~~~
 avg.c - rešenje
 {:.figure}
 

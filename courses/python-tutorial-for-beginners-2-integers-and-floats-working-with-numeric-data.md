@@ -7,17 +7,15 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 
 ##  Run Code 1 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app1.py'
 # Arithmetic Operators:
 # Addition:       3 + 2
 # Subtraction:    3 - 2
@@ -30,110 +28,100 @@ hide_description: true
 num = 3
 
 print(type(num))
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 2 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app2.py'
 num = 3.14
 
 print(type(num))
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 3 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app3.py'
 print (3+2)
 print (3-2)
 print (3*2)
 print (3/2)
 print (3//2)
 print (3**2)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 4 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app4.py'
 print (2 % 2)
 print (3 % 2)
 print (4 % 2)
 print (5 % 2)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 5 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app5.py'
 print (3 * 2 + 1)
 print (3 * (2 + 1))
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 6 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app6.py'
 num = 1
 num = num +1
 
 print(num)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 7 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app7.py'
 num = 1
 num += 1
 
 print(num)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 8 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app8.py'
 num = 1
 num += 10
 
 print(num)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 9 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app9.py'
 num = 1
 num *= 10
 
 print(num)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 10 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app10.py'
 print(abs(-3))
 print(round(3.75))
 print(round(3.75, 1))
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 11 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app11.py'
 # Comparisons:
 # Equal:            3 == 2
 # Not Equal:        3 != 2
@@ -152,24 +140,22 @@ print(num_1 < num_2)
 print(num_1 > num_2)
 print(num_1 <= num_2)
 print(num_1 >= num_2)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 12 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app12.py'
 num_1 = '100'
 num_2 = '200'
 
 print(num_1 + num_2)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 13 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app13.py'
 num_1 = '100'
 num_2 = '200'
 
@@ -177,6 +163,4 @@ num_1 = int(num_1)
 num_2 = int(num_2)
 
 print(num_1 + num_2)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~

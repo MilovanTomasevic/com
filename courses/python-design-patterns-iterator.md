@@ -7,12 +7,10 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ## iterator Model
 
@@ -20,7 +18,8 @@ hide_description: true
 
 ## Python-Design-Patterns iterator
 
-{% highlight python linenos %}
+~~~py
+# file: 'iterator.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -61,7 +60,7 @@ print()
 # one two
 # Counting to five...
 # one two three four five
-{% endhighlight %}
+~~~
 iterator.py
 {:.figure}
 

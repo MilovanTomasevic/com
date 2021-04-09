@@ -1,30 +1,20 @@
-{% if site.hydejack.dark_mode.dynamic %}
-  <script>!function(w, d) {
-    var h = new Date().getHours();
-    var m = h <= {{ site.hydejack.dark_mode.sunrise | default:"6" }} || h >= {{ site.hydejack.dark_mode.sunset | default:"18" }} ? 'add' : 'remove';
-    d.body.classList[m]('dark-mode');
-  }(window, document);</script>
-{% endif %}
-
-{% unless page.redirect %}
-  <!--[if !IE]><!---->
-  <script>loadJSDeferred(document.getElementById('_hrefJS').href);</script>
+<!--[if gt IE 10]><!---->
+  <script nomodule>{% include scripts/nomodule.min.js %}</script>
+  <script src="{{ '/assets/js/hydejack-9.1.2.js' | relative_url }}" type="module"></script>
+  <script src="{{ '/assets/js/LEGACY-hydejack-9.1.2.js' | relative_url }}" nomodule defer></script>
   {% include my-scripts.html %}
-  <!--<![endif]-->
-
   {% include body/analytics.html %}
-
-  <script>!function(w, d) {
-    if ('serviceWorker' in w.navigator) {
+  <script type="module">
+    if ('serviceWorker' in navigator) {
       /*{% if site.hydejack.offline.enabled %}*/
-      w.navigator.serviceWorker.register(d.getElementById('_hrefSW').href)
+      navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}')
         .then(r => r.update())
         .catch(() => {});
       /*{% else %}*/
-      w.navigator.serviceWorker.getRegistration()
+      navigator.serviceWorker.getRegistration()
         .then(r => r.unregister())
         .catch(() => {});
       /*{% endif %}*/
     }
-  }(window, document);</script>
-{% endunless %}
+  </script>
+<!--<![endif]-->

@@ -7,47 +7,50 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ## Setup
 
 ### Installation
 
-```sh
+~~~sh
+# file: 'terminal'
 apt-get install libopenmpi-dev 
 apt-get install openmpi-bin 
-```
+~~~
 
 ### Compilation & Running OpenMP
-```sh
+~~~sh
+# file: 'terminal'
 gcc -o name name.c -fopenmp
 ./name
-```
+~~~
 
 ### Compilation & Running MPI
 
-```sh
+~~~sh
+# file: 'terminal'
 mpicc filename.c -o filename 
 mpirun -np 1 ./filename # -lm
-```
+~~~
 
 ### Compilation & Running OpenACC
 
-```sh
+~~~sh
+# file: 'terminal'
 gcc -o izvrsna_dat izvorna_dat.c -fopenacc
 ./izvrsna_dat
-```
+~~~
 
 ## Primeri 
 
 ### hello_world.c
 
-{% highlight c linenos %}
+~~~c
+// file: '.c'
 // Hello World iz hibridnog OpenMPI + OpenMP programa.
 
 #include <stdio.h>
@@ -69,7 +72,7 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-{% endhighlight %}
+~~~
 hello_world.c
 {:.figure}
 
@@ -92,17 +95,20 @@ se dodaju u promenljivu ``CMAKE_C_FLAGS``, a linkerske u ``CMAKE_EXE_LINKER_FLAG
 ###### Kompajliranje iz terminala
 Ukoliko želite da koristite izgenerisane ulazne podatke u ``hdf5`` formatu neophodno je imati instaliranu podršku za ovaj
 format podataka. Na Ubuntu operativnim sistemina, hdf5 paket možete instalirati pokretanjem sledećih komandi:
-```sh
+~~~sh
+# file: 'terminal'
 sudo apt install libhdf5-dev 
-```
+~~~
 Zatim se pozicinonirati u korenski direktorijum zadatka i pokrenuti:
-```sh
+~~~sh
+# file: 'terminal'
 h5cc utils/*.h utils/*.c main.c $(mpicc --showme:compile) $(mpicc --showme:link) -fopenmp
-```
+~~~
 Ukoliko ne želite da koristite ulazne podatke u hdf5 formatu, zadatak možetekompajlirati na sledeći način:
-```sh
+~~~sh
+# file: 'terminal'
 mpicc main.c -DDISABLE_HDF5 -fopenmp
-```
+~~~
 Ukoliko isključite podršku za učitavanje generisanih ulaznih podataka, potrebno je da 
 modifikujete izvorni kod tako da na neki drugi način obezbedite učitavanje ulaznih podataka, ali je obavezno koristiti
 vrednosti date u datotekama m3x3.h5 i m5x5.h5. Da bi se postiglo množenje dve matrice, svaku od prethodno navedenih
@@ -113,17 +119,19 @@ u matricama (dakle ne treba da bude specifičnosti koje koriste činjenicu da se
 Ukoliko nemate instalirane ``cmake`` i ``make`` pakete nećete moći ovako da kompajlirate zadatak.
 
 Instalacija na Ubuntu operativnim sistemima:
-```sh
+~~~sh
+# file: 'terminal'
 sudo apt install cmake make -y
-```
+~~~
 Nakon uspešne instalacije, potrebno je da se pozicionirate u korenski direktorijum zadatka i pokrenete sledeće naredbe:
 
-```sh
+~~~sh
+# file: 'terminal'
 mkdir build
 cd build
 cmake ..
 make -j4
-```
+~~~
 Ukoliko hoćete da iskompajlirate program bez podrške za ``hdf5`` paket, liniju ``cmake ..`` treba zameniti sa 
 ``cmake -DENABLE_HDF5=OFF ..``. Ukoliko isključite podršku za učitavanje generisanih ulaznih podataka, potrebno je da 
 modifikujete izvorni kod tako da na neki drugi način obezbedite učitavanje ulaznih podataka.
@@ -137,7 +145,8 @@ procesu.
 
 #### main.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'main.c'
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -213,13 +222,14 @@ int main(int argc, char *argv[]) {
     
     return 0;
 }
-{% endhighlight %}
+~~~
 main.c - zadatak
 {:.figure}
 
 #### CMakeLists.txt
 
-{% highlight sh linenos %}
+~~~sh
+# file: 'CMakeLists.txt'
 cmake_minimum_required(VERSION 3.5)
 project(MatrixMultiplication)
 
@@ -252,7 +262,7 @@ else()
     add_definitions(-DDISABLE_HDF5)
     message(STATUS "HDF5 support disabled.")
 endif()
-{% endhighlight %}
+~~~
 CMakeLists.txt - zadatak
 {:.figure}
 
@@ -260,7 +270,8 @@ CMakeLists.txt - zadatak
 
 ##### h5defs.h
 
-{% highlight c linenos %}
+~~~c
+// file: 'h5defs.h'
 #ifndef MATRIXUTILITIES_H5DEFS_H
 #define MATRIXUTILITIES_H5DEFS_H
 
@@ -272,13 +283,14 @@ CMakeLists.txt - zadatak
     (if (e < 0) { printf("\nHDF5 error on line %d\n\n", __LINE__ ); exit 1; })
 
 #endif //MATRIXUTILITIES_H5DEFS_H
-{% endhighlight %}
+~~~
 h5defs.h - zadatak
 {:.figure}
 
 ##### h5_matrix_utils.h
 
-{% highlight c linenos %}
+~~~c
+// file: 'h5_matrix_utils.h'
 #ifndef MATRIXUTILITIES_H5_MATRIX_UTILS_H
 #define MATRIXUTILITIES_H5_MATRIX_UTILS_H
 
@@ -323,13 +335,14 @@ void h5_save_float_matrix(const char *filename, float *data, unsigned int rows, 
 void *h5_load_matrix(const char *filename, unsigned long long *rows, unsigned long long *cols);
 
 #endif //MATRIXUTILITIES_H5_MATRIX_UTILS_H
-{% endhighlight %}
+~~~
 h5_matrix_utils.h - zadatak
 {:.figure}
 
 ##### h5_matrix_utils.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'h5_matrix_utils.c'
 #include <time.h>
 #include "h5_matrix_utils.h"
 
@@ -431,7 +444,7 @@ void print_float_vector(float *vector, unsigned long long len) {
         printf("%f ", vector[i]);
     } printf("\n");
 }
-{% endhighlight %}
+~~~
 h5_matrix_utils.c - zadatak
 {:.figure}
 
@@ -441,7 +454,8 @@ h5_matrix_utils.c - zadatak
 - [m5x5.h5](../high-performance-computing/v5/input_data/m5x5.h5){:target="_blank"} <br>
 - [statistika.csv](../high-performance-computing/v5/statistika.csv){:target="_blank"}
 
-{% highlight c linenos %}
+~~~c
+// file: 'hello_world.c'
 // Hello World iz hibridnog OpenMPI + OpenMP programa.
 
 #include <stdio.h>
@@ -463,7 +477,7 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-{% endhighlight %}
+~~~
 hello_world.c
 {:.figure}
 
@@ -471,7 +485,8 @@ hello_world.c
 
 ### pi_openmp.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'pi_openmp.c'
 /**
  * Program koji racuna vrednost integrala funkcije 4/(1+x^2). Numericki,
  * ova vrednost je jednaka broju pi.
@@ -510,13 +525,14 @@ int main() {
 
     return 0;
 }
-{% endhighlight %}
+~~~
 pi_openmp.c
 {:.figure}
 
 ### pi_sekvencijalni.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'pi_sekvencijalni.c'
 /**
  * Program koji racuna vrednost integrala funkcije 4/(1+x^2). Numericki,
  * ova vrednost je jednaka broju pi.
@@ -553,7 +569,7 @@ int main() {
 
     return 0;
 }
-{% endhighlight %}
+~~~
 pi_sekvencijalni.c
 {:.figure}
 
@@ -561,9 +577,9 @@ pi_sekvencijalni.c
 
 ### nbody_basic.c
 
-{% highlight c linenos %}
-/* File:     nbody_basic.c
- * Purpose:  Implement a 2-dimensional n-body solver that uses the 
+~~~c
+// file: 'nbody_basic.c'
+/* Purpose:  Implement a 2-dimensional n-body solver that uses the 
  *           straightforward n^2 algorithm.  This version directly
  *           computes all the forces.
  *
@@ -982,15 +998,15 @@ void Compute_energy(struct particle_s curr[], int n, double* kin_en_p,
    *pot_en_p = pe;
 }  /* Compute_energy */
 
-{% endhighlight %}
+~~~
 nbody_basic.c
 {:.figure}
 
 ### nbody_red.c
 
-{% highlight c linenos %}
-/* File:     nbody_red.c
- * Purpose:  Implement a 2-dimensional n-body solver that uses the 
+~~~c
+// file: 'nbody_red.c'
+/* Purpose:  Implement a 2-dimensional n-body solver that uses the 
  *           reduced algorithm.  So when the force on particle
  *           q due to particle k (q < k) is computed, the force
  *           on k due to q is also computed
@@ -1418,15 +1434,15 @@ void Compute_energy(struct particle_s curr[], int n, double* kin_en_p,
    *pot_en_p = pe;
 }  /* Compute_energy */
 
-{% endhighlight %}
+~~~
 nbody_red.c
 {:.figure}
 
 ### omp_nbody_basic.c
 
-{% highlight c linenos %}
-/* File:     omp_nbody_basic.c
- * Purpose:  Implement a 2-dimensional n-body solver that uses the 
+~~~c
+// file: 'omp_nbody_basic.c'
+/* Purpose:  Implement a 2-dimensional n-body solver that uses the 
  *           basic algorithm.  So this version directly computes 
  *           all the forces.
  *
@@ -1837,16 +1853,15 @@ void Compute_energy(struct particle_s curr[], int n, double* kin_en_p,
    *kin_en_p = ke;
    *pot_en_p = pe;
 }  /* Compute_energy */
-{% endhighlight %}
+~~~
 omp_nbody_basic.c
 {:.figure}
 
 ### omp_nbody_red.c
 
-{% highlight c linenos %}
-/* File:     omp_nbody_red.c
- *
- * Purpose:  Use OpenMP to parallelize a 2-dimensional n-body solver 
+~~~c
+// file: 'omp_nbody_red.c'
+/* Purpose:  Use OpenMP to parallelize a 2-dimensional n-body solver 
  *           that uses the reduced algorithm.  This version uses one 
  *           array per thread to store locally computed forces.
  *           These forces are then added into a shared array.  It
@@ -2248,15 +2263,15 @@ void Update_part(int part, vect_t forces[], struct particle_s curr[],
 // curr[part].s[X] += delta_t * curr[part].v[X];
 // curr[part].s[Y] += delta_t * curr[part].v[Y];
 }  /* Update_part */
-{% endhighlight %}
+~~~
 omp_nbody_red.c
 {:.figure}
 
 ### mpi_nbody_basic.c
 
-{% highlight c linenos %}
-/* File:     mpi_nbody_basic.c
- * Purpose:  Implement a 2-dimensional n-body solver that uses the 
+~~~c
+// file: 'mpi_nbody_basic.c'
+/* Purpose:  Implement a 2-dimensional n-body solver that uses the 
  *           basic algorithm.  This version uses an in-place Allgather
  *
  * Compile:  mpicc -g -Wall -o mpi_nbody_basic mpi_nbody_basic.c -lm
@@ -2723,15 +2738,15 @@ void Update_part(int loc_part, double masses[], vect_t loc_forces[],
                loc_vel[loc_part][X], loc_vel[loc_part][Y]);
 #  endif
 }  /* Update_part */
-{% endhighlight %}
+~~~
 mpi_nbody_basic.c
 {:.figure}
 
 ### mpi_nbody_red.c
 
-{% highlight c linenos %}
-/* File:     mpi_nbody_red.c
- * Purpose:  Implement a 2-dimensional n-body solver that uses the 
+~~~c
+// file: 'mpi_nbody_red.c'
+/* Purpose:  Implement a 2-dimensional n-body solver that uses the 
  *           reduced algorithm.  In this version, we reduce storage 
  *           and communication over the original MPI version 
  *           and we slightly improve the organization of the loops 
@@ -3409,6 +3424,6 @@ void Update_part(int loc_part, double masses[], vect_t loc_forces[],
                loc_vel[loc_part][X], loc_vel[loc_part][Y]);
 #  endif
 }  /* Update_part */
-{% endhighlight %}
+~~~
 mpi_nbody_red.c
 {:.figure}

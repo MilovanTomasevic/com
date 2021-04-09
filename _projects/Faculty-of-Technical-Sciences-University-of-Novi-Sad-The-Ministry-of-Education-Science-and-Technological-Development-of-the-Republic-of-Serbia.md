@@ -139,7 +139,8 @@ FAM4QS Algorithm
 {:.figure}
 
 
-{% highlight csharp linenos %}
+~~~csharp
+// file: 'FAM4QS.cs'
 private void CalculateFAM4QS()
         {
             CollectScores();
@@ -179,7 +180,7 @@ private void CalculateFAM4QS()
                     }
                 }
             }
-{% endhighlight %}          
+~~~        
 FAM4QS Algorithm (program code - C#)
 {:.figure}
 

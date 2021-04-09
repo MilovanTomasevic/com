@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## graph_search Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns graph_search
 
-{% highlight python linenos %}
+~~~py
+# file: 'graph_search.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -87,6 +85,6 @@ print(graph1.find_shortest_path('A', 'D'))
 # ['A', 'B', 'C', 'D']
 # [['A', 'B', 'C', 'D'], ['A', 'B', 'D'], ['A', 'C', 'D']]
 # ['A', 'B', 'D']
-{% endhighlight %}
+~~~
 graph_search.py
 {:.figure}

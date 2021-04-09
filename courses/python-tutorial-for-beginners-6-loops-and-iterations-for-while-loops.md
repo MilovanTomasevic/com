@@ -7,28 +7,26 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ##  Run Code 1 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app1.py'
 nums = [1, 2, 3, 4, 5]
 
 for num in nums
     print(num)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 
 ##  Run Code 2 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app2.py'
 nums = [1, 2, 3, 4, 5]
 
 for num in nums
@@ -36,14 +34,13 @@ for num in nums
       print('Found!')
       break
     print(num)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 
 ##  Run Code 3 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app3.py'
 nums = [1, 2, 3, 4, 5]
 
 for num in nums
@@ -51,34 +48,31 @@ for num in nums
       print('Found!')
       continue
     print(num)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 4 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app4.py'
 nums = [1, 2, 3, 4, 5]
 
 for num in nums
     for letter in 'abc'
         print(num, letter)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 5 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app5.py'
 for i in range(1, 11)
     print(i)
-{% endhighlight %}
-start.py
-{:.figure}
+~~~
 
 ##  Run Code 6 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app6.py'
 x = 0
 
 while True:
@@ -86,6 +80,4 @@ while True:
     #     break
     print(x)
     x += 1
-{% endhighlight %}
-start.py
-{:.figure}
+~~~

@@ -7,16 +7,15 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ##  Test text
 
-{% highlight csv linenos %}
+~~~sh
+# file: 'patrons.csv'
 FirstName,LastName,Email,Pledge,Lifetime,Status,Country,Start
 1 + Reward,"Description I will add your name to the contributors page on my website.
 
@@ -66,14 +65,15 @@ Jane,Stuart,janestuart@bogusemail.com,1.00,2.00,Ok,,2017-05-21 19:42:36.098523
 Travis,Arnold,travisarnold@bogusemail.com,1.00,3.00,Ok,,2017-04-19 08:04:33.428559
 John,Robinson,johnrobinson@bogusemail.com,1.00,4.00,Ok,,2017-03-30 14:59:33.850333
 Travis,Arnold,travisarnold@bogusemail.com,1.00,6.00,Ok,,2017-01-28 22:02:57
-{% endhighlight %}
+~~~
 patrons.csv
 {:.figure}
 
 
 ##  Run Code 1 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'app1.py'
 import csv
 
 html_output = ''
@@ -100,6 +100,6 @@ for name in names:
 html_output += '\n</ul>'
 
 print(html_output)
-{% endhighlight %}
+~~~
 start.py
 {:.figure}

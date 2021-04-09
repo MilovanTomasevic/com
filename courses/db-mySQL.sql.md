@@ -19,8 +19,8 @@ Model baze podataka
 Model baze podataka
 {:.figure}
 
-{% highlight sql linenos %}
-
+~~~sql
+-- file: 'mySQL.sql'
 DROP DATABASE stud2011;
 CREATE DATABASE stud2011;
 
@@ -131,6 +131,6 @@ insert into ispit values
 (20100024, 1021, 2011, 'apr', 6, '03.04.2011'),
 (20100026, 1021, 2011, 'apr', 8, '03.04.2011')
 ;
-{% endhighlight %}
-mySQL.sql
+~~~
+Model & Data
 {:.figure}

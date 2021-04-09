@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## prototype Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns prototype
 
-{% highlight python linenos %}
+~~~py
+# file: 'prototype.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -91,13 +89,14 @@ if __name__ == '__main__':
 
 ### OUTPUT ###
 # [{'objectb': 'b-value'}, {'default': 'default'}, {'objecta': 'a-value'}]
-{% endhighlight %}
+~~~
 prototype.py
 {:.figure}
 
 ## prototype Test
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_prototype.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -145,6 +144,6 @@ class TestDispatcherFeatures(unittest.TestCase):
     def test_extended_properties_retrieving(self):
         self.assertEqual(self.dispatcher.get_objects()['A'].ext_value, 'E')
         self.assertTrue(self.dispatcher.get_objects()['B'].diff)
-{% endhighlight %}
+~~~
 test_prototype.py
 {:.figure}

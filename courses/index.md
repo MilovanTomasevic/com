@@ -15,14 +15,11 @@ In this context are the programming languages as well as methodologies. In addit
 
 ---
 
-## Table of Contents
 {:.no_toc}
 1. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
 ---
-
-
 
 ## Technologies 
 ### GIT - Program control system 
@@ -30,7 +27,6 @@ In this context are the programming languages as well as methodologies. In addit
 {:.related-posts.faded}
 
 ### The Go Programming Language
-
 
 #### Learn GO
 

@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## chaining_method Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns chaining_method
 
-{% highlight python linenos %}
+~~~py
+# file: 'chaining_method.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -54,7 +52,7 @@ if __name__ == '__main__':
 
 ### OUTPUT ###
 # Jack move 5m then stop
-{% endhighlight %}
+~~~
 chaining_method.py
 {:.figure}
 

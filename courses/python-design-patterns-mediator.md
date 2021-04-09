@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## mediator Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns mediator
 
-{% highlight python linenos %}
+~~~py
+# file: 'mediator.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -160,7 +158,7 @@ if __name__ == '__main__':
 # Tearing down
 # Updating the test results in Database
 # Reporting the results of Test
-{% endhighlight %}
+~~~
 mediator.py
 {:.figure}
 

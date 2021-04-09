@@ -7,16 +7,15 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ##  Run Code 1 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'starting_code.py'
 import pandas as pd
 from matplotlib import pyplot as plt
 
@@ -42,7 +41,7 @@ plt.ylabel('Median Salary (USD)')
 plt.tight_layout()
 
 plt.show()
-{% endhighlight %}
+~~~
 starting_code.py
 {:.figure}
 
@@ -55,7 +54,8 @@ starting_code.py
 
 ##  Run Code 2 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'finished_code.py'
 import pandas as pd
 from matplotlib import pyplot as plt
 
@@ -89,7 +89,7 @@ plt.ylabel('Median Salary (USD)')
 plt.tight_layout()
 
 plt.show()
-{% endhighlight %}
+~~~
 finished_code.py
 {:.figure}
 
@@ -102,7 +102,8 @@ finished_code.py
 
 ##  CSV data
 
-{% highlight csv linenos %}
+~~~sh
+# file: 'data.csv'
 Age,All_Devs,Python,JavaScript
 18,17784,20046,16446
 19,16500,17100,16791
@@ -142,6 +143,6 @@ Age,All_Devs,Python,JavaScript
 53,108923,112542,108000
 54,105000,122870,105000
 55,103117,120000,104000
-{% endhighlight %}
+~~~
 data.csv
 {:.figure}

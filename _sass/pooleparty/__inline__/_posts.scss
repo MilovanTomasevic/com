@@ -7,7 +7,7 @@
 // During development you can run `npm run watch:css`
 // to continuosly rebuild this file.
 
-// Copyright (c) 2018 Milovan Tomašević <https://milovantomasevic.com/>
+// Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -31,7 +31,27 @@
   }
 
   > header {
-    margin-bottom: 2rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  .aspect-ratio.sixteen-nine.lead {
+    @extend .border-radius;
+  }
+}
+
+body:not(.no-third-column) {
+  .page > header {
+    > .lead + .note-sm, 
+    > a.no-hover + .note-sm {
+      @media screen and (min-width: $break-point-dynamic) {
+        position: absolute;
+        right: -25rem;
+        width: 21rem;
+        bottom: 0;
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
@@ -40,10 +60,23 @@
 
 // Meta data line below post title
 .post-date {
-  display: block;
-  margin-top: -0.5rem;
-  margin-bottom: 1rem;
-  color: var(--text-muted);
+  @extend .h4;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -.6rem;
+  height: 2rem;
+  margin-bottom: .85rem;
+  color: var(--gray);
+
+  > .ellipsis {
+    cursor: pointer;
+  }
+
+  [class^="icon-"] { 
+    display: inline-block; 
+    font-size: smaller;
+    margin-right: .25rem;
+  }
 }
 
 

@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## command Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns command
 
-{% highlight python linenos %}
+~~~py
+# file: 'command.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -81,13 +79,14 @@ if __name__ == "__main__":
 # renaming bar.txt to baz.txt
 # renaming baz.txt to bar.txt
 # renaming bar.txt to foo.txt
-{% endhighlight %}
+~~~
 command.py
 {:.figure}
 
 ## command Test
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_command.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import os
@@ -146,6 +145,6 @@ class CommandTest(unittest.TestCase):
         Remove the temporary directory /test_command and its content.
         """
         shutil.rmtree('tests/test_command')
-{% endhighlight %}
+~~~
 test_command.py
 {:.figure}

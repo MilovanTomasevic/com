@@ -7,16 +7,14 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 ## Zadatak 1
 
-{% highlight python linenos %}
+~~~py
+# file: 'zadatak1.py'
 import sys
 import random
 import time
@@ -113,6 +111,4 @@ if __name__ == "__main__":
 
     for i in [5, 10, 11, 12, 13, 14, 15]:
         test_iterative(i)
-{% endhighlight %}
-zadatak1.py
-{:.figure}
+~~~

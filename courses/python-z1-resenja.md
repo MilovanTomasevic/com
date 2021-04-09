@@ -7,16 +7,15 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 ## Primer 1
 
-{% highlight python linenos %}
+
+~~~py
+# file: 'primer1.py'
 import sys
 
 if __name__ == "__main__":
@@ -28,13 +27,12 @@ if __name__ == "__main__":
     d = {}
     d[key] = val
     print(d)
-{% endhighlight %}
-primer1.py
-{:.figure}
+~~~
 
 ## Zadatak 1
 
-{% highlight python linenos %}
+~~~py
+# file: 'z1-1.py'
 def zbir(n):
     if n <= 0:
         return 0
@@ -43,13 +41,12 @@ def zbir(n):
 
 if __name__ == "__main__":
     print(zbir(eval(input())))
-{% endhighlight %}
-zadatak1.py
-{:.figure}
+~~~
 
 ## Zadatak 2
 
-{% highlight python linenos %}
+~~~py
+# file: 'z1-2.py'
 import sys
 
 def kv_zbir(n):
@@ -64,35 +61,33 @@ if __name__ == "__main__":
         sys.exit()
     n = int(sys.argv[1])
     print(kv_zbir(n))
-{% endhighlight %}
-zadatak2.py
-{:.figure}
+~~~
 
 ## Zadatak 3
 
-{% highlight python linenos %}
+~~~py
+# file: 'z1-3.py'
 if __name__ == "__main__":
     str1 = input()
     str2 = input()
     str3 = str1[:3] * 2 + str2[-3:];
     print(str3)
-{% endhighlight %}
-zadatak3.py
-{:.figure}
+~~~
 
 ## Zadatak 4
 
-{% highlight python linenos %}
+~~~py
+# file: 'z1-4.py'
 if __name__ == "__main__":
     l = [i + 1 for i in range(100)]
     print (l[::-1])
-{% endhighlight %}
-zadatak4.py
-{:.figure}
+~~~
+
 
 ## Zadatak 5
 
-{% highlight python linenos %}
+~~~py
+# file: 'z1-5.py'
 if __name__ == "__main__":
     f = open("dict_test.txt", "r")
     d = dict()
@@ -106,13 +101,12 @@ if __name__ == "__main__":
     for key, value in d.items():
         print(key, ":", value)
     f.close()
-{% endhighlight %}
-zadatak5.py
-{:.figure}
+~~~
 
 ## Zadatak 6
 
-{% highlight python linenos %}
+~~~py
+# file: 'z1-6.py'
 if __name__ == "__main__":
     l = []
     l.append((1, 2.3, "a"))
@@ -122,13 +116,12 @@ if __name__ == "__main__":
     print(l)
     l.remove(l[0])
     print(l)
-{% endhighlight %}
-zadatak6.py
-{:.figure}
+~~~
 
 ## Zadatak 7
 
-{% highlight python linenos %}
+~~~py
+# file: 'z1-7.py'
 if __name__ == "__main__":
     s = set()
     el0 = 1, 2.3, "a"
@@ -142,6 +135,4 @@ if __name__ == "__main__":
     print(s)
     s.remove(el0)
     print(s)
-{% endhighlight %}
-zadatak7.py
-{:.figure}
+~~~

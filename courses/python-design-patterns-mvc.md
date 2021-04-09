@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## mvc Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns mvc
 
-{% highlight python linenos %}
+~~~py
+# file: 'mvc.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -149,6 +147,6 @@ if __name__ == '__main__':
 # Name: Milk, Price: 1.50, Quantity: 10
 #
 # That product "arepas" does not exist in the records
-{% endhighlight %}
+~~~
 mvc.py
 {:.figure}

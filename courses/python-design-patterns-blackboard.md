@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## blackboard Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns blackboard
 
-{% highlight python linenos %}
+~~~py
+# file: 'blackboard.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -137,6 +135,6 @@ if __name__ == '__main__':
 #  'Student',
 #  'Scientist',
 #  'Professor']
-{% endhighlight %}
+~~~
 blackboard.py
 {:.figure}

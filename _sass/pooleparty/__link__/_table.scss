@@ -7,7 +7,7 @@
 // During development you can run `npm run watch:css`
 // to continuosly rebuild this file.
 
-// Copyright (c) 2018 Milovan Tomašević <https://milovantomasevic.com/>
+// Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -22,19 +22,37 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-table:not(.highlight) {
-  
 
-  
+table:not(.rouge-table) {
+  @extend .figure-base;
+  border-collapse: collapse;
+  border-radius: 0!important;
   display: block;
-  vertical-align: top;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  
+  margin-bottom: 1.5rem;
 
-  
+  td, th {
+    @extend .color-transition;
+    padding: .5em .75em;
 
-  
+    &:first-child {
+      padding-left: 1rem;
+      border-left: 1px solid var(--border-color);
+    }
+
+    &:last-child {
+      padding-right: 1rem;
+      border-right: 1px solid var(--border-color);
+    }
+  }
+
+  > *:first-child {
+    border-top: 1px solid var(--border-color);
+  }
+
+  > *:last-child {
+    border-bottom: 1px solid var(--border-color);
+  }
+
   thead {
     @extend .color-transition;
     background-color: var(--body-bg);
@@ -44,7 +62,7 @@ table:not(.highlight) {
   tbody + tbody,
   tfoot {
     @extend .color-transition;
-    border-top: 3px double var(--border-color);
+    border-top: 1px solid var(--border-color);
   }
 
   tbody tr:nth-child(even) td,
@@ -57,14 +75,6 @@ table:not(.highlight) {
   tbody tr:nth-child(odd) th {
     @extend .color-transition;
     background-color: var(--gray-bg);
-  }
-  
-}
-
-
-@media print {
-  table:not(.highlight) {
-    width: 100%!important;
   }
 }
 
@@ -79,13 +89,6 @@ table:not(.highlight) {
   display: flex;
   overflow: hidden;
 
-  thead,
-  thead + tbody,
-  tbody + tbody {
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-  }
-
   thead, tbody {
     display: flex;
   }
@@ -93,9 +96,11 @@ table:not(.highlight) {
   thead {
     flex-shrink: 0;
     min-width: min-content;
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 
     th {
-      padding-left: 1rem;
+      padding-left: 1em;
     }
   }
 
@@ -103,7 +108,6 @@ table:not(.highlight) {
     position: relative;
     overflow-x: auto;
     overflow-y: hidden;
-    padding-left: 1px;
     -webkit-overflow-scrolling: touch;
   }
 
@@ -113,35 +117,25 @@ table:not(.highlight) {
     min-width: min-content;
     flex-shrink: 0;
 
-    td {
-      border-left: none;
-    }
-
-    &:first-child {
-      td {
-        border-left: 1px solid var(--border-color);
-      }
-    }
-
     &:last-child {
+      border-right: 1px solid var(--border-color);
       td {
-        padding-right: 1rem;
-        border-right: 1px solid var(--border-color);
+        padding-right: 1em;
       }
     }
   }
 
   td, th {
     display: block;
-    border-bottom: none;
 
     &:first-child {
-      padding-left: .5rem;
-      border-top: none;
+      padding-left: .5em;
+      border-left: none;
     }
 
     &:last-child {
-      padding-right: .5rem;
+      padding-right: .5em;
+      border-right: none;
     }
   }
 }
@@ -149,7 +143,11 @@ table:not(.highlight) {
 table.stretch-table {
   display: table;
   width: 100% !important;
-  width: calc(100% + 2rem) !important;
+  width: calc(100% + 2em) !important;
+  // @media screen and (max-width: $break-point-4) {
+  //   display: block!important;
+  //   @include scroll-table();
+  // }
 }
 
 table.scroll-table {
@@ -167,6 +165,12 @@ table.flip-table {
 
   table.flip-table-small {
     @include flip-table();
+  }
+}
+
+@media print {
+  table:not(.rouge-table) {
+    width: 100%!important;
   }
 }
 

@@ -1,12 +1,12 @@
-body.dark-mode {
+@mixin darkmode-syntax {
   .highlight,
   pre.highlight {
     // background: #282c34;
     color: #abb2bf;
   }
-  .highlight pre {
-    // background: #282c34;
-  }
+  // .highlight pre {
+  //   background: #282c34;
+  // }
   .highlight .ge {
     font-style: italic;
   }
@@ -129,5 +129,11 @@ body.dark-mode {
   }
   .highlight .language-json .kc {
     color: #56b6c2;
+  }
+}
+
+@media screen {
+  body.dark-mode {
+    @include darkmode-syntax();
   }
 }

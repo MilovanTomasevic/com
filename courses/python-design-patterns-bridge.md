@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## bridge Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns bridge
 
-{% highlight python linenos %}
+~~~py
+# file: 'bridge.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -71,13 +69,14 @@ if __name__ == '__main__':
 ### OUTPUT ###
 # API1.circle at 1:2 radius 7.5
 # API2.circle at 5:7 radius 27.5
-```
+~~~
 bridge.py
 {:.figure}
 
 ## bridge Test
 
-```py
+~~~py
+# file: 'test_bridge'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -122,6 +121,6 @@ class BridgeTest(unittest.TestCase):
             sh2.scale(2)
             cls.assertEqual(mock_sh1_scale_circle.call_count, 1)
             cls.assertEqual(mock_sh2_scale_circle.call_count, 1)
-{% endhighlight %}
+~~~
 test_bridge.py
 {:.figure}

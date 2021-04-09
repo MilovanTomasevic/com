@@ -7,12 +7,10 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ## borg Model
 
@@ -20,7 +18,8 @@ hide_description: true
 
 ## Python-Design-Patterns borg
 
-{% highlight python linenos %}
+~~~py
+# file: 'borg.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -110,13 +109,14 @@ if __name__ == '__main__':
 # rm1: Init
 # rm2: Init
 # rm3: Init
-{% endhighlight %}
+~~~
 borg.py
 {:.figure}
 
 ## borg Test
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_borg.py'
 ##!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -140,6 +140,6 @@ class BorgTest(unittest.TestCase):
 
     def test_instances_shall_have_own_ids(self):
         self.assertNotEqual(id(self.b1), id(self.b2), id(self.ib1))
-{% endhighlight %}
+~~~
 test_borg.py
 {:.figure}

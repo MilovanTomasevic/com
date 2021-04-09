@@ -7,40 +7,41 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## Setup
 
 ### Installation
 
-```sh
+~~~sh
+# file: 'terminal'
 apt-get install libopenmpi-dev 
 apt-get install openmpi-bin 
-```
+~~~
 
 ### Compilation & Running OpenMP
-```sh
+~~~sh
+# file: 'terminal'
 gcc -o name name.c -fopenmp
 ./name
-```
+~~~
 
 ### Compilation & Running MPI
 
-```sh
+~~~sh
+# file: 'terminal'
 mpicc filename.c -o filename 
 mpirun -np 1 ./filename # -lm
-```
+~~~
 
 ## Exercises
 
 ### omp_threadnum.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'omp_threadnum.c'
 #include <omp.h>
 #include <stdio.h>
 
@@ -48,13 +49,14 @@ int main (int argc, char *argv[])
 {
   printf("Hello World from thread = %d\n", omp_get_thread_num());
 }
-{% endhighlight %}
+~~~
 omp_threadnum.c - exercises
 {:.figure}
 
 ### omp_hello.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'omp_hello.c'
 #include <omp.h>
 #include <stdio.h>
 
@@ -64,13 +66,14 @@ int main (int argc, char *argv[])
   printf("Hello World from thread = %d\n", omp_get_thread_num());
   }
 }
-{% endhighlight %}
+~~~
 omp_hello.c - exercises
 {:.figure}
 
 ### omp_private.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'omp_private.c'
 #include <omp.h>
 #include <stdio.h>
 
@@ -87,13 +90,14 @@ int tid, nthreads;
   printf("Hello World from thread = %d out of %d\n", tid, nthreads);
   }  /* All threads join master thread and disband */
 }
-{% endhighlight %}
+~~~
 omp_private.c - exercises
 {:.figure}
 
 ### omp_vectadd.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'omp_vectadd.c'
 #include <omp.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -125,13 +129,14 @@ end = omp_get_wtime();
 printf("Summed vectors a and b in %g seconds\n", end-start);
 
 }
-{% endhighlight %}
+~~~
 omp_vectadd.c - exercises
 {:.figure}
 
 ### omp_pi.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'omp_pi.c'
 #include <omp.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -161,7 +166,7 @@ int main (int argc, char *argv[])
   // Print result
   printf("Pi estimate: %.20f, obtained in %f seconds\n", pi, end-start);
 }
-{% endhighlight %}
+~~~
 omp_pi.c - exercises
 {:.figure}
 
@@ -169,7 +174,8 @@ omp_pi.c - exercises
 
 ### omp_threadnum.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'omp_threadnum.c'
 #include <omp.h>
 #include <stdio.h>
 
@@ -177,13 +183,14 @@ int main (int argc, char *argv[])
 {
   printf("Hello World from thread = %d\n", omp_get_thread_num());
 }
-{% endhighlight %}
+~~~
 omp_threadnum.c - solutions
 {:.figure}
 
 ### omp_hello.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'omp_hello.c'
 #include <omp.h>
 #include <stdio.h>
 
@@ -195,13 +202,14 @@ int main (int argc, char *argv[])
   printf("Hello World from thread = %d\n", omp_get_thread_num());
   }  /* All threads join master thread and disband */
 }
-{% endhighlight %}
+~~~
 omp_hello.c - solutions
 {:.figure}
 
 ### omp_private.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'omp_private.c'
 #include <omp.h>
 #include <stdio.h>
 
@@ -218,13 +226,14 @@ int tid, nthreads;
   printf("Hello World from thread = %d out of %d\n", tid, nthreads);
   }  /* All threads join master thread and disband */
 }
-{% endhighlight %}
+~~~
 omp_private.c - solutions
 {:.figure}
 
 ### omp_vectadd.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'omp_vectadd.c'
 #include <omp.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -257,13 +266,14 @@ end = omp_get_wtime();
 printf("Summed vectors a and b in %g seconds\n", end-start);
 
 }
-{% endhighlight %}
+~~~
 omp_vectadd.c - solutions
 {:.figure}
 
 ### omp_pi.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'mp_pi.c'
 #include <omp.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -295,6 +305,6 @@ int main (int argc, char *argv[])
   // Print result
   printf("Pi estimate: %.20f, obtained in %f seconds\n", pi, end-start);
 }
-{% endhighlight %}
+~~~
 omp_pi.c - solutions
 {:.figure}

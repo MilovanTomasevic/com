@@ -18,29 +18,33 @@ hide_description: true
 
 ### Installation
 
-```sh
+~~~sh
+# file: 'terminal'
 apt-get install libopenmpi-dev 
 apt-get install openmpi-bin 
-```
+~~~
 
 ### Compilation & Running OpenMP
-```sh
+~~~sh
+# file: 'terminal'
 gcc -o name name.c -fopenmp
 ./name
-```
+~~~
 
 ### Compilation & Running MPI
 
-```sh
+~~~sh
+# file: 'terminal'
 mpicc filename.c -o filename 
 mpirun -np 1 ./filename # -lm
-```
+~~~
 
 ## Exercises
 
 ### mpi_hello_world.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'mpi_hello_world.c'
 #include <mpi.h>
 #include <stdio.h>
 
@@ -52,13 +56,14 @@ void main(int argc, char* argv[])
   printf("Hello world from %d\n", id);
   MPI_Finalize();
 }
-{% endhighlight %}
+~~~
 mpi_hello_world.c - exercises
 {:.figure}
 
 ### mpi_pnt2pnt.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'mpi_pnt2pnt.c'
 #include <mpi.h>
 #include <stdio.h>
 
@@ -70,13 +75,14 @@ void main(int argc, char* argv[])
   printf("Hello world from %d\n", id);
   MPI_Finalize();
 }
-{% endhighlight %}
+~~~
 mpi_pnt2pnt.c - exercises
 {:.figure}
 
 ### mpi_pingpong.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'mpi_pingpong.c'
 #include <mpi.h>
 #include <stdio.h>
 
@@ -125,13 +131,14 @@ int main(int argc, char* argv[])
 
         MPI_Finalize();
 }
-{% endhighlight %}
+~~~
 mpi_pingpong.c - exercises
 {:.figure}
 
 ### mpi_pingpong_nonblocking.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'mpi_pingpong_nonblocking.c'
 #include <mpi.h>
 #include <stdio.h>
 
@@ -180,13 +187,14 @@ int main(int argc, char* argv[])
 
         MPI_Finalize();
 }
-{% endhighlight %}
+~~~
 mpi_pingpong_nonblocking.c - exercises
 {:.figure}
 
 ### mpi_pi.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'mpi_pi.c'
 #include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -237,13 +245,14 @@ int main (int argc, char *argv[])
 
   MPI_Finalize();
 }
-{% endhighlight %}
+~~~
 mpi_pi.c - exercises
 {:.figure}
 
 ### mpi_pi_advanced.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'mpi_pi_advanced.c'
 #include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -283,7 +292,7 @@ int main (int argc, char *argv[])
 
   MPI_Finalize();
 }
-{% endhighlight %}
+~~~
 mpi_pi_advanced.c - exercises
 {:.figure}
 
@@ -291,7 +300,8 @@ mpi_pi_advanced.c - exercises
 
 ### mpi_hello_world.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'mpi_hello_world.c'
 #include <mpi.h>
 #include <stdio.h>
 
@@ -303,13 +313,14 @@ void main(int argc, char* argv[])
   printf("Hello world from %d\n", id);
   MPI_Finalize();
 }
-{% endhighlight %}
+~~~
 mpi_hello_world.c - solutions
 {:.figure}
 
 ### mpi_pnt2pnt.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'mpi_pnt2pnt.c'
 #include <mpi.h>
 #include <stdio.h>
 
@@ -321,13 +332,14 @@ void main(int argc, char* argv[])
   printf("Hello world from %d\n", id);
   MPI_Finalize();
 }
-{% endhighlight %}
+~~~
 mpi_pnt2pnt.c - solutions
 {:.figure}
 
 ### mpi_pingpong.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'mpi_pingpong.c'
 #include <mpi.h>
 #include <stdio.h>
 
@@ -376,13 +388,14 @@ int main(int argc, char* argv[])
 
         MPI_Finalize();
 }
-{% endhighlight %}
+~~~
 mpi_pingpong.c - solutions
 {:.figure}
 
 ### mpi_pingpong_nonblocking.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'mpi_pingpong_nonblocking.c'
 #include <mpi.h>
 #include <stdio.h>
 
@@ -435,13 +448,14 @@ int main(int argc, char* argv[])
 
         MPI_Finalize();
 }
-{% endhighlight %}
+~~~
 mpi_pingpong_nonblocking.c - solutions
 {:.figure}
 
 ### mpi_pi.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'mpi_pi.c'
 #include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -492,13 +506,14 @@ int main (int argc, char *argv[])
 
   MPI_Finalize();
 }
-{% endhighlight %}
+~~~
 mpi_pi.c - solutions
 {:.figure}
 
 ### mpi_pi_v2.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'mpi_pi_v2.c'
 #include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -550,6 +565,6 @@ int main (int argc, char *argv[])
 
   MPI_Finalize();
 }
-{% endhighlight %}
+~~~
 mpi_pi_v2.c - solutions
 {:.figure}

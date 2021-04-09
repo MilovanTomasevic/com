@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## factory_method Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns factory_method
 
-{% highlight python linenos %}
+~~~py
+# file: 'factory_method.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -90,13 +88,14 @@ if __name__ == '__main__':
 # parrot parrot
 # cat γάτα
 # bear bear
-{% endhighlight %}
+~~~
 factory_method.py
 {:.figure}
 
 ## factory_method Test
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_factory_method.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -129,6 +128,6 @@ class TestLocalizer(unittest.TestCase):
 
     def test_bear_greek_localization(self):
         self.assertEqual(self.g.get('bear'), 'bear')
-{% endhighlight %}
+~~~
 test_factory_method.py
 {:.figure}

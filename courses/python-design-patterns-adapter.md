@@ -7,12 +7,10 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ## adapter Model
 
@@ -20,7 +18,8 @@ hide_description: true
 
 ## Python-Design-Patterns adapter
 
-{% highlight python linenos %}
+~~~py
+# file: 'adapter.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -154,13 +153,14 @@ if __name__ == "__main__":
 # A Cat goes meow!
 # A Human goes 'hello'
 # A Car goes vroom!!!
-{% endhighlight %}
+~~~
 adapter.py
 {:.figure}
 
 ## adapter Test
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_adapter.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -234,6 +234,6 @@ class AdapterTest(unittest.TestCase):
         expected_noise = "vroom!!!!!!!!!!"
 
         self.assertEqual(noise, expected_noise)
-{% endhighlight %}
+~~~
 test_adapter.py
 {:.figure}

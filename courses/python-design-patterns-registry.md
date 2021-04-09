@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## registry Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns registry
 
-{% highlight python linenos %}
+~~~py
+# file: 'registry.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -69,6 +67,6 @@ if __name__ == "__main__":
 # After subclassing:
 # BaseRegisteredClass
 # ClassRegistree
-{% endhighlight %}
+~~~
 registry.py
 {:.figure}

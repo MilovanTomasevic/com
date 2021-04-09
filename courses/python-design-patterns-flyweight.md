@@ -7,12 +7,9 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## flyweight Model
 
@@ -20,7 +17,8 @@ hide_description: true
 
 ## Python-Design-Patterns flyweight
 
-{% highlight python linenos %}
+~~~py
+# file: 'flyweight.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -156,13 +154,14 @@ if __name__ == '__main__':
 # (31903856, 31903856)
 # True
 # False
-{% endhighlight %}
+~~~
 flyweight.py
 {:.figure}
 
 ## flyweight Test
 
-{% highlight python linenos %}
+~~~py
+# file: 'test_flyweight.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import unittest
@@ -199,6 +198,6 @@ class TestCard(unittest.TestCase):
         c2 = Card('9', 'h')
         self.assertEqual(hasattr(c2, expected_attribute_name), True)
         self.assertEqual(c2.attr, expected_attribute_value)
-{% endhighlight %}
+~~~
 test_flyweight.py
 {:.figure}

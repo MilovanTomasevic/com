@@ -7,16 +7,14 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 ## Zadatak 1
 
-{% highlight python linenos %}
+~~~py
+# file: 'z6-1.py'
 import sys
 from math import inf
 
@@ -91,6 +89,4 @@ if __name__ == "__main__":
     test_cases = [['a', 'b'], ['a', 'b', 'a', 'b', 'a', 'b', 'a', 'b', 'a', 'b'], ['a', 'a', 'b', 'b', 'b', 'c', 'c', 'c', 'c'], ['a', 'a', 'b', 'b', 'b', 'c', 'c', 'c', 'c', 'd', 'd', 'd', 'd', 'd'], ['a', 'a', 'a', 'b', 'b', 'b', 'b', 'c', 'c', 'c', 'c', 'c', 'd', 'd', 'd', 'd', 'd', 'd', 'e', 'e', 'f']]
     for s in test_cases:
         test(s)
-{% endhighlight %}
-zadatak1.py
-{:.figure}
+~~~

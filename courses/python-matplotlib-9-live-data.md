@@ -7,17 +7,14 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 ##  Run Code 1 in Python
 
-{% highlight python linenos %}
-
+~~~py
+# file: 'starting_code.py'
 import random
 from itertools import count
 import pandas as pd
@@ -46,15 +43,15 @@ plt.show()
 # x = data['x_value']
 # y1 = data['total_1']
 # y2 = data['total_2']
-{% endhighlight %}
+~~~
 starting_code.py
 {:.figure}
 
 
 ##  Run Code 2 in Python - dont stop run code !
 
-{% highlight python linenos %}
-
+~~~py
+# file: 'data_gen.py'
 import csv
 import random
 import time
@@ -89,14 +86,14 @@ while True:
         total_2 = total_2 + random.randint(-5, 6)
 
     time.sleep(1)
-{% endhighlight %}
+~~~
 data_gen.py
 {:.figure}
 
 ##  Run Code 3 in Python - parallel with Code 2
 
-{% highlight python linenos %}
-
+~~~py
+# file: 'finished_code.py'
 import random
 from itertools import count
 import pandas as pd
@@ -130,7 +127,7 @@ ani = FuncAnimation(plt.gcf(), animate, interval=1000)
 
 plt.tight_layout()
 plt.show()
-{% endhighlight %}
+~~~
 finished_code.py
 {:.figure}
 

@@ -7,47 +7,49 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
-
----
 
 ## Setup
 
 ### Installation
 
-```sh
+~~~sh
+# file: 'terminal'
 apt-get install libopenmpi-dev 
 apt-get install openmpi-bin 
-```
+~~~
 
 ### Compilation & Running OpenMP
-```sh
+~~~sh
+# file: 'terminal'
 gcc -o name name.c -fopenmp
 ./name
-```
+~~~
 
 ### Compilation & Running MPI
 
-```sh
+~~~sh
+# file: 'terminal'
 mpicc filename.c -o filename 
 mpirun -np 1 ./filename # -lm
-```
+~~~
 
 ### Compilation & Running OpenACC
 
-```sh
+~~~sh
+# file: 'terminal'
 gcc -o izvrsna_dat izvorna_dat.c -fopenacc
 ./izvrsna_dat
-```
+~~~
 
 ## Zadaci
 
 ### Pi.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'pi.c'
 #include <stdio.h>
 #include <omp.h>
 
@@ -81,15 +83,14 @@ void serial_code() {
     printf("Time elapsed: %lf\n", end - start);
 }
 
-{% endhighlight %}
+~~~
 Pi.c - zadatak
 {:.figure}
 
 ### mandelbrot.c
 
-{% highlight c linenos %}
-// mandelbrot.c
-
+~~~c
+// file: 'mandelbrot.c'
 /**
  * OpenMP paralelizovan Mandelbrotov algoritam. Program ne daje ispravne rezultate
  * zbog stetnog preplitanja koje se pojavljuje u njemu. Pronaci i otkloniti greske koje
@@ -153,15 +154,14 @@ void testpoint(void){
         }
     }
 }
-{% endhighlight %}
+~~~
 mandelbrot.c - zadatak 
 {:.figure}
 
 ### linkedlist.c
 
-{% highlight c linenos %}
-// Linked.c
-
+~~~c
+// file: 'linkedlist.c'
 #include <stdlib.h>
 #include <stdio.h>
 #include <omp.h>
@@ -260,7 +260,7 @@ int main(int argc, char *argv[]) {
     printf("Compute Time: %f seconds\n", end - start);
     return 0;
 }
-{% endhighlight %}
+~~~
 linkedlist.c - zadatak 
 {:.figure}
 
@@ -280,17 +280,20 @@ dodati opciju u liniju ``set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
 ###### Kompajliranje iz terminala
 Ukoliko želite da koristite izgenerisane ulazne podatke u ``hdf5`` formatu neophodno je imati instaliranu podršku za ovaj
 format podataka. Na Ubuntu operativnim sistemina, hdf5 paket možete instalirati pokretanjem sledećih komandi:
-```sh
+~~~sh
+# file: 'terminal'
 sudo apt install libhdf5-dev 
-```
+~~~
 Zatim se pozicinonirati u korenski direktorijum zadatka i pokrenuti:
-```sh
+~~~sh
+# file: 'terminal'
 h5cc utils/*.h utils/*.c main.c -fopenmp
-```
+~~~
 Ukoliko ne želite da koristite ulazne podatke u hdf5 formatu, zadatak možetekompajlirati na sledeći način:
-```sh
+~~~sh
+# file: 'terminal'
 gcc main.c -fopenmp -DDISABLE_HDF5
-```
+~~~
 Ukoliko isključite podršku za učitavanje generisanih ulaznih podataka, potrebno je da 
 modifikujete izvorni kod tako da na neki drugi način obezbedite učitavanje ulaznih podataka.
 
@@ -298,16 +301,18 @@ modifikujete izvorni kod tako da na neki drugi način obezbedite učitavanje ula
 Ukoliko nemate instalirane ``cmake`` i ``make`` pakete nećete moći ovako da kompajlirate zadatak.
 
 Instalacija na Ubuntu operativnim sistemima:
-```sh
+~~~sh
+# file: 'terminal'
 sudo apt install cmake make -y
-```
+~~~
 Nakon uspešne instalacije, potrebno je da se pozicionirate u korenski direktorijum zadatka i pokrenete sledeće naredbe:
 
-```sh
+~~~sh
+# file: 'terminal'
 mkdir build && cd build
 cmake ..
 make -j4
-```
+~~~
 Ukoliko hoćete da iskompajlirate program bez podrške za ``hdf5`` paket, liniju ``cmake ..`` treba zameniti sa 
 ``cmake -DENABLE_HDF5=OFF ..``. Ukoliko isključite podršku za učitavanje generisanih ulaznih podataka, potrebno je da 
 modifikujete izvorni kod tako da na neki drugi način obezbedite učitavanje ulaznih podataka.
@@ -318,7 +323,8 @@ je drugačije specificirano tokom kompajliranja.
 
 #### main.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'main.c'
 #include <omp.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -391,13 +397,14 @@ int main(int argc, char *argv[]) {
     
     return 0;
 }
-{% endhighlight %}
+~~~
 main.c - zadatak 
 {:.figure}
 
 #### CMakeLists.txt
 
-{% highlight sh linenos %}
+~~~sh
+# file: 'CMakeLists.txt'
 cmake_minimum_required(VERSION 3.5)
 project(TransposeMatrix)
 
@@ -427,7 +434,7 @@ else()
     add_definitions(-DDISABLE_HDF5)
     message(STATUS "HDF5 support disabled.")
 endif()
-{% endhighlight %}
+~~~
 CMakeLists.txt - zadatak 
 {:.figure}
 
@@ -435,7 +442,8 @@ CMakeLists.txt - zadatak
 
 ##### h5defs.h
 
-{% highlight c linenos %}
+~~~c
+// file: 'h5defs.h'
 #ifndef MATRIXUTILITIES_H5DEFS_H
 #define MATRIXUTILITIES_H5DEFS_H
 
@@ -447,13 +455,14 @@ CMakeLists.txt - zadatak
     (if (e < 0) { printf("\nHDF5 error on line %d\n\n", __LINE__ ); exit 1; })
 
 #endif //MATRIXUTILITIES_H5DEFS_H
-{% endhighlight %}
+~~~
 h5defs.h - zadatak 
 {:.figure}
 
 ##### h5_matrix_utils.h
 
-{% highlight c linenos %}
+~~~c
+// file: 'h5_matrix_utils.h'
 #ifndef MATRIXUTILITIES_H5_MATRIX_UTILS_H
 #define MATRIXUTILITIES_H5_MATRIX_UTILS_H
 
@@ -487,13 +496,14 @@ void *h5_load_matrix(const char *filename, unsigned long long *rows, unsigned lo
 
 #endif //MATRIXUTILITIES_H5_MATRIX_UTILS_H
 
-{% endhighlight %}
+~~~
 h5_matrix_utils.h - zadatak 
 {:.figure}
 
 ##### h5_matrix_utils.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'h5_matrix_utils.c'
 #include <time.h>
 #include "h5_matrix_utils.h"
 
@@ -586,8 +596,8 @@ void print_float_matrix(float *matrix, unsigned long long rows, unsigned long lo
         } printf("\n");
     }
 }
-{% endhighlight %}
-h5_matrix_utils.h - zadatak 
+~~~
+h5_matrix_utils.c - zadatak 
 {:.figure}
 
 ### Genetic Algorithm
@@ -606,9 +616,10 @@ dodati opciju u liniju ``set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
 
 ###### Kompajliranje iz terminala
 Pozicionirati se u korenski direktorijum:
-```sh
+~~~sh
+# file: 'terminal'
 gcc main.c -fopenmp
-```
+~~~
 Moguće je još proslediti i opcije ``-DLARGE`` (kompleksan primer), ``-DMEDIUM`` (srednje kompleksan primer) i ``-DSMALL``
 (jednostavan primer). Ukoliko se ne specificira ni jedna od navedenih opcija, program će biti pokrenut nad jednostavnim
 primerom. 
@@ -617,16 +628,18 @@ primerom.
 Ukoliko nemate instalirane ``cmake`` i ``make`` pakete nećete moći ovako da kompajlirate zadatak.
 
 Instalacija na Ubuntu operativnim sistemima:
-```sh
+~~~sh
+# file: 'terminal'
 sudo apt install cmake make -y
-```
+~~~
 Nakon uspešne instalacije, potrebno je da se pozicionirate u korenski direktorijum zadatka i pokrenete sledeće naredbe:
 
-```sh
+~~~sh
+# file: 'terminal'
 mkdir build && cd build
 cmake ..
 make -j4
-```
+~~~
 
 ##### Pokretanje programa
 Pozicionirati se u direktorijum u kojem se nalazi izvršna datoteka i pokrenuti ``./a.out``, ili drugi naziv ukoliko 
@@ -634,7 +647,8 @@ je drugačije specificirano tokom kompajliranja.
 
 #### main.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'main.c'
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -921,13 +935,14 @@ void timer(void (*f)(void), double *time) {
     *time += (stop - start);
 }
 
-{% endhighlight %}
+~~~
 main.c - zadatak 
 {:.figure}
 
 #### CMakeLists.txt
 
-{% highlight sh linenos %}
+~~~sh
+# file: 'MakeLists.txt'
 cmake_minimum_required(VERSION 3.5)
 project(GeneticAlgorithm)
 
@@ -939,7 +954,7 @@ set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_EXE_LINKER_FLAGS}
 set(SOURCE_FILES main.c)
 
 add_executable(GeneticAlgorithm ${SOURCE_FILES})
-{% endhighlight %}
+~~~
 CMakeLists.txt - zadatak 
 {:.figure}
 
@@ -958,9 +973,10 @@ dodati opciju u liniju ``set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
 
 ###### Kompajliranje iz terminala
 Pozicionirati se u korenski direktorijum:
-```sh
+~~~sh
+# file: 'terminal'
 gcc main.c -fopenmp -lm
-```
+~~~
 Dodatne opcije kompajliranja:
 
 - ``-DFX``   - kompajlirati program tako da evaluira funkciju x-1 nad intervalom [-5, 5] (jedan koren).
@@ -971,16 +987,18 @@ Dodatne opcije kompajliranja:
 Ukoliko nemate instalirane ``cmake`` i ``make`` pakete nećete moći ovako da kompajlirate zadatak.
 
 Instalacija na Ubuntu operativnim sistemima:
-```sh
+~~~sh
+# file: 'terminal'
 sudo apt install cmake make -y
-```
+~~~
 Nakon uspešne instalacije, potrebno je da se pozicionirate u korenski direktorijum zadatka i pokrenete sledeće naredbe:
 
-```sh
+~~~sh
+# file: 'terminal'
 mkdir build && cd build
 cmake ..
 make -j4
-```
+~~~
 
 ##### Pokretanje programa
 Pozicionirati se u direktorijum u kojem se nalazi izvršna datoteka i pokrenuti ``./a.out``, ili drugi naziv ukoliko 
@@ -988,7 +1006,8 @@ je drugačije specificirano tokom kompajliranja.
 
 #### main.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'main.c'
 #include <stdio.h>
 #include <math.h>
 #include <omp.h>
@@ -1122,13 +1141,14 @@ int main() {
     return 0;
 }
 
-{% endhighlight %}
+~~~
 main.c - zadatak
 {:.figure}
 
 #### CMakeLists.txt
 
-{% highlight sh linenos %}
+~~~sh
+# file: ''
 cmake_minimum_required(VERSION 3.5)
 project(BisectionMethod)
 
@@ -1142,7 +1162,7 @@ set(SOURCE_FILES main.c)
 add_executable(BisectionMethod ${SOURCE_FILES})
 target_link_libraries(BisectionMethod -lm)
 
-{% endhighlight %}
+~~~
 CMakeLists.txt - zadatak
 {:.figure}
 
@@ -1150,7 +1170,8 @@ CMakeLists.txt - zadatak
 
 ### Pi.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'pi.c'
 /**
  * Program koji racuna vrednost integrala funkcije 4/(1+x^2). Numericki,
  * ova vrednost je jednaka broju pi.
@@ -1411,13 +1432,14 @@ void parallel_code_for_construct() {
     printf("Time elapsed: %lf\n", end - start);
 }
 
-{% endhighlight %}
+~~~
 Pi.c - rešenje
 {:.figure}
 
 ### mandelbrot.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'mandelbrot.c'
 #include <stdio.h>
 #include <omp.h>
 
@@ -1485,13 +1507,14 @@ void testpoint(struct d_complex c){
         }
     }
 }
-{% endhighlight %}
+~~~
 mandelbrot.c - rešenje 
 {:.figure}
 
 ### linkedlist.c
 
-{% highlight c linenos %}
+~~~c
+// file: 'linkedlist.c'
 #include <stdlib.h>
 #include <stdio.h>
 #include <omp.h>
@@ -1597,6 +1620,6 @@ int main(int argc, char *argv[]) {
     printf("Compute Time: %f seconds\n", end - start);
     return 0;
 }
-{% endhighlight %}
+~~~
 linkedlist.c - rešenje 
 {:.figure}

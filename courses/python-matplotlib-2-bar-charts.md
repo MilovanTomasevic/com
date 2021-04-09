@@ -7,16 +7,15 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ##  Run Code 1 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'starting_code.py'
 from matplotlib import pyplot as plt
 
 plt.style.use("fivethirtyeight")
@@ -44,7 +43,7 @@ plt.ylabel("Median Salary (USD)")
 plt.tight_layout()
 
 plt.show()
-{% endhighlight %}
+~~~
 starting_code.py
 {:.figure}
 
@@ -57,7 +56,8 @@ starting_code.py
 
 ##  Run Code 2 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'start.py'
 import csv
 import numpy as np
 import pandas as pd
@@ -94,7 +94,7 @@ plt.xlabel("Number of People Who Use")
 plt.tight_layout()
 
 plt.show()
-{% endhighlight %}
+~~~
 start.py
 {:.figure}
 
@@ -107,7 +107,8 @@ start.py
 
 ##  CSV data
 
-{% highlight csv linenos %}
+~~~sh
+# file: 'data.csv'
 Responder_id,LanguagesWorkedWith
 1,HTML/CSS;Java;JavaScript;Python
 2,C++;HTML/CSS;Python
@@ -87678,6 +87679,6 @@ Responder_id,LanguagesWorkedWith
 88282,Bash/Shell/PowerShell;Go;HTML/CSS;JavaScript;WebAssembly
 88377,HTML/CSS;JavaScript;Other(s):
 88863,Bash/Shell/PowerShell;HTML/CSS;Java;JavaScript;PHP;SQL;Swift
-{% endhighlight %}
+~~~
 data.csv
 {:.figure}

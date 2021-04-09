@@ -7,17 +7,15 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
-
 
 ##  Run Code 1 in Python
 
-{% highlight python linenos %}
+~~~py
+# file: 'finished_code.py'
 from matplotlib import pyplot as plt
 
 plt.xkcd()
@@ -48,7 +46,7 @@ plt.tight_layout()
 plt.savefig('plot.png')
 
 plt.show()
-{% endhighlight %}
+~~~
 finished_code.py
 {:.figure}
 

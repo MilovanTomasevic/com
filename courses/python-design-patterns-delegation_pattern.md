@@ -7,12 +7,10 @@ hide_description: true
 
 ---
 
-## Table of Contents
 {:.no_toc}
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
----
 
 ## delegation_pattern Model
 
@@ -20,7 +18,8 @@ hide_description: true
 
 ## Python-Design-Patterns delegation_pattern
 
-{% highlight python linenos %}
+~~~py
+# file: 'delegation_pattern.py'
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -73,6 +72,6 @@ if __name__ == '__main__':
     import doctest
 
     doctest.testmod()
-{% endhighlight %}
+~~~
 delegation_pattern.py
 {:.figure}
