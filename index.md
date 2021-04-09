@@ -22,20 +22,8 @@ featured: false
 
 <aside class="about related mt4 mb4" role="complementary">
 <div class="author mt4">
-  <hy-img  
-    src="/assets/icons/milovantomasevic.png"
-    class="avatar"
-    alt="The MT Team"
-    srcset="/assets/icons/milovantomasevic.png, /assets/icons/milovantomasevic.png" 
-    root-margin="512px"
-  >
-    <span class="loading" slot="loading" hidden>
-      <span class="icon-cog"></span>
-    </span>
-  </hy-img>
-  
-  <h2  class="page-title hr">Well, Hello There:</h2>
-
+  <img src="https://www.milovantomasevic.com/assets/icons/milovantomasevic.png" class="avatar photo u-photo" alt="Milovan Tomašević" property="image" width="120" height="120" loading="lazy" />
+  <h2 class="page-title">Well, Hello There:</h2>
 <div class="tip" markdown="1">
 
 
