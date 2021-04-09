@@ -1,7 +1,7 @@
 {
   "name": "hydejack-assets",
   "homepage": "https://milovantomasevic.com/",
-  "author": "Florian Klampfer <mail@qwtel.com> (https://qwtel.com/)",
+  "author": "Milovan Tomašević <tomas.ftn.e2@gmail.com> (https://milovantomasevic.com/)",
   "license": "MIT",
   "private": true,
   "dependencies": {
