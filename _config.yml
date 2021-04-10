@@ -77,17 +77,21 @@ theme_color:           rgb(25,55,71)
 
 # The string encoding which fonts to fetch from Google Fonts.
 # See: <https://milovantomasevic.com/docs/configuration/>
-google_fonts:          Inconsolata
+# google_fonts:          Inconsolata
 
 # The text font. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
-font:                  Inconsolata
+# font:                  Inconsolata
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
-font_heading:          Inconsolata
+# font_heading:          Inconsolata
 
 # font_code:             Consolas, Courier, "Courier New", 'STKaiti', 'KaiTi', 'SimKai', monospace
+google_fonts:          Inconsolata+Inconsolata:600|Inconsolata+Inconsolata:150,150i,600,600i
+font:                  Inconsolata, Inconsolata, Inconsolata, Inconsolata
+font_heading:          Inconsolata, Inconsolata, Inconsolata, Inconsolata
+font-code:             ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
 defaults:
   - scope:
