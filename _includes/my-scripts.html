@@ -52,4 +52,45 @@ The snippet below will run the code on every `hy-push-state-load` event instead.
     }()
   });
 </script>
+
+
+
+<script>
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+
 {% endcomment %}
+
+
+ <script
+     src='https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js'></script>
+ <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+ <script id="rendered-js">
+
+     $(document).ready(function () {
+         $(window).scroll(function () {
+             if ($(this).scrollTop() > 100) {
+                 $('#scroll').fadeIn();
+             } else {
+                 $('#scroll').fadeOut();
+             }
+         });
+         $('#scroll').click(function () {
+             $("html, body").animate({ scrollTop: 0 }, 600);
+             return false;
+         });
+     });      //# sourceURL=pen.js
+ </script> 
