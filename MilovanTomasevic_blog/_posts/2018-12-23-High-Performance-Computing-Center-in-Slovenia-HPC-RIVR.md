@@ -5,15 +5,25 @@ image: /courses/fis/fis/hpc.jpg
 description: >
   At present the most powerful supercomputer in Slovenia has a capacity of around 38 teraFLOP/s and is owned by a private company. In the HPC RIVR project, we will set up a supercomputer capacity of at least 1.5 petaFLOP/s of data capacity of at least 22 PB. Today I would be the 23rd most powerful in Europe and the 90th in the world.
 hide_description: true
+last_modified_at: 2021-04-10
 hide_image: true
 comments: true
 ---
+
+High Performance Computing Center in Slovenia - HPC RIVR
+
+{:.no_toc}
+1. this unordered seed list will be replaced by toc as unordered list
+{:toc}
+
+## About HPC RIVR
 
 The largest HPC Center in Slovenia is [**_HPC RIVR_**](/projects/Faculty-of-Information-Studies-in-Novo-MestoThe-Ministry-of-Education-Science-and-Sport-Slovenia/){:target="_blank"} whose partners are the [University of Maribor](https://www.um.si/en/Pages/default.aspx){:target="_blank"}, the [Institute of Information Sciences (IZUM)](https://www.izum.si){:target="_blank"} and the [Faculty of Information Studies in Novo mesto (FIŠ)](https://www.fis.unm.si/en/){:target="_blank"}.
 
 ![HPC Rudolf](/courses/fis/fis/hpc.jpg)
 FIŠ – HPC Rudolf
 {:.figure}
+
 
 _"This is a big thing for the eastern region and Maribor, because it brings a number of multiplier effects,"_ said the head of the project, Vice-Rector for Research [Zoran Ren](https://www.um.si/en/about/About/Pages/prof.-Zoran-Ren.aspx){:target="_blank"} for the Slovenian Press Agency. He believes that strengthening computer capacity will significantly contribute not only to the development of supercomputer profession and research in many scientific fields, but it will also give an acceleration to the economy. _"With such a supercomputer system we will contribute, for example, to more precise forecasting of weather phenomena, simulation of social phenomena, optimization of individual products, simulations of basic particle physics, development of crypto technologies, deep learning, artificial intelligence, etc. So far, we have had to perform demanding calculations using supercomputer systems abroad,"_ he explained.
 
@@ -22,7 +32,7 @@ _"This is a big thing for the eastern region and Maribor, because it brings a nu
 
 
 
-# The value of the HPC RIVR project
+## The value of the HPC RIVR project
 
 In the HPC RIVR project, estimated at **_20 million euros_**, the University of Maribor, the Institute of Information Science (IZUM) and the Faculty of Information Studies in Novo mesto (FIŠ) obtained European and national funds for it. If everything goes according to plans, it will be **_launched in 2020_**.
 

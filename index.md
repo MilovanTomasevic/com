@@ -13,11 +13,10 @@ selected_projects:
 more_projects: projects.md
 selected_posts:
   - MilovanTomasevic_blog/_posts/2018-12-23-High-Performance-Computing-Center-in-Slovenia-HPC-RIVR.md
-  - MilovanTomasevic_blog/_posts/2018-06-30-introducing-milovantomasevic-website.md
 
 
 more_posts: posts.md
-featured: false
+featured: true
 ---
 
 <aside class="about related mt4 mb4" role="complementary">
@@ -96,7 +95,7 @@ I moved to Slovenia only a month ago and I am currently employed at the [*Facult
 
 ---
 
-# Recent Posts
+# First my Post
 
 <!--posts-->
 

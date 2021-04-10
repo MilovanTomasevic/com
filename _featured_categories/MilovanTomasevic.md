@@ -1,5 +1,5 @@
 ---
-layout: list
+layout: grid
 title: Milovan Tomašević
 slug: MilovanTomasevic_blog
 description: >
