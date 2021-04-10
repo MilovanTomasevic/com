@@ -4,7 +4,7 @@ cover: false
 title: Impossible is nothing but a word!
 image: /assets/img/MilovanTomasevic-8.jpeg
 description: >
-  In addition to scientific research, I also develop business software and websites with the aim of creating a new product or service that consumers will want.
+  In addition to scientific research, I develop business software and websites with the aim of creating a new product or service that consumers will want. My name is Milovan Tomašević, ½ Software Engineer, ¼ Open Source enthusiast and ¼ Manager.
 hide_description: true
 selected_projects:
 - _projects/Faculty-of-Information-Studies-in-Novo-MestoThe-Ministry-of-Education-Science-and-Sport-Slovenia.md
@@ -19,14 +19,28 @@ more_posts: posts.md
 featured: true
 ---
 
+{:.no_toc}
+1. this unordered seed list will be replaced by toc as unordered list
+{:toc}
+
 <aside class="about related mt4 mb4" role="complementary">
 <div class="author mt4">
   <img src="https://www.milovantomasevic.com/assets/icons/milovantomasevic.png" class="avatar photo u-photo" alt="Milovan Tomašević" property="image" width="120" height="120" loading="lazy" />
-  <h2 class="page-title">Well, Hello There:</h2>
 <div class="tip" markdown="1">
 
+# Well, Hello There:
 
-My name is [***Milovan Tomašević***](/resume/) and I work on [**_HPC RIVR project_**](MilovanTomasevic_blog/_posts/2018-12-23-High-Performance-Computing-Center-in-Slovenia-HPC-RIVR.md){:target="_blank"} as a [**_HPC (High Performance Computing) Consultant_**](https://www.fis.unm.si/si/o-fakulteti/sodelavci/strokovni-sodelavci/){:target="_blank"} at the [**_Faculty of Information Studies in Novo mesto, Slovenia_**](https://www.fis.unm.si/en/){:target="_blank"}. I am from _Serbia_ and I worked at the [_Faculty of Technical Sciences, Novi Sad University_, Serbia](http://www.ftn.uns.ac.rs/n1386094394/faculty-of-technical-sciences){:target="_blank"}, as a researcher for six years. And I worked as an iOS Developer (that is, I developed applications for I-device) at a company working on the development of Internet of Things, also known as Industry 4.0.
+In addition to scientific research, I develop business software and websites with the aim of creating a new product or service that consumers will want. My name is [***Milovan Tomašević***](/resume/), ½ Software Engineer, ¼ Open Source enthusiast and ¼ Manager. I am currently employed by [NLB d.d.](https://www.nlb.si) as a Senior Data Solutions Developer. My focus in the Data Mangment is mostly on Backup&Restoring a database that contains a very large amount of data.
+
+Planning a strategy for backup and restoring a database is essential for any manufacturing-like database. It helps reduce loss and increase data availability. The full strategy consists of planning a backup with documentation, and then testing restore options to make sure you're ready for the worst.
+{:.faded}
+Awareness of the types of data loss and risks associated with data loss is essential to preventing data loss that may be a major cost to your business.
+{:.faded}
+My engagement help businesses improve performance and make the necessary changes to succeed. It also helps clients reduce IT costs and deliver a better quality service by enabling consolidation available on 6 known instances of the database: IBM DB2, MySQL, PostgreSQL, MariaDB, Oracle Database, and SQL Server engines.
+{:.faded}
+
+
+I worked on [**_HPC RIVR project_**](MilovanTomasevic_blog/_posts/2018-12-23-High-Performance-Computing-Center-in-Slovenia-HPC-RIVR.md){:target="_blank"} as a [**_HPC (High Performance Computing) Consultant_**](https://www.fis.unm.si/si/o-fakulteti/sodelavci/strokovni-sodelavci/){:target="_blank"} at the [**_Faculty of Information Studies in Novo mesto, Slovenia_**](https://www.fis.unm.si/en/){:target="_blank"}. I am from _Serbia_ and I worked at the [_Faculty of Technical Sciences, Novi Sad University_, Serbia](http://www.ftn.uns.ac.rs/n1386094394/faculty-of-technical-sciences){:target="_blank"}, as a researcher for six years. And I worked as an iOS Developer (that is, I developed applications for I-device) at a company working on the development of Internet of Things, also known as Industry 4.0.
 
 I obtained a [*Ph.D.*](courses/fis/PhDfis.html#1){:target="_blank"} in *Industrial Engineering* at the same faculty, with a dissertation paper called [*''Adaptive Model for Supply Chains Management in Small and Medium Enterprises''*](http://nardus.mpn.gov.rs/handle/123456789/9234){:target="_blank"} (as well as an *MSc* in *Industrial Engineering and Engineering Management* and an *MSc* in *Computer Sciences*).
 
@@ -34,6 +48,7 @@ I obtained a [*Ph.D.*](courses/fis/PhDfis.html#1){:target="_blank"} in *Industri
 
 My main areas of interest are:
 
+* BigData
 *   Models for Feasibility Assessment of High Performance Computing Architectures,
 *   **_[Domain Specific Languages (DSLs) for High Performance Computing (HPC)](/courses/#table-of-contents)_**,
 *   Supply Chain Management Systems with HPC,
@@ -95,7 +110,7 @@ I moved to Slovenia only a month ago and I am currently employed at the [*Facult
 
 ---
 
-# First my Post
+# My First Blog Post
 
 <!--posts-->
 
