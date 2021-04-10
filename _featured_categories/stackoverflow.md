@@ -1,8 +1,8 @@
 ---
-layout: list
+layout: grid
 title: stackoverflow
 slug: stackoverflow
 description: >
-  stackoverflow answers.
+  Question answering (Q&A) - stackoverflow
 hide_description: true
 ---
