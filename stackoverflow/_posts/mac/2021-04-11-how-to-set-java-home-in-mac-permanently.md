@@ -10,8 +10,8 @@ hide_image: true
 comments: true
 more_posts: posts.md
 featured: true
-categories: [stackoverflow]
-tags: [stackoverflow]
+categories: [stackoverflow, mac]
+tags: [stackoverflow, mac]
 ---
 
 How to set JAVA_HOME in Mac permanently?
