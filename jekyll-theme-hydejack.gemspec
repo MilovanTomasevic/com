@@ -2,18 +2,18 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-hydejack"
-  spec.version       = "9.1.2"
+  spec.version       = "9.1.4"
   spec.authors       = ["Florian Klampfer"]
   spec.email         = ["mail@qwtel.com"]
 
   spec.summary       = %q{"A boutique Jekyll theme for hackers, nerds, and academics"}
-  spec.homepage      = "https://milovantomasevic.com/"
+  spec.homepage      = "https://hydejack.com/"
   spec.license       = "GPL-3.0"
   spec.metadata = {
     "bug_tracker_uri"   => "https://github.com/hydecorp/hydejack/issues",
-    "changelog_uri"     => "https://milovantomasevic.com/changelog/",
-    "documentation_uri" => "https://milovantomasevic.com/docs/",
-    "homepage_uri"      => "https://milovantomasevic.com/",
+    "changelog_uri"     => "https://hydejack.com/changelog/",
+    "documentation_uri" => "https://hydejack.com/docs/",
+    "homepage_uri"      => "https://hydejack.com/",
     "source_code_uri"   => "https://github.com/hydecorp/hydejack-dev/",
     "github_repo"       => "ssh://github.com/hydecorp/hydejack-dev"
   }
