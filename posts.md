@@ -2,5 +2,7 @@
 layout: grid
 title: Posts
 description: >
-  `List` of posts by Milovan Tomašević.
+  List of recent blog posts, grouped by year.
+grouped: true
+sitemap: false
 ---
