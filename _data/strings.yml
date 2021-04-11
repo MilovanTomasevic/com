@@ -20,7 +20,7 @@ posts:                 Posts
 about:                 About
 related_posts:         Related Posts
 other_projects:        Other Projects
-comments:              Comments
+comments:              Comments 💬
 jump_to:               Jump to
 navigation:            Navigation
 social:                Social
@@ -50,7 +50,7 @@ continue_reading:      >
 cookies_banner:
   text:                >
     This site uses cookies. [Cookies Policy](/cookies-policy/).
-  okay:                Okay
+  okay:                Got it!
 
 not_found:
   title:               '404: Page Not Found'
