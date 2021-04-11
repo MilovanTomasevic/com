@@ -301,6 +301,7 @@ plugins:
   - jekyll-titles-from-headings
   - jekyll-plantuml
   - jekyll-include-cache
+  - jekyll-last-modified-at
 
 # Theme
 # ---------------------------------------------------------------------------------------
