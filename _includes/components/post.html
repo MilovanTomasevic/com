@@ -14,12 +14,19 @@
 
     <div class="post-date">
       {% capture foobar %}
-        {%- unless site.hydejack.hide_dates -%}
-          {%- assign post_format = site.data.strings.date_formats.post | default:"%d %b %Y" -%}
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:post_format }}</time>
-        {%- else -%}
-          {{- site.data.strings.posted | default:"Posted" -}}
-        {%- endunless -%}
+      {% unless site.hydejack.hide_dates %}
+        {% assign post_format = site.data.strings.date_formats.post | default:"%d %b %Y" %}
+        {% assign post_date = post.date | date:post_format %}
+
+        {% comment %} Custom code to add link and last modified date {% endcomment %}
+        {% assign last_update = post.last_modified_at | date:post_format %}
+
+        {% if post_date != last_update %}
+          <a href="https://github.com/MilovanTomasevic/com/commits/master/{{ post.path }}" target="_blank">Updated</a>: {{ last_update }}
+        {% else %}
+          Posted: <time datetime="{{ post.date | date_to_xmlschema }}">{{ post_date }}</time>
+        {% endif %}
+      {% endunless %}
         {{ ' ' }}
         {%- assign category_start     = site.data.strings.category_start     | default:"in " -%}
         {%- assign category_separator = site.data.strings.category_separator | default:" / " -%}
