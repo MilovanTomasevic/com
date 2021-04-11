@@ -3,15 +3,14 @@ layout: post
 title: Making Python loggers output all messages to stdout in addition to log file
 image: /assets/img/stackoverflow/logger.png
 description: >
-  python, logging, error-logging
+  Is there a way to make Python logging using the `logging` module automatically output things to stdout in addition to the log file where they are supposed to go?
 hide_description: true
-last_modified_at: 2021-04-10
 hide_image: true
 comments: true
 more_posts: posts.md
 featured: true
 categories: [stackoverflow, python]
-tags: [stackoverflow, python]
+tags: [python, logging, error-logging]
 ---
 
 Making Python loggers output all messages to stdout in addition to log file
