@@ -3,15 +3,14 @@ layout: post
 title: How to set JAVA_HOME in Mac permanently?
 image: https://i.stack.imgur.com/EIi48.jpg
 description: >
-  java, macos, java-home
+  I am trying to set `JAVA_HOME` by entering export `JAVA_HOME=/Library/Java/Home` at terminal. 
 hide_description: true
-last_modified_at: 2021-04-11
 hide_image: true
 comments: true
 more_posts: posts.md
 featured: true
 categories: [stackoverflow, mac]
-tags: [stackoverflow, mac]
+tags: [java, macos, java-home]
 ---
 
 How to set JAVA_HOME in Mac permanently?
