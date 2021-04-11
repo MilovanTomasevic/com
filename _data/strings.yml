@@ -8,6 +8,10 @@
 # but note that this may not work in all situations,
 # especially for languages that differ significantly from English.
 
+# Custom strings
+website_name: MilovanTomašević
+website_url: https://milovantomasevic.com
+
 # Free version
 # ---------------------------------------------------------------------------------------
 home:                  Home
