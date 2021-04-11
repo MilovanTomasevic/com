@@ -27,6 +27,14 @@
         {{ ' ' }}
         {%- assign tag_start          = site.data.strings.tag_start          | default:"on " -%}
         {%- assign tag_separator      = site.data.strings.tag_separator      | default:", "  -%}
+        <span class="read-time" title="Estimated read time"> ∙
+          {% assign words = post.content | number_of_words %}
+          {% if words < 360 %}
+            1 min read
+          {% else %}
+            {{ words | divided_by:180 }} mins read
+          {% endif %}
+        </span>
         {%- include components/tag-list.html tags=post.tags meta=site.featured_tags start_with=tag_start separator=tag_separator -%}
       {% endcapture %}
       <span class="ellipsis mr1">
