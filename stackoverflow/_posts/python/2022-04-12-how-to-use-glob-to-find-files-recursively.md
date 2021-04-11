@@ -3,13 +3,12 @@ layout: post
 title: How to use glob() to find files recursively?
 image: https://i.pinimg.com/originals/99/65/d3/9965d3d198d5cb0ba5d6311d8a9a7ea3.png
 description: >
-  Is there a way to make Python logging using the `logging` module automatically output things to stdout in addition to the log file where they are supposed to go?
+  If you don't want to use pathlib, use can use `glob.glob('**/*.c')`
 hide_description: true
 hide_image: true
 comments: true
 more_posts: posts.md
 featured: true
-last_modified_at: 2021-04-12
 categories: [stackoverflow]
 tags: [python, path, filesystems, glob, fnmatch]
 ---
