@@ -5,9 +5,11 @@ image: /courses/fis/fis/hpc.jpg
 description: >
   At present the most powerful supercomputer in Slovenia has a capacity of around 38 teraFLOP/s and is owned by a private company. In the HPC RIVR project, we will set up a supercomputer capacity of at least 1.5 petaFLOP/s of data capacity of at least 22 PB. Today I would be the 23rd most powerful in Europe and the 90th in the world.
 hide_description: true
-last_modified_at: 2021-04-10
 hide_image: true
 comments: true
+more_posts: posts.md
+featured: true
+tags: [HPC RIVR, supercomputer]
 ---
 
 High Performance Computing Center in Slovenia - HPC RIVR
