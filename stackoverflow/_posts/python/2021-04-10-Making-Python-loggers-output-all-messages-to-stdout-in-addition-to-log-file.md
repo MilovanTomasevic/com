@@ -7,9 +7,7 @@ description: >
 hide_description: true
 hide_image: true
 comments: true
-more_posts: posts.md
-featured: true
-last_modified_at: 2021-04-11
+last_modified_at: 2021-04-12
 categories: [stackoverflow]
 tags: [python, logging, error-logging]
 ---
