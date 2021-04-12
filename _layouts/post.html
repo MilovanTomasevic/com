@@ -39,6 +39,7 @@ layout: base
   {% when 'random' %}
     {% include if-non-null try="pro/random-posts.html" %}
   {% when 'comments' %}
+    {% include body/github-comments.html %}
     {% include body/comments.html %}
   {% else %}
   {% endcase %}
