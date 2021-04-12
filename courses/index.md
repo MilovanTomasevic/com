@@ -258,11 +258,6 @@ In this context are the programming languages as well as methodologies. In addit
 - [DOCTORAL DISSERTATION PROPOSAL](/courses/PhDDispozicija/PhDdispozicija.html){:target="_blank"}{:.heading.flip-title} --- PC & Mobile view.
 {:.related-posts.faded}
 
-### FIS Presentation (in Serbian)
-
-- Prezentacija prikazuje zašto uspešno izvršavamo obaveze svih 10 godina !
-	- [Budi student FIŠ-a](/courses/fis/fis.html){:target="_blank"}{:.heading.flip-title} --- PC & Mobile view.
-{:.related-posts.faded}
 
 {% comment %} 
 
