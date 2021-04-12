@@ -9,12 +9,9 @@ hide_description: true
 selected_projects:
 - _projects/Faculty-of-Information-Studies-in-Novo-MestoThe-Ministry-of-Education-Science-and-Sport-Slovenia.md
 - _projects/Faculty-of-Technical-Sciences-University-of-Novi-Sad-The-Ministry-of-Education-Science-and-Technological-Development-of-the-Republic-of-Serbia.md
-
 more_projects: projects.md
 selected_posts:
-  - MilovanTomasevic_blog/_posts/2018-12-23-High-Performance-Computing-Center-in-Slovenia-HPC-RIVR.md
-
-
+  - tech/_posts/2018-12-23-High-Performance-Computing-Center-in-Slovenia-HPC-RIVR.md
 more_posts: posts.md
 featured: true
 ---
@@ -26,7 +23,7 @@ featured: true
 <aside class="about related mt4 mb4" role="complementary">
 <div class="author mt4">
   <img src="https://www.milovantomasevic.com/assets/icons/milovantomasevic.png" class="avatar photo u-photo" alt="Milovan Tomašević" property="image" width="120" height="120" loading="lazy" />
-<div class="tip" markdown="1">
+<div class="tip_" markdown="1">
 
 # Well, Hello There:
 
