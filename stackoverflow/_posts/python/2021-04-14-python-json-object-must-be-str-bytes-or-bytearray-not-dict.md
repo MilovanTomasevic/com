@@ -20,7 +20,7 @@ python JSON object must be str, bytes or bytearray, not 'dict
 
 ## [Question](https://stackoverflow.com/questions/136097/difference-between-staticmethod-and-classmethod) by [barak manos](https://stackoverflow.com/users/1382251/barak-manos)
 
-In Python 3, to load json previously saved like this:
+In Python 3+, to load json previously saved like this:
 
 ```py
 json.dumps(dictionary)
