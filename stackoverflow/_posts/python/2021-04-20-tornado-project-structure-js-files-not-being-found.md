@@ -54,7 +54,7 @@ I get this:
 I'm not sure what am I doing wrong. I even changed the relative path to full paths of the JS and CSS files.
 
 
-## [Answer](https://stackoverflow.com/a/65655346/13155046) by [Milovan Tomašević](https://stackoverflow.com/users/13155046/milovan-tomašević)
+## [Answer](https://stackoverflow.com/a/62288422/13155046) by [Milovan Tomašević](https://stackoverflow.com/users/13155046/milovan-tomašević)
 
 Tornado Project Structure :
 
