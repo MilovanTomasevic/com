@@ -71,7 +71,6 @@ permalink: /certifications/
 1. [Software Design Course: SOLID, Design patterns, Code Smells](https://www.udemy.com/certificate/UC-9fd190a7-8788-4174-a602-20bc655e20a1/){:target="_blank"}
 1. [Python Design Patterns](http://ude.my/UC-c9139435-41e7-4038-aa8b-1a2573b5de98){:target="_blank"}
 1. [SOLID Principles: Introducing Software Architecture & Design](https://www.udemy.com/certificate/UC-492086f7-17f0-4c0d-b6e1-967034487af8/){:target="_blank"}
-1. [Software Design Course: SOLID, Design patterns, Code Smells](https://www.udemy.com/certificate/UC-9fd190a7-8788-4174-a602-20bc655e20a1/){:target="_blank"}
 
 # Development
 
