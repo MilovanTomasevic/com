@@ -38,7 +38,11 @@ work:
     startDate: "09-06-2020"
     endDate: ""
     summary: >
-      → HBase, HDFS, Hive, Kafka, Apache Hadoop, Knox, Solr, Storm, YARN, Pig, Sqoop, Oozie, ZooKeeper, Ambari Infra, Ambari Metrics, Ranger, SmartSense, Spark2, IBM DB2 BIG SQL, DSM, Spectrum Scale, Slider and Atlas Service.
+      Project member of MEDM ("Modern Enterprise Data Management"), which represents the implementation of a modern analytical banking platform in the framework of modern data management, organization and exploitation of data for new business models with new banking products and services in banking.
+      <br>
+      As part of the project, several complex software solutions were developed together with IBM, Deloitte, IN516HT, SmartIS and others, which increase the competitiveness of both companies and their customers in various markets.
+      <br>
+      Development of a central ecosystem for data management in the NLB Group (6 countries and 9 banks).
     highlights:
       - coordination of external contractors on the development of new data solutions
       - advising and supporting user administrators and users in the development and use of data solutions on computer systems
@@ -53,17 +57,27 @@ work:
       - coordinating, controlling and monitoring the work process
       - participation in project and working groups
       - mentoring and knowledge transfer
-    
+        <br>→ HBase, HDFS, Hive, Kafka, Apache Hadoop, Knox, Solr, Storm, YARN, Pig, Sqoop, Oozie, ZooKeeper, Ambari Infra, Ambari Metrics, Ranger, SmartSense, Spark2, IBM DB2 BIG SQL, DSM, Spectrum Scale, Slider and Atlas Service.
+
   - company: "Faculty of information studies"
     position: "Researcher"
     website: "https://fis.unm.si/en/"
     startDate: "21-08-2018"
     endDate: "08-06-2020"
     summary: >
-      Milovan works as a researcher on the project “SUPERVISION OF NATIONAL RESEARCH INFRASTRUCTURES - HPC RIVER”.
+      As part of the project "Upgrading National Research Infrastructures - HPC RIVR", a supercomputer node HPC RIVR with a capacity of 6.8 petaflops per second has been established and is currently ranked among the 50 most powerful supercomputers in the world. 
+      <br>The aim of the project was to strengthen national high-performance computing capacities for the needs of the Slovenian research and innovation as well as economic area.
     highlights:
-      - "Build an algorithm for HPC"
-  
+      - management and planning of supercomputer support to research groups and research and educational activities of FIŠ,
+      - consulting in the field of supercomputer support to research groups and research and educational activities of FIŠ,
+      - proposing the introduction of new technologies in the field of systems, planning the strategy and architecture of the HPC information system,
+      - cooperation with external contractors in the field of ICT HPC
+      - …
+      - Design and develop parallel computing algorithms.  Python, C, C++
+      - Design and develop tools to optimize parallel computing algorithms. Python, C, C++
+      - Manage life-cycle of HPC products from inception to deployment
+      - Research new parallelization paradigms on new computer architectures
+
   - company: "Faculty of Technical Sciences, University of Novi Sad"
     position: "Researcher"
     website: "http://www.ftn.uns.ac.rs/1417837973/milovan-tomasevic"
